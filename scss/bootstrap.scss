@@ -5,6 +5,22 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 
+// @font-face {
+//   font-family: 'Biko';
+//   src: url(/repos/environmentaldashboard.org/fonts/biko/Biko_Regular.otf);
+//   font-weight: normal;
+// }
+// @font-face {
+//   font-family: 'Biko';
+//   src: url(/repos/environmentaldashboard.org/fonts/biko/Biko_Bold.otf);
+//   font-weight: bold;
+// }
+@font-face {
+  font-family: 'Multicolore';
+  src: url(/repos/environmentaldashboard.org/fonts/multicolore/Multicolore.otf);
+  font-weight: normal;
+}
+
 @import "functions";
 @import "variables";
 @import "mixins";
@@ -40,3 +56,23 @@
 @import "carousel";
 @import "utilities";
 @import "print";
+
+// misc. styles that dont belong anywhere in particular
+body {
+	background-image: url(https://environmentaldashboard.org/wp-content/uploads/2015/07/background.jpg);
+	background-position: left top;
+  background-size: auto;
+  background-repeat: repeat;
+}
+.container {
+	background: #fff;
+	padding: 0px;
+}
+@include media-breakpoint-down(sm) {
+	.row {
+		margin: 0px;
+	}
+	.banner-col {
+		padding: 0px;
+	}
+}

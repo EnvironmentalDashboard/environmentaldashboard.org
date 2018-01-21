@@ -3,108 +3,82 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.css?v=<?php echo time(); ?>">
     <title>Environmental Dashboard</title>
   </head>
   <body>
     <div class="container">
-      <div class="row">
-        <div class="col">
-          <img src="images/banner.jpg" alt="" class="img-fluid">
+      <?php include 'includes/header.php'; ?>
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators" style="top: 10px">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="http://environmentaldashboard.org/wp-content/uploads/2015/07/homepage-slider2-welcome1.jpg" alt="First slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="http://environmentaldashboard.org/wp-content/uploads/2015/07/homepage-slider2-our-mission.jpg" alt="Second slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="http://environmentaldashboard.org/wp-content/uploads/2015/07/homepage-slider2-project1.jpg" alt="Third slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="http://environmentaldashboard.org/wp-content/uploads/2015/07/homepage-slider2-resources1.jpg" alt="Fourth slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="http://environmentaldashboard.org/wp-content/uploads/2015/07/homepage-slider2-schools1.jpg" alt="Fifth slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="http://environmentaldashboard.org/wp-content/uploads/2015/07/homepage-slider2-digital-signage1.jpg" alt="Sixth slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="http://environmentaldashboard.org/wp-content/uploads/2015/07/homepage-slider2-community-voices1.jpg" alt="Seventh slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="http://environmentaldashboard.org/wp-content/uploads/2015/07/homepage-slider2-building-dbs2.jpg" alt="Eighth slide">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+      <div class="row" style="margin-top: 20px;margin-bottom: 20px;">
+        <div class="col-12 col-sm-4 text-center">
+          <a href="citywide-dashboard">
+            <img src="http://environmentaldashboard.org/wp-content/uploads/2015/07/icons-cleveland1-300x300.png" alt="" class="img-fluid" onmouseover="this.src='http://environmentaldashboard.org/wp-content/uploads/2015/07/cwd_icon_hr-300x300.png'" onmouseout="this.src='http://environmentaldashboard.org/wp-content/uploads/2015/07/icons-cleveland1-300x300.png'">
+          </a>
+          <h4 style="color: #5aba50;margin-top: 10px">Citywide Dashboard</h4>
+          <p style="text-align: initial;padding: 0px 15px;">An animated display of current electricity and water use and environmental conditions in the entire community. “Flash” the energy squirrel and “Walley the Walleye” narrate the dynamic story.</p>
+        </div>
+        <div class="col-12 col-sm-4 text-center">
+          <a href="building-dashboards">
+            <img src="http://environmentaldashboard.org/wp-content/uploads/2015/07/icons-town1-300x300.png" alt="" class="img-fluid" onmouseover="this.src='http://environmentaldashboard.org/wp-content/uploads/2015/07/building_dashboard_icon_ed_hr-300x300.png'" onmouseout="this.src='http://environmentaldashboard.org/wp-content/uploads/2015/07/icons-town1-300x300.png'">
+          </a>
+          <h4 style="color: #5aba50;margin-top: 10px">Building Dashboards</h4>
+          <p style="text-align: initial;padding: 0px 15px;">Measure electricity and water consumption in schools, businesses, public facilities and homes and translate this into animated displays.</p>
+        </div>
+        <div class="col-12 col-sm-4 text-center">
+          <a href="community-voices">
+            <img src="http://environmentaldashboard.org/wp-content/uploads/2015/07/icons-home-family-300x300.png" alt="" class="img-fluid" onmouseover="this.src='http://environmentaldashboard.org/wp-content/uploads/2015/07/cv_logo_hr-300x300.png'" onmouseout="this.src='http://environmentaldashboard.org/wp-content/uploads/2015/07/icons-home-family-300x300.png'">
+          </a>
+          <h4 style="color: #5aba50;margin-top: 10px">Community Voices</h4>
+          <p style="text-align: initial;padding: 0px 15px;">Combines images thoughts, ideas and actions of community members and groups to celebrate and empower positive action.</p>
         </div>
       </div>
-      <div class="row">
-        <div class="col">
-          <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-              <ul class="navbar-nav">
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Citywide Dashboard
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink1">
-                    <a class="dropdown-item" href="#">Citywide View</a>
-                    <a class="dropdown-item" href="#">Electricity</a>
-                    <a class="dropdown-item" href="#">Water Flow</a>
-                    <a class="dropdown-item" href="#">Water Quality</a>
-                    <a class="dropdown-item" href="#">10 Acre Solar Array</a>
-                    <a class="dropdown-item" href="#">Gauges explained</a>
-                  </div>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Building Dashboard
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink2">
-                    <a class="dropdown-item" href="#">Building Dashboard Explained</a>
-
-                    <a class="dropdown-item dropdown-toggle" href="#" id="navbarDropdownMenuLink3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Oberlin City</a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink3">
-                        <li><a class="dropdown-item" href="#">Eastwood Elementary</a></li>
-                        <li><a class="dropdown-item" href="#">Prospect Elementary</a></li>
-                        <li><a class="dropdown-item" href="#">Langston Middle School</a></li>
-                        <li><a class="dropdown-item" href="#">Oberlin High School</a></li>
-                        <li><a class="dropdown-item" href="#">Langston Board Office</a></li>
-                        <li><a class="dropdown-item" href="#">Oberlin Public Library</a></li>
-                    </ul>
-
-                    <a class="dropdown-item dropdown-toggle" href="#" id="navbarDropdownMenuLink4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Oberlin College</a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink4">
-                        <li><a class="dropdown-item" href="#">Eastwood Elementary</a></li>
-                        <li><a class="dropdown-item" href="#">Prospect Elementary</a></li>
-                        <li><a class="dropdown-item" href="#">Langston Middle School</a></li>
-                        <li><a class="dropdown-item" href="#">Oberlin High School</a></li>
-                        <li><a class="dropdown-item" href="#">Langston Board Office</a></li>
-                        <li><a class="dropdown-item" href="#">Oberlin Public Library</a></li>
-                    </ul>
-                  </div>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Community Voices
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink5">
-                    <a class="dropdown-item" href="#">View Slides</a>
-                    <a class="dropdown-item" href="#">View Articles</a>
-                    <a class="dropdown-item" href="#">Advanced Image Search</a>
-                  </div>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Events Calendar</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink6" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    More
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink6">
-                    <a class="dropdown-item" href="#">Resources Explained</a>
-                    <a class="dropdown-item" href="#">Story of Dashboard</a>
-                    <a class="dropdown-item" href="#">Bring Dashboard to Your Community</a>
-
-                    <a class="dropdown-item dropdown-toggle" href="#" id="navbarDropdownMenuLink7" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Instructor Toolkit</a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink7">
-                        <li><a class="dropdown-item" href="#">About</a></li>
-                        <li><a class="dropdown-item" href="#">Search K12</a></li>
-                        <li><a class="dropdown-item" href="#">Teacher Workshop</a></li>
-                    </ul>
-
-                    <a class="dropdown-item dropdown-toggle" href="#" id="navbarDropdownMenuLink8" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About Us</a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink8">
-                        <li><a class="dropdown-item" href="#">Mission</a></li>
-                        <li><a class="dropdown-item" href="#">Meet the Team</a></li>
-                        <li><a class="dropdown-item" href="#">In the News</a></li>
-                    </ul>
-
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </nav>
-        </div>
-      </div>
+      <?php include 'includes/footer.php'; ?>
     </div>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -115,32 +89,37 @@
  * Copyright 2017.
  * Licensed under the GPL license
  */
-$(document).ready(function() {
-  $('.dropdown-menu a.dropdown-toggle').on('click', function(e) {
-    var $el = $(this);
-    var $parent = $(this).offsetParent(".dropdown-menu");
-    if (!$(this).next().hasClass('show')) {
-      $(this).parents('.dropdown-menu').first().find('.show').removeClass("show");
-    }
-    var $subMenu = $(this).next(".dropdown-menu");
-    $subMenu.toggleClass('show');
+// $(document).ready(function() {
+//   $('.dropdown-menu a.dropdown-toggle').on('click', function(e) {
+//     var $el = $(this);
+//     var $parent = $(this).offsetParent(".dropdown-menu");
+//     if (!$(this).next().hasClass('show')) {
+//       $(this).parents('.dropdown-menu').first().find('.show').removeClass("show");
+//     }
+//     var $subMenu = $(this).next(".dropdown-menu");
+//     $subMenu.toggleClass('show');
 
-    $(this).parent("li").toggleClass('show');
+//     $(this).parent("li").toggleClass('show');
 
-    $(this).parents('li.nav-item.dropdown.show').on('hidden.bs.dropdown', function(e) {
-      $('.dropdown-menu .show').removeClass("show");
-    });
+//     $(this).parents('li.nav-item.dropdown.show').on('hidden.bs.dropdown', function(e) {
+//       $('.dropdown-menu .show').removeClass("show");
+//     });
 
-    if (!$parent.parent().hasClass('navbar-nav')) {
-      $el.next().css({
-        "top": $el[0].offsetTop,
-        "left": $parent.outerWidth() - 4
-      });
-    }
+//     if (!$parent.parent().hasClass('navbar-nav')) {
+//       $el.next().css({
+//         "top": $el[0].offsetTop,
+//         "left": $parent.outerWidth() - 4 // CHANGE THIS TO REPOSITION DROPDOWN
+//       });
+//     }
 
-    return false;
-  });
-});
+//     return false;
+//   });
+
+//   $('#hover1').on('mouseenter mouseleave', function() {
+//     console.log('a');
+//     $('#hover_target1').dropdown('toggle');
+//   })
+// });
 
     </script>
   </body>
