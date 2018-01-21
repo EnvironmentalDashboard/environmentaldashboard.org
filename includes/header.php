@@ -1,6 +1,6 @@
 <div class="row">
   <div class="col banner-col">
-    <img src="/repos/environmentaldashboard.org/images/banner.jpg" alt="" class="img-fluid">
+    <img src="http://67.205.179.187/test/environmentaldashboard.org/images/banner.jpg" alt="" class="img-fluid">
   </div>
 </div>
 <nav class="navbar sticky-top navbar-expand-lg navbar-dark" style="background: #21a7df;padding-top: 0px;padding-bottom: 0px">
