@@ -29,7 +29,7 @@
 </div>
 <div class="row">
   <div class="col text-center" style="padding-bottom: 50px">
-    <a href="#" class="btn btn-primary" style="height: 35px;width: 35px;padding: 5px"><img src="images/facebook-f.svg" alt="" style="height: 100%"></a>
-    <a href="#" class="btn btn-primary" style="height: 35px;width: 35px;padding: 5px"><img src="images/twitter.svg" style="height: 100%" alt=""></a>
+    <a href="#" class="btn btn-primary" style="height: 35px;width: 35px;padding: 5px"><img src="http://67.205.179.187/test/environmentaldashboard.org/images/facebook-f.svg" alt="" style="height: 100%"></a>
+    <a href="#" class="btn btn-primary" style="height: 35px;width: 35px;padding: 5px"><img src="http://67.205.179.187/test/environmentaldashboard.org/images/twitter.svg" style="height: 100%" alt=""></a>
   </div>
 </div>

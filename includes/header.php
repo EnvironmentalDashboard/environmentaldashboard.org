@@ -29,25 +29,28 @@
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink2">
           <a class="dropdown-item" href="#">Building Dashboard Explained</a>
 
-          <a class="dropdown-item dropdown-toggle" href="#" id="navbarDropdownMenuLink3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Oberlin City</a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink3">
+          <div class="dropdown">
+            <a class="dropdown-item dropdown-toggle" href="#" id="navbarDropdownMenuLink3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Oberlin City</a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink3">
               <li><a class="dropdown-item" href="#">Eastwood Elementary</a></li>
               <li><a class="dropdown-item" href="#">Prospect Elementary</a></li>
               <li><a class="dropdown-item" href="#">Langston Middle School</a></li>
               <li><a class="dropdown-item" href="#">Oberlin High School</a></li>
               <li><a class="dropdown-item" href="#">Langston Board Office</a></li>
               <li><a class="dropdown-item" href="#">Oberlin Public Library</a></li>
-          </ul>
+            </ul>
+          </div>
 
-          <a class="dropdown-item dropdown-toggle" href="#" id="navbarDropdownMenuLink4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Oberlin College</a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink4">
-              <li><a class="dropdown-item" href="#">Eastwood Elementary</a></li>
-              <li><a class="dropdown-item" href="#">Prospect Elementary</a></li>
-              <li><a class="dropdown-item" href="#">Langston Middle School</a></li>
-              <li><a class="dropdown-item" href="#">Oberlin High School</a></li>
-              <li><a class="dropdown-item" href="#">Langston Board Office</a></li>
-              <li><a class="dropdown-item" href="#">Oberlin Public Library</a></li>
-          </ul>
+          <div class="dropdown">
+            <a class="dropdown-item dropdown-toggle" href="#" id="navbarDropdownMenuLink4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Oberlin College</a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink4">
+              <li><a class="dropdown-item" href="#">College Dormitories</a></li>
+              <li><a class="dropdown-item" href="#">AJLC</a></li>
+              <li><a class="dropdown-item" href="#">Bosworth</a></li>
+              <li><a class="dropdown-item" href="#">Cox Administration</a></li>
+              <li><a class="dropdown-item" href="#">Alumni Office</a></li>
+            </ul>
+          </div>
         </div>
       </li>
       <li class="nav-item dropdown">
@@ -67,24 +70,28 @@
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink6" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           More
         </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink6">
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink6" style="left: -250%">
           <a class="dropdown-item" href="#">Resources Explained</a>
           <a class="dropdown-item" href="#">Story of Dashboard</a>
           <a class="dropdown-item" href="#">Bring Dashboard to Your Community</a>
 
-          <a class="dropdown-item dropdown-toggle" href="#" id="navbarDropdownMenuLink7" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Instructor Toolkit</a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink7">
+          <div class="dropdown">
+            <a class="dropdown-item dropdown-toggle" href="#" id="navbarDropdownMenuLink7" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Instructor Toolkit</a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink7">
               <li><a class="dropdown-item" href="#">About</a></li>
               <li><a class="dropdown-item" href="#">Search K12</a></li>
               <li><a class="dropdown-item" href="#">Teacher Workshop</a></li>
-          </ul>
+            </ul>
+          </div>
 
-          <a class="dropdown-item dropdown-toggle" href="#" id="navbarDropdownMenuLink8" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About Us</a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink8">
+          <div class="dropdown">
+            <a class="dropdown-item dropdown-toggle" href="#" id="navbarDropdownMenuLink8" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About Us</a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink8">
               <li><a class="dropdown-item" href="#">Mission</a></li>
               <li><a class="dropdown-item" href="#">Meet the Team</a></li>
               <li><a class="dropdown-item" href="#">In the News</a></li>
-          </ul>
+            </ul>
+          </div>
 
         </div>
       </li>

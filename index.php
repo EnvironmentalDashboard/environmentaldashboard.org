@@ -115,10 +115,12 @@
 //     return false;
 //   });
 
-//   $('#hover1').on('mouseenter mouseleave', function() {
-//     console.log('a');
-//     $('#hover_target1').dropdown('toggle');
-//   })
+  // $('#hover1').on('mouseenter', function() {
+  //   $('#hover_target1').dropdown('toggle');
+  // });
+  // $('#hover1').on('mouseleave', function() {
+  //   $('#hover_target1').dropdown('toggle');
+  // });
 // });
 
     </script>
