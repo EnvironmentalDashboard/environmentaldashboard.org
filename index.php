@@ -22,28 +22,28 @@
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img class="d-block w-100" src="http://environmentaldashboard.org/wp-content/uploads/2015/07/homepage-slider2-welcome1.jpg" alt="First slide">
+            <img class="d-block w-100" src="http://environmentaldashboard.org/images/uploads/2015/07/homepage-slider2-welcome1.jpg" alt="First slide">
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" src="http://environmentaldashboard.org/wp-content/uploads/2015/07/homepage-slider2-our-mission.jpg" alt="Second slide">
+            <img class="d-block w-100" src="http://environmentaldashboard.org/images/uploads/2015/07/homepage-slider2-our-mission.jpg" alt="Second slide">
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" src="http://environmentaldashboard.org/wp-content/uploads/2015/07/homepage-slider2-project1.jpg" alt="Third slide">
+            <img class="d-block w-100" src="http://environmentaldashboard.org/images/uploads/2015/07/homepage-slider2-project1.jpg" alt="Third slide">
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" src="http://environmentaldashboard.org/wp-content/uploads/2015/07/homepage-slider2-resources1.jpg" alt="Fourth slide">
+            <img class="d-block w-100" src="http://environmentaldashboard.org/images/uploads/2015/07/homepage-slider2-resources1.jpg" alt="Fourth slide">
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" src="http://environmentaldashboard.org/wp-content/uploads/2015/07/homepage-slider2-schools1.jpg" alt="Fifth slide">
+            <img class="d-block w-100" src="http://environmentaldashboard.org/images/uploads/2015/07/homepage-slider2-schools1.jpg" alt="Fifth slide">
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" src="http://environmentaldashboard.org/wp-content/uploads/2015/07/homepage-slider2-digital-signage1.jpg" alt="Sixth slide">
+            <img class="d-block w-100" src="http://environmentaldashboard.org/images/uploads/2015/07/homepage-slider2-digital-signage1.jpg" alt="Sixth slide">
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" src="http://environmentaldashboard.org/wp-content/uploads/2015/07/homepage-slider2-community-voices1.jpg" alt="Seventh slide">
+            <img class="d-block w-100" src="http://environmentaldashboard.org/images/uploads/2015/07/homepage-slider2-community-voices1.jpg" alt="Seventh slide">
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" src="http://environmentaldashboard.org/wp-content/uploads/2015/07/homepage-slider2-building-dbs2.jpg" alt="Eighth slide">
+            <img class="d-block w-100" src="http://environmentaldashboard.org/images/uploads/2015/07/homepage-slider2-building-dbs2.jpg" alt="Eighth slide">
           </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -58,21 +58,21 @@
       <div class="row" style="margin-top: 20px;margin-bottom: 20px;">
         <div class="col-12 col-sm-4 text-center">
           <a href="citywide-dashboard">
-            <img src="http://environmentaldashboard.org/wp-content/uploads/2015/07/icons-cleveland1-300x300.png" alt="" class="img-fluid" onmouseover="this.src='http://environmentaldashboard.org/wp-content/uploads/2015/07/cwd_icon_hr-300x300.png'" onmouseout="this.src='http://environmentaldashboard.org/wp-content/uploads/2015/07/icons-cleveland1-300x300.png'">
+            <img src="http://environmentaldashboard.org/images/uploads/2015/07/icons-cleveland1-300x300.png" alt="" class="img-fluid" onmouseover="this.src='http://environmentaldashboard.org/images/uploads/2015/07/cwd_icon_hr-300x300.png'" onmouseout="this.src='http://environmentaldashboard.org/images/uploads/2015/07/icons-cleveland1-300x300.png'">
           </a>
           <h4 style="color: #5aba50;margin-top: 10px">Citywide Dashboard</h4>
           <p style="text-align: initial;padding: 0px 15px;">An animated display of current electricity and water use and environmental conditions in the entire community. “Flash” the energy squirrel and “Walley the Walleye” narrate the dynamic story.</p>
         </div>
         <div class="col-12 col-sm-4 text-center">
           <a href="building-dashboards">
-            <img src="http://environmentaldashboard.org/wp-content/uploads/2015/07/icons-town1-300x300.png" alt="" class="img-fluid" onmouseover="this.src='http://environmentaldashboard.org/wp-content/uploads/2015/07/building_dashboard_icon_ed_hr-300x300.png'" onmouseout="this.src='http://environmentaldashboard.org/wp-content/uploads/2015/07/icons-town1-300x300.png'">
+            <img src="http://environmentaldashboard.org/images/uploads/2015/07/icons-town1-300x300.png" alt="" class="img-fluid" onmouseover="this.src='http://environmentaldashboard.org/images/uploads/2015/07/building_dashboard_icon_ed_hr-300x300.png'" onmouseout="this.src='http://environmentaldashboard.org/images/uploads/2015/07/icons-town1-300x300.png'">
           </a>
           <h4 style="color: #5aba50;margin-top: 10px">Building Dashboards</h4>
           <p style="text-align: initial;padding: 0px 15px;">Measure electricity and water consumption in schools, businesses, public facilities and homes and translate this into animated displays.</p>
         </div>
         <div class="col-12 col-sm-4 text-center">
           <a href="community-voices">
-            <img src="http://environmentaldashboard.org/wp-content/uploads/2015/07/icons-home-family-300x300.png" alt="" class="img-fluid" onmouseover="this.src='http://environmentaldashboard.org/wp-content/uploads/2015/07/cv_logo_hr-300x300.png'" onmouseout="this.src='http://environmentaldashboard.org/wp-content/uploads/2015/07/icons-home-family-300x300.png'">
+            <img src="http://environmentaldashboard.org/images/uploads/2015/07/icons-home-family-300x300.png" alt="" class="img-fluid" onmouseover="this.src='http://environmentaldashboard.org/images/uploads/2015/07/cv_logo_hr-300x300.png'" onmouseout="this.src='http://environmentaldashboard.org/images/uploads/2015/07/icons-home-family-300x300.png'">
           </a>
           <h4 style="color: #5aba50;margin-top: 10px">Community Voices</h4>
           <p style="text-align: initial;padding: 0px 15px;">Combines images thoughts, ideas and actions of community members and groups to celebrate and empower positive action.</p>
