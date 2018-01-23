@@ -10,24 +10,24 @@
   <div class="collapse navbar-collapse" id="navbarNavDropdown">
     <ul class="navbar-nav">
       <li class="nav-item dropdown" id="hover1">
-        <a class="nav-link dropdown-toggle" href="cwd" id="navbarDropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a class="nav-link dropdown-toggle" href="/cwd" id="navbarDropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Citywide Dashboard
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink1" id="hover_target1">
-          <a class="dropdown-item" href="cwd">Citywide View</a>
+          <a class="dropdown-item" href="/cwd">Citywide View</a>
           <a class="dropdown-item" href="http://buildingdashboard.net/oberlincity/#/oberlincity/cityelectricity/">Electricity</a>
           <a class="dropdown-item" href="http://buildingdashboard.net/oberlincity/#/oberlincity/citywateruse">Water Flow</a>
           <a class="dropdown-item" href="http://buildingdashboard.net/oberlincity/#/oberlincity/citywaterquality">Water Quality</a>
           <a class="dropdown-item" href="http://buildingdashboard.net/oberlin/#/oberlin/spearpoint">10 Acre Solar Array</a>
-          <a class="dropdown-item" href="gauges-explained">Gauges explained</a>
+          <a class="dropdown-item" href="/gauges-explained">Gauges explained</a>
         </div>
       </li>
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="building-dashboard-explained" id="navbarDropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a class="nav-link dropdown-toggle" href="/building-dashboard-explained" id="navbarDropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Building Dashboard
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink2">
-          <a class="dropdown-item" href="building-dashboard-explained">Building Dashboard Explained</a>
+          <a class="dropdown-item" href="/building-dashboard-explained">Building Dashboard Explained</a>
 
           <div class="dropdown">
             <a class="dropdown-item dropdown-toggle" href="#" id="navbarDropdownMenuLink3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Oberlin City</a>
@@ -64,14 +64,14 @@
         </div>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="calendar">Events Calendar</a>
+        <a class="nav-link" href="/calendar">Events Calendar</a>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink6" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           More
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink6" style="left: -250%">
-          <a class="dropdown-item" href="resources-explained">Resources Explained</a>
+          <a class="dropdown-item" href="/resources-explained">Resources Explained</a>
           <a class="dropdown-item" href="#">Story of Dashboard</a>
           <a class="dropdown-item" href="#">Bring Dashboard to Your Community</a>
 
@@ -87,8 +87,8 @@
           <div class="dropdown">
             <a class="dropdown-item dropdown-toggle" href="#" id="navbarDropdownMenuLink8" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About Us</a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink8">
-              <li><a class="dropdown-item" href="#">Mission</a></li>
-              <li><a class="dropdown-item" href="#">Meet the Team</a></li>
+              <li><a class="dropdown-item" href="/mission">Mission</a></li>
+              <li><a class="dropdown-item" href="/meet-the-team">Meet the Team</a></li>
               <li><a class="dropdown-item" href="#">In the News</a></li>
             </ul>
           </div>
