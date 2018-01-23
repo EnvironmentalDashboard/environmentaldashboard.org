@@ -3,7 +3,7 @@ $slug = 'used-photos';
 $width = 1200;
 $height = 800;
 extract($_GET, EXTR_IF_EXISTS);
-require '../includes/db.php';
+require '../../includes/db.php';
 header('Content-Type: image/svg+xml');
 // get image
 $stmt = $db->prepare('SELECT id FROM cv_image_gallery WHERE slug = ?');
