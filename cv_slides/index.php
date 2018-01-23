@@ -1,7 +1,7 @@
 <?php
 $slug = 'used-photos';
-$width = 1200;
-$height = 800;
+$width = 3000;
+$height = 1448;
 extract($_GET, EXTR_IF_EXISTS);
 require '../../includes/db.php';
 header('Content-Type: image/svg+xml');
@@ -29,5 +29,5 @@ if (!$quote) {
 	<text x="0" y="35" font-family="Verdana" font-size="35" stroke="none" fill="#eee">
 		<?php echo $quote; ?>
   </text>
-  <image href="/cv_slides/categorybars/<?php echo $slug ?>.png" width="100%" height="20%" x="0" y="<?php echo $height*0.8 ?>"/>
+  <image href="/cv_slides/categorybars/<?php echo $slug ?>.png" width="100%" height="100%" x="0" y="0"/>
 </svg>
