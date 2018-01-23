@@ -72,7 +72,7 @@
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink6" style="left: -250%">
           <a class="dropdown-item" href="/resources-explained">Resources Explained</a>
-          <a class="dropdown-item" href="#">Story of Dashboard</a>
+          <a class="dropdown-item" href="/story-of-dashboard">Story of Dashboard</a>
           <a class="dropdown-item" href="#">Bring Dashboard to Your Community</a>
 
           <div class="dropdown">
