@@ -57,21 +57,21 @@
       </div>
       <div class="row" style="margin-top: 20px;margin-bottom: 20px;">
         <div class="col-12 col-sm-4 text-center">
-          <a href="citywide-dashboard">
+          <a href="/cwd">
             <img src="http://environmentaldashboard.org/images/uploads/2015/07/icons-cleveland1-300x300.png" alt="" class="img-fluid" onmouseover="this.src='http://environmentaldashboard.org/images/uploads/2015/07/cwd_icon_hr-300x300.png'" onmouseout="this.src='http://environmentaldashboard.org/images/uploads/2015/07/icons-cleveland1-300x300.png'">
           </a>
           <h4 style="color: #5aba50;margin-top: 10px">Citywide Dashboard</h4>
           <p style="text-align: initial;padding: 0px 15px;">An animated display of current electricity and water use and environmental conditions in the entire community. “Flash” the energy squirrel and “Walley the Walleye” narrate the dynamic story.</p>
         </div>
         <div class="col-12 col-sm-4 text-center">
-          <a href="building-dashboards">
+          <a href="/building-dashboard-explained">
             <img src="http://environmentaldashboard.org/images/uploads/2015/07/icons-town1-300x300.png" alt="" class="img-fluid" onmouseover="this.src='http://environmentaldashboard.org/images/uploads/2015/07/building_dashboard_icon_ed_hr-300x300.png'" onmouseout="this.src='http://environmentaldashboard.org/images/uploads/2015/07/icons-town1-300x300.png'">
           </a>
           <h4 style="color: #5aba50;margin-top: 10px">Building Dashboards</h4>
           <p style="text-align: initial;padding: 0px 15px;">Measure electricity and water consumption in schools, businesses, public facilities and homes and translate this into animated displays.</p>
         </div>
         <div class="col-12 col-sm-4 text-center">
-          <a href="community-voices">
+          <a href="/community-voices">
             <img src="http://environmentaldashboard.org/images/uploads/2015/07/icons-home-family-300x300.png" alt="" class="img-fluid" onmouseover="this.src='http://environmentaldashboard.org/images/uploads/2015/07/cv_logo_hr-300x300.png'" onmouseout="this.src='http://environmentaldashboard.org/images/uploads/2015/07/icons-home-family-300x300.png'">
           </a>
           <h4 style="color: #5aba50;margin-top: 10px">Community Voices</h4>

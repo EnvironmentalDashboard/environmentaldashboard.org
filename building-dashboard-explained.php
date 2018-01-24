@@ -28,15 +28,15 @@
       </div>
       <div class="row text-center" style="margin: 10px 0px">
         <div class="col-12 col-sm-4" style="padding: 0px 30px">
-          <img class="img-fluid" src="http://environmentaldashboard.org/wp-content/uploads/2015/07/icons-town1-300x300.png" alt="">
+          <img class="img-fluid" src="http://environmentaldashboard.org/images/uploads/2015/07/icons-town1-300x300.png" alt="">
           <p style="text-align: initial;margin-top: 20px">A variety of public buildings within the City of Oberlin have building dashboards and displays. Links here allow you to view dashboards for all four public schools, the Oberlin Public Library and Slow Train Cafe. digital signs in eleven locations in town display content.</p>
         </div>
         <div class="col-12 col-sm-4" style="padding: 0px 30px">
-          <img class="img-fluid" src="http://environmentaldashboard.org/wp-content/uploads/2015/07/icons-town1-300x300.png" alt="">
+          <img class="img-fluid" src="http://environmentaldashboard.org/images/uploads/2015/07/icons-town1-300x300.png" alt="">
           <p style="text-align: initial;margin-top: 20px">Separate Dashboards have been created for all four Oberlin City schools and the Langston School Board office. Each year students participate in "Ecolympics" in which students from all four public schools compete against each other to achieve the highest percentage reduction in electricity and water use.</p>
         </div>
         <div class="col-12 col-sm-4" style="padding: 0px 30px">
-          <img class="img-fluid" src="http://environmentaldashboard.org/wp-content/uploads/2015/07/icons-town1-300x300.png" alt="">
+          <img class="img-fluid" src="http://environmentaldashboard.org/images/uploads/2015/07/icons-town1-300x300.png" alt="">
           <p style="text-align: initial;margin-top: 20px">Separate Building Dashboards have been created for all twenty six dormitories at Oberlin College. Each year dormitory residents participate in “Campus Conservation Nationals” in which dormitory residents compete against other dorms on campus and collaborate nationally to achieve electricity and water use reductions.</p>
         </div>
       </div>
@@ -44,7 +44,6 @@
         <div class="col-12" style="padding: 0px 30px;margin-bottom: 50px">
           <h3 class="text-center">Businesses, Homes and Places of Worship</h3>
           <p>Our goal is to make Building Dashboard displays available to all members of the community. Currently, dashboards have been created for all 33 residences and 14 businesses that occupy Sustainable Community Associates East College Street buildings. To protect privacy, these have password protected websites, but dashboards for the Slow Train Cafe is visible to the public. We are working towards a pilot “home dashboard” project with displays for up to 100 residences in Oberlin.</p>
-          <p><b>Coming Soon</b></p>
         </div>
       </div>
       <?php include 'includes/footer.php'; ?>
