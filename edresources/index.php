@@ -8,7 +8,7 @@
   </head>
   <body>
     <div class="container">
-      <?php include 'includes/header.php'; ?>
+      <?php include '../includes/header.php'; ?>
       <div class="row">
         <div class="col-12">
           <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -21,19 +21,19 @@
               <div class="carousel-item active">
                 <img class="d-block w-100" src="/images/uploads/2016/10/Instructortoolkitslide1.jpg" alt="First slide">
                 <div class="carousel-caption d-none d-md-block">
-                  <h5>Higher Ed. Teaching Tools</h5>
+                  <h3 style="color: #fff">Higher Ed. Teaching Tools</h5>
                 </div>
               </div>
               <div class="carousel-item">
                 <img class="d-block w-100" src="/images/uploads/2015/10/Splashimageteacherresourcespage.jpg" alt="K-12 Education Teaching Tools">
                 <div class="carousel-caption d-none d-md-block">
-                  <h5>K-12 Education Teaching</h5>
+                  <h3 style="color: #fff">K-12 Education Teaching</h5>
                 </div>
               </div>
               <div class="carousel-item">
                 <img class="d-block w-100" src="/images/uploads/2015/11/Splashimageteacherresource2.jpg" alt="Supporting Resources">
                 <div class="carousel-caption d-none d-md-block">
-                  <h5>Supporting Resources</h5>
+                  <h3 style="color: #fff">Supporting Resources</h5>
                 </div>
               </div>
             </div>
@@ -61,14 +61,14 @@
         </div>
       </div>
       <div class="row" style="padding: 30px">
-        <div class="col-6"><img src="/images/uploads/2016/10/K12Icon.jpg" alt="" class="img-fluid img-thumbnail"></div>
-        <div class="col-6"><img src="/images/uploads/2016/10/HEIcon.jpg" alt="" class="img-fluid img-thumbnail"></div>
+        <div class="col-6 text-center"><img src="/images/uploads/2016/10/K12Icon.jpg" alt="" class="img-fluid" width="75%"></div>
+        <div class="col-6 text-center"><img src="/images/uploads/2016/10/HEIcon.jpg" alt="" class="img-fluid" width="75%"></div>
       </div>
       <div class="row">
         <div class="col-12" style="padding: 30px">
         </div>
       </div>
-      <?php include 'includes/footer.php'; ?>
+      <?php require '../includes/footer.php'; ?>
     </div>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>

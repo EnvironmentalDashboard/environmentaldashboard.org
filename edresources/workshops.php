@@ -8,7 +8,7 @@
   </head>
   <body>
     <div class="container">
-      <?php include 'includes/header.php'; ?>
+      <?php include '../includes/header.php'; ?>
       <div class="row" style="padding: 30px">
         <div class="col-12">
           <h1 class="text-center">Curriculum Development Workshops</h1>
@@ -29,34 +29,28 @@
           <p>The professional development sequence:</p>
           <ul>
             <li>Summer 2017: Workshops</li>
-            <li>
-              <ul>
-                <li>Date: June 13, 2017 &amp; August 1, 2017</li>
-                <li>Location: Oberlin College</li>
-                <li>Outcome: Goals 1-3, Draft lesson plan(s), curriculum alignment</li>
-              </ul>
-            </li>
+            <ul>
+              <li>Date: June 13, 2017 &amp; August 1, 2017</li>
+              <li>Location: Oberlin College</li>
+              <li>Outcome: Goals 1-3, Draft lesson plan(s), curriculum alignment</li>
+            </ul>
             <li>Fall 2017: 2 webinars</li>
-            <li>
-              <ul>
-                <li>Dates: TBD</li>
-                <li>Location: Webinar</li>
-              </ul>
-            </li>
+            <ul>
+              <li>Dates: TBD</li>
+              <li>Location: Webinar</li>
+            </ul>
             <li>Spring 2018: Workshop</li>
-            <li>
-              <ul>
-                <li>Date: TBD</li>
-                <li>Location: Oberlin College</li>
-                <li>Outcome: Share and Reflect on implementation</li>
-              </ul>
-            </li>
+            <ul>
+              <li>Date: TBD</li>
+              <li>Location: Oberlin College</li>
+              <li>Outcome: Share and Reflect on implementation</li>
+            </ul>
           </ul>
           <p>Educators will receive a total stipend of $500 after participating in the full sequence of workshops and producing lessons and will receive reimbursement for mileage. CEU credits will provided based on completing district requirements.  Pending the success of the program and grant funding, opportunities for further curriculum development may be possible.</p>
           <p>Space in these workshops is limited to 20 educators.  Review of applications will begin on April 1 and will end when available space is filled</p>
         </div>
       </div>
-      <?php include 'includes/footer.php'; ?>
+      <?php require '../includes/footer.php'; ?>
     </div>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
