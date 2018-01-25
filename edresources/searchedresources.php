@@ -26,11 +26,10 @@ if (isset($_GET['submit'])) {
   }
   $sql2 = '';
   if (strlen($search_query) > 0) {
-    $sql2 = ' OR title LIKE ?';
+    $sql2 = ' AND title LIKE ?';
     $params[] = "%{$search_query}%";
   }
   $stmt = $db->prepare("SELECT SQL_CALC_FOUND_ROWS id, title, pdf, gmt FROM cv_lessons WHERE id IN (SELECT lesson_id FROM cv_lesson_meta {$sql}){$sql2} ORDER BY gmt DESC LIMIT {$offset}, {$limit}");
-  // echo "SELECT SQL_CALC_FOUND_ROWS id, title, pdf, gmt FROM cv_lessons WHERE id IN (SELECT lesson_id FROM cv_lesson_meta {$sql}){$sql2} ORDER BY gmt DESC LIMIT {$offset}, {$limit}";die;
   $stmt->execute($params);
   $search_results = $stmt->fetchAll();
   $count = $db->query('SELECT FOUND_ROWS();')->fetchColumn();
