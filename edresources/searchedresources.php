@@ -68,7 +68,7 @@ parse_str($_SERVER['QUERY_STRING'], $qs);
                   </div>
                   <?php foreach ($db->query('SELECT DISTINCT `key` FROM cv_lesson_meta ORDER BY `key` ASC') as $row) {
                     echo ($query) ? "<div class='col-12'>" : "<div class='col-12 col-sm-6 col-md-4'>";
-                    echo "<p>{$row['key']}</p>";
+                    echo "<p style='margin-bottom:0px;margin-top:5px'>{$row['key']}</p>";
                     $encoded_key = str_replace(' ', '$WS$', $row['key']);
                     echo "<select name='{$encoded_key}' class='custom-select'>";
                     $stmt = $db->prepare('SELECT DISTINCT value FROM cv_lesson_meta WHERE `key` = ? ORDER BY value ASC');
@@ -116,6 +116,9 @@ parse_str($_SERVER['QUERY_STRING'], $qs);
             echo "<p><a class='btn btn-primary open-pdf' href='#' data-pdf-url='{$result['pdf']}' data-pdf-id='pdf{$pdf_id}'>Open PDF</a> <a class='btn btn-secondary' href='{$result['pdf']}' download>Download PDF</a></p>";
             echo "</div><div class='card-footer bg-light'>".date('F j Y', strtotime($result['gmt']))."</div></div>";
             $pdf_id++;
+          }
+          if ($pdf_id === 0) {
+            echo "<h2 class='text-center'>No Results</h2><p class='text-center'>We couldn't find any lessons for your search query. Try broadening your search terms.</p>";
           } ?>
         </div>
         <?php } ?>
