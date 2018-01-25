@@ -87,7 +87,7 @@ parse_str($_SERVER['QUERY_STRING'], $qs);
                   } ?>
                 </div>
               </div>
-              <div class="card-footer bg-transparent"><input type="submit" name="submit" value="Search" class="btn btn-primary"></div>
+              <div class="card-footer bg-transparent"><input type="reset" value="Reset the form" class="btn btn-secondary"> <input type="submit" name="submit" value="Search" class="btn btn-primary"></div>
             </div>
           </form>
         </div>
@@ -179,6 +179,15 @@ parse_str($_SERVER['QUERY_STRING'], $qs);
           $(this).text('Open PDF');
         }
       });
+      jQuery(function($) { // onDomReady
+        // reset handler that clears the form
+        $('form input:reset').click(function () {
+          $('form')
+            .find(':radio, :checkbox').removeAttr('checked').end()
+            .find('textarea, :text, select').val('')
+                return false;
+            });
+        });
     </script>
   </body>
 </html>

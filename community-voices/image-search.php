@@ -6,7 +6,7 @@ $page = (empty($_GET['page'])) ? 0 : intval($_GET['page']) - 1;
 $params = [];
 $sub_where = false;
 if (isset($_GET['search']) && trim($_GET['search']) !== '') {
-  $WHERE = 'WHERE alt LIKE ? OR id IN (SELECT pid FROM cv_image_meta';
+  $WHERE = 'WHERE alt LIKE ? AND id IN (SELECT pid FROM cv_image_meta';
   $params[] = "%{$_GET['search']}%";
 } else {
   $WHERE = 'WHERE id IN (SELECT pid FROM cv_image_meta';
@@ -15,6 +15,7 @@ $buf = '';
 if (isset($_GET['msg_cat_select']) && $_GET['msg_cat_select'] !== 'all') {
   if (!$sub_where) {
     $WHERE .= ' WHERE';
+    $sub_where = true;
   }
   $buf .= " (`key` = ? AND value = ?) AND";
   $params[] = 'Message Category';
@@ -23,6 +24,7 @@ if (isset($_GET['msg_cat_select']) && $_GET['msg_cat_select'] !== 'all') {
 if (isset($_GET['msg_attr_select']) && $_GET['msg_attr_select'] !== 'all') {
   if (!$sub_where) {
     $WHERE .= ' WHERE';
+    $sub_where = true;
   }
   $buf .= " (`key` = ? AND value = ?) AND";
   $params[] = 'Message Attribution';
@@ -31,6 +33,7 @@ if (isset($_GET['msg_attr_select']) && $_GET['msg_attr_select'] !== 'all') {
 if (isset($_GET['photographer_select']) && $_GET['photographer_select'] !== 'all') {
   if (!$sub_where) {
     $WHERE .= ' WHERE';
+    $sub_where = true;
   }
   $buf .= " (`key` = ? AND value = ?) AND";
   $params[] = 'Photographer';
@@ -39,6 +42,7 @@ if (isset($_GET['photographer_select']) && $_GET['photographer_select'] !== 'all
 if (isset($_GET['org_select']) && $_GET['org_select'] !== 'all') {
   if (!$sub_where) {
     $WHERE .= ' WHERE';
+    $sub_where = true;
   }
   $buf .= " (`key` = ? AND value = ?) AND";
   $params[] = 'Organization';
@@ -47,6 +51,7 @@ if (isset($_GET['org_select']) && $_GET['org_select'] !== 'all') {
 if (isset($_GET['end_use_select']) && $_GET['end_use_select'] !== 'all') {
   if (!$sub_where) {
     $WHERE .= ' WHERE';
+    $sub_where = true;
   }
   $buf .= " (`key` = ? AND value = ?) AND";
   $params[] = 'End Use';
@@ -103,6 +108,26 @@ if ($count > 0) {
     <title>Environmental Dashboard</title>
   </head>
   <body>
+    <div class="modal fade" id="imageModal" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="imageModalLabel"></h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img src="" alt="" id="modal-img" class="img-fluid">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
     <div class="container">
       <?php include '../includes/header.php'; ?>
       <div class="row" style="padding: 30px">
@@ -175,7 +200,8 @@ if ($count > 0) {
             </fieldset>
             <div class="form-group row">
               <div class="col-sm-10 offset-sm-2">
-                <button type="submit" class="btn btn-primary">Search</button>
+                <input type="reset" value="Reset the form" class="btn btn-secondary">
+                <button type="submit" class="btn btn-primary float-right">Search</button>
               </div>
             </div>
           </form>
@@ -191,7 +217,7 @@ if ($count > 0) {
             foreach ($results as $row) {
               if (isset($cv_image_meta[$row['id']]['Message Text']) && isset($cv_image_meta[$row['id']]['Message Attribution'])) {
                 echo "<div class='card'>
-                        <img class='card-img-top' src='https://environmentaldashboard.org/images/uploads/gallery/{$galleries[$row['gid']]}/{$row['fn']}' alt='{$row['alt']}'>
+                        <img class='card-img-top' src='https://environmentaldashboard.org/images/uploads/gallery/{$galleries[$row['gid']]}/{$row['fn']}' alt='{$row['alt']}' data-toggle='modal' data-target='#imageModal' data-img='https://environmentaldashboard.org/images/uploads/gallery/{$galleries[$row['gid']]}/{$row['fn']}' data-alt='{$row['alt']}'>
                         <div class='card-body'>
                           <blockquote class='blockquote mb-0 card-body'>
                             <p>{$cv_image_meta[$row['id']]['Message Text']}</p>
@@ -205,7 +231,7 @@ if ($count > 0) {
                       </div>";
               } else {
                 echo "<div class='card'>
-                        <img class='card-img-top' src='https://environmentaldashboard.org/images/uploads/gallery/{$galleries[$row['gid']]}/{$row['fn']}' alt='{$row['alt']}'></div>";
+                        <img class='card-img-top' src='https://environmentaldashboard.org/images/uploads/gallery/{$galleries[$row['gid']]}/{$row['fn']}' alt='{$row['alt']}' data-toggle='modal' data-target='#imageModal' data-img='https://environmentaldashboard.org/images/uploads/gallery/{$galleries[$row['gid']]}/{$row['fn']}' data-alt='{$row['alt']}'></div>";
               }
               // echo '<div class="col-12 col-sm-6 col-md-4 col-lg-3">';
               // echo "<img src='https://environmentaldashboard.org/images/uploads/gallery/{$galleries[$row['gid']]}/{$row['fn']}' class='img-thumbnail img-fluid' />";
@@ -256,5 +282,23 @@ if ($count > 0) {
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script>
+      $('#imageModal').on('show.bs.modal', function (event) {
+        var button = $(event.relatedTarget);
+        var img = button.data('img'), alt = button.data('alt');
+        var modal = $(this);
+        modal.find('.modal-title').text(alt);
+        $('#modal-img').attr('src', img);
+      });
+      jQuery(function($) { // onDomReady
+        // reset handler that clears the form
+        $('form input:reset').click(function () {
+          $('form')
+            .find(':radio, :checkbox').removeAttr('checked').end()
+            .find('textarea, :text, select').val('')
+                return false;
+            });
+        });
+    </script>
   </body>
 </html>
