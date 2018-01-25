@@ -8,7 +8,7 @@ if (isset($_GET['submit'])) {
   $limit = 7;
   $offset = $limit * $page;
   $query = true;
-  $sql = 'WHERE ';
+  $sql = '';
   $search_query = '';
   foreach ($_GET as $key => $value) {
     if ($value === 'all' || $key === 'submit' || $key === 'query' || $key === 'page') {
@@ -21,13 +21,16 @@ if (isset($_GET['submit'])) {
     $params[] = str_replace('$WS$', ' ', $key);
     $params[] = str_replace('$WS$', ' ', $value);
   }
-  $sql = substr($sql, 0, -4); // remove the final ' OR '
+  if ($sql !== '') {
+    $sql = 'WHERE ' . substr($sql, 0, -4); // remove the final ' OR '
+  }
   $sql2 = '';
   if (strlen($search_query) > 0) {
     $sql2 = ' OR title LIKE ?';
     $params[] = "%{$search_query}%";
   }
   $stmt = $db->prepare("SELECT SQL_CALC_FOUND_ROWS id, title, pdf, gmt FROM cv_lessons WHERE id IN (SELECT lesson_id FROM cv_lesson_meta {$sql}){$sql2} ORDER BY gmt DESC LIMIT {$offset}, {$limit}");
+  // echo "SELECT SQL_CALC_FOUND_ROWS id, title, pdf, gmt FROM cv_lessons WHERE id IN (SELECT lesson_id FROM cv_lesson_meta {$sql}){$sql2} ORDER BY gmt DESC LIMIT {$offset}, {$limit}";die;
   $stmt->execute($params);
   $search_results = $stmt->fetchAll();
   $count = $db->query('SELECT FOUND_ROWS();')->fetchColumn();
@@ -42,7 +45,7 @@ parse_str($_SERVER['QUERY_STRING'], $qs);
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="../css/bootstrap.css?v=<?php echo time(); ?>">
+    <link rel="stylesheet" href="https://environmentaldashboard.org/css/bootstrap.css?v=<?php echo time(); ?>">
     <title>Environmental Dashboard</title>
   </head>
   <body>
