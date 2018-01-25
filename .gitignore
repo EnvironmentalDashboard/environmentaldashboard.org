@@ -3,3 +3,4 @@ config.codekit3
 calendar
 cwd-files
 images/uploads
+symlinks
