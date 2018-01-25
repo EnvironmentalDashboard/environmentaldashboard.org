@@ -134,8 +134,8 @@
 
 
 // make navbar hover https://stackoverflow.com/a/42183824/2624391
-// @include media-breakpoint-up(lg) {
-//   .dropdown:hover>.dropdown-menu {
-//     display: block;
-//   }
-// }
+@include media-breakpoint-up(lg) {
+  .dropdown:hover>.dropdown-menu {
+    display: block;
+  }
+}
