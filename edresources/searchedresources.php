@@ -2,34 +2,47 @@
 require '../../includes/db.php';
 error_reporting(-1);
 ini_set('display_errors', 'On');
+$params = [];
 if (isset($_GET['submit'])) {
+  $page = (empty($_GET['page'])) ? 0 : intval($_GET['page']) - 1;
+  $limit = 7;
+  $offset = $limit * $page;
   $query = true;
   $sql = 'WHERE ';
-  $params = [];
+  $search_query = '';
   foreach ($_GET as $key => $value) {
-    if ($value === 'all' || $key === 'submit' || $key === 'query') {
+    if ($value === 'all' || $key === 'submit' || $key === 'query' || $key === 'page') {
+      if ($key === 'query') {
+        $search_query = $value;
+      }
       continue;
     }
     $sql .= "(`key` = ? AND value = ?) OR ";
     $params[] = str_replace('$WS$', ' ', $key);
     $params[] = str_replace('$WS$', ' ', $value);
   }
-  $sql = substr($sql, 0, -3); // remove the final 'OR '
-  $stmt = $db->prepare('SELECT id, title, pdf, gmt FROM cv_lessons WHERE id IN (SELECT lesson_id FROM cv_lesson_meta '. $sql.') ORDER BY gmt DESC');
+  $sql = substr($sql, 0, -4); // remove the final ' OR '
+  $sql2 = '';
+  if (strlen($search_query) > 0) {
+    $sql2 = ' OR title LIKE ?';
+    $params[] = "%{$search_query}%";
+  }
+  $stmt = $db->prepare("SELECT SQL_CALC_FOUND_ROWS id, title, pdf, gmt FROM cv_lessons WHERE id IN (SELECT lesson_id FROM cv_lesson_meta {$sql}){$sql2} ORDER BY gmt DESC LIMIT {$offset}, {$limit}");
   $stmt->execute($params);
   $search_results = $stmt->fetchAll();
-  // var_dump('SELECT title, pdf, gmt FROM cv_lessons WHERE id IN (SELECT lesson_id FROM cv_lesson_meta '. $sql.')');
-  // var_dump($params);die;
+  $count = $db->query('SELECT FOUND_ROWS();')->fetchColumn();
+  $final_page = ceil($count / $limit);
 } else {
   $query = false;
 }
+parse_str($_SERVER['QUERY_STRING'], $qs);
 ?>
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="/css/bootstrap.css?v=<?php echo time(); ?>">
+    <link rel="stylesheet" href="../css/bootstrap.css?v=<?php echo time(); ?>">
     <title>Environmental Dashboard</title>
   </head>
   <body>
@@ -49,19 +62,24 @@ if (isset($_GET['submit'])) {
                 <div class="row">
                   <div class="col-12" style="margin-bottom: 10px">
                     <label for="query">Search</label>
-                    <input type="text" class="form-control" id="query" name="query" placeholder="Enter search terms">
+                    <input type="text" class="form-control" id="query" name="query" value="<?php echo (isset($_GET['query'])) ? $_GET['query'] : '' ?>" placeholder="Enter search terms">
                   </div>
                   <?php foreach ($db->query('SELECT DISTINCT `key` FROM cv_lesson_meta ORDER BY `key` ASC') as $row) {
                     echo ($query) ? "<div class='col-12'>" : "<div class='col-12 col-sm-6 col-md-4'>";
                     echo "<p>{$row['key']}</p>";
-                    $encoded = str_replace(' ', '$WS$', $row['key']);
-                    echo "<select name='{$encoded}' class='custom-select'>";
+                    $encoded_key = str_replace(' ', '$WS$', $row['key']);
+                    echo "<select name='{$encoded_key}' class='custom-select'>";
                     $stmt = $db->prepare('SELECT DISTINCT value FROM cv_lesson_meta WHERE `key` = ? ORDER BY value ASC');
                     $stmt->execute([$row['key']]);
                     echo "<option value='all'>All</option>";
+                    $isset = isset($_GET[$encoded_key]);
                     foreach ($stmt->fetchAll() as $row2) {
-                      $encoded = str_replace(' ', '$WS$', $row2['value']);
-                      echo "<option value='{$encoded}'>{$row2['value']}</option>";
+                      $encoded_val = str_replace(' ', '$WS$', $row2['value']);
+                      if ($isset && $_GET[$encoded_key] === $encoded_val) {
+                        echo "<option value='{$encoded_val}' selected>{$row2['value']}</option>";
+                      } else {
+                        echo "<option value='{$encoded_val}'>{$row2['value']}</option>";
+                      }
                     }
                     echo "</select></div>";
                   } ?>
@@ -83,7 +101,7 @@ if (isset($_GET['submit'])) {
             $count = count($rows);
             for ($i=0; $i < $count; $i++) { 
               if ($last_key !== $rows[$i]['key']) {
-                echo "<p class='card-text class{$pdf_id}'><b>{$rows[$i]['key']}</b>: ";
+                echo "<p class='card-text classpdf{$pdf_id}'><b>{$rows[$i]['key']}</b>: ";
               }
               echo "{$rows[$i]['value']}, ";
               if ($i < $count-1 && $rows[$i + 1]['key'] !== $rows[$i]['key']) {
@@ -92,7 +110,7 @@ if (isset($_GET['submit'])) {
               $last_key = $rows[$i]['key'];
             }
             echo "</p>";
-            echo "<embed src='' width='100%' height='500' type='application/pdf' style='display:none' id='pdf{$pdf_id}'>";
+            echo "<embed src='' width='100%' height='600' type='application/pdf' style='display:none;margin-bottom:10px' id='pdf{$pdf_id}'>";
             echo "<p><a class='btn btn-primary open-pdf' href='#' data-pdf-url='{$result['pdf']}' data-pdf-id='pdf{$pdf_id}'>Open PDF</a> <a class='btn btn-secondary' href='{$result['pdf']}' download>Download PDF</a></p>";
             echo "</div><div class='card-footer bg-light'>".date('F j Y', strtotime($result['gmt']))."</div></div>";
             $pdf_id++;
@@ -100,6 +118,40 @@ if (isset($_GET['submit'])) {
         </div>
         <?php } ?>
       </div>
+      <?php if ($query) { ?>
+      <div class="row" style="padding: 30px">
+        <div class="col">
+          <nav aria-label="Page navigation example" class="text-center">
+            <ul class="pagination" style="display: inline-flex;">
+              <?php if ($page > 0) { ?>
+              <li class="page-item">
+                <a class="page-link" href="?<?php echo http_build_query(array_replace($qs, ['page' => $page])) ?>" aria-label="Previous">
+                  <span aria-hidden="true">&laquo;</span>
+                  <span class="sr-only">Previous</span>
+                </a>
+              </li>
+              <?php }
+              for ($i = 1; $i <= $final_page; $i++) {
+                if ($page + 1 === $i) {
+                  echo '<li class="page-item active"><a class="page-link" href="?'. http_build_query(array_replace($qs, ['page' => $i])).'">' . $i . '</a></li>';
+                }
+                else {
+                  echo '<li class="page-item"><a class="page-link" href="?'. http_build_query(array_replace($qs, ['page' => $i])).'">' . $i . '</a></li>';
+                }
+              }
+              if ($page + 1 < $final_page) { ?>
+              <li class="page-item">
+                <a class="page-link" href="?page=<?php echo http_build_query(array_replace($qs, ['page' => $page+2])) ?>" aria-label="Next">
+                  <span aria-hidden="true">&raquo;</span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </li>
+              <?php } ?>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <?php } ?>
       <?php include '../includes/footer.php'; ?>
     </div>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -111,9 +163,16 @@ if (isset($_GET['submit'])) {
         var id = $(this).data('pdf-id'),
             url = $(this).data('pdf-url'),
             pdf = $('#pdf'+id);
-        $('.class'+id).attr('style', 'display:none');
-        $('#'+id).attr('src', url);
-        $('#'+id).css('display', 'initial');
+        if ($(this).text() === 'Open PDF') {
+          $('.class'+id).css('display', 'none');
+          $('#'+id).attr('src', url);
+          $('#'+id).css('display', 'block');
+          $(this).text('Back');
+        } else {
+          $('.class'+id).css('display', 'block');
+          $('#'+id).css('display', 'none');
+          $(this).text('Open PDF');
+        }
       });
     </script>
   </body>
