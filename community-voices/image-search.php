@@ -1,37 +1,98 @@
 <?php
 require '../../includes/db.php';
+error_reporting(-1);
+ini_set('display_errors', 'On');
 $page = (empty($_GET['page'])) ? 0 : intval($_GET['page']) - 1;
+$params = [];
+$sub_where = false;
 if (isset($_GET['search']) && trim($_GET['search']) !== '') {
-  if (isset($_GET['criteria'])) {
-    $whitelist = ['Message Text', 'Message Attribution', 'Date Photo Taken', 'Photographer', 'Organization', 'Parental Consent Documentation', 'Probability', 'Message Category', 'Interview Link', 'Date Added to Live Folder', 'Enable Decay', 'End Use'];
-    $key = [];
-    foreach ($_GET['criteria'] as $val) {
-      if (in_array($val, $whitelist)) {
-        $key[] = "'{$val}'";
-      }
-    }
+  $WHERE = 'WHERE alt LIKE ? OR id IN (SELECT pid FROM cv_image_meta';
+  $params[] = "%{$_GET['search']}%";
+} else {
+  $WHERE = 'WHERE id IN (SELECT pid FROM cv_image_meta';
+}
+$buf = '';
+if (isset($_GET['msg_cat_select']) && $_GET['msg_cat_select'] !== 'all') {
+  if (!$sub_where) {
+    $WHERE .= ' WHERE';
   }
-  $WHERE = 'WHERE alt LIKE ? OR id IN (SELECT pid FROM cv_image_meta WHERE `key` IN ('.implode(', ', $key).') AND value = ?)';
-  $count = $db->prepare('SELECT COUNT(*) FROM cv_images '.$WHERE);
-  $count->execute(["%{$_GET['search']}%", "%{$_GET['search']}%"]);
-  $count = $count->fetchColumn();
+  $buf .= " (`key` = ? AND value = ?) AND";
+  $params[] = 'Message Category';
+  $params[] = $_GET['msg_cat_select'];
 }
-else {
-  $count = $db->query("SELECT COUNT(*) FROM cv_images")->fetchColumn();
-  $WHERE = '';
+if (isset($_GET['msg_attr_select']) && $_GET['msg_attr_select'] !== 'all') {
+  if (!$sub_where) {
+    $WHERE .= ' WHERE';
+  }
+  $buf .= " (`key` = ? AND value = ?) AND";
+  $params[] = 'Message Attribution';
+  $params[] = $_GET['msg_attr_select'];
 }
+if (isset($_GET['photographer_select']) && $_GET['photographer_select'] !== 'all') {
+  if (!$sub_where) {
+    $WHERE .= ' WHERE';
+  }
+  $buf .= " (`key` = ? AND value = ?) AND";
+  $params[] = 'Photographer';
+  $params[] = $_GET['photographer_select'];
+}
+if (isset($_GET['org_select']) && $_GET['org_select'] !== 'all') {
+  if (!$sub_where) {
+    $WHERE .= ' WHERE';
+  }
+  $buf .= " (`key` = ? AND value = ?) AND";
+  $params[] = 'Organization';
+  $params[] = $_GET['org_select'];
+}
+if (isset($_GET['end_use_select']) && $_GET['end_use_select'] !== 'all') {
+  if (!$sub_where) {
+    $WHERE .= ' WHERE';
+  }
+  $buf .= " (`key` = ? AND value = ?) AND";
+  $params[] = 'End Use';
+  $params[] = $_GET['end_use_select'];
+}
+if ($buf === '') {
+  $WHERE .= ')';
+} else {
+  $WHERE .= (substr($buf, 0, -3) . ')');
+}
+
+// if (isset($_GET['search']) && trim($_GET['search']) !== '') {
+//   if (isset($_GET['criteria'])) {
+//     $whitelist = ['Message Text', 'Message Attribution', 'Date Photo Taken', 'Photographer', 'Organization', 'Parental Consent Documentation', 'Probability', 'Message Category', 'Interview Link', 'Date Added to Live Folder', 'Enable Decay', 'End Use'];
+//     $key = [];
+//     foreach ($_GET['criteria'] as $val) {
+//       if (in_array($val, $whitelist)) {
+//         $key[] = "'{$val}'";
+//       }
+//     }
+//   }
+//   $WHERE = 'WHERE alt LIKE ? OR id IN (SELECT pid FROM cv_image_meta WHERE `key` IN ('.implode(', ', $key).') AND value != \'\' AND value LIKE ?)';
+//   $count = $db->prepare('SELECT COUNT(*) FROM cv_images '.$WHERE);
+//   $count->execute(["%{$_GET['search']}%", "%{$_GET['search']}%"]);
+//   $count = $count->fetchColumn();
+// }
+// else {
+//   $count = $db->query("SELECT COUNT(*) FROM cv_images")->fetchColumn();
+//   $WHERE = '';
+// }
 $limit = 18;
 $offset = $limit * $page;
-$final_page = ceil($count / $limit);
-$search = (empty($_GET['search'])) ? '' : 'WHERE content LIKE ?';
-$stmt = $db->prepare("SELECT fn, alt, gid FROM cv_images {$WHERE} ORDER BY imgdate DESC LIMIT {$offset}, {$limit}");
-if (empty($_GET['search'])) {
-  $stmt->execute();
-}
-else {
-  $stmt->execute(["%{$_GET['search']}%", "%{$_GET['search']}%"]);
-}
+$stmt = $db->prepare("SELECT SQL_CALC_FOUND_ROWS id, fn, alt, gid FROM cv_images {$WHERE} ORDER BY imgdate DESC LIMIT {$offset}, {$limit}");
+// var_dump("SELECT SQL_CALC_FOUND_ROWS id, fn, alt, gid FROM cv_images {$WHERE} ORDER BY imgdate DESC LIMIT {$offset}, {$limit}");var_dump($params);die;
+$stmt->execute($params);
 $results = $stmt->fetchAll();
+$count = $db->query('SELECT FOUND_ROWS();')->fetchColumn();
+$final_page = ceil($count / $limit);
+$pids = implode(', ', array_column($results, 'id'));
+$cv_image_meta = [];
+if ($count > 0) {
+  foreach ($db->query("SELECT pid, `key`, value FROM cv_image_meta WHERE (`key` = 'Message Text' OR `key` = 'Message Attribution') AND value != '' AND pid IN ({$pids}) ORDER BY pid") as $row) {
+    $cv_image_meta[$row['pid']][$row['key']] = $row['value'];
+  }
+}
+// var_dump($cv_image_meta);die;
 ?>
 <!doctype html>
 <html lang="en">
@@ -53,50 +114,106 @@ $results = $stmt->fetchAll();
         <div class="col">
           <form action="" method="GET" style="padding: 40px">
             <div class="form-group row">
-              <label for="search" class="col-sm-2 col-form-label">Enter search terms</label>
+              <label style="white-space: nowrap;" for="search" class="col-sm-2 col-form-label">Enter search terms</label>
               <div class="col-sm-10">
-                <input type="text" class="form-control" id="search" name="search" placeholder="Search">
+                <input type="text" class="form-control" id="search" name="search" placeholder="Search" value="<?php echo (isset($_GET['search'])) ? $_GET['search'] : '' ?>">
               </div>
             </div>
             <fieldset class="form-group">
               <div class="row">
-                <legend class="col-form-label col-sm-2 pt-0">Match my query against</legend>
+                <legend class="col-form-label col-sm-2 pt-0">Filter search</legend>
                 <div class="col-sm-10">
-                  <?php foreach ($db->query('SELECT DISTINCT `key` FROM cv_image_meta ORDER BY `key` ASC') as $criteria) {
-                    $id = uniqid(); ?>
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" name="criteria[]" id="<?php echo $id ?>" value="<?php echo $criteria['key'] ?>" checked>
-                    <label class="form-check-label" for="<?php echo $id ?>">
-                      <?php echo $criteria['key']; ?>
-                    </label>
+                  <div class="row">
+                    <div class="col"> <!-- col-12 col-sm-6 col-md-4 -->
+                      <label style="white-space: nowrap;" for="msg_cat_select">Message category</label>
+                      <select class="custom-select" name="msg_cat_select" id="msg_cat_select">
+                        <option value="all">All</option>
+                        <?php foreach ($db->query('SELECT DISTINCT value FROM cv_image_meta WHERE value != \'\' AND `key` = \'Message Category\'') as $row) {
+                          echo (isset($_GET['msg_cat_select']) && $_GET['msg_cat_select'] === $row['value']) ? "<option value='{$row['value']}' selected>{$row['value']}</option>" : "<option value='{$row['value']}'>{$row['value']}</option>";
+                        } ?>
+                      </select>
+                    </div>
+                    <div class="col">
+                      <label style="white-space: nowrap;" for="msg_attr_select">Message Attribution</label>
+                      <select class="custom-select" name="msg_attr_select" id="msg_attr_select">
+                        <option value="all">All</option>
+                        <?php foreach ($db->query('SELECT DISTINCT value FROM cv_image_meta WHERE value != \'\' AND `key` = \'Message Attribution\'') as $row) {
+                          echo (isset($_GET['msg_attr_select']) && $_GET['msg_attr_select'] === $row['value']) ? "<option value='{$row['value']}' selected>{$row['value']}</option>" : "<option value='{$row['value']}'>{$row['value']}</option>";
+                        } ?>
+                      </select>
+                    </div>
+                    <div class="col">
+                      <label style="white-space: nowrap;" for="photographer_select">Photographer</label>
+                      <select class="custom-select" name="photographer_select" id="photographer_select">
+                        <option value="all">All</option>
+                        <?php foreach ($db->query('SELECT DISTINCT value FROM cv_image_meta WHERE value != \'\' AND `key` = \'Photographer\'') as $row) {
+                          echo (isset($_GET['photographer_select']) && $_GET['photographer_select'] === $row['value']) ? "<option value='{$row['value']}' selected>{$row['value']}</option>" : "<option value='{$row['value']}'>{$row['value']}</option>";
+                        } ?>
+                      </select>
+                    </div>
+                    <div class="col">
+                      <label style="white-space: nowrap;" for="org_select">Organization</label>
+                      <select class="custom-select" name="org_select" id="org_select">
+                        <option value="all">All</option>
+                        <?php foreach ($db->query('SELECT DISTINCT value FROM cv_image_meta WHERE value != \'\' AND `key` = \'Organization\'') as $row) {
+                          echo (isset($_GET['org_select']) && $_GET['org_select'] === $row['value']) ? "<option value='{$row['value']}' selected>{$row['value']}</option>" : "<option value='{$row['value']}'>{$row['value']}</option>";
+                        } ?>
+                      </select>
+                    </div>
+                    <div class="col">
+                      <label style="white-space: nowrap;" for="end_use_select">End Use</label>
+                      <select class="custom-select" name="end_use_select" id="end_use_select">
+                        <option value="all">All</option>
+                        <?php foreach ($db->query('SELECT DISTINCT value FROM cv_image_meta WHERE value != \'\' AND `key` = \'End Use\'') as $row) {
+                          echo (isset($_GET['end_use_select']) && $_GET['end_use_select'] === $row['value']) ? "<option value='{$row['value']}' selected>{$row['value']}</option>" : "<option value='{$row['value']}'>{$row['value']}</option>";
+                        } ?>
+                      </select>
+                    </div>
                   </div>
-                  <?php } ?>
                 </div>
               </div>
             </fieldset>
             <div class="form-group row">
-              <div class="col-sm-10">
+              <div class="col-sm-10 offset-sm-2">
                 <button type="submit" class="btn btn-primary">Search</button>
               </div>
             </div>
           </form>
         </div>
       </div>
-      <div class="row">
-      <?php $i = 0;
-      $galleries = [null, 'used-photos', 'nature_photos', 'neighbors', 'next-generation', 'serving-our-community', 'heritage', 'our-downtown']; // null to offset by 1
-      foreach ($results as $row) {
-        // if ($i % 4 === 0) {
-          // echo '<div class="row">';
-        // }
-        echo '<div class="col-12 col-sm-6 col-md-4 col-lg-3">';
-        echo "<img src='https://environmentaldashboard.org/images/uploads/gallery/{$galleries[$row['gid']]}/{$row['fn']}' class='img-thumbnail img-fluid' />";
-        echo '</div>';
-        // if ($i % 4 === 0) {
-          // echo '</div>';
-        // }
-        $i++;
-      } ?></div>
+      <div class="row" style="padding: 15px">
+        <div class="col-12">
+          <?php if ($count === '0') {
+            echo "<h2 class='text-center'>No images matched your query</h2>";
+          } ?>
+          <div class="card-columns">
+            <?php $galleries = [null, 'used-photos', 'nature_photos', 'neighbors', 'next-generation', 'serving-our-community', 'heritage', 'our-downtown']; // null to offset by 1
+            foreach ($results as $row) {
+              if (isset($cv_image_meta[$row['id']]['Message Text']) && isset($cv_image_meta[$row['id']]['Message Attribution'])) {
+                echo "<div class='card'>
+                        <img class='card-img-top' src='https://environmentaldashboard.org/images/uploads/gallery/{$galleries[$row['gid']]}/{$row['fn']}' alt='{$row['alt']}'>
+                        <div class='card-body'>
+                          <blockquote class='blockquote mb-0 card-body'>
+                            <p>{$cv_image_meta[$row['id']]['Message Text']}</p>
+                            <footer class='blockquote-footer'>
+                              <small class='text-muted'>
+                                <cite title='{$cv_image_meta[$row['id']]['Message Attribution']}'>{$cv_image_meta[$row['id']]['Message Attribution']}</cite>
+                              </small>
+                            </footer>
+                          </blockquote>
+                        </div>
+                      </div>";
+              } else {
+                echo "<div class='card'>
+                        <img class='card-img-top' src='https://environmentaldashboard.org/images/uploads/gallery/{$galleries[$row['gid']]}/{$row['fn']}' alt='{$row['alt']}'></div>";
+              }
+              // echo '<div class="col-12 col-sm-6 col-md-4 col-lg-3">';
+              // echo "<img src='https://environmentaldashboard.org/images/uploads/gallery/{$galleries[$row['gid']]}/{$row['fn']}' class='img-thumbnail img-fluid' />";
+              // echo '</div>';
+            } ?>
+          </div>
+        </div>
+      </div>
       <div class="row" style="margin: 30px 0px;">
         <div class="col">
           <nav aria-label="Page navigation example" class="text-center">
