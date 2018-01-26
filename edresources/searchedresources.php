@@ -87,7 +87,7 @@ parse_str($_SERVER['QUERY_STRING'], $qs);
                   } ?>
                 </div>
               </div>
-              <div class="card-footer bg-transparent"><input type="reset" value="Reset the form" class="btn btn-secondary"> <input type="submit" name="submit" value="Search" class="btn btn-primary"></div>
+              <div class="card-footer bg-transparent"><button type="button" id="reset" class="btn btn-secondary">Reset</button> <input type="submit" name="submit" value="Search" class="btn btn-primary"></div>
             </div>
           </form>
         </div>
@@ -95,26 +95,27 @@ parse_str($_SERVER['QUERY_STRING'], $qs);
         <div class="col-12 col-sm-9">
           <?php $pdf_id = 0;
           foreach ($search_results as $result) {
-            $stmt = $db->prepare('SELECT DISTINCT `key`, value FROM cv_lesson_meta WHERE lesson_id = ? GROUP BY value, `key` ORDER BY `key` ASC');
+            $stmt = $db->prepare('SELECT DISTINCT `key`, value FROM cv_lesson_meta WHERE lesson_id = ? GROUP BY value, `key` ORDER BY `key` ASC, value ASC');
             $stmt->execute([$result['id']]);
             echo "<div class='card bg-light mb-3'><div class='card-body'><h5 class='card-title'>{$result['title']}</h5>";
             $last_key = -1;
             $rows = $stmt->fetchAll();
             $count = count($rows);
+            $buf = '';
             for ($i=0; $i < $count; $i++) { 
               if ($last_key !== $rows[$i]['key']) {
-                echo "<p class='card-text classpdf{$pdf_id}'><b>{$rows[$i]['key']}</b>: ";
+                $buf .= "<p style='margin-bottom:2px' class='card-text classpdf{$pdf_id}'><b>{$rows[$i]['key']}</b>: ";
               }
-              echo "{$rows[$i]['value']}, ";
+              $buf .= ($i === $count-1) ? "{$rows[$i]['value']}" : "{$rows[$i]['value']}, ";
               if ($i < $count-1 && $rows[$i + 1]['key'] !== $rows[$i]['key']) {
-                echo "</p>";
+                $buf = substr($buf, 0, -2)."</p>";
               }
               $last_key = $rows[$i]['key'];
             }
-            echo "</p>";
+            echo "{$buf}</p>";
             echo "<embed src='' width='100%' height='600' type='application/pdf' style='display:none;margin-bottom:10px' id='pdf{$pdf_id}'>";
-            echo "<p><a class='btn btn-primary open-pdf' href='#' data-pdf-url='{$result['pdf']}' data-pdf-id='pdf{$pdf_id}'>Open PDF</a> <a class='btn btn-secondary' href='{$result['pdf']}' download>Download PDF</a></p>";
-            echo "</div><div class='card-footer bg-light'>".date('F j Y', strtotime($result['gmt']))."</div></div>";
+            echo "<p style='margin:15px 0px 0px 0px'><a class='btn btn-primary open-pdf' href='#' data-pdf-url='{$result['pdf']}' data-pdf-id='pdf{$pdf_id}'>Open PDF</a> <a class='btn btn-secondary' href='{$result['pdf']}' download>Download PDF</a></p>";
+            echo "</div><div class='card-footer bg-light'>".date('F jS, Y', strtotime($result['gmt']))."</div></div>";
             $pdf_id++;
           }
           if ($pdf_id === 0) {
@@ -179,15 +180,11 @@ parse_str($_SERVER['QUERY_STRING'], $qs);
           $(this).text('Open PDF');
         }
       });
-      jQuery(function($) { // onDomReady
-        // reset handler that clears the form
-        $('form input:reset').click(function () {
-          $('form')
-            .find(':radio, :checkbox').removeAttr('checked').end()
-            .find('textarea, :text, select').val('')
-                return false;
-            });
-        });
+      $('#reset').on('click', function(e) {
+        e.preventDefault();
+        $('input:not(input[type="submit"])').val('');
+        $('select').val('all');
+      });
     </script>
   </body>
 </html>

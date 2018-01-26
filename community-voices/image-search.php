@@ -97,7 +97,7 @@ if ($count > 0) {
     $cv_image_meta[$row['pid']][$row['key']] = $row['value'];
   }
 }
-// var_dump($cv_image_meta);die;
+parse_str($_SERVER['QUERY_STRING'], $qs);
 ?>
 <!doctype html>
 <html lang="en">
@@ -118,11 +118,11 @@ if ($count > 0) {
             </button>
           </div>
           <div class="modal-body">
-            <img src="" alt="" id="modal-img" class="img-fluid">
+            <img src="" alt="" id="modal-img" class="img-fluid" style="width: 100%">
           </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          </div>
+          <!-- <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+          </div> -->
         </div>
       </div>
     </div>
@@ -137,7 +137,7 @@ if ($count > 0) {
       </div>
       <div class="row">
         <div class="col">
-          <form action="" method="GET" style="padding: 40px">
+          <form action="" method="GET" style="padding: 40px" id="form">
             <div class="form-group row">
               <label style="white-space: nowrap;" for="search" class="col-sm-2 col-form-label">Enter search terms</label>
               <div class="col-sm-10">
@@ -200,7 +200,8 @@ if ($count > 0) {
             </fieldset>
             <div class="form-group row">
               <div class="col-sm-10 offset-sm-2">
-                <input type="reset" value="Reset the form" class="btn btn-secondary">
+                <!-- <input type="reset" value="Reset" class="btn btn-secondary" id="reset"> -->
+                <button type="button" id="reset" class="btn btn-secondary">Reset</button>
                 <button type="submit" class="btn btn-primary float-right">Search</button>
               </div>
             </div>
@@ -246,7 +247,7 @@ if ($count > 0) {
             <ul class="pagination" style="display: inline-flex;">
               <?php if ($page > 0) { ?>
               <li class="page-item">
-                <a class="page-link" href="?page=<?php echo $page ?>" aria-label="Previous">
+                <a class="page-link" href="?<?php echo http_build_query(array_replace($qs, ['page' => $page])) ?>" aria-label="Previous">
                   <span aria-hidden="true">&laquo;</span>
                   <span class="sr-only">Previous</span>
                 </a>
@@ -259,15 +260,15 @@ if ($count > 0) {
                   echo "<li class='page-item'><span class='page-link'>...</span></li>";
                 }
                 if ($page + 1 === $i) {
-                  echo '<li class="page-item active"><a class="page-link" href="?page=' . $i . '&search=' .$urlencoded. '">' . $i . '</a></li>';
+                  echo '<li class="page-item active"><a class="page-link" href="?'.http_build_query(array_replace($qs, ['page' => $i])).'">' . $i . '</a></li>';
                 }
                 else {
-                  echo '<li class="page-item"><a class="page-link" href="?page=' . $i . '&search=' .$urlencoded. '">' . $i . '</a></li>';
+                  echo '<li class="page-item"><a class="page-link" href="?'.http_build_query(array_replace($qs, ['page' => $i])).'">' . $i . '</a></li>';
                 }
               }
               if ($page + 1 < $final_page) { ?>
               <li class="page-item">
-                <a class="page-link" href="?page=<?php echo $page + 2 ?>" aria-label="Next">
+                <a class="page-link" href="?page=<?php echo http_build_query(array_replace($qs, ['page' => $page+2])); ?>" aria-label="Next">
                   <span aria-hidden="true">&raquo;</span>
                   <span class="sr-only">Next</span>
                 </a>
@@ -290,15 +291,11 @@ if ($count > 0) {
         modal.find('.modal-title').text(alt);
         $('#modal-img').attr('src', img);
       });
-      jQuery(function($) { // onDomReady
-        // reset handler that clears the form
-        $('form input:reset').click(function () {
-          $('form')
-            .find(':radio, :checkbox').removeAttr('checked').end()
-            .find('textarea, :text, select').val('')
-                return false;
-            });
-        });
+      $('#reset').on('click', function(e) {
+        e.preventDefault();
+        $('input').val('');
+        $('select').val('all');
+      });
     </script>
   </body>
 </html>
