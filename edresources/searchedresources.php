@@ -61,8 +61,8 @@ parse_str($_SERVER['QUERY_STRING'], $qs);
         <div class="<?php echo($query) ? 'col-12 col-sm-3' : 'col-12' ?>">
           <?php if (!$query) { ?>
           <h1 class="text-center">Search K-12 Instructor Toolkit</h1>
-          <p>The Search table below allows you to search through our entire library of lessons easily and efficiently. Use the search box to search lesson titles or one of our logical operators to refine your search. On this site, you will be able to search for Environmental Dashboard specific lessons as well as external teaching resources that utilize Environmental Dashboard as a tool.</p>
-          <p>For example, you could search for a lesson with the keyword "electricity" to see all lessons tagged or titled "electricity" with their respective sub data for quick assessment. You could also add use any of the other search parameters such as "grade" and "author(s)". To reset your search, simply click "reset" icon. The number in the brackets indicate the total quantity of lessons for each specific field you include in a search.</p>
+          <p>On this site, you will be able to search for Environmental Dashboard specific lessons that utilize Dashboard as a tool.  The Search table below allows you to comb through our entire library of lessons easily and efficiently. Use the search box to find lessons by title or one of our search fields, such as subjects or student levels, to refine your search.</p>
+          <p>For example, you could search for a lesson with the keyword "electricity" to see all lessons tagged or titled "electricity" with their respective sub data for quick assessment. You could also add any of the other search parameters such as "grade" and "author(s)". To reset your search, simply click "reset" icon.</p>
           <?php } ?>
           <form action="" method="GET">
             <div class="card bg-light mb-3">

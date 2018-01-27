@@ -81,7 +81,7 @@
             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink7">
               <li><a class="dropdown-item" href="/edresources">About</a></li>
               <li><a class="dropdown-item" href="/edresources/searchedresources">Search K12</a></li>
-              <li><a class="dropdown-item" href="/edresources/workshops">Teacher Workshop</a></li>
+              <!-- <li><a class="dropdown-item" href="/edresources/workshops">Teacher Workshop</a></li> -->
             </ul>
           </div>
 
