@@ -68,8 +68,7 @@
         </div>
       </div>
       <div class="row" style="padding: 30px">
-        <div class="col-6 text-center"><img src="/images/uploads/2016/10/K12Icon.jpg" alt="" class="img-fluid" width="75%"></div>
-        <div class="col-6 text-center"><img src="/images/uploads/2016/10/HEIcon.jpg" alt="" class="img-fluid" width="75%"></div>
+        <div class="col-6 text-center"><a href="/edresources/searchedresources"><img src="/images/uploads/2016/10/K12Icon.jpg" alt="" class="img-fluid" width="50%"></a></div>
       </div>
       <div class="row">
         <div class="col-12" style="padding: 30px">
