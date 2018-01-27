@@ -27,6 +27,7 @@
           Building Dashboard
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink2">
+          <a href="https://palmer.buildingos.com/reports/dashboards/c59fde5ec0db11e7aff5525400391da3" class="dropdown-item" target="_blank">Toledo Public Schools</a>
           <a class="dropdown-item" href="/building-dashboard-explained">Building Dashboard Explained</a>
 
           <div class="dropdown">
