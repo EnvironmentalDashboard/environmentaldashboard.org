@@ -1,3 +1,11 @@
+<?php
+require '../includes/db.php';
+if ($user_id === 1) { // because no user slug means default to oberlin
+  $symlink = 'oberlin';
+} else {
+  $symlink = explode('/', $_SERVER['REQUEST_URI'])[1];
+}
+?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -22,7 +30,7 @@
   <body>
     <div class="container">
       <?php include 'includes/header.php'; ?>
-      <object type="image/svg+xml" data="//environmentaldashboard.org/cwd-files/dashboard.php?<?php echo http_build_query($_GET); ?>" class='img-fluid'></object>
+      <object type="image/svg+xml" data="//environmentaldashboard.org/{$symlink}/cwd-files/dashboard.php?<?php echo http_build_query($_GET); ?>" class='img-fluid'></object>
       <?php include 'includes/footer.php'; ?>
     </div>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
