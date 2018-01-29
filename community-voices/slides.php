@@ -1,5 +1,20 @@
 <?php
 require '../../includes/db.php';
+$galleries = ['serving-our-community', 'our-downtown', 'next-generation', 'neighbors', 'nature_photos', 'heritage', 'random'];
+$num_galleries = count($galleries);
+$urls = [];
+for ($i=0; $i < $num_galleries; $i++) {
+  $gallery = ($i === $num_galleries-1) ? $galleries[mt_rand(0, $num_galleries-2)] : $galleries[$i];
+  $n = 0;
+  $files = glob(dirname(__DIR__)."/images/uploads/photocache/{$gallery}/*.png");
+  shuffle($files);
+  foreach ($files as $pic) {
+    $urls[$galleries[$i]][] = "/images/uploads/photocache/{$gallery}/".basename($pic);
+    if ($n++ === 4) {
+      break;
+    }
+  }
+}
 ?>
 <!doctype html>
 <html lang="en">
@@ -21,44 +36,29 @@ require '../../includes/db.php';
       <?php include '../includes/header.php'; ?>
       <div class="row" style="padding: 30px">
         <div class="col text-center">
-          <?php $galleries = ['serving-our-community', 'our-downtown', 'next-generation', 'neighbors', 'nature_photos', 'heritage', 'random'];
-          $num_galleries = count($galleries);
-          for ($i=0; $i < $num_galleries; $i++) {
-            $i = $num_galleries-1;
-            if ($i === $num_galleries-1) {
-              $gallery = $galleries[mt_rand(0, $num_galleries-2)];
-            } else {
-              $gallery = $galleries[$i];
-            } ?>
-          <div id="<?php echo $galleries[$i] ?>-carousel" class="carousel slide" data-ride="carousel" <?php echo ($i===0) ? 'style="height:500px"' : 'style="display:none;height:500px"'; ?>>
+          <div id="cvSlider" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
-              <li data-target="#<?php echo $galleries[$i] ?>-carousel" data-slide-to="0" class="active"></li>
-              <li data-target="#<?php echo $galleries[$i] ?>-carousel" data-slide-to="1"></li>
-              <li data-target="#<?php echo $galleries[$i] ?>-carousel" data-slide-to="2"></li>
-              <li data-target="#<?php echo $galleries[$i] ?>-carousel" data-slide-to="3"></li>
-              <li data-target="#<?php echo $galleries[$i] ?>-carousel" data-slide-to="4"></li>
-              <li data-target="#<?php echo $galleries[$i] ?>-carousel" data-slide-to="5"></li>
+              <li data-target="#cvSlider" data-slide-to="0" class="active"></li>
+              <li data-target="#cvSlider" data-slide-to="1"></li>
+              <li data-target="#cvSlider" data-slide-to="2"></li>
+              <li data-target="#cvSlider" data-slide-to="3"></li>
+              <li data-target="#cvSlider" data-slide-to="4"></li>
             </ol>
-            <div class="carousel-inner" style="max-height: 500px">
-              <?php $pics = glob(dirname(__DIR__)."/images/uploads/photocache/{$gallery}/*.png");
-              for ($j=0; $j < count($pics); $j++) { 
-                echo ($j === 0) ? "<div class='carousel-item active'>" : "<div class='carousel-item'>";
-                echo "<img class='d-block w-100' src='/images/uploads/photocache/{$gallery}/".basename($pics[$j])."'></div>";
-                if ($j === 5) {
-                  break;
-                }
+            <div class="carousel-inner">
+              <?php $i = 0; foreach ($urls[$galleries[0]] as $url) {
+                echo ($i++ === 0) ? '<div class="carousel-item active">' : '<div class="carousel-item">';
+                echo "<img class='d-block w-100' src='{$url}' alt='Slide {$i}' id='slide{$i}'></div>";
               } ?>
             </div>
-            <a class="carousel-control-prev" href="#<?php echo $galleries[$i] ?>-carousel" role="button" data-slide="prev">
+            <a class="carousel-control-prev" href="#cvSlider" role="button" data-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
               <span class="sr-only">Previous</span>
             </a>
-            <a class="carousel-control-next" href="#<?php echo $galleries[$i] ?>-carousel" role="button" data-slide="next">
+            <a class="carousel-control-next" href="#cvSlider" role="button" data-slide="next">
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
               <span class="sr-only">Next</span>
             </a>
           </div>
-          <?php } ?>
         </div>
       </div>
       <div class="row" style="padding: 30px">
@@ -76,15 +76,13 @@ require '../../includes/db.php';
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script>
-      var shown = $('#serving-our-community-carousel');
-      // shown.carousel('dispose');
+      var urls = <?php echo json_encode($urls); ?>;
       $('#<?php echo implode(', #', $images) ?>').on('click', function(e) {
         e.preventDefault();
-        // shown.carousel('dispose');
-        shown.css('display', 'none');
-        shown = $('#'+this.id+'-carousel');
-        shown.css('display', 'initial');
-        // shown.carousel();
+        var i = 1;
+        urls[this.id].forEach(function(url) {
+          $('#slide'+(i++)).attr('src', url);
+        })
       });
     </script>
   </body>
