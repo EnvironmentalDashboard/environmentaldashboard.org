@@ -23,9 +23,10 @@ require '../../includes/db.php';
         <div class="col text-center">
           <?php $first = true;
           $galleries = ['serving-our-community', 'our-downtown', 'next-generation', 'neighbors', 'nature_photos', 'heritage'];
-          $galleries[] = $galleries[mt_rand(0, count($galleries)-1)];
+          $num_galleries = count($galleries);
+          $galleries[] = $galleries[mt_rand(0, $num_galleries-1)];
           foreach ($galleries as $gallery) { ?>
-          <div id="carouselIndicators" class="carousel slide" data-ride="carousel" <?php echo ($first) ? 'style="display:hidden"' : ''; ?>>
+          <div id="carouselIndicators" class="carousel slide" data-ride="carousel" <?php echo ($first) ? '' : 'style="display:none"'; ?>>
             <ol class="carousel-indicators">
               <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
               <li data-target="#carouselIndicators" data-slide-to="1"></li>
@@ -35,7 +36,7 @@ require '../../includes/db.php';
               <?php $pics = glob(dirname(__DIR__)."/images/uploads/gallery/{$gallery}/*.jpg");
               for ($i=0; $i < count($pics); $i++) { 
                 echo ($i === 0) ? "<div class='carousel-item active'>" : "<div class='carousel-item'>";
-                echo "<img class='d-block w-100' src='{$pics[$i]}'></div>";
+                echo "<img class='d-block w-100' src='/images/uploads/gallery/{$gallery}/".basename($pics[$i])."'></div>";
                 if ($i === 5) {
                   break;
                 }
@@ -52,6 +53,12 @@ require '../../includes/db.php';
           </div>
           <?php $first = false; } ?>
         </div>
+      </div>
+      <div class="row" style="padding: 30px">
+        <?php for ($i=0; $i < $num_galleries; $i++) { 
+          $img = ($i === $num_galleries-1) ? 'random.png' : $galleries[$i].'.png';
+          echo "<div class='col'><img class='img-fluid' src='slider-images/{$img}' /></div>";
+        } ?>
       </div>
       <?php include '../includes/footer.php'; ?>
     </div>
