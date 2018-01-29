@@ -1,13 +1,5 @@
 <?php
 require '../../includes/db.php';
-if (isset($_GET['name'])) {
-  $stmt = $db->prepare('SELECT post_date, title, img, content FROM cv_posts WHERE slug = ?');
-  $stmt->execute([$_GET['name']]);
-  $article = $stmt->fetch();
-} else {
-  http_response_code(404);
-  require '../404.php';
-}
 ?>
 <!doctype html>
 <html lang="en">
@@ -29,10 +21,36 @@ if (isset($_GET['name'])) {
       <?php include '../includes/header.php'; ?>
       <div class="row" style="padding: 30px">
         <div class="col text-center">
-          <h1><?php echo $article['title']; ?></h1>
-          <p><?php echo date('l, F j, Y', strtotime($article['post_date'])); ?></p>
-          <img src="<?php echo $article['img'] ?>" alt="" class='img-thumbnail'>
-          <div style="text-align: initial;"><?php echo $article['content']; ?></div>
+          <?php $first = true;
+          $galleries = ['serving-our-community', 'our-downtown', 'next-generation', 'neighbors', 'nature_photos', 'heritage'];
+          $galleries[] = $galleries[mt_rand(0, count($galleries)-1)];
+          foreach ($galleries as $gallery) { ?>
+          <div id="carouselIndicators" class="carousel slide" data-ride="carousel" <?php echo ($first) ? 'style="display:hidden"' : ''; ?>>
+            <ol class="carousel-indicators">
+              <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <?php $pics = glob(dirname(__DIR__)."/images/uploads/gallery/{$gallery}/*.jpg");
+              for ($i=0; $i < count($pics); $i++) { 
+                echo ($i === 0) ? "<div class='carousel-item active'>" : "<div class='carousel-item'>";
+                echo "<img class='d-block w-100' src='{$pics[$i]}'></div>";
+                if ($i === 5) {
+                  break;
+                }
+              } ?>
+            </div>
+            <a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+          <?php $first = false; } ?>
         </div>
       </div>
       <?php include '../includes/footer.php'; ?>
