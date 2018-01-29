@@ -59,7 +59,7 @@
           Community Voices
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink5">
-          <a class="dropdown-item" href="#">View Slides</a>
+          <a class="dropdown-item" href="/community-voices/slides">View Slides</a>
           <a class="dropdown-item" href="/community-voices/">View Articles</a>
           <a class="dropdown-item" href="/community-voices/image-search">Advanced Image Search</a>
         </div>

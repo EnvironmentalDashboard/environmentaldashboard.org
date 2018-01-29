@@ -40,7 +40,7 @@ require '../../includes/db.php';
               <li data-target="#<?php echo $galleries[$i] ?>-carousel" data-slide-to="5"></li>
             </ol>
             <div class="carousel-inner" style="max-height: 500px">
-              <?php $pics = glob(dirname(__DIR__)."/images/uploads/photocache/{$gallery}/*.jpg");
+              <?php $pics = glob(dirname(__DIR__)."/images/uploads/photocache/{$gallery}/*.png");
               for ($j=0; $j < count($pics); $j++) { 
                 echo ($j === 0) ? "<div class='carousel-item active'>" : "<div class='carousel-item'>";
                 echo "<img class='d-block w-100' src='/images/uploads/photocache/{$gallery}/".basename($pics[$j])."'></div>";
