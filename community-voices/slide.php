@@ -14,13 +14,6 @@ foreach (glob(dirname(__DIR__)."/images/uploads/photocache/{$gallery}/*.png") as
   $files[] = "/images/uploads/photocache/{$gallery}/".basename($path);
 }
 shuffle($files);
-//   foreach ($files as $pic) {
-//     $urls[$galleries[$i]][] = "/images/uploads/photocache/{$gallery}/".basename($pic);
-//     if ($n++ === 4) {
-//       break;
-//     }
-//   }
-// }
 ?>
 <!doctype html>
 <html lang="en">
@@ -81,9 +74,6 @@ shuffle($files);
     <img id="img2" src="<?php echo $files[1]; ?>" alt="" style="width: 100%;height: auto;position: absolute;top: 0;left: 0;right: 0">
   </body>
   <script>
-    // setTimeout(function() {
-    //   window.location.reload(true);
-    // }, <?php echo (isset($_GET['ms'])) ? $_GET['ms'] : 5000 ?>);
     var paths = <?php echo json_encode($files); ?>;
     var images = [document.getElementById('img1'), document.getElementById('img2')];
     var current_path = 2,
