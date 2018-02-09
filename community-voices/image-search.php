@@ -261,8 +261,14 @@ parse_str($_SERVER['QUERY_STRING'], $qs);
               </li>
               <?php }
               $urlencoded = (isset($_GET['search'])) ? urlencode($_GET['search']) : '';
+              $ok = true;
               for ($i = 1; $i <= $final_page; $i++) {
-                if ($i >= 20 && $final_page > 23 && $page < $i) {
+                if ($page > 20 && $i > 3 && $ok) {
+                  $i = $page - 2;
+                  $ok = false;
+                  echo "<li class='page-item'><span class='page-link'>...</span></li>";
+                }
+                if ($i >= 20 && $final_page > ($i+3) && $page+3 < $i) {
                   $i = $final_page - 3;
                   echo "<li class='page-item'><span class='page-link'>...</span></li>";
                 }

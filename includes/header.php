@@ -1,3 +1,10 @@
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-65902947-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'GA_TRACKING_ID');
+</script>
 <div class="row">
   <div class="col banner-col">
     <a href="/"><img src="http://environmentaldashboard.org/images/banner.jpg" alt="" class="img-fluid"></a>
