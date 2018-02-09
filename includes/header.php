@@ -7,7 +7,7 @@
 </script>
 <div class="row">
   <div class="col banner-col">
-    <a href="/"><img src="http://environmentaldashboard.org/images/banner.jpg" alt="" class="img-fluid"></a>
+    <a href="/"><img src="https://environmentaldashboard.org/images/banner.jpg" alt="" class="img-fluid"></a>
   </div>
 </div>
 <nav class="navbar sticky-top navbar-expand-lg navbar-dark" style="background: #21a7df;padding-top: 0px;padding-bottom: 0px">
