@@ -6,8 +6,16 @@ $page = (empty($_GET['page'])) ? 0 : intval($_GET['page']) - 1;
 $params = [];
 $sub_where = false;
 if (isset($_GET['search']) && trim($_GET['search']) !== '') {
-  $WHERE = 'WHERE alt LIKE ? AND id IN (SELECT pid FROM cv_image_meta';
-  $params[] = "%{$_GET['search']}%";
+  $tmp = getcwd();
+  chdir('/var/www/repos/search/');
+  $lucene_cmd = 'java -cp "/var/www/repos/search/.:/var/www/repos/search/mysql-connector-java-5.1.45/mysql-connector-java-5.1.45-bin.jar:/var/www/repos/search/lucene-7.2.1/core/lucene-core-7.2.1.jar:/var/www/repos/search/lucene-7.2.1/queryparser/lucene-queryparser-7.2.1.jar:/var/www/repos/search/lucene-7.2.1/analysis/common/lucene-analyzers-common-7.2.1.jar" search/SearchCVImages '.escapeshellarg($_GET['search']);
+  $lucene = shell_exec($lucene_cmd);
+  if ($lucene != '') {
+    $WHERE = 'WHERE id IN ('.$lucene.') AND id IN (SELECT pid FROM cv_image_meta';
+  } else {
+    $WHERE = 'WHERE id = -1 AND id IN (SELECT pid FROM cv_image_meta'; // no results
+  }
+  chdir($tmp);
 } else {
   $WHERE = 'WHERE id IN (SELECT pid FROM cv_image_meta';
 }
@@ -221,7 +229,10 @@ parse_str($_SERVER['QUERY_STRING'], $qs);
             echo "<h2 class='text-center'>No images matched your query</h2>";
           } ?>
           <div class="card-columns">
-            <?php $galleries = [null, 'used-photos', 'nature_photos', 'neighbors', 'next-generation', 'serving-our-community', 'heritage', 'our-downtown']; // null to offset by 1
+            <?php $galleries = [];
+            foreach ($db->query('SELECT id, slug FROM cv_image_gallery') as $row) {
+              $galleries[$row['id']] = $row['slug'];
+            }
             foreach ($results as $row) {
               if (isset($cv_image_meta[$row['id']]['Message Text']) && isset($cv_image_meta[$row['id']]['Message Attribution'])) {
                 echo "<div class='card'>
@@ -293,9 +304,7 @@ parse_str($_SERVER['QUERY_STRING'], $qs);
       </div>
       <?php include '../includes/footer.php'; ?>
     </div>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <?php include '../includes/js.php'; ?>
     <script>
       $('#imageModal').on('show.bs.modal', function (event) {
         var button = $(event.relatedTarget);

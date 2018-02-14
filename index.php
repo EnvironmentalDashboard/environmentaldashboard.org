@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Environmental Dashboard. A technology & approach for organizations and whole communities that combines feedback, through real-time public displays of resource use and environmental conditions, with thoughts and actions of community to engage, motivate, empower & celebrate sustainable thought and action.">
-    <link rel="stylesheet" href="https://environmentaldashboard.org/css/bootstrap.css?v=<?php echo time(); ?>">
+    <link rel="stylesheet" href="css/bootstrap.css?v=<?php echo time(); ?>"> <!-- https://environmentaldashboard.org/ -->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=9ByOqqx0o3">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=9ByOqqx0o3">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=9ByOqqx0o3">
@@ -88,49 +88,6 @@
       </div>
       <?php include 'includes/footer.php'; ?>
     </div>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script>
-/*!
- * Bootstrap 4 multi dropdown navbar ( https://bootstrapthemes.co/demo/resource/bootstrap-4-multi-dropdown-navbar/ )
- * Copyright 2017.
- * Licensed under the GPL license
- */
-// $(document).ready(function() {
-//   $('.dropdown-menu a.dropdown-toggle').on('click', function(e) {
-//     var $el = $(this);
-//     var $parent = $(this).offsetParent(".dropdown-menu");
-//     if (!$(this).next().hasClass('show')) {
-//       $(this).parents('.dropdown-menu').first().find('.show').removeClass("show");
-//     }
-//     var $subMenu = $(this).next(".dropdown-menu");
-//     $subMenu.toggleClass('show');
-
-//     $(this).parent("li").toggleClass('show');
-
-//     $(this).parents('li.nav-item.dropdown.show').on('hidden.bs.dropdown', function(e) {
-//       $('.dropdown-menu .show').removeClass("show");
-//     });
-
-//     if (!$parent.parent().hasClass('navbar-nav')) {
-//       $el.next().css({
-//         "top": $el[0].offsetTop,
-//         "left": $parent.outerWidth() - 4 // CHANGE THIS TO REPOSITION DROPDOWN
-//       });
-//     }
-
-//     return false;
-//   });
-
-  // $('#hover1').on('mouseenter', function() {
-  //   $('#hover_target1').dropdown('toggle');
-  // });
-  // $('#hover1').on('mouseleave', function() {
-  //   $('#hover_target1').dropdown('toggle');
-  // });
-// });
-
-    </script>
+    <?php include 'includes/js.php'; ?>
   </body>
 </html>

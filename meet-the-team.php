@@ -28,8 +28,6 @@
         <p>Augustus Arthur is the Project Manager of the Environmental Dashboard. He graduated in 2012 with a major in Computer Science from Ashesi University College in Ghana. He briefly worked for Petra Trust private pensions company as an operations analyst. He then went on to pursue a master’s degree in Environmental Education from the University of Minnesota Duluth after which he moved to Ohio to work full time on developing and implementing the Dashboard in Oberlin and in other communities. Augustus grew up in Ghana, West Africa.</p>
       </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <?php include 'includes/js.php'; ?>
   </body>
 </html>php
