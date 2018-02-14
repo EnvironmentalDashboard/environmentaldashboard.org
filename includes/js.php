@@ -16,7 +16,7 @@ $(document).ready(function() {
     $(this).parents('li.nav-item.dropdown.show' ).on( 'hidden.bs.dropdown', function (e) {
       $('.dropdown-menu .show').removeClass("show");
     });
-    if ( !$parent.parent().hasClass('navbar-nav') ) {
+    if ( !$parent.parent().hasClass('navbar-nav')) {
       $el.next().css( { "top": $el[0].offsetTop, "left": -$subMenu.outerWidth() } );
     }
     return false;
