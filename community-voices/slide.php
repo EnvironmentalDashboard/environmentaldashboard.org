@@ -84,11 +84,17 @@ shuffle($files);
         setTimeout(function() { images[0].setAttribute('src', paths[current_path++]); }, 2000);
         current_img = 1;
         images[current_img].className = 'fade-in';
+        if (current_path === paths.length) {
+          current_path = 0;
+        }
       } else {
         images[current_img].className = 'fade-out';
         setTimeout(function() { images[1].setAttribute('src', paths[current_path++]); }, 2000);
         current_img = 0;
         images[current_img].className = 'fade-in';
+        if (current_path === paths.length) {
+          current_path = 0;
+        }
       }
     }, <?php echo (isset($_GET['ms'])) ? $_GET['ms'] : 5000 ?>);
   </script>
