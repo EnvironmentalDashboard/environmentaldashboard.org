@@ -65,6 +65,10 @@ if (isset($_GET['end_use_select']) && $_GET['end_use_select'] !== 'all') {
   $params[] = 'End Use';
   $params[] = $_GET['end_use_select'];
 }
+$unused_photos = '';
+if (isset($_GET['unused_photos'])) {
+ $unused_photos = " AND id NOT IN (SELECT pid FROM cv_image_meta WHERE `key` = 'Message Text') ";
+}
 if ($buf === '') {
   $WHERE .= ')';
 } else {
@@ -92,7 +96,7 @@ if ($buf === '') {
 // }
 $limit = 18;
 $offset = $limit * $page;
-$stmt = $db->prepare("SELECT SQL_CALC_FOUND_ROWS id, fn, alt, gid FROM cv_images {$WHERE} ORDER BY imgdate DESC LIMIT {$offset}, {$limit}");
+$stmt = $db->prepare("SELECT SQL_CALC_FOUND_ROWS id, fn, alt, gid FROM cv_images {$WHERE}{$unused_photos} ORDER BY imgdate DESC LIMIT {$offset}, {$limit}");
 // var_dump("SELECT SQL_CALC_FOUND_ROWS id, fn, alt, gid FROM cv_images {$WHERE} ORDER BY imgdate DESC LIMIT {$offset}, {$limit}");var_dump($params);die;
 $stmt->execute($params);
 $results = $stmt->fetchAll();
@@ -215,9 +219,12 @@ parse_str($_SERVER['QUERY_STRING'], $qs);
             </fieldset>
             <div class="form-group row">
               <div class="col-sm-10 offset-sm-2">
-                <!-- <input type="reset" value="Reset" class="btn btn-secondary" id="reset"> -->
-                <button type="button" id="reset" class="btn btn-secondary">Reset</button>
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" name="unused_photos" id="unused_photos" <?php echo (isset($_GET['unused_photos'])) ? 'checked' : ''; ?>>
+                  <label class="custom-control-label" for="unused_photos">Show only photos without text</label>
+                </div>
                 <button type="submit" class="btn btn-primary float-right">Search</button>
+                <button type="button" id="reset" class="btn btn-secondary">Reset</button>
               </div>
             </div>
           </form>
