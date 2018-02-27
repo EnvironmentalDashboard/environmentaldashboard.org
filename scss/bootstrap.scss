@@ -71,6 +71,8 @@ body {
 	background: #fff;
 	padding: 0px;
 }
+.grow { transition: all .2s ease-in-out; }
+.grow:hover { transform: scale(1.1); }
 @include media-breakpoint-down(sm) {
 	.row {
 		margin: 0px;
