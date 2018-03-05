@@ -4,16 +4,19 @@ $galleries = ['serving-our-community', 'our-downtown', 'next-generation', 'neigh
 $num_galleries = count($galleries);
 $urls = [];
 for ($i=0; $i < $num_galleries; $i++) {
-  $gallery = ($i === $num_galleries-1) ? $galleries[mt_rand(0, $num_galleries-2)] : $galleries[$i];
+  $gallery = ($i === $num_galleries-1) ? $galleries[mt_rand(0, $num_galleries-2)] : $galleries[$i]; // last gallery is random
   $n = 0;
-  $files = glob(dirname(__DIR__)."/images/uploads/photocache/{$gallery}/*.png");
-  shuffle($files);
-  foreach ($files as $pic) {
-    $urls[$galleries[$i]][] = "/images/uploads/photocache/{$gallery}/".basename($pic);
-    if ($n++ === 4) {
-      break;
-    }
-  }
+  $stmt = $db->prepare('SELECT url FROM google_slides WHERE category = ? AND prob > 0 ORDER BY (prob/100) * rand() * rand() * rand() * rand() * rand() * rand() DESC LIMIT 4');
+  $stmt->execute([$gallery]);
+  $urls[$galleries[$i]] = array_column($stmt->fetchAll(), 'url');
+  // $files = glob(dirname(__DIR__)."/images/uploads/photocache/{$gallery}/*.png");
+  // shuffle($files);
+  // foreach ($files as $pic) {
+  //   $urls[$galleries[$i]][] = "/images/uploads/photocache/{$gallery}/".basename($pic);
+  //   if ($n++ === 4) {
+  //     break;
+  //   }
+  // }
 }
 ?>
 <!doctype html>

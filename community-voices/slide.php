@@ -9,17 +9,9 @@ if (!isset($_GET['gallery']) || !in_array($_GET['gallery'], $galleries)) {
 } else {
   $gallery = $_GET['gallery'];
 }
-// if (isset($_GET['loc_id'])) { // new setup
-  $stmt = $db->prepare("SELECT url FROM google_slides WHERE category = ? AND prob > 0 ORDER BY (prob/100) * rand() * rand() * rand() * rand() * rand() * rand() DESC");
-  $stmt->execute([$gallery]);
-  $files = array_column($stmt->fetchAll(), 'url');
-// } else { // old setup
-//   $files = [];
-//   foreach (glob(dirname(__DIR__)."/images/uploads/photocache/{$gallery}/*.png") as $path) {
-//     $files[] = "/images/uploads/photocache/{$gallery}/".basename($path);
-//   }
-//   shuffle($files);
-// }
+$stmt = $db->prepare("SELECT url FROM google_slides WHERE category = ? AND prob > 0 ORDER BY (prob/100) * rand() * rand() * rand() * rand() * rand() * rand() DESC");
+$stmt->execute([$gallery]);
+$files = array_column($stmt->fetchAll(), 'url');
 ?>
 <!doctype html>
 <html lang="en">
