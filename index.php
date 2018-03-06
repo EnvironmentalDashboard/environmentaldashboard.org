@@ -87,7 +87,7 @@
         </div>
         <div class="col-12 col-sm-3 text-center">
           <a href="/calendar">
-            <img src="images/Homepageonhovercalendarcovericon.svg" alt="" class="img-fluid" onmouseover="this.src='images/Homepageonhover.svg'" onmouseout="this.src='images/Homepageonhovercalendarcovericon.svg'">
+            <img src="images/Homepageonhovercalendarcovericon.png" alt="" class="img-fluid" onmouseover="this.src='images/Homepageonhover.png'" onmouseout="this.src='images/Homepageonhovercalendarcovericon.png'">
           </a>
           <h4 style="color: #5aba50;margin-top: 10px">Community Calendar</h4>
           <p style="text-align: initial;padding: 0px 15px;">The Community Calendar is a free, public website, where events submitted by community members are displayed both on this site and on digital signs installed in Oberlin.</p>
