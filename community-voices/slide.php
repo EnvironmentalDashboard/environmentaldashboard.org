@@ -2,7 +2,14 @@
 require '../../includes/db.php';
 error_reporting(-1);
 ini_set('display_errors', 'On');
-$galleries = ['serving-our-community', 'our-downtown', 'next-generation', 'neighbors', 'nature_photos', 'heritage'];
+$galleries = ['serving-our-community' => 5, 'our-downtown' => 5, 'next-generation' => 5, 'neighbors' => 5, 'nature_photos' => 5, 'heritage' => 5];
+foreach ($galleries as $gallery => $numerator) {
+  if (isset($_GET[$gallery])) {
+    $galleries[$gallery] = $_GET[$gallery];
+  }
+}
+$stmt = $db->prepare("SELECT url FROM google_slides WHERE prob > 0 ORDER BY category ASC, (prob/100) * rand() * rand() * rand() * rand() * rand() * rand() DESC");
+/*
 $num_galleries = count($galleries);
 if (!isset($_GET['gallery']) || !in_array($_GET['gallery'], $galleries)) {
   $gallery = $galleries[mt_rand(0, $num_galleries-1)];
@@ -12,6 +19,7 @@ if (!isset($_GET['gallery']) || !in_array($_GET['gallery'], $galleries)) {
 $stmt = $db->prepare("SELECT url FROM google_slides WHERE category = ? AND prob > 0 ORDER BY (prob/100) * rand() * rand() * rand() * rand() * rand() * rand() DESC");
 $stmt->execute([$gallery]);
 $files = array_column($stmt->fetchAll(), 'url');
+*/
 ?>
 <!doctype html>
 <html lang="en">
