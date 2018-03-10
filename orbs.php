@@ -1,7 +1,7 @@
 <?php
 require '../includes/db.php';
-$rv_descriptions = ['very high', 'high', 'normal', 'low', 'very low'];
-$rv_colors = ['#F44336', 'orange', '#eee', '#8BC34A', '#4CAF50'];
+$rv_descriptions = ['very low', 'low', 'normal', 'high', 'very high'];
+$rv_colors = ['#4CAF50', '#8BC34A', '#eee', 'orange', '#F44336'];
 ?>
 <!doctype html>
 <html lang="en">
@@ -23,17 +23,18 @@ $rv_colors = ['#F44336', 'orange', '#eee', '#8BC34A', '#4CAF50'];
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="rvModalLabel">Modal title</h5>
+            <h5 class="modal-title" id="rvModalLabel">Loading</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
           <div class="modal-body">
-            ...
+            <p id="explanation"></p>
+            <h5>Previous readings</h5>
+            <div id="data"></div>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
           </div>
         </div>
       </div>
@@ -61,13 +62,15 @@ $rv_colors = ['#F44336', 'orange', '#eee', '#8BC34A', '#4CAF50'];
                 <?php
                 foreach (explode(',', $orb_array['name_csv']) as $i => $orb_name) {
                   echo "<li class='media row'>";
-                  if (is_numeric($orb_elec_rvids[$i])) {
-                    $rv = round(($db->query("SELECT relative_value FROM relative_values WHERE id = ".intval($orb_elec_rvids[$i]))->fetchColumn()/100)*4);
-                    echo "<div class='col'><div style='height: 100px;width: 100px;border-radius: 100%;background: {$rv_colors[$rv]};margin-right: 10px;margin:0 auto;'></div><div class='media-body'><p style='text-align:center'>Electricity use in {$orb_name} is {$rv_descriptions[$rv]}</p><p style='text-align:center'><a data-meter='{$orb_elec_uuids[$i]}' class='btn btn-primary btn-sm' href='#'>View calculation</a></p></div></div>";
+                  if (is_numeric($orb_elec_rvids[$i]) && $orb_elec_uuids[$i] !== 'x') {
+                    $rv = $db->query("SELECT relative_value FROM relative_values WHERE id = ".intval($orb_elec_rvids[$i]))->fetchColumn();
+                    $scaled_rv = round(($rv/100)*4);
+                    echo "<div class='col'><div style='height: 100px;width: 100px;border-radius: 100%;background: {$rv_colors[$scaled_rv]};margin-right: 10px;margin:0 auto;'></div><div class='media-body'><p style='text-align:center'>Electricity use in {$orb_name} is {$rv_descriptions[$scaled_rv]}</p><p style='text-align:center'><button type='button' data-target='#rvModal' data-toggle='modal' data-rvid='{$orb_elec_rvids[$i]}' data-rv='{$scaled_rv}' data-meter='{$orb_elec_uuids[$i]}' data-resource='Electricity' class='btn btn-primary btn-sm' href='#'>View calculation</button></p></div></div>";
                   }
-                  if (is_numeric($orb_water_rvids[$i])) {
-                    $rv = round(($db->query("SELECT relative_value FROM relative_values WHERE id = ".intval($orb_water_rvids[$i]))->fetchColumn()/100)*4);
-                    echo "<div class='col'><div style='height: 100px;width: 100px;border-radius: 100%;background: {$rv_colors[$rv]};margin-right: 10px;margin:0 auto;'></div><div class='media-body'><p style='text-align:center'>Water use in {$orb_name} is {$rv_descriptions[$rv]}</p><p style='text-align:center'><a data-meter='{$orb_water_uuids[$i]}' class='btn btn-primary btn-sm' href='#'>View calculation</a></p></div></div>";
+                  if (is_numeric($orb_water_rvids[$i]) && $orb_water_uuids[$i] !== 'x') {
+                    $rv = $db->query("SELECT relative_value FROM relative_values WHERE id = ".intval($orb_water_rvids[$i]))->fetchColumn();
+                    $scaled_rv = round(($rv/100)*4);
+                    echo "<div class='col'><div style='height: 100px;width: 100px;border-radius: 100%;background: {$rv_colors[$scaled_rv]};margin-right: 10px;margin:0 auto;'></div><div class='media-body'><p style='text-align:center'>Water use in {$orb_name} is {$rv_descriptions[$scaled_rv]}</p><p style='text-align:center'><button type='button' data-target='#rvModal' data-toggle='modal' data-rvid='{$orb_water_rvids[$i]}' data-rv='{$scaled_rv}' data-meter='{$orb_water_uuids[$i]}' data-resource='Water' class='btn btn-primary btn-sm' href='#'>View calculation</button></p></div></div>";
                   }
                   echo "</li>";
                 } ?>
@@ -81,15 +84,36 @@ $rv_colors = ['#F44336', 'orange', '#eee', '#8BC34A', '#4CAF50'];
     </div>
     <?php include 'includes/js.php'; ?>
     <script>
-      $('#rvModal').on('shown.bs.modal', function () {
-        $.post( "includes/rv_calc.php", { meter: this.data('meter') }, function( json ) {
-          if (json.constructor === Array) {
-            json.forEach(function(entry) {
-              console.log(entry);
-            });
+      var colors = <?php echo json_encode($rv_colors); ?>;
+      $('#rvModal').on('shown.bs.modal', function (e) {
+        var button = $(e.relatedTarget);
+        $.post( "includes/rv_calc.php", { rvid: button.data('rvid') }, function( json ) {
+          $('#rvModalLabel').text('Why is the orb ' + colors[button.data('rv')] + '?');
+          var typical = JSON.parse(json['typical']);
+          var above = 0, below = 0;
+          console.log(json['typical'], json['current']);
+          for (var i = typical.length - 1; i >= 0; i--) {
+            if (typical[i]['value'] < json['current']) {
+              above++;
+            } else if (typical[i]['value'] > json['current']) {
+              below++;
+            }
+            $('#data').append('<p>'+typical[i]['time']+': <b>'+typical[i]['value']+'</b></p>');
           }
+          if (button.data('resource') === 'Electricity') {
+            var units = ' kilowatts';
+          } else {
+            var units = ' gallons per hour';
+          }
+          var sentence = button.data('resource') + ' use is currently '+json['current']+units+', which is higher than '+above+' previous readings and lower than '+below+' previous readings.';
+          $('#explanation').text(sentence);
         }, "json");
+      });
+      $('#rvModal').on('shown.bs.modal', function (e) {
+        $('#rvModalLabel').text('Loading');
+        $('#data').empty();
+        $('#explanation').text('');
       });
     </script>
   </body>
-</html>php
+</html>
