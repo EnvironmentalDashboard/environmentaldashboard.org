@@ -1,7 +1,8 @@
 <?php
 require '../includes/db.php';
 $rv_descriptions = ['very low', 'low', 'normal', 'high', 'very high'];
-$rv_colors = ['#4CAF50', '#8BC34A', '#eee', 'orange', '#F44336'];
+$rv_colors = ['#4CAF50', '#8BC34A', '#eee', '#FF9800', '#F44336'];
+$rv_color_names = ['green', 'light green', 'gray', 'orange', 'red'];
 ?>
 <!doctype html>
 <html lang="en">
@@ -84,7 +85,7 @@ $rv_colors = ['#4CAF50', '#8BC34A', '#eee', 'orange', '#F44336'];
     </div>
     <?php include 'includes/js.php'; ?>
     <script>
-      var colors = <?php echo json_encode($rv_colors); ?>;
+      var colors = <?php echo json_encode($rv_color_names); ?>;
       $('#rvModal').on('shown.bs.modal', function (e) {
         var button = $(e.relatedTarget);
         $.post( "includes/rv_calc.php", { rvid: button.data('rvid') }, function( json ) {

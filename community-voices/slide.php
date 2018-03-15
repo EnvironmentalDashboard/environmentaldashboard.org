@@ -3,23 +3,36 @@ require '../../includes/db.php';
 error_reporting(-1);
 ini_set('display_errors', 'On');
 $galleries = ['serving-our-community' => 5, 'our-downtown' => 5, 'next-generation' => 5, 'neighbors' => 5, 'nature_photos' => 5, 'heritage' => 5];
+$gallery_names = array_keys($galleries);
 foreach ($galleries as $gallery => $numerator) {
   if (isset($_GET[$gallery])) {
     $galleries[$gallery] = $_GET[$gallery];
   }
 }
-$stmt = $db->prepare("SELECT url FROM google_slides WHERE prob > 0 ORDER BY category ASC, (prob/100) * rand() * rand() * rand() * rand() * rand() * rand() DESC");
-/*
-$num_galleries = count($galleries);
-if (!isset($_GET['gallery']) || !in_array($_GET['gallery'], $galleries)) {
-  $gallery = $galleries[mt_rand(0, $num_galleries-1)];
-} else {
-  $gallery = $_GET['gallery'];
+$denominator = array_sum($galleries);
+$sorted_rows = array_fill_keys($gallery_names, []); // list of urls, each duplicated to match its prob/weight
+// $row_counts = array_fill_keys($gallery_names, 0); // number of urls per category
+$num_urls = 0;
+foreach ($db->query("SELECT url, category, prob FROM google_slides WHERE prob > 0 ORDER BY prob DESC") as $row) {
+  for ($i=0; $i < $row['prob']; $i++) { 
+    $sorted_rows[$row['category']][] = $row['url'];
+  }
+  // $row_counts[$row['category']] += $row['prob'];
+  $num_urls += $row['prob'];
 }
-$stmt = $db->prepare("SELECT url FROM google_slides WHERE category = ? AND prob > 0 ORDER BY (prob/100) * rand() * rand() * rand() * rand() * rand() * rand() DESC");
-$stmt->execute([$gallery]);
-$files = array_column($stmt->fetchAll(), 'url');
-*/
+$files = [];
+foreach ($galleries as $gallery => $weight) {
+  shuffle($sorted_rows[$gallery]);
+  $allowed_space = ($galleries[$gallery]/$denominator);
+  $space_so_far = 0;
+  foreach ($sorted_rows[$gallery] as $url) {
+    $files[] = $url;
+    if ($allowed_space <= (($space_so_far++)/$num_urls)) {
+      break;
+    }
+  }
+}
+
 ?>
 <!doctype html>
 <html lang="en">
