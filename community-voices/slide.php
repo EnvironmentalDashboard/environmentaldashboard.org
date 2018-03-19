@@ -9,7 +9,7 @@ foreach ($galleries as $gallery => $numerator) {
     $galleries[$gallery] = $_GET[$gallery];
   }
 }
-$denominator = array_sum($galleries);
+$weight_sum = array_sum($galleries);
 $sorted_rows = array_fill_keys($gallery_names, []); // list of urls, each duplicated to match its prob/weight
 // $row_counts = array_fill_keys($gallery_names, 0); // number of urls per category
 $num_urls = 0;
@@ -23,7 +23,7 @@ foreach ($db->query("SELECT url, category, prob FROM google_slides WHERE prob > 
 $files = [];
 foreach ($galleries as $gallery => $weight) {
   shuffle($sorted_rows[$gallery]);
-  $allowed_space = ($galleries[$gallery]/$denominator);
+  $allowed_space = ($galleries[$gallery]/$weight_sum);
   $space_so_far = 0;
   foreach ($sorted_rows[$gallery] as $url) {
     $files[] = $url;
@@ -32,7 +32,7 @@ foreach ($galleries as $gallery => $weight) {
     }
   }
 }
-
+shuffle($files);
 ?>
 <!doctype html>
 <html lang="en">
