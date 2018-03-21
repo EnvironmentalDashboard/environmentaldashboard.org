@@ -1,6 +1,6 @@
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-65902947-1"></script>
 <script>
-  if (<?php echo ($production_server && !isset($_COOKIE['token'])) ? 'true' : 'false'; ?>) {
+  if (<?php echo (posix_uname()['nodename'] === 'environmentaldashboard.org' && !isset($_COOKIE['token'])) ? 'true' : 'false'; ?>) {
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
