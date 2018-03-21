@@ -1,9 +1,11 @@
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-65902947-1"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'UA-65902947-1');
+  if (<?php echo ($production_server && !isset($_COOKIE['token'])) ? 'true' : 'false'; ?>) {
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-65902947-1');
+  }
 </script>
 <div class="row">
   <div class="col banner-col">
