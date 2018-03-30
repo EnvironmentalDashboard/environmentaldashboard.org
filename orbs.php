@@ -1,4 +1,6 @@
 <?php
+error_reporting(-1);
+ini_set('display_errors', 'On');
 require '../includes/db.php';
 $rv_descriptions = ['very low', 'low', 'normal', 'high', 'very high'];
 $rv_colors = ['#4CAF50', '#8BC34A', '#eee', '#FF9800', '#F44336'];
@@ -63,15 +65,29 @@ $rv_color_names = ['green', 'light green', 'gray', 'orange', 'red'];
                 <?php
                 foreach (explode(',', $orb_array['name_csv']) as $i => $orb_name) {
                   echo "<li class='media row'>";
-                  if (is_numeric($orb_elec_rvids[$i]) && $orb_elec_uuids[$i] !== 'x') {
+                  if (is_numeric($orb_elec_rvids[$i]) && $orb_elec_uuids[$i] != null) {
                     $rv = $db->query("SELECT relative_value FROM relative_values WHERE id = ".intval($orb_elec_rvids[$i]))->fetchColumn();
                     $scaled_rv = round(($rv/100)*4);
-                    echo "<div class='col'><div style='height: 100px;width: 100px;border-radius: 100%;background: {$rv_colors[$scaled_rv]};margin-right: 10px;margin:0 auto;'></div><div class='media-body'><p style='text-align:center'>Electricity use in {$orb_name} is {$rv_descriptions[$scaled_rv]}</p><p style='text-align:center'><button type='button' data-target='#rvModal' data-toggle='modal' data-rvid='{$orb_elec_rvids[$i]}' data-rv='{$scaled_rv}' data-meter='{$orb_elec_uuids[$i]}' data-resource='Electricity' class='btn btn-primary btn-sm' href='#'>View calculation</button></p></div></div>";
+                    echo
+                    "<div class='col'>
+                      <div style='height: 100px;width: 100px;border-radius: 100%;background: {$rv_colors[$scaled_rv]};margin-right: 10px;margin:0 auto;' class='actual-orb' data-rvid='{$orb_elec_rvids[$i]}'></div>
+                      <div class='media-body'>
+                        <p style='text-align:center'>Electricity use in {$orb_name} is <span class='orb-description'>{$rv_descriptions[$scaled_rv]}</span></p>
+                        <p style='text-align:center'><button type='button' data-target='#rvModal' data-toggle='modal' data-rvid='{$orb_elec_rvids[$i]}' data-rv='{$scaled_rv}' data-meter='{$orb_elec_uuids[$i]}' data-resource='Electricity' class='btn btn-primary btn-sm view-calc-btn' href='#'>View calculation</button></p>
+                      </div>
+                    </div>";
                   }
-                  if (is_numeric($orb_water_rvids[$i]) && $orb_water_uuids[$i] !== 'x') {
+                  if (is_numeric($orb_water_rvids[$i]) && $orb_water_uuids[$i] != null) {
                     $rv = $db->query("SELECT relative_value FROM relative_values WHERE id = ".intval($orb_water_rvids[$i]))->fetchColumn();
                     $scaled_rv = round(($rv/100)*4);
-                    echo "<div class='col'><div style='height: 100px;width: 100px;border-radius: 100%;background: {$rv_colors[$scaled_rv]};margin-right: 10px;margin:0 auto;'></div><div class='media-body'><p style='text-align:center'>Water use in {$orb_name} is {$rv_descriptions[$scaled_rv]}</p><p style='text-align:center'><button type='button' data-target='#rvModal' data-toggle='modal' data-rvid='{$orb_water_rvids[$i]}' data-rv='{$scaled_rv}' data-meter='{$orb_water_uuids[$i]}' data-resource='Water' class='btn btn-primary btn-sm' href='#'>View calculation</button></p></div></div>";
+                    echo
+                    "<div class='col'>
+                      <div style='height: 100px;width: 100px;border-radius: 100%;background: {$rv_colors[$scaled_rv]};margin-right: 10px;margin:0 auto;' class='actual-orb' data-rvid='{$orb_water_rvids[$i]}'></div>
+                      <div class='media-body'>
+                        <p style='text-align:center'>Water use in {$orb_name} is <span class='orb-description'>{$rv_descriptions[$scaled_rv]}</span></p>
+                        <p style='text-align:center'><button type='button' data-target='#rvModal' data-toggle='modal' data-rvid='{$orb_water_rvids[$i]}' data-rv='{$scaled_rv}' data-meter='{$orb_water_uuids[$i]}' data-resource='Water' class='btn btn-primary btn-sm view-calc-btn' href='#'>View calculation</button></p>
+                      </div>
+                    </div>";
                   }
                   echo "</li>";
                 } ?>
@@ -85,14 +101,16 @@ $rv_color_names = ['green', 'light green', 'gray', 'orange', 'red'];
     </div>
     <?php include 'includes/js.php'; ?>
     <script>
-      var colors = <?php echo json_encode($rv_color_names); ?>;
+      var colors = <?php echo json_encode($rv_color_names); ?>,
+          rv_descriptions = <?php echo json_encode($rv_descriptions); ?>,
+          rv_color_codes = <?php echo json_encode($rv_colors); ?>;
       $('#rvModal').on('shown.bs.modal', function (e) {
         var button = $(e.relatedTarget);
         $.post( "includes/rv_calc.php", { rvid: button.data('rvid') }, function( json ) {
           $('#rvModalLabel').text('Why is the orb ' + colors[button.data('rv')] + '?');
           var typical = JSON.parse(json['typical']);
           var above = 0, below = 0;
-          console.log(json['typical'], json['current']);
+          // console.log(json['typical'], json['current']);
           for (var i = typical.length - 1; i >= 0; i--) {
             if (typical[i]['value'] < json['current']) {
               above++;
@@ -115,6 +133,25 @@ $rv_color_names = ['green', 'light green', 'gray', 'orange', 'red'];
         $('#data').empty();
         $('#explanation').text('');
       });
+      // reload orbs at the top of every min
+      var orb_order = [], orbs = [], descriptions = $('.orb-description'), btns = $('.view-calc-btn');
+      $('.actual-orb').each(function(i, orb) {
+        var $orb = $(orb);
+        orb_order.push($orb.data('rvid'));
+        orbs.push($orb);
+      });
+      var reload_in = 60 - new Date().getSeconds();
+      setInterval(function() {
+        reload_in = 60;
+        $.post( "includes/all_orbs.php", { order: JSON.stringify(orb_order) }, function( json ) {
+          for (var i = 0; i < json.length; i++) {
+            var scaled_rv = Math.round((json[i]/100)*4);
+            orbs[i].css('background', rv_color_codes[scaled_rv]);
+            $(descriptions[i]).text(rv_descriptions[scaled_rv]);
+            $(btns[i]).attr('data-rv', scaled_rv);
+          }
+        }, "json");
+      }, (reload_in + 3)*1000); // add 3 seconds to make sure cron has updated all orbs
     </script>
   </body>
 </html>
