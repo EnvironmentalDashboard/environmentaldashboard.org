@@ -40,13 +40,6 @@ for ($i=0; $i < $num_galleries; $i++) {
       <div class="row" style="padding: 30px">
         <div class="col text-center">
           <div id="cvSlider" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-              <li data-target="#cvSlider" data-slide-to="0" class="active"></li>
-              <li data-target="#cvSlider" data-slide-to="1"></li>
-              <li data-target="#cvSlider" data-slide-to="2"></li>
-              <li data-target="#cvSlider" data-slide-to="3"></li>
-              <li data-target="#cvSlider" data-slide-to="4"></li>
-            </ol>
             <div class="carousel-inner">
               <?php $i = 0; foreach ($urls[$galleries[0]] as $url) {
                 echo ($i++ === 0) ? '<div class="carousel-item active">' : '<div class="carousel-item">';

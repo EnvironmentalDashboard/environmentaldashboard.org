@@ -138,6 +138,7 @@ parse_str($_SERVER['QUERY_STRING'], $qs);
           </div>
           <div class="modal-body">
             <img src="" alt="" id="modal-img" class="img-fluid" style="width: 100%">
+            <p id="metadata" style="margin-top: 15px"></p>
           </div>
           <!-- <div class="modal-footer">
             <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
@@ -243,7 +244,7 @@ parse_str($_SERVER['QUERY_STRING'], $qs);
             foreach ($results as $row) {
               if (isset($cv_image_meta[$row['id']]['Message Text']) && isset($cv_image_meta[$row['id']]['Message Attribution'])) {
                 echo "<div class='card'>
-                        <img class='card-img-top' src='https://environmentaldashboard.org/images/uploads/gallery/{$galleries[$row['gid']]}/{$row['fn']}' alt='{$row['alt']}' data-toggle='modal' data-target='#imageModal' data-img='https://environmentaldashboard.org/images/uploads/gallery/{$galleries[$row['gid']]}/{$row['fn']}' data-alt='{$row['alt']}'>
+                        <img class='card-img-top' src='https://environmentaldashboard.org/images/uploads/gallery/{$galleries[$row['gid']]}/{$row['fn']}' alt='{$row['alt']}' data-toggle='modal' data-target='#imageModal' data-img='https://environmentaldashboard.org/images/uploads/gallery/{$galleries[$row['gid']]}/{$row['fn']}' data-alt='{$row['alt']}' data-imgid='{$row['id']}'>
                         <div class='card-body'>
                           <blockquote class='blockquote mb-0 card-body'>
                             <p>{$cv_image_meta[$row['id']]['Message Text']}</p>
@@ -313,10 +314,30 @@ parse_str($_SERVER['QUERY_STRING'], $qs);
     </div>
     <?php include '../includes/js.php'; ?>
     <script>
+      function img_metadata(id) {
+        // https://stackoverflow.com/a/9713078/2624391
+        var http = new XMLHttpRequest();
+        var url = "img_metadata.php";
+        var params = "id="+id;
+        http.open("POST", url, true);
+        http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+        http.onreadystatechange = function() {
+          if(http.readyState == 4 && http.status == 200) {
+            var json = JSON.parse(http.responseText);
+            for (var key in json) {
+              $('#metadata').append("<h4>"+key+"</h4><p>"+json[key]+"</p>");
+              // console.log(key, json[key]);
+            }
+          }
+        }
+        http.send(params);
+      }
       $('#imageModal').on('show.bs.modal', function (event) {
         var button = $(event.relatedTarget);
-        var img = button.data('img'), alt = button.data('alt');
+        var img = button.data('img'), alt = button.data('alt'), imgid = button.data('imgid');
         var modal = $(this);
+        $('#metadata').text('');
+        img_metadata(imgid);
         modal.find('.modal-title').text(alt);
         $('#modal-img').attr('src', img);
       });
