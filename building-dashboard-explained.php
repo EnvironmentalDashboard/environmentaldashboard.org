@@ -35,16 +35,22 @@
       </div>
       <div class="row text-center" style="margin: 10px 0px">
         <div class="col-12 col-sm-4" style="padding: 0px 30px">
-          <img class="img-fluid grow" src="https://environmentaldashboard.org/images/uploads/2015/07/icons-town1-300x300.png" alt="">
-          <p style="text-align: initial;margin-top: 20px">A variety of public buildings within the City of Oberlin have building dashboards and displays. Links here allow you to view dashboards for all four public schools, the Oberlin Public Library and Slow Train Cafe. digital signs in eleven locations in town display content.</p>
+          <a href="https://buildingos.com/s/oberlincity/storyboard314/?chapterId=1382">
+            <img class="img-fluid grow" src="https://environmentaldashboard.org/images/uploads/2015/07/icons-town1-300x300.png" alt="">
+            <p style="text-align: initial;margin-top: 20px">A variety of public buildings within the City of Oberlin have building dashboards and displays. Links here allow you to view dashboards for all four public schools, the Oberlin Public Library and Slow Train Cafe. digital signs in eleven locations in town display content.</p>
+          </a>
         </div>
         <div class="col-12 col-sm-4" style="padding: 0px 30px">
-          <img class="img-fluid grow" src="https://environmentaldashboard.org/images/uploads/2014/09/Finalpublicschoolsicon.jpg" alt="">
-          <p style="text-align: initial;margin-top: 20px">Separate Dashboards have been created for all four Oberlin City schools and the Langston School Board office. Each year students participate in "Ecolympics" in which students from all four public schools compete against each other to achieve the highest percentage reduction in electricity and water use.</p>
+          <a href="https://buildingos.com/s/oberlincity/storyboard314/?chapterId=1382">
+            <img class="img-fluid grow" src="https://environmentaldashboard.org/images/uploads/2014/09/Finalpublicschoolsicon.jpg" alt="">
+            <p style="text-align: initial;margin-top: 20px">Separate Dashboards have been created for all four Oberlin City schools and the Langston School Board office. Each year students participate in "Ecolympics" in which students from all four public schools compete against each other to achieve the highest percentage reduction in electricity and water use.</p>
+          </a>
         </div>
         <div class="col-12 col-sm-4" style="padding: 0px 30px">
-          <img class="img-fluid grow" src="https://environmentaldashboard.org/images/uploads/2015/07/icons-college-300x300.png" alt="">
-          <p style="text-align: initial;margin-top: 20px">Separate Building Dashboards have been created for all twenty six dormitories at Oberlin College. Each year dormitory residents participate in “Campus Conservation Nationals” in which dormitory residents compete against other dorms on campus and collaborate nationally to achieve electricity and water use reductions.</p>
+          <a href="https://buildingos.com/reports/dashboards/282f6022666d11e7a61b525400d1fc46">
+            <img class="img-fluid grow" src="https://environmentaldashboard.org/images/uploads/2015/07/icons-college-300x300.png" alt="">
+            <p style="text-align: initial;margin-top: 20px">Separate Building Dashboards have been created for all twenty six dormitories at Oberlin College. Each year dormitory residents participate in “Campus Conservation Nationals” in which dormitory residents compete against other dorms on campus and collaborate nationally to achieve electricity and water use reductions.</p>
+          </a>
         </div>
       </div>
       <div class="row">
