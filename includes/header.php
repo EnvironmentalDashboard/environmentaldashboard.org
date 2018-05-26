@@ -1,12 +1,12 @@
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-65902947-1"></script>
-<script>
-  if (<?php echo (posix_uname()['nodename'] === 'environmentaldashboard' && !isset($_COOKIE['token'])) ? 'true' : 'false'; ?>) {
+<?php if (posix_uname()['nodename'] === 'environmentaldashboard' && !isset($_COOKIE['token'])) { ?>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-65902947-1"></script>
+  <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'UA-65902947-1');
-  }
-</script>
+  </script>
+<?php } ?>
 <div class="row">
   <div class="col banner-col">
     <a href="/"><img src="https://environmentaldashboard.org/images/banner.jpg" alt="" class="img-fluid"></a>
