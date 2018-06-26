@@ -1,10 +1,5 @@
 <?php
 require '../includes/db.php';
-if ($user_id === 1) { // because no user slug means default to oberlin
-  $symlink = 'oberlin';
-} else {
-  $symlink = explode('/', $_SERVER['REQUEST_URI'])[1];
-}
 ?>
 <!doctype html>
 <html lang="en">
