@@ -29,7 +29,7 @@ if (isset($_GET['submit'])) {
     $sql2 = ' AND title LIKE ?';
     $params[] = "%{$search_query}%";
   }
-  $stmt = $db->prepare("SELECT SQL_CALC_FOUND_ROWS id, title, pdf, gmt FROM cv_lessons WHERE id IN (SELECT lesson_id FROM cv_lesson_meta {$sql}){$sql2} ORDER BY gmt DESC LIMIT {$offset}, {$limit}");
+  $stmt = $db->prepare("SELECT SQL_CALC_FOUND_ROWS id, title, pdf, published FROM cv_lessons WHERE id IN (SELECT lesson_id FROM cv_lesson_meta {$sql}){$sql2} ORDER BY published DESC LIMIT {$offset}, {$limit}");
   $stmt->execute($params);
   $search_results = $stmt->fetchAll();
   $count = $db->query('SELECT FOUND_ROWS();')->fetchColumn();
@@ -123,7 +123,7 @@ parse_str($_SERVER['QUERY_STRING'], $qs);
             echo "{$buf}</p>";
             echo "<embed src='' width='100%' height='600' type='application/pdf' style='display:none;margin-bottom:10px' id='pdf{$pdf_id}'>";
             echo "<p style='margin:15px 0px 0px 0px'><a class='btn btn-primary open-pdf' href='#' data-pdf-url='{$result['pdf']}' data-pdf-id='pdf{$pdf_id}'>Open PDF</a> <a class='btn btn-secondary' href='{$result['pdf']}' download>Download PDF</a></p>";
-            echo "</div><div class='card-footer bg-light'>".date('F jS, Y', strtotime($result['gmt']))."</div></div>";
+            echo "</div><div class='card-footer bg-light'>".date('F jS, Y', strtotime($result['published']))."</div></div>";
             $pdf_id++;
           }
           if ($pdf_id === 0) {
