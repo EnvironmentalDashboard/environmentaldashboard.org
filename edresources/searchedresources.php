@@ -3,14 +3,14 @@ require '../../includes/db.php';
 error_reporting(-1);
 ini_set('display_errors', 'On');
 $params = [];
-if (isset($_POST['submit'])) {
-  $page = (empty($_POST['page'])) ? 0 : intval($_POST['page']) - 1;
+if (isset($_GET['submit'])) {
+  $page = (empty($_GET['page'])) ? 0 : intval($_GET['page']) - 1;
   $limit = 7;
   $offset = $limit * $page;
   $query = true;
   $sql = '';
   $search_query = '';
-  foreach ($_POST as $key => $value) {
+  foreach ($_GET as $key => $value) {
     if ($value === 'all' || $key === 'submit' || $key === 'query' || $key === 'page') {
       if ($key === 'query') {
         $search_query = $value;
@@ -99,13 +99,13 @@ function format_key($str) {
           <p>Educators from a variety of schools have creatively employed Environmental Dashboard to teach a variety of concepts, subjects and levels.  Use the selectors below to search our repository for Dashboard-related lessons and units by title, topic, grade level or any of the other search fields alone or in combination.</p>
           <p>For example, a search for the term "electricity" will take you to titles and summary descriptions of all lessons tagged as being related.  From  this list you can click and download PDFs of complete lessons.  This <a href="https://docs.google.com/document/d/1uJLghYhpDRiZadqeeacH2aUyiedKHI0DhQs_QWsQjLM/edit">Navigation Guide to BuildingOS</a> may be a useful resource as a general introduction to the tools and apps in the BuildingOS component of Dashboard.</p>
           <?php } ?>
-          <form action="" method="POST">
+          <form action="" method="GET">
             <div class="card bg-light mb-3">
               <div class="card-body">
                 <div class="row">
                   <div class="col-12" style="margin-bottom: 10px">
                     <label for="query">Search</label>
-                    <input type="text" class="form-control" id="query" name="query" value="<?php echo (isset($_POST['query'])) ? $_POST['query'] : '' ?>" placeholder="Enter search terms">
+                    <input type="text" class="form-control" id="query" name="query" value="<?php echo (isset($_GET['query'])) ? $_GET['query'] : '' ?>" placeholder="Enter search terms">
                   </div>
                   <?php foreach ($db->query('SELECT DISTINCT `key` FROM cv_lesson_meta ORDER BY `key` ASC') as $i => $row) {
                     if (in_array($row['key'], ['Materials', 'Objectives', 'Summary'])) {
@@ -117,7 +117,7 @@ function format_key($str) {
                     echo "<div style='max-height:130px;overflow-y:scroll'>";
                     $stmt = $db->prepare('SELECT DISTINCT value FROM cv_lesson_meta WHERE `key` = ? ORDER BY value ASC');
                     $stmt->execute([$row['key']]);
-                    $isset = isset($_POST[$encoded_key]);
+                    $isset = isset($_GET[$encoded_key]);
                     $rows = $stmt->fetchAll();
                     if ($row['key'] === 'Select grade level(s)') {
                       usort($rows, 'cmp');
@@ -126,8 +126,8 @@ function format_key($str) {
                       $uniq = uniqid();
                       $encoded_val = str_replace(' ', '$WS$', $row2['value']);
                       if (
-                          ($isset && is_array($_POST[$encoded_key]) && in_array($encoded_val, $_POST[$encoded_key])) || 
-                          ($isset && $_POST[$encoded_key] === $encoded_val)
+                          ($isset && is_array($_GET[$encoded_key]) && in_array($encoded_val, $_GET[$encoded_key])) || 
+                          ($isset && $_GET[$encoded_key] === $encoded_val)
                         ) { // checked checkbox
                         $row2['value'] = ucwords($row2['value']);
                         echo "<div class=\"custom-control custom-checkbox\">
