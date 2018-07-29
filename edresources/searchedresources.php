@@ -18,10 +18,10 @@ if (isset($_POST['submit'])) {
       continue;
     }
     foreach ($value as $v) {
-      $sql .= "(`key` = ? AND value = ?) AND ";
+      $sql .= "(`key` = ? AND value = ?) OR ";
       $params[] = str_replace('$WS$', ' ', $key);
       $params[] = str_replace('$WS$', ' ', $v);
-      // $sql .= "(`key` = '".str_replace('$WS$', ' ', $key)."' AND value = '".str_replace('$WS$', ' ', $v)."') AND ";
+      // $sql .= "(`key` = '".str_replace('$WS$', ' ', $key)."' AND value = '".str_replace('$WS$', ' ', $v)."') OR ";
     }
   }
   if ($sql !== '') {
@@ -108,7 +108,7 @@ function format_key($str) {
                     <input type="text" class="form-control" id="query" name="query" value="<?php echo (isset($_POST['query'])) ? $_POST['query'] : '' ?>" placeholder="Enter search terms">
                   </div>
                   <?php foreach ($db->query('SELECT DISTINCT `key` FROM cv_lesson_meta ORDER BY `key` ASC') as $i => $row) {
-                    if (in_array($row['key'], ['Materials', 'Objectives', 'Excerpt'])) {
+                    if (in_array($row['key'], ['Materials', 'Objectives', 'Summary'])) {
                       continue;
                     }
                     echo ($query) ? "<div class='col-12'>" : "<div class='col-12 col-sm-6 col-md-4'>";
@@ -160,13 +160,13 @@ function format_key($str) {
             $count = count($rows);
             $buf = '';
             for ($i=0; $i < $count; $i++) {
-              if ($rows[$i]['key'] === 'Excerpt') { // print excerpt first at top
+              if ($rows[$i]['key'] === 'Summary') { // print summary first at top
                 $buf .= "<p style='margin-bottom:2px' class='card-text classpdf{$pdf_id}'><b>{$rows[$i]['key']}</b>: {$rows[$i]['value']}</p>";
                 break;
               }
             }
             for ($i=0; $i < $count; $i++) { 
-              if ($rows[$i]['key'] === 'Excerpt') {
+              if ($rows[$i]['key'] === 'Summary') {
                 continue;
               }
               if ($last_key !== $rows[$i]['key']) {
