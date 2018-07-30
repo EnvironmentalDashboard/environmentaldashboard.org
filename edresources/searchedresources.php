@@ -17,17 +17,40 @@ if (isset($_GET['submit'])) {
       }
       continue;
     }
-    foreach ($value as $v) {
-      $sql .= "(`key` = ? AND value = ?) OR ";
+    $sql .= "(";
+    $count = count($value)-1;
+    foreach ($value as $i => $v) {
+      $sql .= ($i===$count) ? "(`key` = ? AND value = ?) " : "(`key` = ? AND value = ?) OR ";
       $params[] = str_replace('$WS$', ' ', $key);
       $params[] = str_replace('$WS$', ' ', $v);
-      // $sql .= "(`key` = '".str_replace('$WS$', ' ', $key)."' AND value = '".str_replace('$WS$', ' ', $v)."') OR ";
+      // $sql .= ($i===$count) ? "(`key` = '".str_replace('$WS$', ' ', $key)."' AND value = '".str_replace('$WS$', ' ', $v)."') " : "(`key` = '".str_replace('$WS$', ' ', $key)."' AND value = '".str_replace('$WS$', ' ', $v)."') OR ";
     }
+    $sql .= ") OR ";
   }
   if ($sql !== '') {
     $sql = 'WHERE ' . substr($sql, 0, -4); // remove the final ' OR '
   }
+  $stmt = $db->prepare("SELECT lesson_id, `key`, value FROM cv_lesson_meta {$sql} ORDER BY lesson_id");
+  $stmt->execute($params);
+  $ids = [];
+  $tmp = $params;
+  $last_lesson_id = null;
+  foreach ($stmt->fetchAll() as $row) {
+    if (empty($tmp) && $last_lesson_id !== $row['lesson_id']) {
+      $ids[] = $last_lesson_id;
+      $tmp = $params;
+    }
+    if (in_array($row['key'], $tmp)) {
+      unset($tmp[array_search($row['key'], $tmp)]);
+    }
+    if (in_array($row['value'], $params)) {
+      unset($tmp[array_search($row['value'], $tmp)]);
+    }
+    $last_lesson_id = $row['lesson_id'];
+  }
+  $sql = implode(',', $ids);
   $sql2 = '';
+  $params = [];
   if (strlen($search_query) > 0) {
     $sql2 = ' AND (title LIKE ? OR id IN (SELECT lesson_id FROM cv_lesson_meta WHERE value LIKE ?))';
     $params[] = "%{$search_query}%";
@@ -35,7 +58,8 @@ if (isset($_GET['submit'])) {
   }
   // var_dump($params);
   // echo "SELECT SQL_CALC_FOUND_ROWS id, title, pdf, published FROM cv_lessons WHERE id IN (SELECT lesson_id FROM cv_lesson_meta {$sql}){$sql2} ORDER BY published DESC LIMIT {$offset}, {$limit}";die;
-  $stmt = $db->prepare("SELECT SQL_CALC_FOUND_ROWS id, title, pdf, published FROM cv_lessons WHERE id IN (SELECT lesson_id FROM cv_lesson_meta {$sql}){$sql2} ORDER BY published DESC LIMIT {$offset}, {$limit}");
+  // echo "SELECT SQL_CALC_FOUND_ROWS id, title, pdf, published FROM cv_lessons WHERE id IN ({$sql}){$sql2} ORDER BY published DESC LIMIT {$offset}, {$limit}";die;
+  $stmt = $db->prepare("SELECT SQL_CALC_FOUND_ROWS id, title, pdf, published FROM cv_lessons WHERE id IN ({$sql}){$sql2} ORDER BY published DESC LIMIT {$offset}, {$limit}");
   $stmt->execute($params);
   $search_results = $stmt->fetchAll();
   $count = $db->query('SELECT FOUND_ROWS();')->fetchColumn();
