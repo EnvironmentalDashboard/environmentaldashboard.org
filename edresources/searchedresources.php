@@ -277,7 +277,7 @@ function format_key($str) {
         e.preventDefault();
         $('input:not(input[type="submit"])').val('');
         $('select').val('all');
-        $('input:checkbox').removeAttr('checked');
+        $('input[type=checkbox]').prop('checked',false);
       });
     </script>
   </body>
