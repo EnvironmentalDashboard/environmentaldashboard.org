@@ -14,14 +14,14 @@
 </div>
 <nav class="navbar sticky-top navbar-expand-lg navbar-dark" style="background: #21a7df;padding-top: 0px;padding-bottom: 0px">
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
+  <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarNavDropdown">
     <ul class="navbar-nav">
       <li class="nav-item dropdown" id="hover1">
         <a class="nav-link dropdown-toggle" href="/cwd" id="navbarDropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Citywide Dashboard
-        </a>
+        Citywide Dashboard
+      </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink1" id="hover_target1">
           <a class="dropdown-item" href="/cwd">Citywide View</a>
           <a class="dropdown-item" href="http://buildingdashboard.net/oberlincity/#/oberlincity/cityelectricity/">Electricity</a>
@@ -33,8 +33,8 @@
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="/building-dashboard-explained" id="navbarDropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Building Dashboard
-        </a>
+        Building Dashboard
+      </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink2">
           <a class="dropdown-item" href="/building-dashboard-explained">Building Dashboard Explained</a>
 
@@ -63,23 +63,16 @@
           <a href="https://palmer.buildingos.com/reports/dashboards/c59fde5ec0db11e7aff5525400391da3" class="dropdown-item" target="_blank">Toledo Public Schools</a>
         </div>
       </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Community Voices
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink5">
-          <a class="dropdown-item" href="/community-voices/slides">View Slides</a>
-          <a class="dropdown-item" href="/community-voices/">View Articles</a>
-          <a class="dropdown-item" href="/community-voices/image-search">Advanced Image Search</a>
-        </div>
+      <li class="nav-item">
+        <a class="nav-link" href="/community-voices/">Community Voices</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="/calendar">Events Calendar</a>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink6" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          More
-        </a>
+        More
+      </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink6" style="left: -250%">
           <a class="dropdown-item" href="/resources-explained">Resources Explained</a>
           <a class="dropdown-item" href="/story-of-dashboard">Story of Dashboard</a>
@@ -88,8 +81,8 @@
           <div class="dropdown">
             <a class="dropdown-item dropdown-toggle" href="#" id="navbarDropdownMenuLink7" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Instructor Toolkit</a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink7">
-              <li><a class="dropdown-item" href="/edresources/searchedresources">Search</a></li>
               <li><a class="dropdown-item" href="/edresources">About</a></li>
+              <li><a class="dropdown-item" href="/edresources/searchedresources">Search K12</a></li>
               <!-- <li><a class="dropdown-item" href="/edresources/workshops">Teacher Workshop</a></li> -->
             </ul>
           </div>
