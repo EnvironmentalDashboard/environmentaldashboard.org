@@ -63,7 +63,7 @@ if (!$need_org_selection || $orgs_selected) { // if no bos orgs need to be selec
     " && mkdir ".escapeshellarg("/var/www/repos/environmentaldashboard.org/symlinks/{$slug}").
     " && ln -s /var/www/repos/calendar ".escapeshellarg("/var/www/repos/environmentaldashboard.org/symlinks/{$slug}/calendar").
     " && cp -r /var/www/repos/calendar/css/repos ".escapeshellarg("/var/www/repos/calendar/css/{$slug}").
-    " && sed -ie 's/3F51B5/{$new_hex_color}/g' ".escapeshellarg("/var/www/repos/calendar/css/{$slug}")
+    " && find ".escapeshellarg("/var/www/repos/calendar/css/{$slug}")." -type f -exec sed -i 's/3F51B5/{$new_hex_color}/g' {} +"
   );
   // create new time series/cwd config using oberlins settings as default
   $db->exec("INSERT INTO cwd_bos (user_id, squirrel, fish, water_speed, electricity_speed, landing_messages, electricity_messages, gas_messages, stream_messages, water_messages, weather_messages) SELECT {$user_id}, squirrel, fish, water_speed, electricity_speed, landing_messages, electricity_messages, gas_messages, stream_messages, water_messages, weather_messages FROM cwd_bos WHERE user_id = 1");
@@ -72,15 +72,23 @@ if (!$need_org_selection || $orgs_selected) { // if no bos orgs need to be selec
   $db->exec("INSERT INTO cwd_states (resource, user_id, gauge1, gauge2, gauge3, gauge4, `on`) SELECT resource, {$user_id}, gauge1, gauge2, gauge3, gauge4, `on` FROM cwd_states WHERE user_id = 1");
   $db->exec("INSERT INTO time_series (name, user_id, length, bin1, bin2, bin3, bin4, bin5) SELECT name, {$user_id}, length, bin1, bin2, bin3, bin4, bin5 FROM time_series WHERE user_id = 1");
   $db->exec("INSERT INTO timing (user_id, message_section, delay, `interval`) SELECT {$user_id}, message_section, delay, `interval` FROM timing WHERE user_id = 1");
-  // write files for calendar
+  // write files for calendar, replace "repos" with $slug" in written includes/snippets files
   copy('/var/www/repos/calendar/includes/snippets/detail/repos_bottom.php', "/var/www/repos/calendar/includes/snippets/detail/{$slug}_bottom.php");
+  shell_exec("sed -ie ".escapeshellarg("s/repos/{$slug}/g")." ".escapeshellarg("/var/www/repos/calendar/includes/snippets/detail/{$slug}_bottom.php"));
   copy('/var/www/repos/calendar/includes/snippets/detail/repos_top.php', "/var/www/repos/calendar/includes/snippets/detail/{$slug}_top.php");
+  shell_exec("sed -ie ".escapeshellarg("s/repos/{$slug}/g")." ".escapeshellarg("/var/www/repos/calendar/includes/snippets/detail/{$slug}_top.php"));
   copy('/var/www/repos/calendar/includes/snippets/detail-calendar/repos_bottom.php', "/var/www/repos/calendar/includes/snippets/detail-calendar/{$slug}_bottom.php");
+  shell_exec("sed -ie ".escapeshellarg("s/repos/{$slug}/g")." ".escapeshellarg("/var/www/repos/calendar/includes/snippets/detail-calendar/{$slug}_bottom.php"));
   copy('/var/www/repos/calendar/includes/snippets/detail-calendar/repos_top.php', "/var/www/repos/calendar/includes/snippets/detail-calendar/{$slug}_top.php");
+  shell_exec("sed -ie ".escapeshellarg("s/repos/{$slug}/g")." ".escapeshellarg("/var/www/repos/calendar/includes/snippets/detail-calendar/{$slug}_top.php"));
   copy('/var/www/repos/calendar/includes/snippets/event-form/repos_bottom.php', "/var/www/repos/calendar/includes/snippets/event-form/{$slug}_bottom.php");
+  shell_exec("sed -ie ".escapeshellarg("s/repos/{$slug}/g")." ".escapeshellarg("/var/www/repos/calendar/includes/snippets/event-form/{$slug}_bottom.php"));
   copy('/var/www/repos/calendar/includes/snippets/event-form/repos_top.php', "/var/www/repos/calendar/includes/snippets/event-form/{$slug}_top.php");
+  shell_exec("sed -ie ".escapeshellarg("s/repos/{$slug}/g")." ".escapeshellarg("/var/www/repos/calendar/includes/snippets/event-form/{$slug}_top.php"));
   copy('/var/www/repos/calendar/includes/snippets/index/repos_bottom.php', "/var/www/repos/calendar/includes/snippets/index/{$slug}_bottom.php");
+  shell_exec("sed -ie ".escapeshellarg("s/repos/{$slug}/g")." ".escapeshellarg("/var/www/repos/calendar/includes/snippets/index/{$slug}_bottom.php"));
   copy('/var/www/repos/calendar/includes/snippets/index/repos_top.php', "/var/www/repos/calendar/includes/snippets/index/{$slug}_top.php");
+  shell_exec("sed -ie ".escapeshellarg("s/repos/{$slug}/g")." ".escapeshellarg("/var/www/repos/calendar/includes/snippets/index/{$slug}_top.php"));
   setcookie('token', $token, time()+60*60*24*30, "/{$slug}/");
   header("Location: /{$slug}/prefs/account.php");
   exit();
