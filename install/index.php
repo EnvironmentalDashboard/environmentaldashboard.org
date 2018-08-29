@@ -142,7 +142,7 @@ require '../../includes/db.php';
         $('#apps_csv').text(selections.join(', '));
         $('#need_org_selection').val('1');
       } else {
-        $(this).submit();
+        this.form.submit();
       }
     });
     var slug_row = $('#slug-row');
