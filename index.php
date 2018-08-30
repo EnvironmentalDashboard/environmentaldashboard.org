@@ -79,7 +79,7 @@
           <p style="text-align: initial;padding: 0px 15px;">Measure electricity and water consumption in schools, businesses, public facilities and homes and translate this into animated displays.</p>
         </div>
         <div class="col-12 col-sm-3 text-center">
-          <a href="/community-voices">
+          <a href="/community-voices/">
             <img src="https://environmentaldashboard.org/images/uploads/2015/07/icons-home-family-300x300.png" alt="" class="img-fluid" onmouseover="this.src='https://environmentaldashboard.org/images/uploads/2015/07/cv_logo_hr-300x300.png'" onmouseout="this.src='https://environmentaldashboard.org/images/uploads/2015/07/icons-home-family-300x300.png'">
           </a>
           <h4 style="color: #5aba50;margin-top: 10px">Community Voices</h4>
