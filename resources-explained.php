@@ -30,7 +30,7 @@
             <a class="nav-link" id="town-tab" data-toggle="pill" href="#town" role="tab" aria-controls="town" aria-selected="false">The Town of Oberlin</a>
             <a class="nav-link" id="college-tab" data-toggle="pill" href="#college" role="tab" aria-controls="college" aria-selected="false">Oberlin College</a>
             <a class="nav-link" id="tappan-tab" data-toggle="pill" href="#tappan" role="tab" aria-controls="tappan" aria-selected="false">Tappan Square</a>
-            <a class="nav-link" id="v-pills-profiyou-tab" data-toggle="pill" href="#v-pills-profiyou" role="tab" aria-controls="v-pills-profiyou" aria-selected="false">You!</a>
+            <a class="nav-link" id="you-tab" data-toggle="pill" href="#you" role="tab" aria-controls="you" aria-selected="false">You!</a>
             <a class="nav-link" id="ref-tab" data-toggle="pill" href="#ref" role="tab" aria-controls="ref" aria-selected="false">References and Notes</a>
           </div>
         </div>
