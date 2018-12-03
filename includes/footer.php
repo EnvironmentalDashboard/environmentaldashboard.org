@@ -31,5 +31,6 @@
   <div class="col text-center" style="padding-bottom: 50px">
     <a href="https://www.facebook.com/oberlindashboard/" class="btn btn-primary" style="height: 35px;width: 35px;padding: 5px"><img src="https://environmentaldashboard.org/images/facebook-f.svg" alt="Environmental Dashboard on Facebook" style="height: 100%"></a>
     <a href="https://twitter.com/envirodashboard" class="btn btn-primary" style="height: 35px;width: 35px;padding: 5px"><img src="https://environmentaldashboard.org/images/twitter.svg" style="height: 100%" alt="Environmental Dashboard on Twitter"></a>
+    <a href="https://www.instagram.com/environmentaldashboard_project/" class="btn btn-primary" style="height: 35px;width: 35px;padding: 5px"><img src="https://environmentaldashboard.org/images/instagram.svg" style="height: 100%" alt="Environmental Dashboard on Instagram"></a>
   </div>
 </div>
