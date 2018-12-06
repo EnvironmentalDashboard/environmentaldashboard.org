@@ -82,7 +82,7 @@
             <a class="dropdown-item dropdown-toggle" href="#" id="navbarDropdownMenuLink7" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Instructor Toolkit</a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink7">
               <li><a class="dropdown-item" href="/edresources">About</a></li>
-              <li><a class="dropdown-item" href="/edresources/searchedresources">Search K12</a></li>
+              <li><a class="dropdown-item" href="/edresources/searchedresources">Search</a></li>
               <!-- <li><a class="dropdown-item" href="/edresources/workshops">Teacher Workshop</a></li> -->
             </ul>
           </div>
