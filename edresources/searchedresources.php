@@ -29,25 +29,14 @@ if (isset($_GET['submit'])) {
   }
   if ($sql !== '') {
     $sql = 'WHERE ' . substr($sql, 0, -4); // remove the final ' OR '
-    $stmt = $db->prepare("SELECT lesson_id, `key`, value FROM cv_lesson_meta {$sql} ORDER BY lesson_id");
+    $stmt = $db->prepare("SELECT lesson_id FROM cv_lesson_meta {$sql} ORDER BY lesson_id");
     $stmt->execute($params);
-    $ids = [];
-    $tmp = $params;
-    $last_lesson_id = null;
-    foreach ($stmt->fetchAll() as $row) {
-      if (empty($tmp) && $last_lesson_id !== $row['lesson_id']) {
-        $ids[] = $last_lesson_id;
-        $tmp = $params;
-      }
-      if (in_array($row['key'], $tmp)) {
-        unset($tmp[array_search($row['key'], $tmp)]);
-      }
-      if (in_array($row['value'], $params)) {
-        unset($tmp[array_search($row['value'], $tmp)]);
-      }
-      $last_lesson_id = $row['lesson_id'];
+    if ($stmt->rowCount() > 0) {
+      $ids = array_column($stmt->fetchAll(), 'lesson_id');
+      $sql = 'WHERE id IN (' . implode(',', $ids) . ') ';
+    } else { // we didnt find any lessons that matched meta data
+      $sql = '';
     }
-    $sql = 'WHERE id IN (' . implode(',', $ids) . ') ';
   }
   $sql2 = '';
   $params = [];
