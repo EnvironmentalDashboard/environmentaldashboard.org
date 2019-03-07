@@ -20,7 +20,7 @@ require '../includes/db.php';
   <body>
     <div class="container">
       <?php include 'includes/header.php'; ?>
-      <object type="image/svg+xml" data="//environmentaldashboard.org/<?php echo $symlink ?>/cwd-files/dashboard.php?<?php echo http_build_query($_GET); ?>" class='img-fluid'></object>
+      <object type="image/svg+xml" data="//<?php echo $subdomain ?>.environmentaldashboard.org/cwd-files/dashboard.php?<?php echo http_build_query($_GET); ?>" class='img-fluid'></object>
       <?php include 'includes/footer.php'; ?>
     </div>
     <?php include 'includes/js.php'; ?>
