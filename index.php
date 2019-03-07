@@ -18,7 +18,7 @@
     <div class="container">
       <?php include 'includes/header.php'; ?>
       <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators" style="top: 10px">
+        <ol class="carousel-indicators" style="top: 10px; height: 5px">
           <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
           <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
           <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
@@ -33,22 +33,22 @@
             <img class="d-block w-100" src="https://environmentaldashboard.org/images/uploads/2015/07/homepage-slider2-welcome1.jpg" alt="First slide">
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" src="https://environmentaldashboard.org/images/uploads/2015/07/homepage-slider2-our-mission.jpg" alt="Second slide">
+            <a href="/mission"><img class="d-block w-100" src="https://environmentaldashboard.org/images/uploads/2015/07/homepage-slider2-our-mission.jpg" alt="Second slide"></a>
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" src="https://environmentaldashboard.org/images/uploads/2015/07/homepage-slider2-project1.jpg" alt="Third slide">
+            <a href="/story-of-dashboard"><img class="d-block w-100" src="https://environmentaldashboard.org/images/uploads/2015/07/homepage-slider2-project1.jpg" alt="Third slide"></a>
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" src="https://environmentaldashboard.org/images/uploads/2015/07/homepage-slider2-resources1.jpg" alt="Fourth slide">
+            <a href="/resources-explained"><img class="d-block w-100" src="https://environmentaldashboard.org/images/uploads/2015/07/homepage-slider2-resources1.jpg" alt="Fourth slide"></a>
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" src="https://environmentaldashboard.org/images/uploads/2015/07/homepage-slider2-schools1.jpg" alt="Fifth slide">
+            <a href="https://buildingos.com/s/oberlincity/storyboard314/?chapterId=1390"><img class="d-block w-100" src="https://environmentaldashboard.org/images/uploads/2015/07/homepage-slider2-schools1.jpg" alt="Fifth slide"></a>
           </div>
           <div class="carousel-item">
             <img class="d-block w-100" src="https://environmentaldashboard.org/images/uploads/2015/07/homepage-slider2-digital-signage1.jpg" alt="Sixth slide">
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" src="https://environmentaldashboard.org/images/uploads/2015/07/homepage-slider2-community-voices1.jpg" alt="Seventh slide">
+            <a href="/community-voices/"><img class="d-block w-100" src="https://environmentaldashboard.org/images/uploads/2015/07/homepage-slider2-community-voices1.jpg" alt="Seventh slide"></a>
           </div>
           <div class="carousel-item">
             <img class="d-block w-100" src="https://environmentaldashboard.org/images/uploads/2015/07/homepage-slider2-building-dbs2.jpg" alt="Eighth slide">
