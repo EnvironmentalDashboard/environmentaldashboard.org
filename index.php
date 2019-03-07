@@ -42,7 +42,7 @@
             <a href="https://environmentaldashboard.org/resources-explained"><img class="d-block w-100" src="https://environmentaldashboard.org/images/uploads/2015/07/homepage-slider2-resources1.jpg" alt="Fourth slide"></a>
           </div>
           <div class="carousel-item">
-            <a href=-"https://buildingos.com/s/oberlincity/storyboard314/?chapterId=1390"><img class="d-block w-100" src="https://environmentaldashboard.org/images/uploads/2015/07/homepage-slider2-schools1.jpg" alt="Fifth slide"></a>
+            <a href="https://buildingos.com/s/oberlincity/storyboard314/?chapterId=1390"><img class="d-block w-100" src="https://environmentaldashboard.org/images/uploads/2015/07/homepage-slider2-schools1.jpg" alt="Fifth slide"></a>
           </div>
           <div class="carousel-item">
             <img class="d-block w-100" src="https://environmentaldashboard.org/images/uploads/2015/07/homepage-slider2-digital-signage1.jpg" alt="Sixth slide">
