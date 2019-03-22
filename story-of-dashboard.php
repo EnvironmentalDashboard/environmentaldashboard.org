@@ -105,8 +105,6 @@
       </div>
 
 
-
-
     </div>
       <div style="clear: both;height: 30px"></div>
       <?php include 'includes/footer.php'; ?>
