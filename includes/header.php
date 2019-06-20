@@ -101,3 +101,8 @@
     </ul>
   </div>
 </nav>
+<a href="/cle">
+  <div class="alert alert-primary mb-0" role="alert" style="width: 100%">
+    Click here to check out our new display for Cleveland's Great Lakes Science Center!
+  </div>
+</a>
