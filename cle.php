@@ -1,6 +1,3 @@
-<?php
-require '../includes/db.php';
-?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -20,8 +17,8 @@ require '../includes/db.php';
   <body>
     <div class="container">
       <?php include 'includes/header.php'; ?>
-      <iframe src="https://environmentaldashboard.org/digital-signage/display/1/present" frameborder="0" style="width: 100vw"></iframe>
-      <iframe src="https://environmentaldashboard.org/digital-signage/remote/1" frameborder="0" style="width: 100vw"></iframe>
+      <iframe src="https://environmentaldashboard.org/digital-signage/display/1/present" frameborder="0" style="width: 100%;height: 80vh"></iframe>
+      <iframe src="https://environmentaldashboard.org/digital-signage/remote/1" frameborder="0" style="width: 100%"></iframe>
       <?php include 'includes/footer.php'; ?>
     </div>
     <?php include 'includes/js.php'; ?>
