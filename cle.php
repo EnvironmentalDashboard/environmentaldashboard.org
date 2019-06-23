@@ -17,8 +17,8 @@
   <body>
     <div class="container">
       <?php include 'includes/header.php'; ?>
-      <iframe src="https://environmentaldashboard.org/digital-signage/display/1/present" frameborder="0" style="width: 100%;height: 80vh"></iframe>
-      <iframe src="https://environmentaldashboard.org/digital-signage/remote/1" frameborder="0" style="width: 100%"></iframe>
+      <iframe src="https://environmentaldashboard.org/digital-signage/display/4/present" frameborder="0" style="width: 80%;height: 80vh;display: inline"></iframe>
+      <iframe src="https://environmentaldashboard.org/digital-signage/remote/3" frameborder="0" style="height: 80vh;width: 19%;display: inline"></iframe>
       <?php include 'includes/footer.php'; ?>
     </div>
     <?php include 'includes/js.php'; ?>
