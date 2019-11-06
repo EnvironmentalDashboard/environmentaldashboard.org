@@ -6,11 +6,11 @@ ENV APACHE_RUN_USER=www-data APACHE_RUN_GROUP=www-data APACHE_LOG_DIR=/var/log/a
 ENV TZ=America/New_York
 # timezone: https://serverfault.com/a/683651/456938
 RUN apt-get update && \
-  apt-get -qq -y install apt-utils git tzdata apache2 php libapache2-mod-php php-mcrypt php-mysql curl && \
+  apt-get -qq -y install apt-utils git tzdata apache2 php libapache2-mod-php php-mysql curl && \
   ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 COPY . /var/www/html/
 WORKDIR /var/www/html/
-RUN curl -sL https://github.com/EnvironmentalDashboard/calendar/archive/master.tar.gz | tar xz && mv calendar-master calendar && \
+RUN curl -sL https://github.com/EnvironmentalDashboard/calendar.archived/archive/master.tar.gz | tar xz && mv calendar.archived-master calendar && \
 curl -sL https://github.com/EnvironmentalDashboard/buildingnavigation/archive/master.tar.gz | tar xz && mv buildingnavigation-master buildingnavigation && \
 curl -sL https://github.com/EnvironmentalDashboard/chart/archive/master.tar.gz | tar xz && mv chart-master chart && \
 curl -sL https://github.com/EnvironmentalDashboard/GoogleDriveAPI/archive/master.tar.gz | tar xz && mv GoogleDriveAPI-master GoogleDriveAPI && \
