@@ -16,7 +16,7 @@
   <body>
     <div class="container">
       <?php include 'includes/header.php'; ?>
-      <div class='embed-responsive embed-responsive-16by9'><iframe class="embed-responsive-item" src="https://docs.google.com/presentation/d/1AosesvyjnPjp732lvuqF6qgeB8uGh0diTAEyVQuEZBc/embed?start=false&loop=false&delayms=30000" frameborder="0"></iframe></div>
+      <div class='embed-responsive embed-responsive-16by9'><iframe class="embed-responsive-item" src="https://docs.google.com/presentation/d/e/2PACX-1vQfRVKa9JNw8GIXMMFZYf0XpjAwswzrJftYMBl7cBu-cJpzIgNcjBZo1X1jjMBrgofuabYMISCxdDLs/embed?start=true&loop=true&delayms=5000" frameborder="0"></iframe></div>
 
 
      <!--  <h3 class="text-center">CampusEnergy2017 Student Video Contest: Oberlin College (Like our video!)</h3>
@@ -27,7 +27,7 @@
       <div class="row text-center">
         <div class="col-lg-4 col-md-6 mb-4">
           <div class="card h-100">
-            <iframe width="290" height="200" src="https://www.youtube.com/embed/YSXFKSvN75o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="100%" height="200" src="https://www.youtube.com/embed/YSXFKSvN75o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <div class="card-body">
               <h4 class="card-title">Climate Change: Global Temperatures</h4>
               <p class="card-text"> What are the trends of global temperature in the past decade?</p>
@@ -40,7 +40,7 @@
 
          <div class="col-lg-4 col-md-6 mb-4">
           <div class="card h-100">
-            <iframe width="290" height="200" src="https://www.youtube.com/embed/ZFVBPEpA4RA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="100%" height="200" src="https://www.youtube.com/embed/ZFVBPEpA4RA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <div class="card-body">
               <h4 class="card-title">Technology for Change</h4>
               <p class="card-text">How does Environmental Dashboard educate, motivate, and empower for a new generation?</p>
@@ -54,7 +54,7 @@
 
         <div class="col-lg-4 col-md-6 mb-4">
           <div class="card h-100">
-          <iframe width="290" height="200" src="https://www.youtube.com/embed/2fCQ3qdJnh0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe width="100%" height="200" src="https://www.youtube.com/embed/2fCQ3qdJnh0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <div class="card-body">
               <h4 class="card-title">Resources Explained: Carbon Neutrality</h4>
               <p class="card-text">How much of Oberlin's electricity sourcing is carbon neutral?</p>
@@ -67,7 +67,7 @@
 
         <div class="col-lg-4 col-md-6 mb-4">
           <div class="card h-100">
-          <iframe width="290" height="200" src="https://www.youtube.com/embed/VEUDNRkChXs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>          
+          <iframe width="100%" height="200" src="https://www.youtube.com/embed/VEUDNRkChXs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           <div class="card-body">
               <h4 class="card-title">Resources Explained: Drinking Water</h4>
               <p class="card-text">Where does Oberlin get its drinking water from?</p>
@@ -80,7 +80,7 @@
 
         <div class="col-lg-4 col-md-6 mb-4">
           <div class="card h-100">
-          <iframe width="290" height="200" src="https://www.youtube.com/embed/3zge8P0GtPM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>       
+          <iframe width="100%" height="200" src="https://www.youtube.com/embed/3zge8P0GtPM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           <div class="card-body">
               <h4 class="card-title">Resources Explained: Renewable Energy</h4>
               <p class="card-text">How does the solar array impact Oberlin's renewable energy?</p>
@@ -93,7 +93,7 @@
 
         <div class="col-lg-4 col-md-6 mb-4">
           <div class="card h-100">
-          <iframe width="290" height="200" src="https://www.youtube.com/embed/xW_HXfanP68" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>     
+          <iframe width="100%" height="200" src="https://www.youtube.com/embed/xW_HXfanP68" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           <div class="card-body">
               <h4 class="card-title">Oberlin Public Library</h4>
               <p class="card-text">How do I get to get to the Oberlin Public Library?</p>
