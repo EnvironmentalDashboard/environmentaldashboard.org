@@ -22,7 +22,7 @@
 <div class="row text-center">
   <div class="col-lg-4 col-md-6 mb-4">
     <div class="card h-100">
-      <a href="pdf"> <img src=""http://environmentaldashboard.org/Dashboardtoyourcomm/Crameri2019SmartCitiesWithUrbanDashboardsGivengCommunityFeedback.pdf" style="width:358px;height:200px">
+      <a href="http://environmentaldashboard.org/Dashboardtoyourcomm/Crameri2019SmartCitiesWithUrbanDashboardsGivengCommunityFeedback.pdf"> <img src="http://environmentaldashboard.org/images/squirrel.svg" style="width:358px;height:200px">
       <div class="card-body">
         <h4 class="card-title">Smart Cities with Urban Dashboards: Giving the Community Feedback About Their City.</h4>
         <p class="card-text">This article was written on the Environmental Dashboard Displays by the Council Leader magazine of Australia. </p>
@@ -43,7 +43,7 @@
   </div>
 <div class="col-lg-4 col-md-6 mb-4">
 <div class="card h-100">
-  <a href="https://grist.org/living/this-online-dashboard-shows-you-a-citys-water-and-electric-usage-in-real-time/?utm_campaign=daily&utm_medium=email&utm_source=newsletter&%2Fr=s"> <img src="" style="width:358px;height:200px">
+  <a href="https://grist.org/living/this-online-dashboard-shows-you-a-citys-water-and-electric-usage-in-real-time/?utm_campaign=daily&utm_medium=email&utm_source=newsletter&%2Fr=s"> <img src="http://environmentaldashboard.org/images/grist-logo.jpg" style="width:358px;height:200px">
   <div class="card-body">
     <h4 class="card-title">This online dashboard shows you a city’s water and electric usage in real time.</h4>
     <p class="card-text">In Grist Magazine </p>
