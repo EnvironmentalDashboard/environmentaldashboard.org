@@ -52,7 +52,7 @@
 </div>
 <div class="col-lg-4 col-md-6 mb-4">
 <div class="card h-100">
-  <a href="http://www.loe.org/shows/segments.html?programID=13-P13-00026&segmentID=3s"> <img src="" style="width:358px;height:200px">
+  <a href="http://www.loe.org/shows/segments.html?programID=13-P13-00026&segmentID=3s"> <img src="http://environmentaldashboard.org/images/loe.jpg" style="width:358px;height:200px">
   <div class="card-body">
     <h4 class="card-title">Oberlin Environmental Dashboard</h4>
     <p class="card-text">by Living on Earth </p>
@@ -61,7 +61,7 @@
 </div>
 <div class="col-lg-4 col-md-6 mb-4">
 <div class="card h-100">
-  <a href="https://www.oberlin.edu/news/environmental-studies-students-key-players-cleveland-foundation-grant"> <img src="" style="width:358px;height:200px">
+  <a href="https://www.oberlin.edu/news/environmental-studies-students-key-players-cleveland-foundation-grant"> <img src="http://environmentaldashboard.org/images/envs_cle_grant_photo_header.jpg" style="width:358px;height:200px">
   <div class="card-body">
     <h4 class="card-title">Environmental Studies Students Key Players in Cleveland Foundation Grant</h4>
     <p class="card-text">An article by Oberlin College detailing our more recent work on an exhibit at the Great Lakes Science Center</p>
@@ -70,7 +70,7 @@
 </div>
 <div class="col-lg-4 col-md-6 mb-4">
 <div class="card h-100">
-  <a href="https://www.depauw.edu/news-media/latest-news/details/31467/"> <img src="" style="width:358px;height:200px">
+  <a href="https://www.depauw.edu/news-media/latest-news/details/31467/"> <img src="http://environmentaldashboard.org/images/depauw.jpg" style="width:358px;height:200px">
   <div class="card-body">
     <h4 class="card-title">GRANT WILL BOLSTER SUSTAINABILITY INITIATIVES AT DEPAUW AND 4 OTHER GLCA COLLEGES</h4>
     <p class="card-text">On our partnership with DePauw University</p>
@@ -79,7 +79,7 @@
 </div>
 <div class="col-lg-4 col-md-6 mb-4">
 <div class="card h-100">
-  <a href="https://www.fondriest.com/news/environmental-dashboard-makes-citywide-energy-water-impacts-clear.htm"> <img src="" style="width:358px;height:200px">
+  <a href="https://www.fondriest.com/news/environmental-dashboard-makes-citywide-energy-water-impacts-clear.htm"> <img src="http://environmentaldashboard.org/images/peterson.jpg" style="width:358px;height:200px">
   <div class="card-body">
     <h4 class="card-title">Environmental Dashboard makes citywide energy and water impacts clear</h4>
     <p class="card-text">by Environmental Monitor, a FONDRIEST Publication</p>
@@ -88,7 +88,7 @@
 </div>
 <div class="col-lg-4 col-md-6 mb-4">
 <div class="card h-100">
-  <a href="https://www.gcbl.org/blog/2013/10/oberlin-dashboard-animation-makes-acting-for-climate-fun"> <img src="" style="width:358px;height:200px">
+  <a href="https://www.gcbl.org/blog/2013/10/oberlin-dashboard-animation-makes-acting-for-climate-fun"> <img src="http://environmentaldashboard.org/images/green.jpeg" style="width:358px;height:200px">
   <div class="card-body">
     <h4 class="card-title">Oberlin Dashboard animation makes acting for climate fun</h4>
     <p class="card-text">Green City Blue Lake blog, by Cleveland Museum of Natural History</p>
@@ -97,7 +97,7 @@
 </div>
 <div class="col-lg-4 col-md-6 mb-4">
 <div class="card h-100">
-  <a href="https://www.kqed.org/quest/60089/oberlin-environmental-dashboard-digital-conservation-tool"> <img src="" style="width:358px;height:200px">
+  <a href="https://www.kqed.org/quest/60089/oberlin-environmental-dashboard-digital-conservation-tool"> <img src="http://environmentaldashboard.org/images/KQED.png" style="width:358px;height:200px">
   <div class="card-body">
     <h4 class="card-title">Tracking Your Own Footprints: Digital Tools to Inspire Conservation</h4>
     <p class="card-text">By KQED Science blog/p>
