@@ -31,7 +31,7 @@
   </div>
   <div class="col-lg-4 col-md-6 mb-4">
     <div class="card h-100">
-      <iframe width="358" height="200" src="https://www.youtube.com/watch?v=p-rTQ443akE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <a href="https://www.youtube.com/watch?v=p-rTQ443akE"> <img src="http://environmentaldashboard.org/images/Classroom.png" style="width:358px;height:200px">
       <div class="card-body">
         <h4 class="card-title">2040 Film</h4>
         <p class="card-text">Environmental Dashboard displays and its use in the classroom are featured in the film 2040. </p>
