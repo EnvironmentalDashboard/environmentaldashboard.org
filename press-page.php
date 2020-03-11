@@ -52,7 +52,7 @@
 </div>
 <div class="col-lg-4 col-md-6 mb-4">
 <div class="card h-100">
-  <a href="http://www.loe.org/shows/segments.html?programID=13-P13-00026&segmentID=3s"> <img src="http://environmentaldashboard.org/images/loe.jpg" style="width:358px;height:200px">
+  <a href="http://www.loe.org/shows/segments.html?programID=13-P13-00026&segmentID=3s"> <img src="http://environmentaldashboard.org/images/living.jpg" style="width:358px;height:200px">
   <div class="card-body">
     <h4 class="card-title">Oberlin Environmental Dashboard</h4>
     <p class="card-text">by Living on Earth </p>
