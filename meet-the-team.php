@@ -21,7 +21,7 @@
    </h1>
    <p class="headdes">
       The Environmental Dashboard has a decade long legacy of being a collaboration between students, faculty
-      , community members, and employees. Hover for more information and to see what makes the Dashboard team unique.
+      , community members, and staff. Hover for more information and to see what makes the Dashboard team unique.
    </p>
    <h1 class="head">
      Primary Staff
@@ -30,19 +30,19 @@
    <div class="flip-card">
 <div class="flip-card-inner">
  <div class="flip-card-front">
-   <img src="/images/" alt="John">
+   <img src="/images/john.jpg" alt="John">
  </div>
  <div class="flip-card-back">
    <p class="name">John Petersen</p>
    <p class="description">Director</p>
-   <p class="description">Was in a Russian dancing troop in high school</p>
+   <p class="description">Was in a Russian dancing troupe in high school</p>
  </div>
 </div>
 </div>
 <div class="flip-card">
 <div class="flip-card-inner">
 <div class="flip-card-front">
-<img src="/images/" alt="Avatar" style="width:300px;height:300px;">
+<img src="/images/rowan.jpg" alt="rowan" style="width:300px;height:300px;">
 </div>
 <div class="flip-card-back">
   <p class="name">Rowan Hannan</p>
@@ -60,7 +60,7 @@
   <div class="flip-card">
   <div class="flip-card-inner">
   <div class="flip-card-front">
-  <img src="/images/" alt="Avatar" style="width:300px;height:300px;">
+  <img src="/images/sam.jpg" alt="sam" style="width:300px;height:300px;">
   </div>
   <div class="flip-card-back">
     <p class="name">Sam Craig</p>
@@ -72,19 +72,19 @@
   <div class="flip-card">
   <div class="flip-card-inner">
   <div class="flip-card-front">
-  <img src="/images/" alt="Avatar" style="width:300px;height:300px;">
+  <img src="/images/phoebe.jpg" alt="Phoebe" style="width:300px;height:300px;">
   </div>
   <div class="flip-card-back">
     <p class="name">Phoebe von Conta</p>
     <p class="description">CV Manager</p>
-    <p class="description">On the Cross Country and Track team</p>
+    <p class="description">Avid runner on the Cross Country and Track team</p>
   </div>
   </div>
   </div>
   <div class="flip-card">
   <div class="flip-card-inner">
   <div class="flip-card-front">
-  <img src="/images/" alt="Avatar" style="width:300px;height:300px;">
+  <img src="/images/harriet.jpg" alt="Harriet" style="width:300px;height:300px;">
   </div>
   <div class="flip-card-back">
     <p class="name">Harriet McSurdy</p>
@@ -99,7 +99,7 @@
   <div class="flip-card">
   <div class="flip-card-inner">
   <div class="flip-card-front">
-  <img src="/images/" alt="Avatar" style="width:300px;height:300px;">
+  <img src="/images/oliver.jpg" alt="oliver" style="width:300px;height:300px;">
   </div>
   <div class="flip-card-back">
     <p class="name">Oliver Ripps</p>
@@ -111,24 +111,24 @@
   <div class="flip-card">
   <div class="flip-card-inner">
   <div class="flip-card-front">
-  <img src="/images/" alt="Avatar" style="width:300px;height:300px;">
+  <img src="/images/maddy.jpg" alt="maddy" style="width:300px;height:300px;">
   </div>
   <div class="flip-card-back">
     <p class="name">Madeleine Faubert</p>
-    <p class="description">Design and media</p>
-    <p class="description">I'm a cult baby</p>
+    <p class="description">Design and Media</p>
+    <p class="description">Is a cult baby</p>
   </div>
   </div>
   </div>
   <div class="flip-card">
   <div class="flip-card-inner">
   <div class="flip-card-front">
-  <img src="/images/" alt="Avatar" style="width:300px;height:300px;">
+  <img src="/images/andrew.jpg" alt="andrew" style="width:300px;height:300px;">
   </div>
   <div class="flip-card-back">
     <p class="name">Andrew Crapitto</p>
     <p class="description">Programmer</p>
-    <p class="description">Isn't very fun</p>
+    <p class="description">Is just a little fun</p>
   </div>
   </div>
   </div>
