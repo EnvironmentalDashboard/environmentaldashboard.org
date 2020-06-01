@@ -15,142 +15,142 @@
     <title>Environmental Dashboard</title>
   </head>
   <body>
-    <div class = "container">
-   <h1 class="head">
-      Meet Our Team
-   </h1>
-   <p class="headdes">
-      The Environmental Dashboard has a decade long legacy of being a collaboration between students, faculty
-      , community members, and staff. Hover for more information and to see what makes the Dashboard team unique.
-   </p>
-   <h1 class="head">
-     Primary Staff
-   </h1>
-   <div class="toprow">
-   <div class="flip-card">
-<div class="flip-card-inner">
- <div class="flip-card-front">
-   <img src="/images/john.jpg" alt="John">
- </div>
- <div class="flip-card-back">
-   <p class="name">John Petersen</p>
-   <p class="description">Director</p>
-   <p class="description">Was in a Russian dancing troupe in high school</p>
- </div>
-</div>
-</div>
-<div class="flip-card">
-<div class="flip-card-inner">
-<div class="flip-card-front">
-<img src="/images/rowan.jpg" alt="rowan" style="width:300px;height:300px;">
-</div>
-<div class="flip-card-back">
-  <p class="name">Rowan Hannan</p>
-  <p class="description">Project Manager</p>
-  <p class="description">Collects and pins insects as a hobby </p>
-</div>
-</div>
-</div>
-</div>
-<br>
-<h1 class="head">
-   Student Team
-</h1>
-<div class="row">
-  <div class="flip-card">
-  <div class="flip-card-inner">
-  <div class="flip-card-front">
-  <img src="/images/sam.jpg" alt="sam" style="width:300px;height:300px;">
-  </div>
-  <div class="flip-card-back">
-    <p class="name">Sam Craig</p>
-    <p class="description">Senior Programmer</p>
-    <p class="description">Won his age group at the Chicago half marathon. They mailed me the award for the wrong Sam</p>
-  </div>
-  </div>
-  </div>
-  <div class="flip-card">
-  <div class="flip-card-inner">
-  <div class="flip-card-front">
-  <img src="/images/phoebe.jpg" alt="Phoebe" style="width:300px;height:300px;">
-  </div>
-  <div class="flip-card-back">
-    <p class="name">Phoebe von Conta</p>
-    <p class="description">CV Manager</p>
-    <p class="description">Avid runner on the Cross Country and Track team</p>
-  </div>
-  </div>
-  </div>
-  <div class="flip-card">
-  <div class="flip-card-inner">
-  <div class="flip-card-front">
-  <img src="/images/harriet.jpg" alt="Harriet" style="width:300px;height:300px;">
-  </div>
-  <div class="flip-card-back">
-    <p class="name">Harriet McSurdy</p>
-    <p class="description">Social Media/Research</p>
-    <p class="description">Favorite color is orange</p>
-  </div>
-  </div>
-  </div>
-</div>
-<br>
-<div class="row">
-  <div class="flip-card">
-  <div class="flip-card-inner">
-  <div class="flip-card-front">
-  <img src="/images/oliver.jpg" alt="oliver" style="width:300px;height:300px;">
-  </div>
-  <div class="flip-card-back">
-    <p class="name">Oliver Ripps</p>
-    <p class="description">Programmer</p>
-    <p class="description">Is Tik Tok Famous</p>
-  </div>
-  </div>
-  </div>
-  <div class="flip-card">
-  <div class="flip-card-inner">
-  <div class="flip-card-front">
-  <img src="/images/maddy.jpg" alt="maddy" style="width:300px;height:300px;">
-  </div>
-  <div class="flip-card-back">
-    <p class="name">Madeleine Faubert</p>
-    <p class="description">Design and Media</p>
-    <p class="description">Is a cult baby</p>
-  </div>
-  </div>
-  </div>
-  <div class="flip-card">
-  <div class="flip-card-inner">
-  <div class="flip-card-front">
-  <img src="/images/andrew.jpg" alt="andrew" style="width:300px;height:300px;">
-  </div>
-  <div class="flip-card-back">
-    <p class="name">Andrew Crapitto</p>
-    <p class="description">Programmer</p>
-    <p class="description">Is just a little fun</p>
-  </div>
-  </div>
-  </div>
-</div>
-<br>
-<div class="lastrow">
-  <div class="flip-card">
-  <div class="flip-card-inner">
-  <div class="flip-card-front">
-    <p class="name">Interested in joining our team?</p>
-    <p class="description">Email Dashboard@oberlin.edu</p>
-    <p class="description">For more info</p>
-  </div>
-  <div class="flip-card-back">
-    <p class="name">Interested in joining our team?</p>
-    <p class="description">Email Dashboard@oberlin.edu</p>
-    <p class="description">For more info</p>
-  </div>
-  </div>
-  </div>
-  <br>
-</div>
-  <?php include 'includes/js.php'; ?>
-  </body>
-</html>
+    <div class="container">
+      <?php include 'includes/header.php'; ?>
+      <h1 class="head">
+        Meet Our Team
+      </h1>
+      <p class="headdes">
+        The Environmental Dashboard has a decade long legacy of being a collaboration between students, faculty
+        , community members, and staff. Hover for more information and to see what makes the Dashboard team unique.
+      </p>
+      <h1 class="head">
+        Primary Staff
+      </h1>
+      <div class="toprow">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="/images/john.jpg" alt="John" class="images">
+            </div>
+            <div class="flip-card-back">
+              <p class="name">John Petersen</p>
+              <p class="description">Director</p>
+              <p class="description">Was in a Russian dancing troupe in high school</p>
+            </div>
+          </div>
+        </div>
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="/images/rowan.jpg" alt="rowan" class="images">
+            </div>
+            <div class="flip-card-back">
+              <p class="name">Rowan Hannan</p>
+              <p class="description">Project Manager</p>
+              <p class="description">Collects and pins insects as a hobby </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <h1 class="head">
+        Student Team
+      </h1>
+      <div class="row">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="/images/sam.jpg" alt="sam" class="images">
+            </div>
+            <div class="flip-card-back">
+              <p class="name">Sam Craig</p>
+              <p class="description">Senior Programmer</p>
+              <p class="description">Won his age group at the Chicago half marathon. They mailed him the award for the wrong Sam</p>
+            </div>
+          </div>
+        </div>
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="/images/phoebe.jpg" alt="Phoebe" class="images">
+            </div>
+            <div class="flip-card-back">
+              <p class="name">Phoebe von Conta</p>
+              <p class="description">CV Manager</p>
+              <p class="description">Avid runner on the Cross Country and Track team</p>
+            </div>
+          </div>
+        </div>
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="/images/harriet.jpg" alt="Harriet" class="images">
+            </div>
+            <div class="flip-card-back">
+              <p class="name">Harriet McSurdy</p>
+              <p class="description">Social Media/Research</p>
+              <p class="description">Favorite color is orange</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="/images/oliver.jpg" alt="oliver" class="images">
+            </div>
+            <div class="flip-card-back">
+              <p class="name">Oliver Ripps</p>
+              <p class="description">Programmer</p>
+              <p class="description">Is Tik Tok Famous</p>
+            </div>
+          </div>
+        </div>
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="/images/maddy.jpg" alt="maddy" class="images">
+            </div>
+            <div class="flip-card-back">
+              <p class="name">Madeleine Faubert</p>
+              <p class="description">Design and Media</p>
+              <p class="description">Is a cult baby</p>
+            </div>
+          </div>
+        </div>
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="/images/andrew.jpg" alt="andrew" class="images">
+            </div>
+            <div class="flip-card-back">
+              <p class="name">Andrew Crapitto</p>
+              <p class="description">Programmer</p>
+              <p class="description">Is just a little fun</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="lastrow">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <p class="name">Interested in joining our team?</p>
+              <p class="description">Email Dashboard@oberlin.edu</p>
+              <p class="description">For more info</p>
+            </div>
+            <div class="flip-card-back">
+              <p class="name">Interested in joining our team?</p>
+              <p class="description">Email Dashboard@oberlin.edu</p>
+              <p class="description">For more info</p>
+            </div>
+          </div>
+        <br>
+      </div>
+    </div>
+    <?php include 'includes/js.php'; ?>
+    </body>
+  </html>
