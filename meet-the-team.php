@@ -31,7 +31,7 @@
         <div class="flip-card">
           <div class="flip-card-inner">
             <div class="flip-card-front">
-              <img src="/images/john.jpg" alt="John" class="images">
+              <img src="/images/John.jpg" alt="John" class="images">
             </div>
             <div class="flip-card-back">
               <p class="name">John Petersen</p>
@@ -43,7 +43,7 @@
         <div class="flip-card">
           <div class="flip-card-inner">
             <div class="flip-card-front">
-              <img src="/images/rowan.jpg" alt="rowan" class="images">
+              <img src="/images/Rowan.jpg" alt="rowan" class="images">
             </div>
             <div class="flip-card-back">
               <p class="name">Rowan Hannan</p>
@@ -61,7 +61,7 @@
         <div class="flip-card">
           <div class="flip-card-inner">
             <div class="flip-card-front">
-              <img src="/images/sam.jpg" alt="sam" class="images">
+              <img src="/images/Sam.jpg" alt="sam" class="images">
             </div>
             <div class="flip-card-back">
               <p class="name">Sam Craig</p>
@@ -124,7 +124,7 @@
         <div class="flip-card">
           <div class="flip-card-inner">
             <div class="flip-card-front">
-              <img src="/images/andrew.jpg" alt="andrew" class="images">
+              <img src="/images/Andrew.jpg" alt="andrew" class="images">
             </div>
             <div class="flip-card-back">
               <p class="name">Andrew Crapitto</p>
