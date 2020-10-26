@@ -1,0 +1,67 @@
+html{
+  background-color: black;
+  font-family: Quicksand;
+  font-weight: bold;
+}
+.header{
+  text-align: center;
+  color: white;
+  /* font-size: 35px; AMOUNT FOR ONE LINE*/
+  font-size: 50px;
+  padding-bottom: 5%;
+}
+
+.subhead{
+  margin: auto;
+  text-align: center;
+  color: white;
+  width: 80%;
+  font-size: 15px;
+}
+
+.button{
+  text-decoration: none;
+}
+.onelinecircle{
+  width: 150px;
+  height: 150px;
+  line-height: 150px;
+  border-radius: 50%;
+  font-size: 15px;
+  color: white;
+  text-align: center;
+  background: black;
+  border: 1px solid white;
+}
+.trycircle{
+  width: 150px;
+  height: 150px;
+  line-height: 150px;
+  border-radius: 50%;
+  font-size: 15px;
+  color: black;
+  text-align: center;
+  background: white;
+}
+.multilinecircle{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  font-size: 15px;
+  color: white;
+  text-align: center;
+  background: black;
+  border: 1px solid white;
+}
+.circletext{
+  margin-top: 60px
+}
+
+.controller{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 20%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}

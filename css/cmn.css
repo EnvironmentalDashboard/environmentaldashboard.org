@@ -1,0 +1,60 @@
+html{
+  background-color: black;
+  font-family: Quicksand;
+  font-weight: bold;
+}
+.topline{
+  text-align: center;
+  font-size: 50px;
+  color: white;
+  padding-bottom: 5%;
+}
+.subheader{
+  text-decoration: none;
+  cursor: pointer;
+  color: black;
+}
+.subflex{
+  border-radius: 20px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: auto;
+  width: 80%
+}
+.newsletter{
+  padding-left: 3%;
+  width: 60px;
+  height: 60px;
+
+}
+.captionline{
+  width: 77%;
+  font-size: 15px;
+}
+.buttons{
+  cursor: pointer;
+  width: 150px;
+  height: 150px;
+}
+.below{
+  color: white;
+  font-family: Quicksand;
+  font-weight: bold;
+
+}
+.controller{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 20%;
+  padding-top: 5%;
+}
+.col{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
