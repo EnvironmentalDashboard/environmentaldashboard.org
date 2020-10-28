@@ -21,7 +21,7 @@ html{
   align-items: center;
   justify-content: space-around;
   margin: auto;
-  width: 80%
+  width: 80%;
 }
 .newsletter{
   padding-left: 3%;
@@ -35,8 +35,8 @@ html{
 }
 .buttons{
   cursor: pointer;
-  width: 150px;
-  height: 150px;
+  width: 125px;
+  height: 125px;
 }
 .below{
   color: white;
@@ -49,7 +49,8 @@ html{
   justify-content: space-around;
   align-items: center;
   height: 20%;
-  padding-top: 5%;
+  padding-top: 10%;
+  padding-bottom: 5%;
 }
 .col{
   display: flex;
