@@ -1,5 +1,3 @@
-/*REMOVE FILES THAT ARE FOR SAMPLES
-
 <!doctype html>
 <html lang="en">
   <head>
