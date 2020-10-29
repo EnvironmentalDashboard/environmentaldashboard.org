@@ -1,67 +1,63 @@
+@font-face{
+	  font-family: 'Multicolore';
+	  src: url(/fonts/multicolore/Multicolore.otf);
+  }
+
+@font-face{
+  font-family: 'Biko';
+  src: url('/fonts/biko/Biko_Regular.otf');
+}
 html{
-  background-color: black;
-  font-family: Quicksand;
-  font-weight: bold;
+  background-color: #191919;
+}
+.constant{
+  position: fixed;
+  top: 0;
+  background-color: #191919;
 }
 .header{
+  font-family: 'Multicolore';
   text-align: center;
   color: white;
-  /* font-size: 35px; AMOUNT FOR ONE LINE*/
-  font-size: 50px;
-  padding-bottom: 5%;
+  font-size: 35px;
+  padding-top: 5%;
+  padding-bottom: 1%;
 }
 
 .subhead{
+  font-family: 'Biko';
   margin: auto;
-  text-align: center;
   color: white;
-  width: 80%;
+  width: 85%;
   font-size: 15px;
 }
 
 .button{
+  color: black;
+  cursor: pointer;
   text-decoration: none;
 }
-.onelinecircle{
-  width: 150px;
-  height: 150px;
-  line-height: 150px;
-  border-radius: 50%;
-  font-size: 15px;
-  color: white;
-  text-align: center;
-  background: black;
-  border: 1px solid white;
-}
-.trycircle{
-  width: 150px;
-  height: 150px;
-  line-height: 150px;
-  border-radius: 50%;
-  font-size: 15px;
-  color: black;
-  text-align: center;
-  background: white;
-}
-.multilinecircle{
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  font-size: 15px;
-  color: white;
-  text-align: center;
-  background: black;
-  border: 1px solid white;
-}
-.circletext{
-  margin-top: 60px
-}
 
-.controller{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: 20%;
-  padding-top: 5%;
-  padding-bottom: 5%;
+.buttonflex{
+  font-family: 'Multicolore';
+  font-weight: bold;
+  border-radius: 12px;
+  background-color: white;
+  margin: auto;
+  margin-bottom: 15px;
+  width: 85%;
+
+}
+.buttontext{
+  padding-top: 5px;
+  padding-left: 5px;
+  font-size: 35px;
+}
+.twolinebuttontext{
+  padding-top: 5px;
+  padding-left: 5px;
+  font-size: 35px;
+}
+.remotelist{
+  margin-top: 100px;
 }

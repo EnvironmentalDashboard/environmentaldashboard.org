@@ -1,58 +1,73 @@
 html{
   background-color: black;
-  font-family: Quicksand;
-  font-weight: bold;
+}
+@font-face{
+	  font-family: 'Multicolore';
+	  src: url(/fonts/multicolore/Multicolore.otf);
+  }
+@font-face{
+  font-family: 'Biko';
+  src: url('/fonts/biko/Biko_Regular.otf');
 }
 .topline{
   text-align: center;
+  font-family: 'Multicolore';
   font-size: 50px;
   color: white;
   padding-bottom: 5%;
 }
 .subheader{
+  font-family: 'Biko';
   text-decoration: none;
   cursor: pointer;
   color: black;
 }
 .subflex{
+  font-family: 'Biko';
   border-radius: 20px;
-  background-color: white;
+  background-color: #21a7df;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   margin: auto;
-  width: 80%;
+  width: 85%;
 }
 .newsletter{
-  padding-left: 3%;
-  width: 60px;
-  height: 60px;
+  font-family: 'Biko';
+  padding-left: 7%;
+  width: 55px;
+  height: 55px;
 
 }
 .captionline{
-  width: 77%;
+  font-family: 'Biko';
+  padding-left: 5%;
+  padding-top: 1%;
   font-size: 15px;
 }
 .buttons{
+  font-family: 'Biko';
   cursor: pointer;
   width: 125px;
   height: 125px;
 }
 .below{
+  font-family: 'Biko';
   color: white;
-  font-family: Quicksand;
-  font-weight: bold;
 
 }
 .controller{
+  font-family: 'Biko';
   display: flex;
   justify-content: space-around;
+  flex-flow: row wrap;
   align-items: center;
   height: 20%;
   padding-top: 10%;
   padding-bottom: 5%;
 }
 .col{
+  font-family: 'Biko';
   display: flex;
   flex-direction: column;
   justify-content: center;

@@ -15,53 +15,73 @@
   </head>
   <body>
     <div class="container">
-      <div class="header">
-        OBERLIN REMOTES
+      <div class="constant">
+        <div class="header">
+          OBERLIN REMOTES
+        </div>
+        <div class="subhead">
+          CHOOSE A REMOTE BELOW TO CONTROL A DASHBOARD AROUND TOWN
+        </div>
       </div>
-      <div class="subhead">
-        <p> CHOOSE A REMOTE BELOW TO CONTROL A DASHBOARD AROUND TOWN</p>
-      </div>
-      <div class="controller">
+      <div class="remotelist">
         <a class="button" href="https://environmentaldashboard.org/calendar">
-          <div class="trycircle">
-            SLOW TRAIN
+          <div class="buttonflex">
+            <div class = "buttontext">SLOW TRAIN</div>
           </div>
         </a>
-      </div>
-      <div class="controller">
         <a class="button" href="https://environmentaldashboard.org/calendar">
-          <div class="onelinecircle">
-            IGA
+          <div class="buttonflex">
+            <div class = "buttontext">IGA</div>
           </div>
         </a>
-      </div>
-      <div class="controller">
         <a class="button" href="https://environmentaldashboard.org/calendar">
-          <div class="onelinecircle">
-            COWORK OB.
+          <div class="buttonflex">
+            <div class = "buttontext">COWORK OB.</div>
           </div>
         </a>
-      </div>
-      <div class="controller">
         <a class="button" href="https://environmentaldashboard.org/calendar">
-          <div class="onelinecircle">
-            HOTEL
+          <div class="buttonflex">
+            <div class = "buttontext">HOTEL</div>
           </div>
         </a>
-      </div>
-      <div class="controller">
         <a class="button" href="https://environmentaldashboard.org/calendar">
-          <div class="onelinecircle">
-            THE BRIDGE
+          <div class="buttonflex">
+            <div class = "buttontext">THE BRIDGE</div>
           </div>
         </a>
-      </div>
-      <div class="controller">
         <a class="button" href="https://environmentaldashboard.org/calendar">
-          <div class="multilinecircle">
-            <p class="circletext">
-              OBERLIN PUBLIC LIBRARY
-            </p>
+          <div class="buttonflex">
+            <div class = "twolinebuttontext">OBERLIN PUBLIC LIBRARY</div>
+          </div>
+        </a>
+        <a class="button" href="https://environmentaldashboard.org/calendar">
+          <div class="buttonflex">
+            <div class = "buttontext">SLOW TRAIN</div>
+          </div>
+        </a>
+        <a class="button" href="https://environmentaldashboard.org/calendar">
+          <div class="buttonflex">
+            <div class = "buttontext">IGA</div>
+          </div>
+        </a>
+        <a class="button" href="https://environmentaldashboard.org/calendar">
+          <div class="buttonflex">
+            <div class = "buttontext">COWORK OB.</div>
+          </div>
+        </a>
+        <a class="button" href="https://environmentaldashboard.org/calendar">
+          <div class="buttonflex">
+            <div class = "buttontext">HOTEL</div>
+          </div>
+        </a>
+        <a class="button" href="https://environmentaldashboard.org/calendar">
+          <div class="buttonflex">
+            <div class = "buttontext">THE BRIDGE</div>
+          </div>
+        </a>
+        <a class="button" href="https://environmentaldashboard.org/calendar">
+          <div class="buttonflex">
+            <div class = "twolinebuttontext">OBERLIN PUBLIC LIBRARY</div>
           </div>
         </a>
       </div>

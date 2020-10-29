@@ -1,3 +1,5 @@
+/*REMOVE FILES THAT ARE FOR SAMPLES
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -22,29 +24,27 @@
         <div class="subflex">
           <img class="newsletter" src="/images/sampleemailimage.png">
           <p class="captionline"> CLICK HERE TO SUBSCRIBE TO OUR EVENTS NEWSLETTER<p>
-          </div>
+        </div>
       </a>
       <div class="controller">
         <div class="col">
-          <a href="https://environmentaldashboard.org/calendar"> <img class="buttons" src=""> </a>
+          <a href="https://environmentaldashboard.org/calendar"> <img class="buttons" src="/images/Homepageonhover.png"> </a>
           <p class="below">Calendar</p>
         </div>
         <div class="col">
-          <a href="https://environmentaldashboard.org/cwd"> <img class="buttons" src=""> </a>
+          <a href="https://environmentaldashboard.org/cwd"> <img class="buttons" src="/images/cwd_icon.png"> </a>
           <p class="below">Citywide Dashboard</p>
         </div>
-      </div>
-      <div class="controller">
         <div class="col">
-          <a href="remotes-page.php "> <img class="buttons" src=""> </a>
+          <a href="remotes-page.php"> <img class="buttons" src="/images/Homepageonhover.png"> </a>
           <p class="below">Remotes</p>
         </div>
         <div class="col">
-          <a href="https://environmentaldashboard.org/cwd"> <img class="buttons" src=""> </a>
+          <a href=""> <img class="buttons" src="/images/cv_logo.png"> </a>
           <p class="below">CV</p>
         </div>
       </div>
-    </div>
+   </div>
     <?php include 'includes/js.php'; ?>
   </body>
 </html>
