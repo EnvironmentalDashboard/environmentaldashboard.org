@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" type="text/css" href="css/rp.css">
+    <link rel="stylesheet" type="text/css" href="/css/rp.css">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=9ByOqqx0o3">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=9ByOqqx0o3">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=9ByOqqx0o3">
@@ -20,42 +20,46 @@
           OBERLIN REMOTES
         </div>
         <div class="subhead">
-          Choose a remote below to control a dashboard around town
+          Clicking a location below will give you live control of that dashboard screen with your phone
         </div>
       </div>
       <div class="remotelist">
-        <a class="button" href="https://environmentaldashboard.org/calendar">
-          <div class="buttonflex">
+        <a class="button" href="">
+          <div class="buttonflex" id="one">
             <div class = "buttontext">SLOW TRAIN</div>
           </div>
         </a>
-        <a class="button" href="https://environmentaldashboard.org/calendar">
-          <div class="buttonflex">
-            <div class = "buttontext">IGA</div>
+        <a class="button" href="">
+          <div class="buttonflex" id="two">
+            <div class = "buttontext" >IGA</div>
           </div>
         </a>
-        <a class="button" href="https://environmentaldashboard.org/calendar">
-          <div class="buttonflex">
-            <div class = "buttontext">COWORK OB.</div>
+        <a class="button" href="">
+          <div class="buttonflex" id="three">
+            <div class = "buttontext">COWORK</div>
           </div>
         </a>
-        <a class="button" href="https://environmentaldashboard.org/calendar">
-          <div class="buttonflex">
+        <a class="button" href="">
+          <div class="buttonflex" id="four">
             <div class = "buttontext">HOTEL</div>
           </div>
         </a>
-        <a class="button" href="https://environmentaldashboard.org/calendar">
-          <div class="buttonflex">
+        <a class="button" href="">
+          <div class="buttonflex" id="five">
             <div class = "buttontext">THE BRIDGE</div>
           </div>
         </a>
-        <a class="button" href="https://environmentaldashboard.org/calendar">
-          <div class="buttonflex">
-            <div class = "twolinebuttontext">PUBLIC LIBRARY</div>
+        <a class="button" href="">
+          <div class="buttonflex" id="four">
+            <div class = "buttontext">LIBRARY</div>
+          </div>
+        </a>
+        <a class="button" href="">
+          <div class="buttonflex" id="three">
+            <div class = "buttontext">KENDAL</div>
           </div>
         </a>
       </div>
     </div>
-    <?php include 'includes/js.php'; ?>
   </body>
 </html>

@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" type="text/css" href="css/cmn.css">
+    <link rel="stylesheet" type="text/css" href="/css/cmn.css">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=9ByOqqx0o3">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=9ByOqqx0o3">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=9ByOqqx0o3">
@@ -18,15 +18,15 @@
       <div class="topline">
         OBERLIN HUB
       </div>
-      <a class="subheader" href="https://environmentaldashboard.org/calendar">
+      <a class="subheader" href="https://oberlin.communityhub.cloud/calendar/">
         <div class="subflex">
-          <img class="newsletter" src="/images/sampleemailimage.png">
-          <p class="captionline"> CLICK HERE TO SUBSCRIBE TO OUR EVENTS NEWSLETTER<p>
+          <img class="newsletter" src="/images/Newsubscribe_icon.svg">
+          <p class="captionline"> Click here to subscribe <br> to our events newsletter<p>
         </div>
       </a>
       <div class="controllerlineone">
         <div class="col">
-          <a href="https://environmentaldashboard.org/calendar"> <img class="buttons" src="/images/Homepageonhover.png"> </a>
+          <a href="https://oberlin.communityhub.cloud/calendar/"> <img class="buttons" src="/images/Homepageonhover.png"> </a>
           <p class="below">Calendar</p>
         </div>
         <div class="col">
@@ -36,16 +36,14 @@
       </div>
       <div class="controllerlinetwo">
         <div class="col">
-          <a href="remotes-page.php"> <img class="buttons" src="/images/Homepageonhover.png"> </a>
+          <a href="remote"> <img class="buttons" src="/images/remoteicon.svg"> </a>
           <p class="below">Remotes</p>
         </div>
         <div class="col">
-          <a href=""> <img class="buttons" src="/images/cv_logo.png"> </a>
+          <a href="https://environmentaldashboard.org/community-voices"> <img class="buttons" src="/images/cv_logo.png"> </a>
           <p class="below">CV</p>
         </div>
       </div>
-
    </div>
-    <?php include 'includes/js.php'; ?>
   </body>
 </html>
