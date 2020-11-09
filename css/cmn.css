@@ -12,15 +12,20 @@ html{
 .topline{
   text-align: center;
   font-family: 'Multicolore';
-  font-size: 50px;
+  font-size: 45px;
   color: white;
   padding-bottom: 5%;
+  padding-top: 5%;
+  width: 90%;
+  margin: auto;
 }
 .subheader{
   font-family: 'Biko';
   text-decoration: none;
   cursor: pointer;
   color: black;
+  width: 85%;
+  margin: auto;
 }
 .subflex{
   font-family: 'Biko';
@@ -43,7 +48,7 @@ html{
   font-family: 'Biko';
   padding-left: 5%;
   padding-top: 1%;
-  font-size: 15px;
+  font-size: 13px;
 }
 .buttons{
   font-family: 'Biko';
@@ -56,15 +61,29 @@ html{
   color: white;
 
 }
-.controller{
+.controllerlineone{
   font-family: 'Biko';
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-flow: row wrap;
   align-items: center;
   height: 20%;
   padding-top: 10%;
   padding-bottom: 5%;
+  padding-left: 10%;
+  padding-right: 8%;
+}
+.controllerlinetwo{
+  font-family: 'Biko';
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  align-items: center;
+  height: 20%;
+  padding-top: 10%;
+  padding-bottom: 5%;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 .col{
   font-family: 'Biko';

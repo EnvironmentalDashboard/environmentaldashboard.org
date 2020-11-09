@@ -20,7 +20,7 @@
           OBERLIN REMOTES
         </div>
         <div class="subhead">
-          CHOOSE A REMOTE BELOW TO CONTROL A DASHBOARD AROUND TOWN
+          Choose a remote below to control a dashboard around town
         </div>
       </div>
       <div class="remotelist">
@@ -51,38 +51,7 @@
         </a>
         <a class="button" href="https://environmentaldashboard.org/calendar">
           <div class="buttonflex">
-            <div class = "twolinebuttontext">OBERLIN PUBLIC LIBRARY</div>
-          </div>
-        </a>
-        <!-- Everything after this is just to show the scroll feature -->
-        <a class="button" href="https://environmentaldashboard.org/calendar">
-          <div class="buttonflex">
-            <div class = "buttontext">SLOW TRAIN</div>
-          </div>
-        </a>
-        <a class="button" href="https://environmentaldashboard.org/calendar">
-          <div class="buttonflex">
-            <div class = "buttontext">IGA</div>
-          </div>
-        </a>
-        <a class="button" href="https://environmentaldashboard.org/calendar">
-          <div class="buttonflex">
-            <div class = "buttontext">COWORK OB.</div>
-          </div>
-        </a>
-        <a class="button" href="https://environmentaldashboard.org/calendar">
-          <div class="buttonflex">
-            <div class = "buttontext">HOTEL</div>
-          </div>
-        </a>
-        <a class="button" href="https://environmentaldashboard.org/calendar">
-          <div class="buttonflex">
-            <div class = "buttontext">THE BRIDGE</div>
-          </div>
-        </a>
-        <a class="button" href="https://environmentaldashboard.org/calendar">
-          <div class="buttonflex">
-            <div class = "twolinebuttontext">OBERLIN PUBLIC LIBRARY</div>
+            <div class = "twolinebuttontext">PUBLIC LIBRARY</div>
           </div>
         </a>
       </div>
