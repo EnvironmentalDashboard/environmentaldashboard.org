@@ -15,7 +15,7 @@ html{
   font-family: 'Multicolore';
   font-size: 45px;
   color: white;
-  /* padding-bottom: 5%; */
+  padding-bottom: 2%;
   padding-top: 5%;
   width: 90%;
   margin: auto;
@@ -27,9 +27,6 @@ html{
   color: black;
   width: 85%;
   margin: auto;
-}
-.controller{
-  height: 60%;
 }
 .subflex{
   font-family: 'Biko';
@@ -75,8 +72,8 @@ html{
   align-items: center;
   height: 20%;
   padding-top: 10%;
-  padding-left: 7%;
-  padding-right: 7%;
+  padding-left: 6%;
+  padding-right: 6%;
 }
 .controllerlinetwo{
   font-family: 'Biko';
@@ -86,8 +83,8 @@ html{
   height: 20%;
   padding-top: 3%;
   padding-bottom: 5%;
-  padding-right: 7%;
-  padding-left: 6%;
+  padding-right: 6%;
+  padding-left: 5%;
 
 
 }
