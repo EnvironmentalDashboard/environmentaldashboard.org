@@ -191,7 +191,7 @@ html{
     font-family: 'Multicolore';
     font-size: 38px;
     color: white;
-    /* padding-bottom: 5%; */
+    padding-bottom: 2%;
     padding-top: 5%;
     width: 90%;
     margin: auto;
@@ -235,7 +235,7 @@ html{
   .below{
     font-family: 'Biko';
     color: white;
-    font-size: 25px;
+    font-size: 20px;
     text-align: center;
 
   }
