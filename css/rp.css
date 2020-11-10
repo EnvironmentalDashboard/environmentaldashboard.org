@@ -1,0 +1,106 @@
+@font-face{
+	  font-family: 'Multicolore';
+	  src: url(/fonts/multicolore/Multicolore.otf);
+  }
+
+@font-face{
+  font-family: 'Biko';
+  src: url('/fonts/biko/Biko_Regular.otf');
+}
+html{
+  background-color: #191919;
+}
+.constant{
+  position: fixed;
+  top: 0;
+  background-color: #191919;
+}
+.header{
+  font-family: 'Multicolore';
+  font-size: 32.5px;
+  width: 85%;
+  padding-top: 5%;
+  padding-bottom: 1%;
+  margin-left: 6.5%;
+  color: #39B54A
+}
+
+.subhead{
+  font-family: 'Biko';
+  margin: auto;
+  color: white;
+  width: 85%;
+  font-size: 14px;
+}
+
+.button{
+  color: black;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.buttonflex{
+  font-family: 'Multicolore';
+  font-weight: bold;
+  border-radius: 12px;
+  margin: auto;
+  margin-bottom: 15px;
+  width: 100%;
+  height: 60px;
+}
+
+#one{
+  background-color: #F2F5F7;
+}
+
+#two{
+  background-color: #C2E1ED;
+}
+
+#three{
+  background-color: #93C6DB;
+}
+
+#four{
+  background-color: #66B3D4;
+}
+
+#five{
+  background-color: #4DA7BC;
+}
+
+.buttontext{
+  padding-left: 20px;
+  padding-top: 15px;
+  font-size: 40px;
+}
+.twolinebuttontext{
+  padding-top: 15px;
+  padding-bottom: 2px;
+  padding-left: 20px;
+  font-size: 36px;
+}
+.remotelist{
+  margin-top: 30%;
+}
+
+@media screen and (max-width : 320px)
+{
+  .header{
+    font-family: 'Multicolore';
+    font-size: 25px;
+    width: 85%;
+    padding-top: 5%;
+    padding-bottom: 1%;
+    margin-left: 6.5%;
+    color: #39B54A
+  }
+  .subhead{
+    font-family: 'Biko';
+    margin: auto;
+    color: white;
+    width: 85%;
+    font-size: 13px;
+  }
+
+}
