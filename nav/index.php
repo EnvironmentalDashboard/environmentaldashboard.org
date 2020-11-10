@@ -18,6 +18,7 @@
       <div class="topline">
         OBERLIN HUB
       </div>
+      <div class="controller">
       <div class="controllerlineone">
         <div class="col">
           <a href="remote"> <img class="buttons" src="/images/remoteicon.svg"> </a>
@@ -38,6 +39,7 @@
           <p class="below">Citywide <br> Dashboard</p>
         </div>
       </div>
+    </div>
       <a class="subheader" href="https://oberlin.communityhub.cloud/calendar/">
         <div class="subflex">
           <img class="newsletter" src="/images/Newsubscribe_icon.svg">
