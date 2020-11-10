@@ -9,7 +9,7 @@ html{
   font-family: 'Biko';
   src: url('/fonts/biko/Biko_Regular.otf');
 }
-@media screen and (min-width : 340px){
+
 .topline{
   text-align: center;
   font-family: 'Multicolore';
@@ -72,8 +72,8 @@ html{
   align-items: center;
   height: 20%;
   padding-top: 10%;
-  padding-left: 6%;
-  padding-right: 6%;
+  padding-left: 7%;
+  padding-right: 7%;
 }
 .controllerlinetwo{
   font-family: 'Biko';
@@ -83,8 +83,8 @@ html{
   height: 20%;
   padding-top: 3%;
   padding-bottom: 5%;
-  padding-right: 6%;
-  padding-left: 5%;
+  padding-right: 7%;
+  padding-left: 6%;
 
 
 }
@@ -95,7 +95,7 @@ html{
   justify-content: center;
   align-items: center;
 }
-}
+
 
 @media screen and (max-width : 339px) and (min-height : 540px)
 {
