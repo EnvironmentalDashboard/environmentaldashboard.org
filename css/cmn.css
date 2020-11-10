@@ -184,7 +184,7 @@ html{
   }
 
 }
-@media screen and (min-width : 400px)
+@media screen and (min-width : 410px)
 {
   .topline{
     text-align: center;
@@ -270,7 +270,7 @@ html{
   }
 
 }
-@media screen and (max-height : 540px)
+@media screen and (max-height : 640px)
 {
   .topline{
     text-align: center;
