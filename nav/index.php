@@ -18,32 +18,33 @@
       <div class="topline">
         OBERLIN HUB
       </div>
-      <a class="subheader" href="https://oberlin.communityhub.cloud/calendar/">
-        <div class="subflex">
-          <img class="newsletter" src="/images/Newsubscribe_icon.svg">
-          <p class="captionline"> Click here to subscribe <br> to our events newsletter<p>
-        </div>
-      </a>
       <div class="controllerlineone">
         <div class="col">
-          <a href="https://oberlin.communityhub.cloud/calendar/"> <img class="buttons" src="/images/Homepageonhover.png"> </a>
-          <p class="below">Calendar</p>
+          <a href="remote"> <img class="buttons" src="/images/remoteicon.svg"> </a>
+          <p class="below">Screen <br> Controller</p>
         </div>
         <div class="col">
-          <a href="https://environmentaldashboard.org/cwd"> <img class="buttons" src="/images/cwd_icon.png"> </a>
-          <p class="below">Citywide Dashboard</p>
+          <a href="https://oberlin.communityhub.cloud/calendar/"> <img class="buttons" src="/images/Homepageonhover.png"> </a>
+          <p class="below">Events <br> Calendar</p>
         </div>
       </div>
       <div class="controllerlinetwo">
         <div class="col">
-          <a href="remote"> <img class="buttons" src="/images/remoteicon.svg"> </a>
-          <p class="below">Remotes</p>
+          <a href="https://environmentaldashboard.org/community-voices"> <img class="buttons" src="/images/cv_logo.png"> </a>
+          <p class="below">Community <br> Voices</p>
         </div>
         <div class="col">
-          <a href="https://environmentaldashboard.org/community-voices"> <img class="buttons" src="/images/cv_logo.png"> </a>
-          <p class="below">CV</p>
+          <a href="https://environmentaldashboard.org/cwd"> <img class="buttons" src="/images/cwd_icon.png"> </a>
+          <p class="below">Citywide <br> Dashboard</p>
         </div>
       </div>
+      <a class="subheader" href="https://oberlin.communityhub.cloud/calendar/">
+        <div class="subflex">
+          <img class="newsletter" src="/images/Newsubscribe_icon.svg">
+            <p class="captionline"> <b> SUBSCRIBE </b> <br> to our events newsletter<p>
+          </div>
+        </div>
+      </a>
    </div>
   </body>
 </html>

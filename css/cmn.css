@@ -14,7 +14,7 @@ html{
   font-family: 'Multicolore';
   font-size: 45px;
   color: white;
-  padding-bottom: 5%;
+  /* padding-bottom: 5%; */
   padding-top: 5%;
   width: 90%;
   margin: auto;
@@ -31,11 +31,14 @@ html{
   font-family: 'Biko';
   border-radius: 20px;
   background-color: #21a7df;
+  /* color: #39B54A; */
   display: flex;
   align-items: center;
   justify-content: space-around;
   margin: auto;
   width: 85%;
+  border-style: outset;
+  border-color: grey;
 }
 .newsletter{
   font-family: 'Biko';
@@ -58,38 +61,38 @@ html{
 .below{
   font-family: 'Biko';
   color: white;
-
+  font-size: 20px;
+  text-align: center;
 }
 .controllerlineone{
   font-family: 'Biko';
   display: flex;
   justify-content: space-between;
-  flex-flow: row wrap;
   align-items: center;
   height: 20%;
   padding-top: 10%;
-  padding-bottom: 5%;
-  padding-left: 10%;
-  padding-right: 7%;
+  padding-left: 9%;
+  padding-right: 9%;
 }
 .controllerlinetwo{
   font-family: 'Biko';
   display: flex;
   justify-content: space-between;
-  flex-flow: row wrap;
   align-items: center;
   height: 20%;
-  padding-top: 10%;
+  padding-top: 3%;
   padding-bottom: 5%;
-  padding-left: 10%;
-  padding-right: 10%;
+  padding-right: 9%;
+  padding-left: 9%;
+
+
 }
 .col{
   font-family: 'Biko';
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;\
+  align-items: center;
 }
 
 @media screen and (max-width : 320px)
@@ -99,7 +102,7 @@ html{
     font-family: 'Multicolore';
     font-size: 38px;
     color: white;
-    padding-bottom: 5%;
+    /* padding-bottom: 5%; */
     padding-top: 5%;
     width: 90%;
     margin: auto;
@@ -143,7 +146,8 @@ html{
   .below{
     font-family: 'Biko';
     color: white;
-    font-size: 15px;
+    font-size: 18px;
+    text-align: center;
 
   }
   .controllerlineone{
@@ -154,9 +158,8 @@ html{
     align-items: center;
     height: 20%;
     padding-top: 10%;
-    padding-bottom: 5%;
     padding-left: 10%;
-    padding-right: 5%;
+    padding-right: 10%;
   }
   .controllerlinetwo{
     font-family: 'Biko';
@@ -165,7 +168,7 @@ html{
     flex-flow: row wrap;
     align-items: center;
     height: 20%;
-    padding-top: 10%;
+    padding-top: 2%;
     padding-bottom: 5%;
     padding-left: 10%;
     padding-right: 10%;
@@ -175,7 +178,7 @@ html{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;\
+    align-items: center;
   }
 
 }

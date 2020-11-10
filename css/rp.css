@@ -42,7 +42,7 @@ html{
 .buttonflex{
   font-family: 'Multicolore';
   font-weight: bold;
-  /* border-radius: 12px; */
+  border-radius: 12px;
   margin: auto;
   margin-bottom: 15px;
   width: 100%;
