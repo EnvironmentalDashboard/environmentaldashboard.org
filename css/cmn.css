@@ -350,3 +350,23 @@ html{
   }
 
 }
+
+@media screen and (max-height : 470px){
+  .topline{
+    font-size: 25px;
+    padding-bottom: 0%;
+  }
+
+  .buttons{
+    width: 70px;
+    height: 70px;
+  }
+  .controllerlineone{
+    padding-top: 5%;
+  }
+  .controllerlinetwo{
+    padding-bottom: 0%;
+
+
+
+}
