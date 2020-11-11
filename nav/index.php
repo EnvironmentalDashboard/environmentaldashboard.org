@@ -40,9 +40,8 @@
       </div>
       <a class="subheader" href="https://oberlin.communityhub.cloud/calendar/">
         <div class="subflex">
-          <img class="newsletter" src="/images/Newsubscribe_icon.svg">
+          <img class="newsletter" src="/images/calendar_noborder_white.svg">
             <p class="captionline"> <b> SUBSCRIBE </b> <br> to our events newsletter<p>
-          </div>
         </div>
       </a>
    </div>

@@ -83,8 +83,14 @@ html{
 .remotelist{
   margin-top: 30%;
 }
+@media screen and (max-width : 376px) and (min-height : 540px){
+  .header{
+    font-size: 25px;
+  }
 
-@media screen and (max-width : 320px)
+}
+
+@media screen and (max-width : 376px) and (max-height: 539px)
 {
   .header{
     font-family: 'Multicolore';
@@ -102,5 +108,25 @@ html{
     width: 85%;
     font-size: 13px;
   }
+  .remotelist{
+    margin-top: 30%;
+  }
+  .subheader{
+    font-size: 14px;
+  }
+}
+@media screen and (max-width : 320px){
 
+  .buttontext{
+    font-size: 30px;
+  }
+  .remotelist{
+    margin-top: 35%;
+  }
+  .subheader{
+    font-size: 13px;
+  }
+  .header{
+    font-size: 23px;
+  }
 }
