@@ -50,25 +50,28 @@ html{
 }
 
 #one{
-  background-color: #F2F5F7;
+  background-color: #5ABA50;
 }
 
 #two{
-  background-color: #C2E1ED;
+  background-color: #A1CD54;
 }
 
 #three{
-  background-color: #93C6DB;
+  background-color: #B4E3F4;
 }
 
 #four{
-  background-color: #66B3D4;
+  background-color: #21A7DF;
 }
 
 #five{
-  background-color: #4DA7BC;
+  background-color: #DB7B2E;
 }
 
+#six{
+  background-color: #DD9533
+}
 .buttontext{
   padding-left: 20px;
   padding-top: 15px;
@@ -84,7 +87,7 @@ html{
   margin-top: 30%;
 }
 
-@media screen and (max-width : 376px) and (min-height : 540px){
+@media screen and (max-width : 374px) and (min-height : 540px){
   .header{
     font-size: 25px;
   }
