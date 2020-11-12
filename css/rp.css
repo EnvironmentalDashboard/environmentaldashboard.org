@@ -93,7 +93,7 @@ html{
   }
 }
 
-@media screen and (max-width : 376px) and (max-height: 539px){
+@media screen and (max-width : 374px) and (max-height: 539px){
   .header{
     font-family: 'Multicolore';
     font-size: 25px;
