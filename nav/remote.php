@@ -24,39 +24,39 @@
         </div>
       </div>
       <div class="remotelist">
-        <a class="button" href="">
+        <a class="button" href="https://oberlin.communityhub.cloud/digital-signage/remote/42">
           <div class="buttonflex" id="one">
-            <div class = "buttontext">SLOW TRAIN</div>
-          </div>
-        </a>
-        <a class="button" href="">
-          <div class="buttonflex" id="two">
-            <div class = "buttontext" >IGA</div>
-          </div>
-        </a>
-        <a class="button" href="">
-          <div class="buttonflex" id="three">
-            <div class = "buttontext">COWORK</div>
-          </div>
-        </a>
-        <a class="button" href="">
-          <div class="buttonflex" id="four">
-            <div class = "buttontext">HOTEL</div>
-          </div>
-        </a>
-        <a class="button" href="">
-          <div class="buttonflex" id="five">
             <div class = "buttontext">THE BRIDGE</div>
           </div>
         </a>
-        <a class="button" href="">
+        <a class="button" href="https://oberlin.communityhub.cloud/digital-signage/remote/40">
+          <div class="buttonflex" id="two">
+            <div class = "buttontext" >COWORK</div>
+          </div>
+        </a>
+        <a class="button" href="https://oberlin.communityhub.cloud/digital-signage/remote/41">
+          <div class="buttonflex" id="three">
+            <div class = "buttontext">HOTEL</div>
+          </div>
+        </a>
+        <a class="button" href="https://oberlin.communityhub.cloud/digital-signage/remote/38">
           <div class="buttonflex" id="four">
+            <div class = "buttontext">IGA</div>
+          </div>
+        </a>
+        <a class="button" href="https://oberlin.communityhub.cloud/digital-signage/remote/44">
+          <div class="buttonflex" id="five">
+            <div class = "buttontext">KENDAL</div>
+          </div>
+        </a>
+        <a class="button" href="https://oberlin.communityhub.cloud/digital-signage/remote/43">
+          <div class="buttonflex" id="six">
             <div class = "buttontext">LIBRARY</div>
           </div>
         </a>
-        <a class="button" href="">
-          <div class="buttonflex" id="three">
-            <div class = "buttontext">KENDAL</div>
+        <a class="button" href="https://oberlin.communityhub.cloud/digital-signage/remote/39">
+          <div class="buttonflex" id="five">
+            <div class = "buttontext">SLOW TRAIN</div>
           </div>
         </a>
       </div>
