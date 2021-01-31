@@ -21,8 +21,8 @@
         Meet Our Team
       </h1>
       <p class="headdes">
-        The Environmental Dashboard has a decade long legacy of being a collaboration between students, faculty
-        , community members, and staff. Hover for more information and to see what makes the Dashboard team unique.
+        The Environmental Dashboard has a decade long legacy of being a collaboration between students, faculty,
+        community members, and staff. Hover for more information and to see what makes the Dashboard team unique.
       </p>
       <h1 class="head">
         Primary Staff
@@ -57,6 +57,13 @@
       <h1 class="head">
         Student Team
       </h1>
+      <p class="headdes">
+        Environmental Dashboard has maintained a student team since it's inception,
+        allowing Oberlin students to explore systems ecology, climate issues, community engagement,
+        and web design/development. Our team is made up of a multidisciplinary crew including those focused on coding, editing, psychological research, hardware, and graphic design.
+        It has been the focus of several independent student research projects.
+        Driven and talented students looking to make a positive difference in the world can contact us at <a href="mailto:Dashboard@oberlin.edu ">dashboard@oberlin.edu </a> for more information.
+      </p>
       <div class="row">
         <div class="flip-card">
           <div class="flip-card-inner">
@@ -105,7 +112,7 @@
             <div class="flip-card-back">
               <p class="name">Oliver Ripps</p>
               <p class="description">Programmer</p>
-              <p class="description">Is Tik Tok Famous</p>
+              <p class="description">Runs a sustainable fashion brand</p>
             </div>
           </div>
         </div>
@@ -135,21 +142,6 @@
         </div>
       </div>
       <br>
-      <div class="lastrow">
-          <div class="flip-card-inner">
-            <div class="flip-card-front">
-              <p class="name">Interested in joining our team?</p>
-              <p class="description">Email Dashboard@oberlin.edu</p>
-              <p class="description">For more info</p>
-            </div>
-            <div class="flip-card-back">
-              <p class="name">Interested in joining our team?</p>
-              <p class="description">Email Dashboard@oberlin.edu</p>
-              <p class="description">For more info</p>
-            </div>
-          </div>
-        <br>
-      </div>
     </div>
     <?php include 'includes/js.php'; ?>
     </body>

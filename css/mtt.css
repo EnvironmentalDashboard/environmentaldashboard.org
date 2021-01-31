@@ -9,35 +9,36 @@
 }
 
 .head{
+	margin-top: 5px;
   text-align: center;
 }
 
 .headdes{
-	text-align: center;
+
 	color: grey;
 	font-family: 'Biko';
 	padding-left: 10%;
 	padding-right: 10%;
 }
+.jointheteam{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
 .toprow{
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: center;
 
 }
 
 .row{
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-}
-
-.lastrow{
-  display: flex;
-  flex-wrap: wrap;
   justify-content: center;
 }
+
 
 .pic{
   width: 100%;
@@ -59,17 +60,19 @@
 .flip-card {
   border-radius: 25px;
   background-color: transparent;
-  width: 200px;
-  height: 250px;
+  width: 220px;
+  height: 242px;
   border: 1px solid #f1f1f1;
   perspective: 1000px;
+	margin: 40px;
+	margin-bottom: 20px;
 }
 
 .flip-card-inner {
   border-radius: 25px;
   position: relative;
-  width: 200px;
-  height: 250px;
+  width: 220px;
+  height: 242px;
   text-align: center;
   transition: transform 0.8s;
   transform-style: preserve-3d;
@@ -82,14 +85,14 @@
 .flip-card-front, .flip-card-back {
   border-radius: 25px;
   position: absolute;
-  width: 200px;
-  height: 250px;
+  width: 220px;
+  height: 242px;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
 .images{
-	width: 200px;
-  height: 250px;
+	width: 220px;
+  height: 242px;
   border-radius: 25px;
 }
 
