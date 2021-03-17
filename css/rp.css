@@ -1,31 +1,31 @@
-@font-face{
-	  font-family: 'Multicolore';
-	  src: url(/fonts/multicolore/Multicolore.otf);
-  }
+@font-face {
+  font-family: 'Multicolore';
+  src: url(/fonts/multicolore/Multicolore.otf);
+}
 
-@font-face{
+@font-face {
   font-family: 'Biko';
   src: url('/fonts/biko/Biko_Regular.otf');
 }
-html{
+html {
   background-color: #191919;
 }
-.constant{
+.constant {
   position: fixed;
   top: 0;
   background-color: #191919;
 }
-.header{
+.header {
   font-family: 'Multicolore';
   font-size: 32.5px;
   width: 85%;
   padding-top: 5%;
   padding-bottom: 1%;
   margin-left: 6.5%;
-  color: #39B54A
+  color: #39b54a;
 }
 
-.subhead{
+.subhead {
   font-family: 'Biko';
   margin: auto;
   color: white;
@@ -33,13 +33,13 @@ html{
   font-size: 14px;
 }
 
-.button{
+.button {
   color: black;
   cursor: pointer;
   text-decoration: none;
 }
 
-.buttonflex{
+.buttonflex {
   font-family: 'Multicolore';
   font-weight: bold;
   border-radius: 12px;
@@ -48,88 +48,89 @@ html{
   width: 100%;
   height: 60px;
 }
-
-#one{
-  background-color: #5ABA50;
+#zero {
+  background-color: grey;
+}
+#one {
+  background-color: #5aba50;
 }
 
-#two{
-  background-color: #A1CD54;
+#two {
+  background-color: #a1cd54;
 }
 
-#three{
-  background-color: #B4E3F4;
+#three {
+  background-color: #b4e3f4;
 }
 
-#four{
-  background-color: #21A7DF;
+#four {
+  background-color: #21a7df;
 }
 
-#five{
-  background-color: #DB7B2E;
+#five {
+  background-color: #db7b2e;
 }
 
-#six{
-  background-color: #DD9533
+#six {
+  background-color: #dd9533;
 }
-.buttontext{
+.buttontext {
   padding-left: 20px;
   padding-top: 15px;
   font-size: 40px;
 }
-.twolinebuttontext{
+.twolinebuttontext {
   padding-top: 15px;
   padding-bottom: 2px;
   padding-left: 20px;
   font-size: 36px;
 }
-.remotelist{
+.remotelist {
   margin-top: 30%;
 }
 
-@media screen and (max-width : 400px) and (min-height : 540px){
-  .header{
+@media screen and (max-width: 400px) and (min-height: 540px) {
+  .header {
     font-size: 25px;
   }
 }
 
-@media screen and (max-width : 400px) and (max-height: 539px){
-  .header{
+@media screen and (max-width: 400px) and (max-height: 539px) {
+  .header {
     font-family: 'Multicolore';
     font-size: 25px;
     width: 85%;
     padding-top: 5%;
     padding-bottom: 1%;
     margin-left: 6.5%;
-    color: #39B54A
+    color: #39b54a;
   }
-  .subhead{
+  .subhead {
     font-family: 'Biko';
     margin: auto;
     color: white;
     width: 85%;
     font-size: 13px;
   }
-  .remotelist{
+  .remotelist {
     margin-top: 30%;
   }
-  .subheader{
+  .subheader {
     font-size: 14px;
   }
 }
 
-@media screen and (max-width : 320px){
-
-  .buttontext{
+@media screen and (max-width: 320px) {
+  .buttontext {
     font-size: 30px;
   }
-  .remotelist{
+  .remotelist {
     margin-top: 35%;
   }
-  .subheader{
+  .subheader {
     font-size: 13px;
   }
-  .header{
+  .header {
     font-size: 23px;
   }
 }
