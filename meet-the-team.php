@@ -187,7 +187,7 @@
         <div class="flip-card">
           <div class="flip-card-inner">
             <div class="flip-card-front">
-              <img src="/images/thayer.jpg" alt="thayer" class="images">
+              <img src="/images/Thayer.jpg" alt="thayer" class="images">
             </div>
             <div class="flip-card-back">
               <p class="name">Thayer Preston</p>
