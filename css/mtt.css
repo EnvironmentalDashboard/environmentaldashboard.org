@@ -1,60 +1,50 @@
-@font-face{
-	  font-family: 'Multicolore';
-	  src: url(/fonts/multicolore/Multicolore.otf);
-  }
-
-@font-face{
-  font-family: 'Biko';
-  src: url('/fonts/biko/Biko_Regular.otf');
+@font-face {
+  font-family: "Multicolore";
+  src: url(/fonts/multicolore/Multicolore.otf);
 }
 
-.head{
-	margin-top: 5px;
+@font-face {
+  font-family: "Biko";
+  src: url("/fonts/biko/Biko_Regular.otf");
+}
+
+.head {
+  margin-top: 5px;
   text-align: center;
 }
 
-.headdes{
-
-	color: grey;
-	font-family: 'Biko';
-	padding-left: 10%;
-	padding-right: 10%;
+.headdes {
+  color: grey;
+  font-family: "Biko";
+  padding-left: 10%;
+  padding-right: 10%;
 }
-.jointheteam{
+.jointheteam {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.row {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-.toprow{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-
-}
-
-.row{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-
-.pic{
+.pic {
   width: 100%;
   height: 100%;
 }
 
-.name{
-  font-family: 'Multicolore';
+.name {
+  font-family: "Multicolore";
   font-size: 30px;
   text-align: center;
 }
 
-.description{
-  text-align:left;
+.description {
+  text-align: left;
   padding-left: 10px;
-  font-family: 'Biko';
+  font-family: "Biko";
 }
 
 .flip-card {
@@ -64,8 +54,8 @@
   height: 242px;
   border: 1px solid #f1f1f1;
   perspective: 1000px;
-	margin: 40px;
-	margin-bottom: 20px;
+  margin: 40px;
+  margin-bottom: 20px;
 }
 
 .flip-card-inner {
@@ -82,7 +72,8 @@
   transform: rotateY(180deg);
 }
 
-.flip-card-front, .flip-card-back {
+.flip-card-front,
+.flip-card-back {
   border-radius: 25px;
   position: absolute;
   width: 220px;
@@ -90,19 +81,19 @@
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
-.images{
-	width: 220px;
+.images {
+  width: 220px;
   height: 242px;
   border-radius: 25px;
 }
 
 .flip-card-back {
-  background-color:#5aba50 ;
+  background-color: #5aba50;
   color: white;
   transform: rotateY(180deg);
 }
 
 .flip-card-front {
-  background-color:#5aba50 ;
+  background-color: #5aba50;
   color: white;
 }
