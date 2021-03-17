@@ -25,9 +25,12 @@
         community members, and staff. Hover for more information and to see what makes the Dashboard team unique.
       </p>
       <h1 class="head">
-        Primary Staff
+        Management and Research
       </h1>
-      <div class="toprow">
+      <p class="headdes">
+      Our student team and programmers are managed by the Project Manager and Project Founder, who are currently the only full time staff members employed by environmental dashboard. In addition, we work with a multidisciplinary constellation of faculty, researchers, part-time workers, affiliate scholars, and volunteers.
+      </p>
+      <div class="row">
         <div class="flip-card">
           <div class="flip-card-inner">
             <div class="flip-card-front">
@@ -43,15 +46,54 @@
         <div class="flip-card">
           <div class="flip-card-inner">
             <div class="flip-card-front">
+              <img src="/images/Caleb.jpg" alt="Caleb" class="images">
+            </div>
+            <div class="flip-card-back">
+              <p class="name">Caleb Stripes</p>
+              <p class="description">Manager</p>
+              <p class="description">For four years lived aboard tallships sailing along the west coast</p>
+            </div>
+          </div>
+        </div>
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="/images/Gaurav.jpg" alt="Gaurav" class="images">
+            </div>
+            <div class="flip-card-back">
+              <p class="name">Gaurav Bora</p>
+              <p class="description">Software Engineer</p>
+              <p class="description">When he was seven he found out that he could play any song he have heard by ear on his toy keyboard</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
               <img src="/images/Rowan.jpg" alt="rowan" class="images">
             </div>
             <div class="flip-card-back">
               <p class="name">Rowan Hannan</p>
-              <p class="description">Project Manager</p>
-              <p class="description">Collects and pins insects as a hobby </p>
+              <p class="description">Graphic Designer</p>
+              <p class="description">Collector of insects, matchbooks, and battered sea plastics</p>
             </div>
           </div>
         </div>
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="/images/Sam.jpg" alt="sam" class="images">
+            </div>
+            <div class="flip-card-back">
+              <p class="name">Sam Craig</p>
+              <p class="description">Senior Programmer</p>
+              <p class="description">Won his age group at the Chicago half marathon. They mailed him the award for the wrong Sam</p>
+            </div>
+          </div>
+        </div>
+        
       </div>
       <br>
       <h1 class="head">
@@ -65,18 +107,6 @@
         Driven and talented students looking to make a positive difference in the world can contact us at <a href="mailto:Dashboard@oberlin.edu ">dashboard@oberlin.edu </a> for more information.
       </p>
       <div class="row">
-        <div class="flip-card">
-          <div class="flip-card-inner">
-            <div class="flip-card-front">
-              <img src="/images/Sam.jpg" alt="sam" class="images">
-            </div>
-            <div class="flip-card-back">
-              <p class="name">Sam Craig</p>
-              <p class="description">Senior Programmer</p>
-              <p class="description">Won his age group at the Chicago half marathon. They mailed him the award for the wrong Sam</p>
-            </div>
-          </div>
-        </div>
         <div class="flip-card">
           <div class="flip-card-inner">
             <div class="flip-card-front">
@@ -101,9 +131,6 @@
             </div>
           </div>
         </div>
-      </div>
-      <br>
-      <div class="row">
         <div class="flip-card">
           <div class="flip-card-inner">
             <div class="flip-card-front">
@@ -112,7 +139,22 @@
             <div class="flip-card-back">
               <p class="name">Oliver Ripps</p>
               <p class="description">Programmer</p>
-              <p class="description">Runs a sustainable fashion brand</p>
+              <p class="description">Coded this page</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+      <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="/images/adar.jpg" alt="adar" class="images">
+            </div>
+            <div class="flip-card-back">
+              <p class="name">Adar Tulloch</p>
+              <p class="description">Programmer</p>
+              <p class="description">Is David Blaine's biggest fan</p>
             </div>
           </div>
         </div>
@@ -128,21 +170,44 @@
             </div>
           </div>
         </div>
+        <!-- <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="/images/Ethan.jpg" alt="ethan" class="images">
+            </div>
+            <div class="flip-card-back">
+              <p class="name">Ethan Michel</p>
+              <p class="description">Programmer</p>
+              <p class="description">NEED</p>
+            </div>
+          </div>
+        </div> -->
+      </div>
+      <div class="row">
         <div class="flip-card">
           <div class="flip-card-inner">
             <div class="flip-card-front">
-              <img src="/images/Andrew.jpg" alt="andrew" class="images">
+              <img src="/images/thayer.jpg" alt="thayer" class="images">
             </div>
             <div class="flip-card-back">
-              <p class="name">Andrew Crapitto</p>
-              <p class="description">Programmer</p>
-              <p class="description">Is just a little fun</p>
+              <p class="name">Thayer Preston</p>
+              <p class="description">Promotion and Media</p>
+              <p class="description">Absolutely loves subterranean homes</p>
             </div>
           </div>
         </div>
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="/images/madison.jpg" alt="madison" class="images">
+            </div>
+            <div class="flip-card-back">
+              <p class="name">Madison Olsen</p>
+              <p class="description">Photographer</p>
+              <p class="description">Is in several DND campaigns and is big into board games</p>
+          </div>
+        </div>
       </div>
-      <br>
-    </div>
     <?php include 'includes/js.php'; ?>
     </body>
   </html>
