@@ -8,9 +8,9 @@ $link .= $_SERVER['HTTP_HOST'];
 $link .= $_SERVER['REQUEST_URI']; 
 $remote = substr($link,(strpos($link,"/nav")+ 5));
 $remoteNumber = substr($link,(strpos($link,"/nav") + 13 ));
-$remoteLink = "https://oberlin.communityhub.cloud/digital-signage/remote/" . $remoteNumber;
-if(is_int($remoteNumber)){
-  header("Location:" . $remoteLink);
+$remoteLink = "remote";
+if(is_numeric($remoteNumber)){
+  $remoteLink = "https://oberlin.communityhub.cloud/digital-signage/remote/" . $remoteNumber;
 }
 ?> 
 
@@ -36,7 +36,7 @@ if(is_int($remoteNumber)){
       </div>
       <div class="controllerlineone">
         <div class="col">
-          <a href="remote"> <img class="buttons" src="/images/remoteicon.svg"> </a>
+          <a href="<?php echo $remoteLink;?>"> <img class="buttons" src="/images/remoteicon.svg"> </a>
           <p class="below">Screen <br> Controller</p>
         </div>
         <div class="col">
