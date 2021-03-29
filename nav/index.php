@@ -1,3 +1,19 @@
+<?php 
+if(isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on') 
+    $link = "https"; 
+else
+    $link = "http"; 
+$link .= "://"; 
+$link .= $_SERVER['HTTP_HOST']; 
+$link .= $_SERVER['REQUEST_URI']; 
+$remote = substr($link,(strpos($link,"/nav")+ 5));
+$remoteNumber = substr($link,(strpos($link,"/nav") + 13 ));
+$remoteLink = "https://oberlin.communityhub.cloud/digital-signage/remote/" . $remoteNumber;
+if(is_int($remoteNumber)){
+  header("Location:" . $remoteLink);
+}
+?> 
+
 <!doctype html>
 <html lang="en">
   <head>
