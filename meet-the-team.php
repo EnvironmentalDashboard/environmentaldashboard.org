@@ -93,7 +93,7 @@
             </div>
           </div>
         </div>
-        
+
       </div>
       <br>
       <h1 class="head">
@@ -170,7 +170,7 @@
             </div>
           </div>
         </div>
-        <!-- <div class="flip-card">
+        <div class="flip-card">
           <div class="flip-card-inner">
             <div class="flip-card-front">
               <img src="/images/Ethan.jpg" alt="ethan" class="images">
@@ -178,10 +178,10 @@
             <div class="flip-card-back">
               <p class="name">Ethan Michel</p>
               <p class="description">Programmer</p>
-              <p class="description">NEED</p>
+              <p class="description">Super into playing ping pong</p>
             </div>
           </div>
-        </div> -->
+        </div>
       </div>
       <div class="row">
         <div class="flip-card">
