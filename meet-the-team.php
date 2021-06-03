@@ -146,7 +146,19 @@
       </div>
       <br>
       <div class="row">
-      <div class="flip-card">
+        <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="/images/Harsha.jpg" alt="Harsha" class="images">
+              </div>
+              <div class="flip-card-back">
+                <p class="name">Harsha Rauniyar</p>
+                <p class="description">Programmer</p>
+                <p class="description">Loves Batman</p>
+              </div>
+            </div>
+          </div>
+      <!-- <div class="flip-card">
           <div class="flip-card-inner">
             <div class="flip-card-front">
               <img src="/images/adar.jpg" alt="adar" class="images">
@@ -157,7 +169,7 @@
               <p class="description">Is David Blaine's biggest fan</p>
             </div>
           </div>
-        </div>
+        </div> -->
         <div class="flip-card">
           <div class="flip-card-inner">
             <div class="flip-card-front">
@@ -173,6 +185,18 @@
         <div class="flip-card">
           <div class="flip-card-inner">
             <div class="flip-card-front">
+              <img src="/images/Ian.png" alt="Ian" class="images">
+            </div>
+            <div class="flip-card-back">
+              <p class="name">Ian</p>
+              <p class="description">Programmer and Designer</p>
+              <p class="description">Can ride a unicycle</p>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
               <img src="/images/Ethan.jpg" alt="ethan" class="images">
             </div>
             <div class="flip-card-back">
@@ -181,7 +205,7 @@
               <p class="description">Super into playing ping pong</p>
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
       <div class="row">
         <div class="flip-card">
