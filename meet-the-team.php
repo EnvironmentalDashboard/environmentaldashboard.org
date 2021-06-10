@@ -63,7 +63,7 @@
             <div class="flip-card-back">
               <p class="name">Gaurav Bora</p>
               <p class="description">Software Engineer</p>
-              <p class="description">When he was seven he found out that he could play any song he have heard by ear on his toy keyboard</p>
+              <p class="description">When he was seven he found out that he could play any song he heard by ear on his toy keyboard</p>
             </div>
           </div>
         </div>
