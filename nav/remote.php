@@ -10,6 +10,9 @@
     <link rel="manifest" href="/manifest.json?v=9ByOqqx0o3">
     <link rel="mask-icon" href="/safari-pinned-tab.svg?v=9ByOqqx0o3" color="#00a300">
     <link rel="shortcut icon" href="/favicon.ico?v=9ByOqqx0o3">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <script src="./remotes.js" type="text/javascript"> </script>
+    <script src="remotes.js"></script>
     <meta name="theme-color" content="#000000">
     <title>Oberlin Remotes</title>
   </head>
@@ -23,42 +26,7 @@
           Clicking a location below will give you live control of that dashboard screen with your phone
         </div>
       </div>
-      <div class="remotelist">
-        <a class="button" href="https://oberlin.communityhub.cloud/digital-signage/remote/42">
-          <div class="buttonflex" id="one">
-            <div class = "buttontext">THE BRIDGE</div>
-          </div>
-        </a>
-        <a class="button" href="https://oberlin.communityhub.cloud/digital-signage/remote/40">
-          <div class="buttonflex" id="two">
-            <div class = "buttontext" >COWORK</div>
-          </div>
-        </a>
-        <a class="button" href="https://oberlin.communityhub.cloud/digital-signage/remote/41">
-          <div class="buttonflex" id="three">
-            <div class = "buttontext">HOTEL</div>
-          </div>
-        </a>
-        <a class="button" href="https://oberlin.communityhub.cloud/digital-signage/remote/38">
-          <div class="buttonflex" id="four">
-            <div class = "buttontext">IGA</div>
-          </div>
-        </a>
-        <a class="button" href="https://oberlin.communityhub.cloud/digital-signage/remote/44">
-          <div class="buttonflex" id="five">
-            <div class = "buttontext">KENDAL</div>
-          </div>
-        </a>
-        <a class="button" href="https://oberlin.communityhub.cloud/digital-signage/remote/43">
-          <div class="buttonflex" id="six">
-            <div class = "buttontext">LIBRARY</div>
-          </div>
-        </a>
-        <a class="button" href="https://oberlin.communityhub.cloud/digital-signage/remote/39">
-          <div class="buttonflex" id="five">
-            <div class = "buttontext">SLOW TRAIN</div>
-          </div>
-        </a>
+      <div class="remotelist" id="remotes">
       </div>
     </div>
   </body>
