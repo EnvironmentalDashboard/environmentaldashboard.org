@@ -24,6 +24,12 @@
         </div>
       </div>
       <div class="remotelist">
+        <a class="button" href="/nav/templates/controller-41.html">
+          <div class="buttonflex" id="zero">
+            <div class="buttontext">TEST HOTEL LOBBY</div>
+          </div>
+        </a>
+        <!-- This first link is a test connection for our hardcoded controller solution -->
         <a class="button" href="https://oberlin.communityhub.cloud/digital-signage/remote/42">
           <div class="buttonflex" id="one">
             <div class = "buttontext">THE BRIDGE</div>

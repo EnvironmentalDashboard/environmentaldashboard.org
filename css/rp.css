@@ -48,6 +48,10 @@ html{
   width: 100%;
   height: 60px;
 }
+/* zero is for testing of our new hard coded controller in the templates directory */
+#zero{
+  background-color: #c6e611;
+}
 
 #one{
   background-color: #5ABA50;
