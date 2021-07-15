@@ -6,97 +6,511 @@
     <!-- change title as appropriate -->
     <title>Controller Template</title>
     <style>
+    @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400&display=swap');
 
-      @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400&display=swap');
+    html, body {
+      height: 100%;
+      margin: 0px;
+      background: #333;
+    }
+    .flex-container {
+      display: flex;
+      height: 10%;
+      width:100%;
+    }
 
-      html, body {
-        height: 100%;
-        margin: 0px;
-        background: #333;
-      }
-      .flex-container {
-        display: flex;
-        height: 10%;
-        width:100%;
-      }
+    .flex-container2{
+      display:flex;
+      height:25%;
+      width:100%;
 
-      .flex-child {
-        flex: 1;
-        height:100%;
-        width: 50%;
-      }
-
-      .flex-child:first-child {
-        margin-right: 20px;
-        font-family:'Comfortaa',cursive;
-        font-size:50px;
-        color:white;
-        padding-top:20px;
-      }
-
-      .button2 {
-        background-color: #92C47C; /* Green */
-        border: none;
-        color: #333;
-        padding: 10px 20px;
-        text-align: center;
-        text-decoration: none;
-        font-size: 75px;
-        margin:auto;
-        display:block;
-        padding-top: 5px;
-        padding-left:10px;
-        padding-right:10px;
-        padding-bottom:5px;
-        margin-left:20px;
-        margin-right:5px;
-        margin-top:50px;
-        margin-left:5px;
-        border-radius: 8px;
-        font-family:'Comfortaa', cursive;
+    }
+   @media screen and (max-width: 768px){
+    .flex-child2{
+      flex:1;
+      height:100%;
+      width:50%;
+    }
+  }
+    @media screen and (min-width: 768px){
+      .flex-child2{
+        flex:1;
+        height:95%;
+        width:50%;
+        margin-top:30px; /* Margin top added for ipad and ipad pro*/
       }
 
-      .frame{
-        height:70%;
-        width:100%;
+    }
+
+    @media screen and (min-width: 1000px){
+     .flex-child2{
+       flex:1;
+       height:95%;
+       width:50%;
+       margin-top:150px;
+     }
+   }
+
+    .flex-child {
+      flex: 1;
+      height:100%;
+      width: 100%;
+    }
+
+    /* .flex-child:first-child {
+      margin-right: 20px;
+      font-family:'Comfortaa',cursive;
+      font-size:50px;
+      color:white;
+      padding-top:20px;
+    } */
+
+    .button2 {
+      background-color: #DB7B35; /* Green */
+      border: none;
+      color:white;
+      /* padding: 10px 20px; */
+      text-align: center;
+      text-decoration: none;
+      font-size: 75px;
+      /* margin:auto; */
+      display:block;
+      padding-top: 10px;
+      padding-left:50px;
+      padding-right:50px;
+      padding-bottom:10px;
+      margin-left:120px;
+      margin-right:120px;
+      margin-top:80px;
+      border-radius: 10px;
+      font-family:'Comfortaa', cursive;
+      font-weight:bold;
+    }
+ @media screen and (min-width: 1000px){
+    .button2 {
+      background-color: #DB7B35; /* Green */
+      border: none;
+      color:white;
+      /* padding: 10px 20px; */
+      text-align: center;
+      text-decoration: none;
+      font-size: 75px;
+      /* margin:auto; */
+      display:block;
+      padding-top: 10px;
+      padding-left:50px;
+      padding-right:50px;
+      padding-bottom:10px;
+      margin-left:120px;
+      margin-right:120px;
+      margin-top:160px;
+      border-radius: 10px;
+      font-family:'Comfortaa', cursive;
+      font-weight:bold;
+    }
+  }
+
+    /* .frame{
+      height:70%;
+      width:100%;
 
 
-      }
+    } */
 
-
-
-
+    .button img {
+      width: 100%;
+      height: 100%;
+      cursor: pointer;
+      position: relative;
+    }
+    #error-overlay, #cookie-overlay, #timeout-overlay, #queue-overlay, #init-overlay, #disconnected-overlay {
+      height: 100vh;
+      width: 100vw;
+      position: absolute;
+      background: #eee;
+      color: #333;
+      top: 0;
+      left: 0;
+      z-index: 100;
+      text-align: center;
+      padding-top: 20vh;
+      font-family: sans-serif;
+    }
+    #error-overlay, #cookie-overlay, #timeout-overlay, #queue-overlay, #disconnected-overlay {
+      display: none;
+    }
     </style>
+    <!-- <link rel="stylesheet" type="text/css" href="/nav/styles/style.css"> -->
 
-  </head>
+</head>
 
 
   <body>
+
+    <div id="timeout-overlay"><h1>Your time using this remote is up. Try again starting at a later time.</h1></div>
+    <div id="queue-overlay"><h1>You are waiting <span id="in-the-queue">in the queue</span>. You will gain access at <span id="a-later-time">a later time</span> at the latest.</h1></div>
+    <div id="cookie-overlay"><h1>Cookies are required to use the remote controller.</h1></div>
+    <div id="disconnected-overlay"><h1>Display is disconnected. Please restart the display in order to control it.</h1></div>
+    <div id="init-overlay"><h1>Initializing connection...</h1></div>
+    <div id="error-overlay"><h1>Lost connection to display... reconnecting in <span id="remaining">10</span>.</h1><p>If this problem persists, please contact <a href="mailto:mail@communityhub.cloud?subject=Controller 38 loaded at 1626203244 connection error with oberlin server">mail@communityhub.cloud</a>.</p></div>
     <!-- first row container -->
     <div class="flex-container">
 
       <!-- first column item in first-row container -->
-      <div class="flex-child">
+      <!-- <div class="flex-child">
         <center>IGA Screen Controller</center>
-      </div>
+      </div> -->
 
       <!-- second column item in first-row container -->
       <div class="flex-child">
-        <!-- <img src="60c34e5796aee.svg" style="height:100%;width:50%"> -->
-        <center>Image goes here</center>
+
+          <img src="Iga_controllerbanner.svg">
+
       </div>
 
     </div>
 
-    <!-- iframe -->
-    <div class="frame">
-      <iframe class="iframe" src="https://oberlin.communityhub.cloud/digital-signage/remote/38" style="height:100%;width:100%"></iframe>
+    <div class="flex-container2">
+
+      <div class="flex-child2">
+        <center>
+        <div class="button" data-twig="btn1">
+            <img  data-type='1' data-url='/digital-signage/remote/7' data-id='1518' data-active_src='' data-src='https://oberlin.communityhub.cloud/api/legacy/digital-signage/uploads/oberlin/6092f2dd9aa4f.svg' src='https://oberlin.communityhub.cloud/api/legacy/digital-signage/uploads/oberlin/6092f2dd9aa4f.svg' />
+          </div>
+        </center>
+      </div>
+
+      <div class="flex-child2">
+        <center>
+          <div class="button" data-twig="btn2" >
+            <img  data-type='1' data-url='/digital-signage/remote/7' data-id='1551' data-active_src='' data-src='https://oberlin.communityhub.cloud/api/legacy/digital-signage/uploads/oberlin/climateaction_remoteicon.svg' src='https://oberlin.communityhub.cloud/api/legacy/digital-signage/uploads/oberlin/climateaction_remoteicon.svg' />
+          </div>
+        </center>
+      </div>
+
     </div>
 
+    <div class="flex-container2">
+
+      <div class="flex-child2">
+        <center>
+          <div class="button" data-twig="btn3">
+            <img  data-type='1' data-url='/digital-signage/remote/7' data-id='1517' data-active_src='' data-src='https://oberlin.communityhub.cloud/api/legacy/digital-signage/uploads/oberlin/6092f2acc936f.svg' src='https://oberlin.communityhub.cloud/api/legacy/digital-signage/uploads/oberlin/6092f2acc936f.svg' />
+          </div>
+        </center>
+      </div>
+
+      <div class="flex-child2">
+        <center>
+          <div class="button" data-twig="btn4">
+            <img  data-type='1' data-url='' data-id='1437' data-active_src='' data-src='https://oberlin.communityhub.cloud/api/legacy/digital-signage/uploads/oberlin/Missions_icon_IGA.svg' src='https://oberlin.communityhub.cloud/api/legacy/digital-signage/uploads/oberlin/Missions_icon_IGA.svg' />
+          </div>
+        </center>
+      </div>
+
+    </div>
+
+    <div class="flex-container2">
+
+      <div class="flex-child2">
+        <center>
+          <div class="button" data-twig="btn5">
+            <img  data-type='1' data-url='' data-id='1435' data-active_src='' data-src='https://oberlin.communityhub.cloud/api/legacy/digital-signage/uploads/oberlin/CWD_txt.svg' src='https://oberlin.communityhub.cloud/api/legacy/digital-signage/uploads/oberlin/CWD_txt.svg' />
+          </div>
+        </center>
+      </div>
+
+      <div class="flex-child2">
+        <center>
+          <div class="button" data-twig="btn6">
+            <img  data-type='1' data-url='/digital-signage/remote/7' data-id='1553' data-active_src='' data-src='https://oberlin.communityhub.cloud/api/legacy/digital-signage/uploads/oberlin/IGAIcon.svg' src='https://oberlin.communityhub.cloud/api/legacy/digital-signage/uploads/oberlin/IGAIcon.svg' />
+          </div>
+        </center>
+      </div>
+
+    </div>
+
+
+
+
+
+
+
     <!-- hub home button end -->
-    <a href="https://environmentaldashboard.org/nav/" class="button2">Hub Home</a>
+    <a href="https://environmentaldashboard.org/nav/" class="button2">HUB HOME</a>
+
+    <script>
+      const cookiesEnabled = navigator.cookieEnabled;
+
+    const cookieOverlay = document.getElementById('cookie-overlay');
+    if (cookiesEnabled)
+    	cookieOverlay.style.display = 'none';
+    else
+    	cookieOverlay.style.display = 'block';
+
+    const timeoutOverlay = document.getElementById('timeout-overlay');
+    const queueOverlay = document.getElementById('queue-overlay');
+    const initOverlay = document.getElementById('init-overlay');
+    const disconnectedOverlay = document.getElementById('disconnected-overlay');
+
+    let queueOverlayTimeout = null;
+
+    var sessionConn = null;
+    var uuid = getCookie('sessionUuid38');
+
+    function initSessionConn() {
+    	if (sessionConn === null) {
+    		const uuidExtension = uuid ? `?uuid=${uuid}` : '';
+
+    		sessionConn = new WebSocket("wss\u003A\/\/oberlin.communityhub.cloud/digital-signage/websockets/session/38" + uuidExtension);
+    		// onclose will always fire when onerror does (https://stackoverflow.com/a/40084550/2624391)
+    		// so don't try reconnecting in both methods
+    		sessionConn.onerror = function () { return; }
+    		sessionConn.onclose = function () {
+    			document.getElementById('error-overlay').style.display = 'block';
+    			var secondsRemaining = document.getElementById('remaining');
+    			for (let seconds = 1; seconds <= 10; seconds++) {
+    				setTimeout(function () {
+    					secondsRemaining.innerText = 10 - seconds;
+    				}, seconds * 1000);
+    			}
+    			sessionConn = null;
+    			setTimeout(initSessionConn, 10000);
+    		}
+    		sessionConn.onopen = function () {
+    			document.getElementById('error-overlay').style.display = 'none';
+    		}
+    		sessionConn.onmessage = sessionConnReceiver;
+    	}
+    }
+
+    function sessionConnReceiver(e) {
+    	var command = JSON.parse(e.data);
+
+    	if (command.type === 'restart') {
+    		location.reload(true);
+    	} else if (command.type === 'load') {
+    		location.href = command.controller;
+    	} else if (command.type === 'uuid') {
+    		// Make our cookie last 10 years (3650 days, estimated).
+    		uuid = command.uuid;
+    		setCookie('sessionUuid38', command.uuid, 3650);
+    	} else if (command.type === 'recode') {
+    		refreshNoClick();
+    	} else if (command.type === 'timeout') {
+    		timeout(command.until);
+    	} else if (command.type === 'queue') {
+    		if (command.position === 1) {
+    			unqueue();
+    		} else {
+    			queue(command.position, command.until);
+    		}
+    	} else if (command.type === 'initialized') {
+    		document.getElementById('init-overlay').style.display = 'none';
+    	} else if (command.type === 'displayConnected' && command.value === false) {
+    		document.getElementById('disconnected-overlay').style.display = 'block';
+
+    		setTimeout(() => {
+    			document.getElementById('disconnected-overlay').style.display = 'none';
+    		}, 10000);
+    	} else if (command.type === 'error') {
+    		// Probably should not silently fail later on.
+    		console.error(command.message);
+    	}
+    }
+
+    const timeout = unixUntil => {
+    	const until = new Date(unixUntil * 1000);
+
+    	timeoutOverlay.style.display = 'block';
+    	timeoutOverlay.innerHTML = timeoutOverlay.innerHTML.replace('a later time', until.toLocaleDateString('en-US') + ' ' + until.toLocaleTimeString('en-US'));
+    };
+
+    const queue = (position, unixUntil) => {
+    	const until = new Date(unixUntil * 1000);
+
+    	queueOverlay.style.display = 'block';
+    	document.getElementById('a-later-time').innerHTML = until.toLocaleDateString('en-US') + ' ' + until.toLocaleTimeString('en-US');
+    	document.getElementById('in-the-queue').innerHTML = 'in the queue at position ' + position;
+
+    	// When we are allowed, we will bring control back.
+    	queueOverlayTimeout = setTimeout(() => {
+    		queueOverlay.style.display = 'none';
+    	}, until.getTime() - (new Date()).getTime());
+    }
+
+    const unqueue = () => {
+    	clearTimeout(queueOverlayTimeout);
+    	queueOverlayTimeout = null;
+
+    	queueOverlay.style.display = 'none';
+    }
+
+
+    var clicked = function () {
+
+    	// This is a weird condition - not sure why it would exist.
+    	if (this.style.top === '15px') {
+    		return;
+    	}
+    	var button_id = this.getAttribute("data-id");
+    	var button_type = this.getAttribute("data-type");
+    	var button_active_image = this.getAttribute("data-active_src");
+    	var button_image = this.getAttribute("data-src");
+    	var that = this;
+    	that.style.top = '15px';
+    	that.style.opacity = '0.7';
+    	if (button_active_image !== '') {
+    		if ('/' + that.src.split('/').splice(3).join('/') === button_active_image) {
+    			that.src = button_image;
+    		} else {
+    			that.src = button_active_image;
+    		}
+    	}
+    	setTimeout(function () {
+    		that.style.top = '';
+    		that.style.opacity = '1';
+    	}, 1500);
+    	if (button_type === "2") {
+    		var fn = that.getAttribute('src').replace(/^.*[\\\/]/, '');
+    		if (fn === 'play.svg') {
+    			that.setAttribute('src', "\/digital\u002Dsignage\/images/pause.svg");
+    		} else {
+    			that.setAttribute('src', "\/digital\u002Dsignage\/images/play.svg");
+    		}
+    	}
+    	if (button_type === "buttonValues.TRIGGER_URL}}") {
+    		if (that.getAttribute('data-fullscreen') === '1') {
+    			location.href = that.getAttribute("data-url");
+    		} else {
+    			that.classList = 'animated slideOutUp';
+    			var subsection = document.getElementById(that.getAttribute('data-subsection'));
+    			subsection.style.display = 'initial';
+    			subsection.classList = 'animated slideInUp';
+    		}
+    	} else if (button_type === "buttonValues.TRIGGER_SUBSECTION}}") {
+    		var subsection = document.getElementById(that.getAttribute('data-subsection'));
+    		if (subsection.style.display === 'none') {
+    			subsection.style.display = '';
+    			subsection.classList = 'animated slideInUp';
+    		} else {
+    			subsection.classList = 'animated slideOutUp';
+    			subsection.addEventListener('animationend', function () {
+    				if (subsection.classList.value === 'animated slideOutUp') {
+    					subsection.style.display = 'none';
+    				}
+    			});
+    		}
+    	} else {
+    		sessionConn.send(JSON.stringify({
+    			button: button_id
+    		}));
+    	}
+    }
+
+
+    var inIframe = function () {
+    	try {
+    		return window.self !== window.top;
+    	} catch (e) {
+    		return true;
+    	}
+    }
+    if (!inIframe() && cookiesEnabled) {
+    	initSessionConn();
+    }
+    if (cookiesEnabled) {
+    	var buttons = document.getElementsByTagName("IMG");
+    	for (var i = 0; i < buttons.length; i++) {
+    		var el = buttons[i];
+
+    		if (el.classList.contains('noclick'))
+    			continue;
+
+    		el.addEventListener('click', clicked, false);
+    		if (el.getAttribute("data-type") === "3") {
+    			if (inIframe()) {
+    				el.setAttribute('data-fullscreen', '1');
+    			} else {
+    				el.setAttribute('data-fullscreen', '0');
+    				var rand = Math.random().toString(36).substr(2, 9),
+    					rand2 = Math.random().toString(36).substr(2, 9);
+    				var iframe = document.createElement("iframe");
+    				var button = document.createElement("button");
+    				iframe.src = el.getAttribute("data-url");
+    				iframe.style.border = 'none';
+    				iframe.style.height = '100%';
+    				iframe.style.width = '100%';
+    				iframe.style.position = 'absolute';
+    				iframe.style.top = '0px';
+    				iframe.style.left = '0px';
+    				iframe.id = rand;
+    				el.setAttribute('data-subsection', rand);
+    				el.id = rand2;
+    				iframe.setAttribute('data-subsection-trigger', rand2);
+    				iframe.classList = 'animated slideOutUp';
+    				button.innerText = 'Close';
+    				button.style = 'position:absolute;top:0;right:0;background:#5aba50;color:white;width:10%;height:12%;font-family:sans-serif;font-size:2vw;border:none;border-radius:3px;cursor:pointer';
+    				button.onclick = function () {
+    					iframe.classList = 'animated slideOutUp';
+    					var subsectionTrigger = document.getElementById(iframe.getAttribute('data-subsection-trigger'));
+    					subsectionTrigger.style.display = 'initial';
+    					subsectionTrigger.classList = 'animated slideInUp';
+    				}
+    				iframe.onload = function () {
+    					this.contentWindow.document.getElementsByTagName('body')[0].appendChild(button);
+    				}
+    				document.getElementsByTagName('body')[0].appendChild(iframe);
+    			}
+    		} else if (el.getAttribute("data-type") === "6") {
+    			var iframe = document.createElement("iframe");
+    			iframe.src = el.getAttribute("data-url");
+    			iframe.style.border = 'none';
+    			iframe.style.height = '80vh';
+    			iframe.style.width = '100%';
+    			iframe.style.display = 'none';
+    			iframe.classList = 'animated slideOutUp';
+    			var rand = Math.random().toString(36).substr(2, 9);
+    			iframe.id = rand;
+    			el.setAttribute('data-subsection', rand);
+    			el.parentElement.parentElement.parentNode.insertBefore(iframe, el.parentElement.parentElement.nextSibling);
+    		}
+    	}
+    }
+
+
+    function setCookie(name, value, days) {
+    	var expires = "";
+    	if (days) {
+    		var date = new Date();
+    		date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+    		expires = "; expires=" + date.toUTCString();
+    	}
+    	document.cookie = name + "=" + (value || "") + expires + "; path=/";
+    }
+    function getCookie(name) {
+    	var nameEQ = name + "=";
+    	var ca = document.cookie.split(';');
+    	for (var i = 0; i < ca.length; i++) {
+    		var c = ca[i];
+    		while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+    		if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+    	}
+    	return null;
+    }
+
+    const refreshNoClick = () => {
+    	const elements = document.getElementsByClassName('noclick');
+
+    	for (let i = 0; i < elements.length; i++) {
+    		elements[i].src = elements[i].src.replace(/#.*/, '') + '#' + Date.now();
+    	}
+    };
+    </script>
 
   </body>
+
+
 
 
 
