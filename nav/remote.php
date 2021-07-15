@@ -26,16 +26,28 @@
       <div class="remotelist">
         <a class="button" href="/nav/templates/controller-template.html">
           <div class="buttonflex" id="zero">
-            <div class="buttontext">TEST HOTEL LOBBY</div>
+            <div class="buttontext">TEST CONTROL</div>
           </div>
         </a>
-        <!-- This first link is a test connection for our hardcoded controller solution -->
-        <a class="button" href="https://oberlin.communityhub.cloud/digital-signage/remote/42">
+        <!-- This first link is a test connection for our hardcoded controller solution 
+        adding new controllers will need three modifications to copied a tag: update href, advance button flex id, update button text between the tag.-->
+        <a class="button" href="https://oberlin.communityhub.cloud/digital-signage/remote/38">
           <div class="buttonflex" id="one">
-            <div class = "buttontext">THE BRIDGE</div>
+            <div class = "buttontext">IGA</div>
           </div>
         </a>
-        <a class="button" href="https://oberlin.communityhub.cloud/digital-signage/remote/40">
+        <a class="button" href="https://oberlin.communityhub.cloud/digital-signage/remote/43">
+          <div class="buttonflex" id="two">
+            <div class = "buttontext">OPL</div>
+          </div>
+        </a>
+        <a class="button" href="https://oberlin.communityhub.cloud/digital-signage/remote/41">
+          <div class="buttonflex" id="three">
+            <div class = "buttontext">Hotel Lobby</div>
+          </div>
+        </a>
+        <!-- The below is legacy inherently because we used a different method to make the Oberlin controllers -->
+        <!-- <a class="button" href="https://oberlin.communityhub.cloud/digital-signage/remote/40">
           <div class="buttonflex" id="two">
             <div class = "buttontext" >COWORK</div>
           </div>
@@ -62,7 +74,7 @@
         </a>
         <a class="button" href="https://oberlin.communityhub.cloud/digital-signage/remote/39">
           <div class="buttonflex" id="five">
-            <div class = "buttontext">SLOW TRAIN</div>
+            <div class = "buttontext">SLOW TRAIN</div> -->
           </div>
         </a>
       </div>
