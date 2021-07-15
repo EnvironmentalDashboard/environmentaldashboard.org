@@ -24,7 +24,7 @@
         </div>
       </div>
       <div class="remotelist">
-        <a class="button" href="/nav/templates/controller-template.html">
+        <a class="button" href="/nav/templates/_controller-template.html">
           <div class="buttonflex" id="zero">
             <div class="buttontext">TEST CONTROL</div>
           </div>
