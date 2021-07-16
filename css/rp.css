@@ -10,28 +10,33 @@
 html{
   background-color: #191919;
 }
+.body{
+  margin: 0;
+  padding: 0;
+}
 .constant{
   position: fixed;
   top: 0;
   background-color: #191919;
 }
+
 .header{
   font-family: 'Multicolore';
-  font-size: 32.5px;
-  width: 85%;
-  padding-top: 5%;
-  padding-bottom: 1%;
-  margin-left: 6.5%;
-  color: #39B54A
+  font-size: 2.5rem;
+  background-color: #a1cd54;
+  width: 100vw;
+  height: 60px;
+  color:#191919;
+  border-bottom:6px solid #5aba50;
 }
 
-.subhead{
+/* .subhead{
   font-family: 'Biko';
   margin: auto;
   color: white;
   width: 85%;
-  font-size: 14px;
-}
+  font-size: 2rem;
+} */
 
 .button{
   color: black;
@@ -43,7 +48,7 @@ html{
   font-family: 'Multicolore';
   font-weight: bold;
   border-radius: 12px;
-  filter: drop-shadow(6px 6px 4px whitesmoke);
+  filter: drop-shadow(0px 0px 6px whitesmoke);
   margin: auto;
   margin-bottom: 15px;
   width: 100%;
@@ -79,21 +84,22 @@ html{
   background-color: #DD9533
 }
 .buttontext{
-  padding-left: 20px;
-  padding-top: 15px;
-  font-size: 40px;
+  /* padding-left: 20px; */
+  /* padding-top: 15px; */
+  font-size: 2rem;
 }
-.twolinebuttontext{
+/* .twolinebuttontext{
   padding-top: 15px;
   padding-bottom: 2px;
   padding-left: 20px;
   font-size: 36px;
-}
+} */
 .remotelist{
-  margin-top: 30%;
+  margin-top: 66px;
+  padding-top: 10px;
 }
 
-@media screen and (max-width : 400px) and (min-height : 540px){
+/* @media screen and (max-width : 400px) and (min-height : 540px){
   .header{
     font-size: 25px;
   }
@@ -138,4 +144,4 @@ html{
   .header{
     font-size: 23px;
   }
-}
+} */

@@ -17,10 +17,10 @@
     <div class="container">
       <div class="constant">
         <div class="header">
-          OBERLIN REMOTES
+          SELECT SCREEN
         </div>
         <div class="subhead">
-          Clicking a location below will give you live control of that dashboard screen with your phone
+          <!-- Clicking a location below will give you live control of that dashboard screen with your phone -->
         </div>
       </div>
       <div class="remotelist">
