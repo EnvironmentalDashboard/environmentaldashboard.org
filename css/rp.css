@@ -43,14 +43,14 @@ html{
   font-family: 'Multicolore';
   font-weight: bold;
   border-radius: 12px;
-  border: 1px solid whitesmoke;
+  filter: drop-shadow(6px 6px 4px whitesmoke);
   margin: auto;
   margin-bottom: 15px;
   width: 100%;
   height: 60px;
   justify-self: center;
 }
-/* zero is for testing of our new hard coded controller in the templates directory */
+/* zero is for testing of our new hard coded controller in the templates directory and should be commented out prior to publishing */
 #zero{
   background-color: #c6e611;
 }
