@@ -24,7 +24,7 @@
         </div>
       </div>
       <div class="remotelist">
-        <a class="button" href="/nav/templates/controller-template.html">
+        <a class="button" href="/nav/templates/_controller-template.html">
           <div class="buttonflex" id="zero">
             <div class="buttontext">TEST CONTROL</div>
           </div>
@@ -38,7 +38,7 @@
         </a>
         <a class="button" href="https://oberlin.communityhub.cloud/digital-signage/remote/43">
           <div class="buttonflex" id="two">
-            <div class = "buttontext">OPL</div>
+            <div class = "buttontext">PUBLIC LIBRARY</div>
           </div>
         </a>
         <a class="button" href="https://oberlin.communityhub.cloud/digital-signage/remote/41">
