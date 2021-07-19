@@ -17,7 +17,9 @@
     <div class="container">
       <div class="topline">
         OBERLIN HUB
+        <!-- <img src="./resources/hub_banner.svg"> -->
       </div>
+
       <div class="controllerlineone">
         <div class="col">
           <a href="remote"> <img class="buttons" src="/images/remoteicon.svg"> </a>

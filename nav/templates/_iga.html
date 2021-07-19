@@ -1,6 +1,7 @@
 <html>
   <head>
     <meta charset= "UTF-8">
+    
     <!-- change "content" as appropriate -->
     <meta name= "description" content="Controller template webpage">
     <!-- change title as appropriate -->
@@ -186,7 +187,7 @@
       <div class="flex-child2">
         <center>
         <div class="button" data-twig="btn1">
-            <img  data-type='1' data-url='/digital-signage/remote/7' data-id='1518' data-active_src='' data-src='' src='../resources/CommunityCalendar_icon_text_v2-01.svg' />
+            <img  data-type='1' data-url='/digital-signage/remote/7' data-id='1563' data-active_src='' data-src='https://oberlin.communityhub.cloud/api/legacy/digital-signage/uploads/oberlin/CitywideDash_icon_text_v2-01.svg' src='https://oberlin.communityhub.cloud/api/legacy/digital-signage/uploads/oberlin/CitywideDash_icon_text_v2-01.svg' />
           </div>
         </center>
       </div>
@@ -194,7 +195,7 @@
       <div class="flex-child2">
         <center>
           <div class="button" data-twig="btn2" >
-            <img  data-type='1' data-url='' src='../resources/climateaction_text_icon_v3-01.svg' />
+            <img  data-type='1' data-url='/digital-signage/remote/7' data-id='1561' data-active_src='' data-src='https://oberlin.communityhub.cloud/api/legacy/digital-signage/uploads/oberlin/climateaction_text_icon-01.svg' src='https://oberlin.communityhub.cloud/api/legacy/digital-signage/uploads/oberlin/climateaction_text_icon-01.svg' />
           </div>
         </center>
       </div>
@@ -206,7 +207,7 @@
       <div class="flex-child2">
         <center>
           <div class="button" data-twig="btn3">
-            <img  data-type='1' data-url='/digital-signage/remote/7' data-id='1517' data-active_src='' data-src='https://oberlin.communityhub.cloud/api/legacy/digital-signage/uploads/oberlin/6092f2acc936f.svg' src='https://oberlin.communityhub.cloud/api/legacy/digital-signage/uploads/oberlin/6092f2acc936f.svg' />
+            <img  data-type='1' data-url='/digital-signage/remote/7' data-id='1565' data-active_src='' data-src='https://oberlin.communityhub.cloud/api/legacy/digital-signage/uploads/oberlin/60f5be1553957.svg' src='https://oberlin.communityhub.cloud/api/legacy/digital-signage/uploads/oberlin/60f5be1553957.svg' />
           </div>
         </center>
       </div>
@@ -214,7 +215,7 @@
       <div class="flex-child2">
         <center>
           <div class="button" data-twig="btn4">
-            <img  data-type='1' data-url='' data-id='1437' data-active_src='' data-src='' src='../resources/missions_text_icon-01.svg' />
+            <img  data-type='1' data-url='' data-id='1562' data-active_src='' data-src='https://oberlin.communityhub.cloud/api/legacy/digital-signage/uploads/oberlin/missions_text_icon-01.svg' src='https://oberlin.communityhub.cloud/api/legacy/digital-signage/uploads/oberlin/missions_text_icon-01.svg' />
           </div>
         </center>
       </div>
@@ -226,7 +227,7 @@
       <div class="flex-child2">
         <center>
           <div class="button" data-twig="btn5">
-            <img  data-type='1' data-url='' data-id='1435' data-active_src='' data-src='' src='../resources/CitywideDash_icon_text_v2-01.svg' />
+            <img  data-type='1' data-url='' data-id='1564' data-active_src='' data-src='https://oberlin.communityhub.cloud/api/legacy/digital-signage/uploads/oberlin/60f5bdfc3b42b.svg' src='https://oberlin.communityhub.cloud/api/legacy/digital-signage/uploads/oberlin/60f5bdfc3b42b.svg' />
           </div>
         </center>
       </div>
@@ -234,7 +235,7 @@
       <div class="flex-child2">
         <center>
           <div class="button" data-twig="btn6">
-            <img  data-type='1' data-url='/digital-signage/remote/7' data-id='1553' data-active_src='' data-src='' src='../resources/IGA Information.svg' />
+            <img  data-type='1' data-url='/digital-signage/remote/7' data-id='1560' data-active_src='' data-src='https://oberlin.communityhub.cloud/api/legacy/digital-signage/uploads/oberlin/60f5bd9d81ff8.svg' src='https://oberlin.communityhub.cloud/api/legacy/digital-signage/uploads/oberlin/60f5bd9d81ff8.svg' />
           </div>
         </center>
       </div>
@@ -267,13 +268,13 @@
     let queueOverlayTimeout = null;
 
     var sessionConn = null;
-    var uuid = getCookie('sessionUuid38');
+    var uuid = getCookie('sessionUuid61');
 
     function initSessionConn() {
     	if (sessionConn === null) {
     		const uuidExtension = uuid ? `?uuid=${uuid}` : '';
 
-    		sessionConn = new WebSocket("wss\u003A\/\/oberlin.communityhub.cloud/digital-signage/websockets/session/38" + uuidExtension);
+    		sessionConn = new WebSocket("wss\u003A\/\/oberlin.communityhub.cloud/digital-signage/websockets/session/61" + uuidExtension);
     		// onclose will always fire when onerror does (https://stackoverflow.com/a/40084550/2624391)
     		// so don't try reconnecting in both methods
     		sessionConn.onerror = function () { return; }
@@ -305,7 +306,7 @@
     	} else if (command.type === 'uuid') {
     		// Make our cookie last 10 years (3650 days, estimated).
     		uuid = command.uuid;
-    		setCookie('sessionUuid38', command.uuid, 3650);
+    		setCookie('sessionUuid61', command.uuid, 3650);
     	} else if (command.type === 'recode') {
     		refreshNoClick();
     	} else if (command.type === 'timeout') {
