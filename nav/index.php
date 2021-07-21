@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=0">
     <link rel="stylesheet" type="text/css" href="/css/cmn.css">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=9ByOqqx0o3">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=9ByOqqx0o3">
@@ -22,7 +22,7 @@
 
       <div class="controllerlineone">
         <div class="col">
-          <a href="templates/select_screen.html"> <img class="buttons" src="/images/remoteicon.svg"> </a>
+          <a href="underconstruction.html"> <img class="buttons" src="/images/remoteicon.svg"> </a>
           <p class="below">Screen <br> Controller</p>
         </div>
         <div class="col">
