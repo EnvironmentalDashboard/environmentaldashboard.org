@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400&display=swap');
+
+html, body {
+  height: 100%;
+  margin: 0px;
+  background: #333;
+}
+.flex-container {
+  display: flex;
+  height: 10%;
+  width:100%;
+}
+
+.flex-container2{
+  display:flex;
+  height:30%;
+  width:100%;
+  justify-content: space-evenly;
+}
+
+.flex-container3{
+  display:flex;
+  height:40%;
+  width:100%;
+}
+
+@media screen and (max-width: 768px){
+.flex-child2{
+  flex:1;
+  height:100%;
+  width:50%;
+}
+}
+/* Media Query for IPAD */
+@media screen and (min-width: 768px){
+  .flex-child2{
+    flex:1;
+    height:95%;
+    width:50%;
+    margin-top:30px; /* Margin top added for ipad and ipad pro*/
+  }
+
+}
+
+@media screen and (min-width: 1000px){
+ .flex-child2{
+   flex:1;
+   height:95%;
+   width:50%;
+   margin-top:50px;
+ }
+}
+
+@media screen and (min-width: 1800px){
+.flex-child2{
+  flex:1;
+  height:95%;
+  width:50%;
+  margin-top:200px;
+}
+}
+
+.flex-child {
+  flex: 1;
+  height:100%;
+  width: 100%;
+}
+
+/* .flex-child:first-child {
+  margin-right: 20px;
+  font-family:'Comfortaa',cursive;
+  font-size:50px;
+  color:white;
+  padding-top:20px;
+} */
+
+
+
+/* .frame{
+  height:70%;
+  width:100%;
+
+
+} */
+
+.button img {
+  width: 80%;
+  height: 80%;
+  cursor: pointer;
+  position: relative;
+}
+
+#mailbutton{
+    margin-top: 6rem;
+}
