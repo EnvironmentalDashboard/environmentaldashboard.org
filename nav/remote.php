@@ -15,18 +15,18 @@
   </head>
   <body>
     <div class="container">
-      <div class="constant">
-        <div class="header">
-          OBERLIN REMOTES
-        </div>
-        <div class="subhead">
+
+
+          <img src="selectscreen_banner.svg">
+
+        <!-- <div class="subhead">
           Clicking a location below will give you live control of that dashboard screen with your phone
-        </div>
-      </div>
+        </div> -->
+
       <div class="remotelist">
         <a class="button" href="https://oberlin.communityhub.cloud/digital-signage/remote/42">
           <div class="buttonflex" id="one">
-            <div class = "buttontext">THE BRIDGE</div>
+            <button onclick="myFunction()"><img src="/nav/resources/OPS_remotebutton.svg" style="height:100%;width:100%"></button>
           </div>
         </a>
         <a class="button" href="https://oberlin.communityhub.cloud/digital-signage/remote/40">
