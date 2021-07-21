@@ -22,7 +22,7 @@
 
       <div class="controllerlineone">
         <div class="col">
-          <a href="templates/select_screen.html"> <img class="buttons" src="/images/remoteicon.svg"> </a>
+          <a href="underconstruction.html"> <img class="buttons" src="/images/remoteicon.svg"> </a>
           <p class="below">Screen <br> Controller</p>
         </div>
         <div class="col">
