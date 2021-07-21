@@ -22,7 +22,11 @@
 
       <div class="controllerlineone">
         <div class="col">
+<<<<<<< HEAD
           <a href="underconstruction.html"> <img class="buttons" src="/images/remoteicon.svg"> </a>
+=======
+          <a href="templates/select_screen.html"> <img class="buttons" src="/images/remoteicon.svg"> </a>
+>>>>>>> harshar
           <p class="below">Screen <br> Controller</p>
         </div>
         <div class="col">
