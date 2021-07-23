@@ -3,9 +3,9 @@
     <meta charset= "UTF-8">
     <!-- change "content" as appropriate -->
     <meta name= "description" content="Controller template webpage">
-    <meta name="viewport" content="user-scalable=0">
+    <meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
     <!-- change title as appropriate -->
-    <title>Controller Template</title>
+    <title>Hotel Lobby Controller</title>
     <style>
     @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400&display=swap');
 
@@ -94,7 +94,6 @@
       margin: auto;
       margin-top: 4rem;
     }
-
  @media screen and (min-width: 1000px){
     .button2 {
       background-color: #DB7B35; /* Green */
@@ -174,7 +173,7 @@
       <div class="flex-container">
       <div class="flex-child">
 
-          <img src="../resources/Iga_controllerbanner.svg">
+          <img src="../resources/hotellobby_controllerbanner.svg">
 
       </div>
 
@@ -185,7 +184,8 @@
       <div class="flex-child2">
         <center>
         <div class="button" data-twig="btn1">
-            <img  data-type='1' data-url='/digital-signage/remote/7' data-id='1518' data-active_src='' data-src='' src='../resources/CommunityCalendar_icon_text_v2-01.svg' />
+            <img  data-type='1' data-url='/digital-signage/remote/7' data-id='1576' data-active_src='' data-src='https://oberlin.communityhub.cloud/api/legacy/digital-signage/uploads/oberlin/60f5fb8301c27.svg' src='https://oberlin.communityhub.cloud/api/legacy/digital-signage/uploads/oberlin/60f5fb8301c27.svg' />
+
           </div>
         </center>
       </div>
@@ -193,7 +193,7 @@
       <div class="flex-child2">
         <center>
           <div class="button" data-twig="btn2" >
-            <img  data-type='1' data-url='' src='../resources/climateaction_text_icon_v3-01.svg' />
+              <img  data-type='1' data-url='/digital-signage/remote/7' data-id='1573' data-active_src='' data-src='https://oberlin.communityhub.cloud/api/legacy/digital-signage/uploads/oberlin/60f5fb3d99d59.svg' src='https://oberlin.communityhub.cloud/api/legacy/digital-signage/uploads/oberlin/60f5fb3d99d59.svg' />
           </div>
         </center>
       </div>
@@ -205,7 +205,9 @@
       <div class="flex-child2">
         <center>
           <div class="button" data-twig="btn3">
-            <img  data-type='1' data-url='/digital-signage/remote/7' data-id='1517' data-active_src='' data-src='https://oberlin.communityhub.cloud/api/legacy/digital-signage/uploads/oberlin/6092f2acc936f.svg' src='https://oberlin.communityhub.cloud/api/legacy/digital-signage/uploads/oberlin/6092f2acc936f.svg' />
+            <img  data-type='1' data-url='/digital-signage/remote/7' data-id='1577' data-active_src='' data-src='https://oberlin.communityhub.cloud/api/legacy/digital-signage/uploads/oberlin/60f5fba828c68.svg' src='https://oberlin.communityhub.cloud/api/legacy/digital-signage/uploads/oberlin/60f5fba828c68.svg' />
+
+
           </div>
         </center>
       </div>
@@ -213,7 +215,7 @@
       <div class="flex-child2">
         <center>
           <div class="button" data-twig="btn4">
-            <img  data-type='1' data-url='' data-id='1437' data-active_src='' data-src='' src='../resources/missions_text_icon-01.svg' />
+            <img  data-type='1' data-url='/digital-signage/remote/7' data-id='1574' data-active_src='' data-src='https://oberlin.communityhub.cloud/api/legacy/digital-signage/uploads/oberlin/60f5fb5a4bdc2.svg' src='https://oberlin.communityhub.cloud/api/legacy/digital-signage/uploads/oberlin/60f5fb5a4bdc2.svg' />
           </div>
         </center>
       </div>
@@ -225,7 +227,8 @@
       <div class="flex-child2">
         <center>
           <div class="button" data-twig="btn5">
-            <img  data-type='1' data-url='' data-id='1435' data-active_src='' data-src='' src='../resources/CitywideDash_icon_text_v2-01.svg' />
+            <img  data-type='1' data-url='/digital-signage/remote/7' data-id='1575' data-active_src='' data-src='https://oberlin.communityhub.cloud/api/legacy/digital-signage/uploads/oberlin/60f5fb7027d75.svg' src='https://oberlin.communityhub.cloud/api/legacy/digital-signage/uploads/oberlin/60f5fb7027d75.svg' />
+
           </div>
         </center>
       </div>
@@ -233,12 +236,18 @@
       <div class="flex-child2">
         <center>
           <div class="button" data-twig="btn6">
-            <img  data-type='1' data-url='/digital-signage/remote/7' data-id='1553' data-active_src='' data-src='' src='../resources/IGA Information.svg' />
+            <img  data-type='1' data-url='/digital-signage/remote/7' data-id='1572' data-active_src='' data-src='https://oberlin.communityhub.cloud/api/legacy/digital-signage/uploads/oberlin/60f5fb29bdd6c.svg' src='https://oberlin.communityhub.cloud/api/legacy/digital-signage/uploads/oberlin/60f5fb29bdd6c.svg' />
           </div>
         </center>
       </div>
 
     </div>
+
+
+
+
+
+
 
     <!-- hub home button end -->
     <a href="https://environmentaldashboard.org/nav/" class="button2">HUB HOME</a>
@@ -260,13 +269,13 @@
     let queueOverlayTimeout = null;
 
     var sessionConn = null;
-    var uuid = getCookie('sessionUuid38');
+    var uuid = getCookie('sessionUuid63');
 
     function initSessionConn() {
     	if (sessionConn === null) {
     		const uuidExtension = uuid ? `?uuid=${uuid}` : '';
 
-    		sessionConn = new WebSocket("wss\u003A\/\/oberlin.communityhub.cloud/digital-signage/websockets/session/38" + uuidExtension);
+    		sessionConn = new WebSocket("wss\u003A\/\/oberlin.communityhub.cloud/digital-signage/websockets/session/63" + uuidExtension);
     		// onclose will always fire when onerror does (https://stackoverflow.com/a/40084550/2624391)
     		// so don't try reconnecting in both methods
     		sessionConn.onerror = function () { return; }
@@ -298,7 +307,7 @@
     	} else if (command.type === 'uuid') {
     		// Make our cookie last 10 years (3650 days, estimated).
     		uuid = command.uuid;
-    		setCookie('sessionUuid38', command.uuid, 3650);
+    		setCookie('sessionUuid63', command.uuid, 3650);
     	} else if (command.type === 'recode') {
     		refreshNoClick();
     	} else if (command.type === 'timeout') {

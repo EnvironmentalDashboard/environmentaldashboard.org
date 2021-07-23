@@ -15,14 +15,14 @@
   </head>
   <body>
     <div class="container">
-      <div class="constant">
-        <div class="header">
-          OBERLIN REMOTES
-        </div>
-        <div class="subhead">
+
+
+          <img src="selectscreen_banner.svg">
+
+        <!-- <div class="subhead">
           Clicking a location below will give you live control of that dashboard screen with your phone
-        </div>
-      </div>
+        </div> -->
+
       <div class="remotelist">
         <a class="button" href="/nav/templates/controller-template.html">
           <div class="buttonflex" id="zero">
@@ -33,6 +33,7 @@
         adding new controllers will need three modifications to copied a tag: update href, advance button flex id, update button text between the tag.-->
         <a class="button" href="https://oberlin.communityhub.cloud/digital-signage/remote/38">
           <div class="buttonflex" id="one">
+<<<<<<< HEAD
             <div class = "buttontext">IGA</div>
           </div>
         </a>
@@ -44,6 +45,9 @@
         <a class="button" href="https://oberlin.communityhub.cloud/digital-signage/remote/41">
           <div class="buttonflex" id="three">
             <div class = "buttontext">Hotel Lobby</div>
+=======
+            <button onclick="myFunction()"><img src="/nav/resources/OPS_remotebutton.svg" style="height:100%;width:100%"></button>
+>>>>>>> 17ce10436010cc4ab1a0caf9a6580d68b7e6b476
           </div>
         </a>
         <!-- The below is legacy inherently because we used a different method to make the Oberlin controllers -->

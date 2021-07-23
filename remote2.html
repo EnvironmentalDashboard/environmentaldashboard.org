@@ -1,0 +1,207 @@
+<html>
+  <head>
+    <meta charset= "UTF-8">
+    <!-- change "content" as appropriate -->
+    <meta name= "description" content="Select Screen Webpage">
+    <!-- change title as appropriate -->
+    <title>Select Screen</title>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400&display=swap');
+
+    html, body {
+      height: 100%;
+      margin: 0px;
+      background: #FFFFFF;
+    }
+    .flex-container {
+      display: flex;
+      height: 10%;
+      width:100%;
+    }
+
+    .flex-container2{
+      display:flex;
+      height:25%;
+      width:100%;
+
+    }
+   @media screen and (max-width: 768px){
+    .flex-child2{
+      flex:1;
+      height:100%;
+      width:100%;
+    }
+  }
+  /* Media Query for IPAD */
+    @media screen and (min-width: 768px){
+      .flex-child2{
+        flex:1;
+        height:95%;
+        width:50%;
+        margin-top:30px; /* Margin top added for ipad and ipad pro*/
+      }
+
+    }
+
+    @media screen and (min-width: 1000px){
+     .flex-child2{
+       flex:1;
+       height:95%;
+       width:50%;
+       margin-top:50px;
+     }
+   }
+
+   @media screen and (min-width: 1800px){
+    .flex-child2{
+      flex:1;
+      height:95%;
+      width:50%;
+      margin-top:200px;
+    }
+  }
+
+    .flex-child {
+      flex: 1;
+      height:100%;
+      width: 100%;
+    }
+
+    /* .flex-child:first-child {
+      margin-right: 20px;
+      font-family:'Comfortaa',cursive;
+      font-size:50px;
+      color:white;
+      padding-top:20px;
+    } */
+
+    .button2 {
+      background-color: #DB7B35; /* Green */
+      border: none;
+      color:white;
+      /* padding: 10px 20px; */
+      text-align: center;
+      text-decoration: none;
+      font-size: 75px;
+      /* margin:auto; */
+      display:block;
+      padding-top: 10px;
+      padding-left:50px;
+      padding-right:50px;
+      padding-bottom:10px;
+      margin-left:120px;
+      margin-right:120px;
+      margin-top:80px;
+      border-radius: 10px;
+      font-family:'Comfortaa', cursive;
+      font-weight:bold;
+    }
+ @media screen and (min-width: 1000px){
+    .button2 {
+      background-color: #DB7B35; /* Green */
+      border: none;
+      color:white;
+      /* padding: 10px 20px; */
+      text-align: center;
+      text-decoration: none;
+      font-size: 75px;
+      /* margin:auto; */
+      display:block;
+      padding-top: 10px;
+      padding-left:50px;
+      padding-right:50px;
+      padding-bottom:10px;
+      margin-left:120px;
+      margin-right:120px;
+      margin-top:80px;
+      border-radius: 10px;
+      font-family:'Comfortaa', cursive;
+      font-weight:bold;
+    }
+  }
+
+    /* .frame{
+      height:70%;
+      width:100%;
+
+
+    } */
+
+    .button img {
+      width: 100%;
+      height: 100%;
+      cursor: pointer;
+      position: relative;
+    }
+
+    </style>
+    <!-- <link rel="stylesheet" type="text/css" href="/nav/styles/style.css"> -->
+
+</head>
+
+
+  <body>
+
+      <div class="flex-container">
+        <div class="flex-child">
+
+          <img src="./resources/selectscreen_banner.svg">
+
+        </div>
+
+     </div>
+
+    <div class="flex-container2">
+
+      <div class="flex-child2">
+        <center>
+        <button onclick=" "><img src="./resources/OPS_remotebutton.svg"></button>
+        </center>
+      </div>
+
+
+    </div>
+
+    <div class="flex-container2">
+
+      <div class="flex-child2">
+        <center>
+          <button onclick=""><img src="../resources/OPL_remotebutton.svg"></button>
+        </center>
+      </div>
+
+
+    </div>
+
+    <div class="flex-container2">
+
+      <div class="flex-child2">
+        <center>
+            <button onclick=""><img src="../resources/IGA_remotebutton.svg"></button>
+        </center>
+      </div>
+
+
+    </div>
+
+    <div class="flex-container2">
+
+      <div class="flex-child2">
+        <center>
+            <button onclick=""><img src="../resources/OPL_remotebutton.svg"></button>
+        </center>
+      </div>
+
+
+    </div>
+
+
+
+
+  </body>
+
+
+
+
+
+</html>
