@@ -4,46 +4,38 @@
     <!-- change "content" as appropriate -->
     <meta name= "description" content="Controller template webpage">
     <meta name="viewport" content="user-scalable=0">
-    <!-- change title as appropriate -->
-    <title>Controller Template</title>
     <link rel="stylesheet" href="../styles/controller.css">
-    <!-- <link rel="stylesheet" type="text/css" href="/nav/styles/style.css"> -->
+    <!-- change title as appropriate -->
+    <title>Title</title>
 
 </head>
 
 
   <body>
-
+    <!-- The below blocks to the next comment is the code to establish user timeout and que of controller use -->
     <div id="timeout-overlay"><h1>Your time using this remote is up. Try again starting at a later time.</h1></div>
     <div id="queue-overlay"><h1>You are waiting <span id="in-the-queue">in the queue</span>. You will gain access at <span id="a-later-time">a later time</span> at the latest.</h1></div>
     <div id="cookie-overlay"><h1>Cookies are required to use the remote controller.</h1></div>
     <div id="disconnected-overlay"><h1>Display is disconnected. Please restart the display in order to control it.</h1></div>
     <div id="init-overlay"><h1>Initializing connection...</h1></div>
     <div id="error-overlay"><h1>Lost connection to display... reconnecting in <span id="remaining">10</span>.</h1><p>If this problem persists, please contact <a href="mailto:mail@communityhub.cloud?subject=Controller 38 loaded at 1626203244 connection error with oberlin server">mail@communityhub.cloud</a>.</p></div>
-    <!-- first row container -->
-
-
-      <!-- first column item in first-row container -->
-      <!-- <div class="flex-child">
-        <center>IGA Screen Controller</center>
-      </div> -->
-
-      <!-- second column item in first-row container -->
+    <!-- below you will find flex-container for the controller banner, flex-container2 each for a row of buttons
+    when adding new buttons replace the img tag and its content between the center tags -->
       <div class="flex-container">
       <div class="flex-child">
 
-          <img src="../resources/Iga_controllerbanner.svg">
+          <img src="../resources/channel10_controllerbanner.svg">
 
       </div>
 
     </div>
-
+    <!-- Row One -->
     <div class="flex-container2">
 
       <div class="flex-child2">
         <center>
         <div class="button" data-twig="btn1">
-          <img  data-type='1' data-url='/digital-signage/remote/7' data-id='1749' data-active_src='' data-src='https://oberlin.communityhub.cloud/api/legacy/digital-signage/uploads/oberlin/611402ec8a829.svg' src='https://oberlin.communityhub.cloud/api/legacy/digital-signage/uploads/oberlin/611402ec8a829.svg' />
+            <img  data-type='1' data-url='/digital-signage/remote/7' data-id='1722' data-active_src='' data-src='https://oberlin.communityhub.cloud/api/legacy/digital-signage/uploads/oberlin/610ab0b6d03a2.svg' src='https://oberlin.communityhub.cloud/api/legacy/digital-signage/uploads/oberlin/610ab0b6d03a2.svg' />
           </div>
         </center>
       </div>
@@ -51,19 +43,19 @@
       <div class="flex-child2">
         <center>
           <div class="button" data-twig="btn2" >
-            <img  data-type='1' data-url='/digital-signage/remote/7' data-id='1567' data-active_src='' data-src='https://oberlin.communityhub.cloud/api/legacy/digital-signage/uploads/oberlin/60f5fa27a05dd.svg' src='https://oberlin.communityhub.cloud/api/legacy/digital-signage/uploads/oberlin/60f5fa27a05dd.svg' />
+            <img  data-type='1' data-url='/digital-signage/remote/7' data-id='1622' data-active_src='' data-src='https://oberlin.communityhub.cloud/api/legacy/digital-signage/uploads/oberlin/60fee84506ad6.svg' src='https://oberlin.communityhub.cloud/api/legacy/digital-signage/uploads/oberlin/60fee84506ad6.svg' />
           </div>
         </center>
       </div>
 
     </div>
-
+    <!-- Row Two -->
     <div class="flex-container2">
 
       <div class="flex-child2">
         <center>
           <div class="button" data-twig="btn3">
-            <img  data-type='1' data-url='/digital-signage/remote/7' data-id='1571' data-active_src='' data-src='https://oberlin.communityhub.cloud/api/legacy/digital-signage/uploads/oberlin/60f5fa890d865.svg' src='https://oberlin.communityhub.cloud/api/legacy/digital-signage/uploads/oberlin/60f5fa890d865.svg' />
+            <img  data-type='1' data-url='/digital-signage/remote/7' data-id='1723' data-active_src='' data-src='https://oberlin.communityhub.cloud/api/legacy/digital-signage/uploads/oberlin/610ab0d0b6ef8.svg' src='https://oberlin.communityhub.cloud/api/legacy/digital-signage/uploads/oberlin/610ab0d0b6ef8.svg' />
           </div>
         </center>
       </div>
@@ -71,19 +63,19 @@
       <div class="flex-child2">
         <center>
           <div class="button" data-twig="btn4">
-            <img  data-type='1' data-url='/digital-signage/remote/7' data-id='1755' data-active_src='' data-src='https://oberlin.communityhub.cloud/api/legacy/digital-signage/uploads/oberlin/6114073c708bc.svg' src='https://oberlin.communityhub.cloud/api/legacy/digital-signage/uploads/oberlin/6114073c708bc.svg' />
+            <img  data-type='1' data-url='/digital-signage/remote/7' data-id='1720' data-active_src='' data-src='https://oberlin.communityhub.cloud/api/legacy/digital-signage/uploads/oberlin/610ab08805e21.svg' src='https://oberlin.communityhub.cloud/api/legacy/digital-signage/uploads/oberlin/610ab08805e21.svg' />
           </div>
         </center>
       </div>
 
     </div>
-    
+    <!-- Row Three -->
     <div class="flex-container2">
 
       <div class="flex-child2">
         <center>
           <div class="button" data-twig="btn5">
-            <img  data-type='1' data-url='/digital-signage/remote/7' data-id='1570' data-active_src='' data-src='https://oberlin.communityhub.cloud/api/legacy/digital-signage/uploads/oberlin/60f5fa7725776.svg' src='https://oberlin.communityhub.cloud/api/legacy/digital-signage/uploads/oberlin/60f5fa7725776.svg' />
+            <img  data-type='1' data-url='/digital-signage/remote/7' data-id='1721' data-active_src='' data-src='https://oberlin.communityhub.cloud/api/legacy/digital-signage/uploads/oberlin/610ab0a32eaec.svg' src='https://oberlin.communityhub.cloud/api/legacy/digital-signage/uploads/oberlin/610ab0a32eaec.svg' />
           </div>
         </center>
       </div>
@@ -91,7 +83,7 @@
       <div class="flex-child2">
         <center>
           <div class="button" data-twig="btn6">
-            <img  data-type='1' data-url='/digital-signage/remote/7' data-id='1750' data-active_src='' data-src='https://oberlin.communityhub.cloud/api/legacy/digital-signage/uploads/oberlin/611406bc4b6b4.svg' src='https://oberlin.communityhub.cloud/api/legacy/digital-signage/uploads/oberlin/611406bc4b6b4.svg' />
+            <img  data-type='1' data-url='/digital-signage/remote/7' data-id='1719' data-active_src='' data-src='https://oberlin.communityhub.cloud/api/legacy/digital-signage/uploads/oberlin/610ab06bec8c0.svg' src='https://oberlin.communityhub.cloud/api/legacy/digital-signage/uploads/oberlin/610ab06bec8c0.svg' />
           </div>
         </center>
       </div>
@@ -101,13 +93,7 @@
     <!-- hub home button end -->
     <a href="https://environmentaldashboard.org/nav/" class="button2">HUB HOME</a>
 
-    <script src="../scripts/">
+    <script src="../scripts/controllers.js">
     </script>
-
   </body>
-
-
-
-
-
 </html>
