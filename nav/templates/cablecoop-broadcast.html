@@ -4,31 +4,23 @@
     <!-- change "content" as appropriate -->
     <meta name= "description" content="Controller template webpage">
     <meta name="viewport" content="user-scalable=0">
-    <!-- change title as appropriate -->
     <link rel="stylesheet" href="../styles/controller.css">
+    <!-- change title as appropriate -->
     <title>Channel 10</title>
-    <!-- <link rel="stylesheet" type="text/css" href="/nav/styles/style.css"> -->
 
 </head>
 
 
   <body>
-
+    <!-- The below blocks to the next comment is the code to establish user timeout and que of controller use -->
     <div id="timeout-overlay"><h1>Your time using this remote is up. Try again starting at a later time.</h1></div>
     <div id="queue-overlay"><h1>You are waiting <span id="in-the-queue">in the queue</span>. You will gain access at <span id="a-later-time">a later time</span> at the latest.</h1></div>
     <div id="cookie-overlay"><h1>Cookies are required to use the remote controller.</h1></div>
     <div id="disconnected-overlay"><h1>Display is disconnected. Please restart the display in order to control it.</h1></div>
     <div id="init-overlay"><h1>Initializing connection...</h1></div>
     <div id="error-overlay"><h1>Lost connection to display... reconnecting in <span id="remaining">10</span>.</h1><p>If this problem persists, please contact <a href="mailto:mail@communityhub.cloud?subject=Controller 38 loaded at 1626203244 connection error with oberlin server">mail@communityhub.cloud</a>.</p></div>
-    <!-- first row container -->
-
-
-      <!-- first column item in first-row container -->
-      <!-- <div class="flex-child">
-        <center>IGA Screen Controller</center>
-      </div> -->
-
-      <!-- second column item in first-row container -->
+    <!-- below you will find flex-container for the controller banner, flex-container2 each for a row of buttons
+    when adding new buttons replace the img tag and its content between the center tags -->
       <div class="flex-container">
       <div class="flex-child">
 
@@ -37,7 +29,7 @@
       </div>
 
     </div>
-
+    <!-- Row One -->
     <div class="flex-container2">
 
       <div class="flex-child2">
@@ -57,7 +49,7 @@
       </div>
 
     </div>
-
+    <!-- Row Two -->
     <div class="flex-container2">
 
       <div class="flex-child2">
@@ -77,7 +69,7 @@
       </div>
 
     </div>
-    
+    <!-- Row Three -->
     <div class="flex-container2">
 
       <div class="flex-child2">
@@ -103,11 +95,5 @@
 
     <script src="../scripts/controllers.js">
     </script>
-
   </body>
-
-
-
-
-
 </html>
