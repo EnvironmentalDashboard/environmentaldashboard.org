@@ -9,7 +9,7 @@
 <?php } ?>
 <div class="row">
   <div class="col banner-col">
-    <a href="/"><img src="https://environmentaldashboard.org/images/banner.jpg" alt="" class="img-fluid"></a>
+    <a href="/"><img src="../images/oberlin-banner.jpg" alt="" class="img-fluid"></a>
   </div>
 </div>
 <nav class="navbar sticky-top navbar-expand-lg navbar-dark" style="background: #21a7df;padding-top: 0px;padding-bottom: 0px">
@@ -24,10 +24,10 @@
       </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink1" id="hover_target1">
           <a class="dropdown-item" href="/cwd">Citywide View</a>
-          <a class="dropdown-item" href="http://buildingdashboard.net/oberlincity/#/oberlincity/cityelectricity/">Electricity</a>
+          <!-- <a class="dropdown-item" href="http://buildingdashboard.net/oberlincity/#/oberlincity/cityelectricity/">Electricity</a>
           <a class="dropdown-item" href="http://buildingdashboard.net/oberlincity/#/oberlincity/citywateruse">Water Flow</a>
           <a class="dropdown-item" href="http://buildingdashboard.net/oberlincity/#/oberlincity/citywaterquality">Water Quality</a>
-          <a class="dropdown-item" href="http://buildingdashboard.net/oberlin/#/oberlin/spearpoint">10 Acre Solar Array</a>
+          <a class="dropdown-item" href="http://buildingdashboard.net/oberlin/#/oberlin/spearpoint">10 Acre Solar Array</a> -->
           <a class="dropdown-item" href="/gauges-explained">Gauges explained</a>
         </div>
       </li>
@@ -41,8 +41,8 @@
           <div class="dropdown">
             <a class="dropdown-item dropdown-toggle" href="#" id="navbarDropdownMenuLink3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Oberlin City</a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink3">
-              <li><a class="dropdown-item" href="https://buildingos.com/s/oberlincity/storyboard314/?chapterId=1390">Eastwood Elementary</a></li>
-              <li><a class="dropdown-item" href="https://buildingos.com/s/oberlincity/storyboard314/?chapterId=1391">Prospect Elementary</a></li>
+              <!-- <li><a class="dropdown-item" href="https://buildingos.com/s/oberlincity/storyboard314/?chapterId=1390">Eastwood Elementary</a></li>
+              <li><a class="dropdown-item" href="https://buildingos.com/s/oberlincity/storyboard314/?chapterId=1391">Prospect Elementary</a></li> -->
               <li><a class="dropdown-item" href="https://buildingos.com/s/oberlincity/storyboard314/?chapterId=1392">Langston Middle School</a></li>
               <li><a class="dropdown-item" href="https://buildingos.com/s/oberlincity/storyboard314/?chapterId=1393">Oberlin High School</a></li>
               <li><a class="dropdown-item" href="https://buildingos.com/s/oberlincity/storyboard314/?chapterId=1394">Langston Board Office</a></li>
@@ -60,7 +60,7 @@
               <li><a class="dropdown-item" href="https://buildingos.com/reports/dashboards/12ef3f22634b11e79136525400ac67dc">Alumni Office</a></li>
             </ul>
           </div>
-          <a href="https://palmer.buildingos.com/reports/dashboards/c59fde5ec0db11e7aff5525400391da3" class="dropdown-item" target="_blank">Toledo Public Schools</a>
+          <!-- <a href="https://palmer.buildingos.com/reports/dashboards/c59fde5ec0db11e7aff5525400391da3" class="dropdown-item" target="_blank">Toledo Public Schools</a> -->
         </div>
       </li>
       <li class="nav-item">
