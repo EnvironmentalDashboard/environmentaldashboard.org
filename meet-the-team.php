@@ -109,24 +109,24 @@
         <div class="flip-card">
           <div class="flip-card-inner">
             <div class="flip-card-front">
-              <img src="/images/oliver.jpg" alt="oliver" class="images">
+              <img src="/images/jenny.jpg" alt="oliver" class="images">
             </div>
             <div class="flip-card-back">
               <p class="name">Jenny Rowlett</p>
               <p class="description">Hardware Manager</p>
-              <p class="description">/p>
+              <p class="description">Loves chai latte</p>
             </div>
           </div>
           </div>
           <div class="flip-card">
           <div class="flip-card-inner">
             <div class="flip-card-front">
-              <img src="/images/oliver.jpg" alt="oliver" class="images">
+              <img src="/images/sagana.jpg" alt="oliver" class="images">
             </div>
             <div class="flip-card-back">
               <p class="name">Sagana Ondande</p>
               <p class="description">Software Engineer</p>
-              <p class="description"></p>
+              <p class="description">Loves cycling, running, and skydiving</p>
             </div>
           </div>
         </div>
