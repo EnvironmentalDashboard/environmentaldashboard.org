@@ -8,22 +8,25 @@
   src: url('/fonts/biko/Biko_Regular.otf');
 }
 html{
-  background-color: #191919;
+  /* background-color: #191919; */
+	background-color:white;
 }
 .constant{
   position: fixed;
   top: 0;
-  background-color: #191919;
+  /* background-color: #191919; */
+	background-color:white;
 }
-.header{
+/* .header{
   font-family: 'Multicolore';
   font-size: 32.5px;
   width: 85%;
   padding-top: 5%;
   padding-bottom: 1%;
   margin-left: 6.5%;
-  color: #39B54A
-}
+  /* color: #39B54A */
+	color:white
+} */
 
 .subhead{
   font-family: 'Biko';

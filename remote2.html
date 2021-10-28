@@ -1,9 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400&display=swap');
+<html>
+  <head>
+    <meta charset= "UTF-8">
+    <!-- change "content" as appropriate -->
+    <meta name= "description" content="Select Screen Webpage">
+    <!-- change title as appropriate -->
+    <title>Select Screen</title>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400&display=swap');
 
     html, body {
       height: 100%;
       margin: 0px;
-      background: #333;
+      background: #FFFFFF;
     }
     .flex-container {
       display: flex;
@@ -21,7 +29,7 @@
     .flex-child2{
       flex:1;
       height:100%;
-      width:50%;
+      width:100%;
     }
   }
   /* Media Query for IPAD */
@@ -67,41 +75,27 @@
       padding-top:20px;
     } */
 
-    @media screen and (orientation: landscape) {
-  html {
-    /* Rotate the content container */
-    transform: rotate(-90deg);
-    transform-origin: left top;
-    /* Set content width to viewport height */
-    width: 100vh;
-    /* Set content height to viewport width */
-    height: 100vw;
-    overflow-x: hidden;
-    position: absolute;
-    top: 100%;
-    left: 0;
-  }
-}
-
     .button2 {
       background-color: #DB7B35; /* Green */
       border: none;
       color:white;
-      width: 60vw;
       /* padding: 10px 20px; */
       text-align: center;
       text-decoration: none;
-      font-size: 4em;
+      font-size: 75px;
+      /* margin:auto; */
+      display:block;
+      padding-top: 10px;
+      padding-left:50px;
+      padding-right:50px;
+      padding-bottom:10px;
+      margin-left:120px;
+      margin-right:120px;
+      margin-top:80px;
       border-radius: 10px;
       font-family:'Comfortaa', cursive;
       font-weight:bold;
-      /* margin:auto; */
-      display:block;
-      padding: 2rem;
-      margin: auto;
-      margin-top: 4rem;
     }
-
  @media screen and (min-width: 1000px){
     .button2 {
       background-color: #DB7B35; /* Green */
@@ -139,19 +133,75 @@
       cursor: pointer;
       position: relative;
     }
-    #error-overlay, #cookie-overlay, #timeout-overlay, #queue-overlay, #init-overlay, #disconnected-overlay {
-      height: 100vh;
-      width: 100vw;
-      position: absolute;
-      background: #eee;
-      color: #333;
-      top: 0;
-      left: 0;
-      z-index: 100;
-      text-align: center;
-      padding-top: 20vh;
-      font-family: sans-serif;
-    }
-    #error-overlay, #cookie-overlay, #timeout-overlay, #queue-overlay, #disconnected-overlay {
-      display: none;
-    }
+
+    </style>
+    <!-- <link rel="stylesheet" type="text/css" href="/nav/styles/style.css"> -->
+
+</head>
+
+
+  <body>
+
+      <div class="flex-container">
+        <div class="flex-child">
+
+          <img src="./resources/selectscreen_banner.svg">
+
+        </div>
+
+     </div>
+
+    <div class="flex-container2">
+
+      <div class="flex-child2">
+        <center>
+        <button onclick=" "><img src="./resources/OPS_remotebutton.svg"></button>
+        </center>
+      </div>
+
+
+    </div>
+
+    <div class="flex-container2">
+
+      <div class="flex-child2">
+        <center>
+          <button onclick=""><img src="../resources/OPL_remotebutton.svg"></button>
+        </center>
+      </div>
+
+
+    </div>
+
+    <div class="flex-container2">
+
+      <div class="flex-child2">
+        <center>
+            <button onclick=""><img src="../resources/IGA_remotebutton.svg"></button>
+        </center>
+      </div>
+
+
+    </div>
+
+    <div class="flex-container2">
+
+      <div class="flex-child2">
+        <center>
+            <button onclick=""><img src="../resources/OPL_remotebutton.svg"></button>
+        </center>
+      </div>
+
+
+    </div>
+
+
+
+
+  </body>
+
+
+
+
+
+</html>
