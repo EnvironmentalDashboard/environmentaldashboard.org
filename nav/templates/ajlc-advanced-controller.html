@@ -14,7 +14,7 @@
   <body>
     <!-- below you will find flex-container for the controller banner, flex-container2 each for a row of buttons
     when adding new buttons replace the img tag and its content between the center tags -->
-      <div class="flex-container">
+    <div class="flex-container">
       <div class="flex-child">
 
           <img src="../resources/AJLCbanner.svg">
@@ -22,12 +22,13 @@
       </div>
 
     </div>
+
     <!-- Row One -->
     <div class="flex-container2">
 
       <div class="flex-child2">
         <center>
-          <div class="button">
+          <div class="button" id="menuBtn1">
             <img src="../resources/livedata_button.svg">
           </div>
         </center>
@@ -35,19 +36,20 @@
 
       <div class="flex-child2">
         <center>
-          <div class="button">
+          <div class="button" id="menuBtn2">
             <img src="../resources/livedata_button.svg">
           </div>
         </center>
       </div>
 
     </div>
+
     <!-- Row Two -->
     <div class="flex-container2">
 
       <div class="flex-child2">
         <center>
-          <div class="button">
+          <div class="button" id="menuBtn3">
             <img src="../resources/livedata_button.svg">
           </div>
         </center>
@@ -55,33 +57,25 @@
 
       <div class="flex-child2">
         <center>
-          <div class="button">
+          <div class="button" id="menuBtn4">
             <img src="../resources/livedata_button.svg">
           </div>
         </center>
       </div>
 
     </div>
-    <!-- Row Three
-    <div class="flex-container2">
 
-      <div class="flex-child2">
-        <center>
-          <div class="button">
-            <img src="../resources/livedata_button.svg">
-          </div>
-        </center>
+    <!-- Carousel to appear virtically centered leaving space above and below for intuitve return to the parent controller -->
+    <div class="carousel" id="carouselOne">
+      <div class="carouselItem">Button #1</div>
+      <div class="carouselItem">Button #2</div>
+      <div class="carouselItem">Button #3</div>
+      <div class="carouselNav">
+        <span class="carouselNavSpots"></span>
+        <span class="carouselNavSpots"></span>
+        <span class="carouselNavSpots"></span>
       </div>
-
-      <div class="flex-child2">
-        <center>
-          <div class="button">
-            <img src="../resources/livedata_button.svg">
-          </div>
-        </center>
-      </div>
-
-    </div> -->
+    </div>
 
     <!-- hub home button end -->
     <a href="https://environmentaldashboard.org/nav/" class="button2">HUB HOME</a>
