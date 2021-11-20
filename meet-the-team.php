@@ -55,46 +55,33 @@
             </div>
           </div>
         </div>
-        <div class="flip-card">
-          <div class="flip-card-inner">
-            <div class="flip-card-front">
-              <img src="/images/Gaurav.jpg" alt="Gaurav" class="images">
-            </div>
-            <div class="flip-card-back">
-              <p class="name">Gaurav Bora</p>
-              <p class="description">Software Engineer</p>
-              <p class="description">When he was seven he found out that he could play any song he heard by ear on his toy keyboard</p>
-            </div>
-          </div>
-        </div>
       </div>
       <div class="row">
         <div class="flip-card">
-          <div class="flip-card-inner">
-            <div class="flip-card-front">
-              <img src="/images/Rowan.jpg" alt="rowan" class="images">
-            </div>
-            <div class="flip-card-back">
-              <p class="name">Rowan Hannan</p>
-              <p class="description">Graphic Designer</p>
-              <p class="description">Collector of insects, matchbooks, and battered sea plastics</p>
-            </div>
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="/images/maddy.jpg" alt="maddy" class="images">
+          </div>
+          <div class="flip-card-back">
+            <p class="name">Madeleine Faubert</p>
+            <p class="description">Design and Media</p>
+            <p class="description">Is a cult baby</p>
           </div>
         </div>
-        <div class="flip-card">
-          <div class="flip-card-inner">
-            <div class="flip-card-front">
-              <img src="/images/Sam.jpg" alt="sam" class="images">
-            </div>
-            <div class="flip-card-back">
-              <p class="name">Sam Craig</p>
-              <p class="description">Senior Programmer</p>
-              <p class="description">Won his age group at the Chicago half marathon. They mailed him the award for the wrong Sam</p>
-            </div>
-          </div>
-        </div>
-
       </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="/images/Gaurav.jpg" alt="Gaurav" class="images">
+          </div>
+          <div class="flip-card-back">
+            <p class="name">Gaurav Bora</p>
+            <p class="description">Software Engineer</p>
+            <p class="description">When he was seven he found out that he could play any song he heard by ear on his toy keyboard</p>
+          </div>
+        </div>
+      </div>
+    </div>
       <br>
       <h1 class="head">
         Student Team
@@ -110,42 +97,43 @@
         <div class="flip-card">
           <div class="flip-card-inner">
             <div class="flip-card-front">
-              <img src="/images/phoebe.jpg" alt="Phoebe" class="images">
-            </div>
-            <div class="flip-card-back">
-              <p class="name">Phoebe von Conta</p>
-              <p class="description">CV Manager</p>
-              <p class="description">Avid runner on the Cross Country and Track team</p>
-            </div>
-          </div>
-        </div>
-        <div class="flip-card">
-          <div class="flip-card-inner">
-            <div class="flip-card-front">
-              <img src="/images/harriet.jpg" alt="Harriet" class="images">
-            </div>
-            <div class="flip-card-back">
-              <p class="name">Harriet McSurdy</p>
-              <p class="description">Social Media/Research</p>
-              <p class="description">Favorite color is orange</p>
-            </div>
-          </div>
-        </div>
-        <div class="flip-card">
-          <div class="flip-card-inner">
-            <div class="flip-card-front">
-              <img src="/images/oliver.jpg" alt="oliver" class="images">
+              <img src="/images/oliver.png" alt="oliver" class="images">
             </div>
             <div class="flip-card-back">
               <p class="name">Oliver Ripps</p>
-              <p class="description">Programmer</p>
-              <p class="description">Coded this page</p>
+              <p class="description">Software Engineer</p>
+              <p class="description">Created The Meet The Team Page!</p>
+            </div>
+          </div>
+        </div>
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="/images/jenny.jpg" alt="oliver" class="images">
+            </div>
+            <div class="flip-card-back">
+              <p class="name">Jenny Rowlett</p>
+              <p class="description">Hardware Manager</p>
+              <p class="description">Loves chai latte</p>
+            </div>
+          </div>
+          </div>
+          <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="/images/sagana.jpg" alt="oliver" class="images">
+            </div>
+            <div class="flip-card-back">
+              <p class="name">Sagana Ondande</p>
+              <p class="description">Software Engineer</p>
+              <p class="description">Loves cycling, running, and skydiving</p>
             </div>
           </div>
         </div>
       </div>
+      </div>
       <br>
-      <div class="row">
+        <!-- <div class="row">
         <div class="flip-card">
             <div class="flip-card-inner">
               <div class="flip-card-front">
@@ -157,32 +145,8 @@
                 <p class="description">Loves Batman</p>
               </div>
             </div>
-          </div>
-      <!-- <div class="flip-card">
-          <div class="flip-card-inner">
-            <div class="flip-card-front">
-              <img src="/images/adar.jpg" alt="adar" class="images">
-            </div>
-            <div class="flip-card-back">
-              <p class="name">Adar Tulloch</p>
-              <p class="description">Programmer</p>
-              <p class="description">Is David Blaine's biggest fan</p>
-            </div>
-          </div>
-        </div> -->
-        <div class="flip-card">
-          <div class="flip-card-inner">
-            <div class="flip-card-front">
-              <img src="/images/maddy.jpg" alt="maddy" class="images">
-            </div>
-            <div class="flip-card-back">
-              <p class="name">Madeleine Faubert</p>
-              <p class="description">Design and Media</p>
-              <p class="description">Is a cult baby</p>
-            </div>
-          </div>
-        </div>
-        <div class="flip-card">
+          </div> -->
+        <!-- <div class="flip-card">
           <div class="flip-card-inner">
             <div class="flip-card-front">
               <img src="/images/Ian.png" alt="Ian" class="images">
@@ -194,44 +158,7 @@
             </div>
           </div>
         </div>
-        <!-- <div class="flip-card">
-          <div class="flip-card-inner">
-            <div class="flip-card-front">
-              <img src="/images/Ethan.jpg" alt="ethan" class="images">
-            </div>
-            <div class="flip-card-back">
-              <p class="name">Ethan Michel</p>
-              <p class="description">Programmer</p>
-              <p class="description">Super into playing ping pong</p>
-            </div>
-          </div>
-        </div> -->
-      </div>
-      <div class="row">
-        <div class="flip-card">
-          <div class="flip-card-inner">
-            <div class="flip-card-front">
-              <img src="/images/Thayer.jpg" alt="thayer" class="images">
-            </div>
-            <div class="flip-card-back">
-              <p class="name">Thayer Preston</p>
-              <p class="description">Promotion and Media</p>
-              <p class="description">Absolutely loves subterranean homes</p>
-            </div>
-          </div>
-        </div>
-        <div class="flip-card">
-          <div class="flip-card-inner">
-            <div class="flip-card-front">
-              <img src="/images/madison.jpg" alt="madison" class="images">
-            </div>
-            <div class="flip-card-back">
-              <p class="name">Madison Olsen</p>
-              <p class="description">Photographer</p>
-              <p class="description">Is in several DND campaigns and is big into board games</p>
-          </div>
-        </div>
-      </div>
+      </div> -->
     <?php include 'includes/js.php'; ?>
     </body>
   </html>

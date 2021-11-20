@@ -1,0 +1,306 @@
+<html>
+  <head>
+    <meta charset= "UTF-8">
+    <!-- change "content" as appropriate -->
+    <meta name= "description" content="Controller template webpage">
+    <meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
+    <!-- change title as appropriate -->
+    <title>Oberlin Public Library Market Demo Controller</title>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400&display=swap');
+
+    html, body {
+      height: 100%;
+      margin: 0px;
+      background: #333;
+    }
+    .flex-container {
+      display: flex;
+      height: 10%;
+      width:100%;
+    }
+
+    .flex-container2{
+      display:flex;
+      height:25%;
+      width:100%;
+
+    }
+   @media screen and (max-width: 768px){
+    .flex-child2{
+      flex:1;
+      height:100%;
+      width:50%;
+    }
+  }
+
+  @media screen and (orientation: landscape) and (max-width:1000px) {
+    html {
+      /* Rotate the content container */
+    transform: rotate(-90deg);
+    transform-origin: left top;
+    /* Set content width to viewport height */
+    width: 100vh;
+    /* Set content height to viewport width */
+    height: 100vw;
+    overflow-x: hidden;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    }
+  }
+  /* Media Query for IPAD */
+    @media screen and (min-width: 768px){
+      .flex-child2{
+        flex:1;
+        height:95%;
+        width:50%;
+        margin-top:30px; /* Margin top added for ipad and ipad pro*/
+      }
+
+    }
+
+    @media screen and (min-width: 1000px){
+     .flex-child2{
+       flex:1;
+       height:95%;
+       width:50%;
+       margin-top:50px;
+     }
+   }
+
+   @media screen and (min-width: 1800px){
+    .flex-child2{
+      flex:1;
+      height:95%;
+      width:50%;
+      margin-top:200px;
+    }
+  }
+
+    .flex-child {
+      flex: 1;
+      height:100%;
+      width: 100%;
+    }
+
+    /* .flex-child:first-child {
+      margin-right: 20px;
+      font-family:'Comfortaa',cursive;
+      font-size:50px;
+      color:white;
+      padding-top:20px;
+    } */
+
+    .button2 {
+      background-color: #DB7B35; /* Green */
+      border: none;
+      color:white;
+      width: 60vw;
+      /* padding: 10px 20px; */
+      text-align: center;
+      text-decoration: none;
+      font-size: 4em;
+      border-radius: 10px;
+      font-family:'Comfortaa', cursive;
+      font-weight:bold;
+      /* margin:auto; */
+      display:block;
+      padding: 2rem;
+      margin: auto;
+      margin-top: 4rem;
+    }
+ @media screen and (min-width: 1000px){
+    .button2 {
+      background-color: #DB7B35; /* Green */
+      border: none;
+      color:white;
+      /* padding: 10px 20px; */
+      text-align: center;
+      text-decoration: none;
+      font-size: 75px;
+      /* margin:auto; */
+      display:block;
+      padding-top: 10px;
+      padding-left:50px;
+      padding-right:50px;
+      padding-bottom:10px;
+      margin-left:120px;
+      margin-right:120px;
+      margin-top:80px;
+      border-radius: 10px;
+      font-family:'Comfortaa', cursive;
+      font-weight:bold;
+    }
+  }
+
+    /* .frame{
+      height:70%;
+      width:100%;
+
+
+    } */
+
+    .button img {
+      width: 100%;
+      height: 100%;
+      cursor: pointer;
+      position: relative;
+    }
+    #error-overlay, #cookie-overlay, #timeout-overlay, #queue-overlay, #init-overlay, #disconnected-overlay {
+      height: 100vh;
+      width: 100vw;
+      position: absolute;
+      background: #eee;
+      color: #333;
+      top: 0;
+      left: 0;
+      z-index: 100;
+      text-align: center;
+      padding-top: 20vh;
+      font-family: sans-serif;
+    }
+    #error-overlay, #cookie-overlay, #timeout-overlay, #queue-overlay, #disconnected-overlay {
+      display: none;
+    }
+    </style>
+    <!-- <link rel="stylesheet" type="text/css" href="/nav/styles/style.css"> -->
+
+</head>
+
+
+  <body>
+
+    <div id="timeout-overlay"><h1>Your time using this remote is up. Try again starting at a later time.</h1></div>
+    <div id="queue-overlay"><h1>You are waiting <span id="in-the-queue">in the queue</span>. You will gain access at <span id="a-later-time">a later time</span> at the latest.</h1></div>
+    <div id="cookie-overlay"><h1>Cookies are required to use the remote controller.</h1></div>
+    <div id="disconnected-overlay"><h1>Display is disconnected. Please restart the display in order to control it.</h1></div>
+    <div id="init-overlay"><h1>Initializing connection...</h1></div>
+    <div id="error-overlay"><h1>Lost connection to display... reconnecting in <span id="remaining">10</span>.</h1><p>If this problem persists, please contact <a href="mailto:mail@communityhub.cloud?subject=Controller 38 loaded at 1626203244 connection error with oberlin server">mail@communityhub.cloud</a>.</p></div>
+    <!-- first row container -->
+
+
+      <!-- first column item in first-row container -->
+      <!-- <div class="flex-child">
+        <center>IGA Screen Controller</center>
+      </div> -->
+
+      <!-- second column item in first-row container -->
+      <div class="flex-container">
+      <div class="flex-child">
+
+          <img src="../resources/opl_controllerbanner.svg">
+
+      </div>
+
+    </div>
+
+    <div class="flex-container2">
+
+      <div class="flex-child2">
+        <center>
+          <div class="button" data-twig="btn1">
+            <img
+              data-type="1"
+              data-url="/digital-signage/remote/7"
+              data-id="1776"
+              data-active_src=""
+              data-src="https://oberlin.communityhub.cloud/api/legacy/digital-signage/uploads/oberlin/618c0b0f5420e.svg"
+              src="https://oberlin.communityhub.cloud/api/legacy/digital-signage/uploads/oberlin/618c0b0f5420e.svg"
+            />
+          </div>
+        </center>
+      </div>
+
+      <div class="flex-child2">
+        <center>
+          <div class="button" data-twig="btn2">
+            <img
+              data-type="1"
+              data-url="/digital-signage/remote/7"
+              data-id="1780"
+              data-active_src=""
+              data-src="https://oberlin.communityhub.cloud/api/legacy/digital-signage/uploads/oberlin/618c0d957176e.svg"
+              src="https://oberlin.communityhub.cloud/api/legacy/digital-signage/uploads/oberlin/618c0d957176e.svg"
+            />
+          </div>
+        </center>
+      </div>
+    </div>
+    <!-- Row Two -->
+    <div class="flex-container2">
+      <div class="flex-child2">
+        <center>
+          <div class="button" data-twig="btn3">
+            <img
+              data-type="1"
+              data-url="/digital-signage/remote/7"
+              data-id="1779"
+              data-active_src=""
+              data-src="https://oberlin.communityhub.cloud/api/legacy/digital-signage/uploads/oberlin/618c0b71a46e6.svg"
+              src="https://oberlin.communityhub.cloud/api/legacy/digital-signage/uploads/oberlin/618c0b71a46e6.svg"
+            />
+          </div>
+        </center>
+      </div>
+
+      <div class="flex-child2">
+        <center>
+          <div class="button" data-twig="btn4">
+            <img
+              data-type="1"
+              data-url="/digital-signage/remote/7"
+              data-id="1775"
+              data-active_src=""
+              data-src="https://oberlin.communityhub.cloud/api/legacy/digital-signage/uploads/oberlin/618c0ad7eb887.svg"
+              src="https://oberlin.communityhub.cloud/api/legacy/digital-signage/uploads/oberlin/618c0ad7eb887.svg"
+            />
+          </div>
+        </center>
+      </div>
+    </div>
+    <!-- Row Three -->
+    <div class="flex-container2">
+      <div class="flex-child2">
+        <center>
+          <div class="button" data-twig="btn5">
+            <img
+              data-type="1"
+              data-url="/digital-signage/remote/7"
+              data-id="1778"
+              data-active_src=""
+              data-src="https://oberlin.communityhub.cloud/api/legacy/digital-signage/uploads/oberlin/618c0b4fb659c.svg"
+              src="https://oberlin.communityhub.cloud/api/legacy/digital-signage/uploads/oberlin/618c0b4fb659c.svg"
+            />
+          </div>
+        </center>
+      </div>
+
+      <div class="flex-child2">
+        <center>
+          <div class="button" data-twig="btn6">
+            <img
+              data-type="1"
+              data-url="/digital-signage/remote/7"
+              data-id="1783"
+              data-active_src=""
+              data-src="https://oberlin.communityhub.cloud/api/legacy/digital-signage/uploads/oberlin/618d4bbb5e60e.svg"
+              src="https://oberlin.communityhub.cloud/api/legacy/digital-signage/uploads/oberlin/618d4bbb5e60e.svg"
+              style="opacity: 1"
+            />
+          </div>
+        </center>
+      </div>
+
+    </div>
+    <!-- hub home button end -->
+    <a href="https://environmentaldashboard.org/nav/" class="button2">HUB HOME</a>
+
+    <script src="../scripts/queued_controller.js"></script>
+  </body>
+
+
+
+
+
+</html>
