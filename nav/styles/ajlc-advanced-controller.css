@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400&display=swap');
+
+    html, body {
+      height: 100%;
+      margin: 0px;
+      background: #333;
+    }
+    .flex-container {
+      display: flex;
+      height: 10%;
+      width:100%;
+    }
+
+    .flex-container2{
+      display:flex;
+      height:25%;
+      width:100%;
+
+    }
+   @media screen and (max-width: 768px){
+    .flex-child2{
+      flex:1;
+      height:100%;
+      width:50%;
+    }
+  }
+  /* Media Query for IPAD */
+    @media screen and (min-width: 768px){
+      .flex-child2{
+        flex:1;
+        height:95%;
+        width:50%;
+        margin-top:30px; /* Margin top added for ipad and ipad pro*/
+      }
+
+    }
+
+    @media screen and (min-width: 1000px){
+     .flex-child2{
+       flex:1;
+       height:95%;
+       width:50%;
+       margin-top:50px;
+     }
+   }
+
+   @media screen and (min-width: 1800px){
+    .flex-child2{
+      flex:1;
+      height:95%;
+      width:50%;
+      margin-top:200px;
+    }
+  }
+
+    .flex-child {
+      flex: 1;
+      height:100%;
+      width: 100%;
+    }
+
+    /* .flex-child:first-child {
+      margin-right: 20px;
+      font-family:'Comfortaa',cursive;
+      font-size:50px;
+      color:white;
+      padding-top:20px;
+    } */
+
+    @media screen and (orientation: landscape) {
+  html {
+    /* Rotate the content container */
+    /* transform: rotate(-90deg);
+    transform-origin: left top; */
+    /* Set content width to viewport height */
+    width: 100vh;
+    /* Set content height to viewport width */
+    height: 100vw;
+    overflow-x: hidden;
+    position: absolute;
+    top: 100%;
+    left: 0;
+  }
+}
+
+    .button2 {
+      background-color: #DB7B35; /* Green */
+      border: none;
+      color:white;
+      width: 60vw;
+      height: 15vw;
+      text-align: center;
+      text-decoration: none;
+      font-size: 2.5em;
+      border-radius: 10px;
+      font-family:'Comfortaa', cursive;
+      font-weight:bold;
+      display:block;
+      padding: 1rem;
+      margin: auto;
+      margin-top: 4rem;
+    }
+
+ @media screen and (min-width: 1000px){
+    .button2 {
+      background-color: #DB7B35; /* Green */
+      border: none;
+      color:white;
+      text-align: center;
+      text-decoration: none;
+      font-size: 75px;
+      display:block;
+      padding-top: 10px;
+      padding-left:50px;
+      padding-right:50px;
+      padding-bottom:10px;
+      margin-left:120px;
+      margin-right:120px;
+      margin-top:80px;
+      border-radius: 10px;
+      font-family:'Comfortaa', cursive;
+      font-weight:bold;
+    }
+  }
+
+    .button img {
+      width: 100%;
+      height: 100%;
+      cursor: pointer;
+      position: relative;
+    }
+
+/* carousel css */
+.carousel {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 100%;
+  height: 60%;
+  background: #21A7DF;
+}
+
+.carouselItem {
+  height: 60%;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.carouselNav {
+  width: 60%;
+  padding-bottom: 0em;
+  position: absolute;
+  top: 90%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  bottom: 0;
+  left: 20%;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.carouselNavSpots {
+  background: #333;
+  opacity: .5;
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+
+/* error handling */
+    #error-overlay, #cookie-overlay, #timeout-overlay, #queue-overlay, #init-overlay, #disconnected-overlay {
+      height: 100vh;
+      width: 100vw;
+      position: absolute;
+      background: #eee;
+      color: #333;
+      top: 0;
+      left: 0;
+      z-index: 100;
+      text-align: center;
+      padding-top: 20vh;
+      font-family: sans-serif;
+    }
+
+    #error-overlay, #cookie-overlay, #timeout-overlay, #queue-overlay, #disconnected-overlay {
+      display: none;
+    }
