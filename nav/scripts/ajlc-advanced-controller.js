@@ -26,3 +26,16 @@ function toggleOff() {
     descriptions[1].style.visibility = "hidden";
     descriptions[2].style.visibility = "hidden";
 }
+
+//function to navigate carousel with spots eventurally this will need to be adapted for swiping on an iPad
+const spotOne = document.getElementById('spotOne')
+const spotTwo = document.getElementById('spotTwo')
+const spotThree = document.getElementById('spotThree')
+
+var advance = function () {
+    console.log ('working')
+}
+
+spotOne.addEventListener('click', advance)
+spotTwo.addEventListener('click', advance)
+spotThree.addEventListener('click', advance)

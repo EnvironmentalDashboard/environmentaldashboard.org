@@ -140,13 +140,15 @@
   width: 100%;
   height: 60%;
   background: #21A7DF;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .carouselItem {
   height: 60%;
-  display: inline-flex;
-  flex-direction: row;
-  justify-content: space-between;
+  padding: 2em;
 }
 
 .carouselNav {
