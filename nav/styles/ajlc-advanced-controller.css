@@ -148,6 +148,7 @@
 .carousel_item {
   height: 60%;
   padding: 2em;
+  display: none;
 }
 
 .carousel_item--selected {
