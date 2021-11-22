@@ -132,7 +132,6 @@
 
 /* carousel css */
 .carousel {
-  margin: 0;
   position: absolute;
   top: 50%;
   -ms-transform: translateY(-50%);
@@ -146,32 +145,35 @@
   align-items: center;
 }
 
-.carouselItem {
+.carousel_item {
   height: 60%;
   padding: 2em;
 }
 
-.carouselNav {
-  width: 60%;
-  padding-bottom: 0em;
-  position: absolute;
-  top: 90%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  bottom: 0;
-  left: 20%;
-  display:flex;
-  flex-direction: row;
-  justify-content: space-around;
+.carousel_item--selected {
+  display: block;
 }
 
-.carouselNavSpots {
+.carousel_nav {
+  width: 60%;
+  padding-top: 60%;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.carousel_button {
   background: #333;
   opacity: .5;
   width: 2em;
   height: 2em;
   border-radius: 50%;
   margin: 0 5px;
+}
+
+.carousel_button--selected {
+  background: rgba(255,255,255, 0.5);
 }
 
 /* error handling */
