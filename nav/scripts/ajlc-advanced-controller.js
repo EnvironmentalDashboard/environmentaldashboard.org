@@ -57,3 +57,14 @@ root_buttons.forEach((button, i) => {
 
 
 //function to close the carousels
+
+window.onclick = function(event) {
+    if (event.target.classList.contains("carousel")){
+        root_carousels.forEach((carousel) => {
+            carousel.classList.remove("carousel--selected");
+            console.log("spunks")
+        })
+    } else {
+            console.log("punks");
+    }
+}
