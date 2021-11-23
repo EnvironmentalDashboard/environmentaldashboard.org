@@ -132,6 +132,10 @@
 
 /* carousel css */
 .carousel {
+  visibility: hidden;
+}
+
+.carousel--selected {
   position: absolute;
   top: 50%;
   -ms-transform: translateY(-50%);
@@ -143,6 +147,7 @@
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  visibility: visible;
 }
 
 .carousel_item {
