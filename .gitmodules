@@ -1,0 +1,3 @@
+[submodule "nav/random-content"]
+	path = nav/random-content
+	url = git@github.com:Caleb-Stripes/random-content-page.git
