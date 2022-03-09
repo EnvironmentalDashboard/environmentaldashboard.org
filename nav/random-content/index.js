@@ -5,12 +5,20 @@
      
 // Array of src urls from pool of content
 const srcArray = [];
-srcArray[0] = 'https://docs.google.com/presentation/d/1C9R1uJ3UxTYtFIvq5gJJqNN4mo3kpLpk-dIRYZLBVXc/preview?rm=minimal&slide=id.g1163cbbd3f2_0_0',
-srcArray[1] = 'https://docs.google.com/presentation/d/1C9R1uJ3UxTYtFIvq5gJJqNN4mo3kpLpk-dIRYZLBVXc/preview?rm=minimal&slide=id.g1163cbbd3f2_0_254',
-srcArray[2] = 'https://docs.google.com/presentation/d/1C9R1uJ3UxTYtFIvq5gJJqNN4mo3kpLpk-dIRYZLBVXc/preview?rm=minimal&slide=id.g1163cbbd3f2_0_5',
-srcArray[3] = 'https://docs.google.com/presentation/d/1C9R1uJ3UxTYtFIvq5gJJqNN4mo3kpLpk-dIRYZLBVXc/preview?rm=minimal&slide=id.g1163cbbd3f2_2_0',
-srcArray[4] = 'https://docs.google.com/presentation/d/1C9R1uJ3UxTYtFIvq5gJJqNN4mo3kpLpk-dIRYZLBVXc/preview?rm=minimal&slide=id.g11435c5e347_0_0',
-srcArray[5] = 'https://docs.google.com/presentation/d/1C9R1uJ3UxTYtFIvq5gJJqNN4mo3kpLpk-dIRYZLBVXc/preview?rm=minimal&slide=id.g11435c5e347_0_4'
+srcArray[0] = 'https://docs.google.com/presentation/d/1f2byL-w1dgvq9SN4P5C7dVwXllTWviNyzVARsigJx2c/preview?rm=minimal&slide=id.g103178f87ab_1_3',
+srcArray[1] = 'https://docs.google.com/presentation/d/1f2byL-w1dgvq9SN4P5C7dVwXllTWviNyzVARsigJx2c/preview?rm=minimal&slide=id.g111ba68a46d_0_0',
+srcArray[2] = 'https://docs.google.com/presentation/d/1f2byL-w1dgvq9SN4P5C7dVwXllTWviNyzVARsigJx2c/preview?rm=minimal&slide=id.g111ba68a46d_0_15',
+srcArray[3] = 'https://docs.google.com/presentation/d/1f2byL-w1dgvq9SN4P5C7dVwXllTWviNyzVARsigJx2c/preview?rm=minimal&slide=id.g111ba68a46d_0_34',
+srcArray[4] = 'https://docs.google.com/presentation/d/1f2byL-w1dgvq9SN4P5C7dVwXllTWviNyzVARsigJx2c/preview?rm=minimal&slide=id.g111ba68a46d_0_50',
+srcArray[5] = 'https://docs.google.com/presentation/d/1f2byL-w1dgvq9SN4P5C7dVwXllTWviNyzVARsigJx2c/preview?rm=minimal&slide=id.g111ba68a46d_0_63',
+srcArray[6] = 'https://docs.google.com/presentation/d/1f2byL-w1dgvq9SN4P5C7dVwXllTWviNyzVARsigJx2c/preview?rm=minimal&slide=id.g111ba68a46d_0_76',
+srcArray[7] = 'https://docs.google.com/presentation/d/1f2byL-w1dgvq9SN4P5C7dVwXllTWviNyzVARsigJx2c/preview?rm=minimal&slide=id.g111ba68a46d_0_89',
+srcArray[8] = 'https://docs.google.com/presentation/d/1f2byL-w1dgvq9SN4P5C7dVwXllTWviNyzVARsigJx2c/preview?rm=minimal&slide=id.g111ba68a46d_0_104',
+srcArray[9] = 'https://docs.google.com/presentation/d/1f2byL-w1dgvq9SN4P5C7dVwXllTWviNyzVARsigJx2c/preview?rm=minimal&slide=id.g111ba68a46d_0_117',
+srcArray[10] = 'https://docs.google.com/presentation/d/1f2byL-w1dgvq9SN4P5C7dVwXllTWviNyzVARsigJx2c/preview?rm=minimal&slide=id.g111ba68a46d_0_130',
+srcArray[11] = 'https://docs.google.com/presentation/d/1f2byL-w1dgvq9SN4P5C7dVwXllTWviNyzVARsigJx2c/preview?rm=minimal&slide=id.g1157155363f_1_0',
+srcArray[12] = 'https://docs.google.com/presentation/d/1f2byL-w1dgvq9SN4P5C7dVwXllTWviNyzVARsigJx2c/preview?rm=minimal&slide=id.g1157155363f_1_11',
+srcArray[13] = 'https://docs.google.com/presentation/d/1f2byL-w1dgvq9SN4P5C7dVwXllTWviNyzVARsigJx2c/preview?rm=minimal&slide=id.g1157155363f_1_22'
 
 function shuffle(array) {
     let currentIndex = array.length,  randomIndex;
