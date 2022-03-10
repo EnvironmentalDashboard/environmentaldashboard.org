@@ -52,4 +52,4 @@ function shuffle(array) {
   }
 
   srcSwap();
-  setInterval(srcSwap, 8000);
+  setInterval(srcSwap, 16000);
