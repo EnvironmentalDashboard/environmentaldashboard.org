@@ -46,12 +46,12 @@
         <div class="flip-card">
           <div class="flip-card-inner">
             <div class="flip-card-front">
-              <img src="/images/Caleb.jpg" alt="Caleb" class="images">
+              <img src="/images/EthanW.jpeg" alt="ethan" class="images">
             </div>
             <div class="flip-card-back">
-              <p class="name">Caleb Stripes</p>
+              <p class="name">Ethan Woodfill</p>
               <p class="description">Manager</p>
-              <p class="description">For four years lived aboard tallships sailing along the west coast</p>
+              <p class="description">Coffee shop aficionado</p>
             </div>
           </div>
         </div>
@@ -109,11 +109,11 @@
         <div class="flip-card">
           <div class="flip-card-inner">
             <div class="flip-card-front">
-              <img src="/images/jenny.jpg" alt="oliver" class="images">
+              <img src="/images/jenny.jpg" alt="jenny" class="images">
             </div>
             <div class="flip-card-back">
               <p class="name">Jenny Rowlett</p>
-              <p class="description">Hardware Manager</p>
+              <p class="description">Social Media and Digital Signage</p>
               <p class="description">Loves chai latte</p>
             </div>
           </div>
@@ -121,12 +121,12 @@
           <div class="flip-card">
           <div class="flip-card-inner">
             <div class="flip-card-front">
-              <img src="/images/sagana.jpg" alt="oliver" class="images">
+              <img src="/images/Sherry.jfif" alt="sherry" class="images">
             </div>
             <div class="flip-card-back">
-              <p class="name">Sagana Ondande</p>
-              <p class="description">Software Engineer</p>
-              <p class="description">Loves cycling, running, and skydiving</p>
+              <p class="name">Sherry Miao</p>
+              <p class="description">Community Voices</p>
+              <p class="description">Loves photography</p>
             </div>
           </div>
         </div>
