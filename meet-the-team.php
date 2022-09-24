@@ -46,7 +46,7 @@
         <div class="flip-card">
           <div class="flip-card-inner">
             <div class="flip-card-front">
-              <img src="/images/EthanW.jpeg" alt="ethan" class="images">
+              <img src="/images/EthanW" alt="ethan" class="images">
             </div>
             <div class="flip-card-back">
               <p class="name">Ethan Woodfill</p>

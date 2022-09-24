@@ -1,0 +1,99 @@
+<html>
+  <head>
+    <meta charset= "UTF-8">
+    <!-- change "content" as appropriate -->
+    <meta name= "description" content="Controller template webpage">
+    <meta name="viewport" content="user-scalable=0">
+    <link rel="stylesheet" href="../styles/controller.css">
+    <!-- change title as appropriate -->
+    <title>Title</title>
+
+</head>
+
+
+  <body>
+    <!-- The below blocks to the next comment is the code to establish user timeout and que of controller use -->
+    <div id="timeout-overlay"><h1>Your time using this remote is up. Try again starting at a later time.</h1></div>
+    <div id="queue-overlay"><h1>You are waiting <span id="in-the-queue">in the queue</span>. You will gain access at <span id="a-later-time">a later time</span> at the latest.</h1></div>
+    <div id="cookie-overlay"><h1>Cookies are required to use the remote controller.</h1></div>
+    <div id="disconnected-overlay"><h1>Display is disconnected. Please restart the display in order to control it.</h1></div>
+    <div id="init-overlay"><h1>Initializing connection...</h1></div>
+    <div id="error-overlay"><h1>Lost connection to display... reconnecting in <span id="remaining">10</span>.</h1><p>If this problem persists, please contact <a href="mailto:mail@communityhub.cloud?subject=Controller 38 loaded at 1626203244 connection error with oberlin server">mail@communityhub.cloud</a>.</p></div>
+    <!-- below you will find flex-container for the controller banner, flex-container2 each for a row of buttons
+    when adding new buttons replace the img tag and its content between the center tags -->
+      <div class="flex-container">
+      <div class="flex-child">
+
+          <img src="../resources/AJLCbanner.svg">
+
+      </div>
+
+    </div>
+    <!-- Row One -->
+    <div class="flex-container2">
+
+      <div class="flex-child2">
+        <center>
+          <div class="button" data-twig="btn1">
+            <img data-type='1' data-url='/digital-signage/remote/7' data-id='1784' data-active_src='' data-src='https://oberlin.communityhub.cloud/api/legacy/digital-signage/uploads/oberlin/livedatabutton.svg' src='https://oberlin.communityhub.cloud/api/legacy/digital-signage/uploads/oberlin/livedatabutton.svg' />
+          </div>
+        </center>
+      </div>
+
+      <div class="flex-child2">
+        <center>
+          <div class="button" data-twig="btn2" >
+            <img data-type='1' data-url='/digital-signage/remote/7' data-id='1785' data-active_src='' data-src='https://oberlin.communityhub.cloud/api/legacy/digital-signage/uploads/oberlin/button1.svg' src='https://oberlin.communityhub.cloud/api/legacy/digital-signage/uploads/oberlin/button1.svg' />
+          </div>
+        </center>
+      </div>
+
+    </div>
+    <!-- Row Two -->
+    <div class="flex-container2">
+
+      <div class="flex-child2">
+        <center>
+          <div class="button" data-twig="btn3">
+            <img <!--this is where you add the code found in the third buttons img tag found in the source code for the FE generated controller-->>
+          </div>
+        </center>
+      </div>
+
+      <div class="flex-child2">
+        <center>
+          <div class="button" data-twig="btn4">
+            <img <!--this is where you add the code found in the fourth buttons img tag found in the source code for the FE generated controller-->>
+          </div>
+        </center>
+      </div>
+
+    </div>
+    <!-- Row Three -->
+    <div class="flex-container2">
+
+      <div class="flex-child2">
+        <center>
+          <div class="button" data-twig="btn5">
+            <img <!--this is where you add the code found in the fifth buttons img tag found in the source code for the FE generated controller-->>
+          </div>
+        </center>
+      </div>
+
+      <div class="flex-child2">
+        <center>
+          <div class="button" data-twig="btn6">
+            <img <!--this is where you add the code found in the sixth buttons img tag found in the source code for the FE generated controller-->>
+          </div>
+        </center>
+      </div>
+
+    </div>
+
+    <!-- hub home button end -->
+    <a href="https://environmentaldashboard.org/nav/" class="button2">HUB HOME</a>
+
+    <script src="../scripts/controllers.js">
+    </script>
+  </body>
+</html>
