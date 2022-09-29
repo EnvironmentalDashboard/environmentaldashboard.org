@@ -5,6 +5,7 @@
     <meta name= "description" content="Select Screen Webpage">
     <meta name="viewport" content="user-scalable=0">
     <meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
+    <link href="http://fonts.cdnfonts.com/css/multicolore-2" rel="stylesheet">
     <!-- change title as appropriate -->
     <title>Select Screen</title>
     <style>
@@ -14,6 +15,8 @@
       height: 100%;
       margin: 0px;
       background: #2c2c2c;
+      font-family: 'Multicolore', sans-serif;
+      font-size: 1.8rem;
     }
     .flex-container {
       display: flex;
@@ -21,11 +24,36 @@
       width:100%;
     }
 
-
     .flex-container2{
       display:flex;
-      height:16%;
+      /* height:16%; */
       width:100%;
+    }
+    .banner-cotainer{
+      display: flex;
+      box-shadow: rgb(0 0 0 / 50%) 8px 10px 17px;
+      margin: 0.8rem 1.25rem 0.8rem 1rem ;
+      border-radius: 0.5rem;
+      height: 100%;
+      max-height: 220px;
+      width: auto;
+
+    }
+    .banner-title{
+      margin: 1.3rem 1.15rem 1.2rem 1.35rem;
+      width: 100%;
+      border-radius: 0.5rem;
+      align-items: center;
+      display: flex;
+      padding-left: 1.1rem;
+    }
+    .logo-image{
+      height: 100%;
+      width: auto;
+      position: absolute;
+      right: 45px;
+      max-height: 208px;
+      align-self: center;
     }
     /* @media screen and (min-width: 768px){
       .flex-container2{
@@ -34,10 +62,6 @@
         width:100%;
         margin-top:35px;
    } */
-
-
-
-
    @media screen and (max-width: 768px){
     .flex-child2{
       flex:1;
@@ -51,20 +75,20 @@
   }
 
   @media screen and (orientation: landscape) and (max-width:1000px) {
-html {
-  /* Rotate the content container */
-  transform: rotate(-90deg);
-  transform-origin: left top;
-  /* Set content width to viewport height */
-  width: 100vh;
-  /* Set content height to viewport width */
-  height: 100vw;
-  overflow-x: hidden;
-  position: absolute;
-  top: 100%;
-  left: 0;
-}
-}
+    html {
+      /* Rotate the content container */
+      transform: rotate(-90deg);
+      transform-origin: left top;
+      /* Set content width to viewport height */
+      width: 100vh;
+      /* Set content height to viewport width */
+      height: 100vw;
+      overflow-x: hidden;
+      position: absolute;
+      top: 100%;
+      left: 0;
+    }
+  }
   /* Media Query for IPAD */
     @media screen and (min-width: 768px){
       .flex-child2{
@@ -110,13 +134,9 @@ html {
       padding-top:20px;
     } */
 
-
-
     /* .frame{
       height:70%;
       width:100%;
-
-
     } */
 
     .button img {
@@ -197,15 +217,20 @@ html {
 
     </div>
 
-    <div class="flex-container2">
-
+    <div class="banner-cotainer" style="background: #c8353b;" onclick="location.href = 'https://oberlin.communityhub.cloud/digital-signage/remote/custom/oberlin-city-school/';">
+      <div class="banner-title" style="background: #eec2c4;">
+          Elementary School
+          <img class="logo-image" src="https://cdn.communityhub.cloud/oberlin/digital-signage/ops_logo.svg">
+      </div>
+    </div>
+    <!-- old ops banner -->
+    <!-- <div class="flex-container2">
       <div class="flex-child2">
         <center>
           <input type="image" src="../resources/OPS_remotebutton.svg" onclick="location.href = '../templates/ops_demo_app.html';" />
         </center>
       </div>
-
-    </div>
+    </div> -->
 
     <div class="flex-container2">
 
