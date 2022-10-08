@@ -97,24 +97,24 @@
         <div class="flip-card">
           <div class="flip-card-inner">
             <div class="flip-card-front">
-              <img src="/images/oliver.png" alt="oliver" class="images">
-            </div>
-            <div class="flip-card-back">
-              <p class="name">Oliver Ripps</p>
-              <p class="description">Software Engineer</p>
-              <p class="description">Created The Meet The Team Page!</p>
-            </div>
-          </div>
-        </div>
-        <div class="flip-card">
-          <div class="flip-card-inner">
-            <div class="flip-card-front">
               <img src="/images/jenny.jpg" alt="jenny" class="images">
             </div>
             <div class="flip-card-back">
               <p class="name">Jenny Rowlett</p>
               <p class="description">Social Media and Digital Signage</p>
               <p class="description">Loves chai latte</p>
+            </div>
+          </div>
+        </div>
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+            <img src="/images/Sherry.jpg" alt="sherry" class="images">
+            </div>
+            <div class="flip-card-back">
+              <p class="name">Sherry Miao</p>
+              <p class="description">Community Voices</p>
+              <p class="description">Loves photography</p>
             </div>
           </div>
           </div>
@@ -124,9 +124,9 @@
               <img src="/images/Sherry.jfif" alt="sherry" class="images">
             </div>
             <div class="flip-card-back">
-              <p class="name">Sherry Miao</p>
-              <p class="description">Community Voices</p>
-              <p class="description">Loves photography</p>
+              <p class="name">Mari Kovalik Silva</p>
+              <p class="description">Digital Signage and Orb Manager</p>
+              <p class="description">Done part of the Camino de Santiago</p>
             </div>
           </div>
         </div>
