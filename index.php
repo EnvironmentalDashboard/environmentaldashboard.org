@@ -86,7 +86,7 @@
           <p style="text-align: initial;padding: 0px 15px;">Combines images thoughts, ideas and actions of community members and groups to celebrate and empower positive action.</p>
         </div>
         <div class="col-12 col-sm-3 text-center">
-          <a href="https: //oberlin.communityhub.cloud/calendar/">
+          <a href="/calendar/">
             <img src="images/Homepageonhovercalendarcovericon.png" alt="" class="img-fluid" onmouseover="this.src='images/Homepageonhover.png'" onmouseout="this.src='images/Homepageonhovercalendarcovericon.png'">
           </a>
           <h4 style="color: #5aba50;margin-top: 10px">Community Calendar</h4>
