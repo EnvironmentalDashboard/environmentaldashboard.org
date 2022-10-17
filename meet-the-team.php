@@ -121,7 +121,7 @@
           <div class="flip-card">
           <div class="flip-card-inner">
             <div class="flip-card-front">
-              <img src="/images/Sherry.jfif" alt="sherry" class="images">
+              <img src="/images/Mari.jpg" alt="mari" class="images">
             </div>
             <div class="flip-card-back">
               <p class="name">Mari Kovalik Silva</p>
