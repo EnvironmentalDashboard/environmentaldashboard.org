@@ -64,10 +64,12 @@
         </div>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/community-voices/">Community Voices</a>
+        <!--<a class="nav-link" href="/community-voices/"></!--a> <-->
+        <a class="nav-link" href="https://oberlin.communityhub.cloud/community-voices/">Community Voices</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/calendar">Events Calendar</a>
+        <!--<a class="nav-link" href="/calendar/">Events Calendar</a> <-->
+        <a class="nav-link" href="https://oberlin.communityhub.cloud/calendar/">Events Calendar</a>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink6" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
