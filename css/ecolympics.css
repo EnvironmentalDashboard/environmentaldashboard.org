@@ -57,21 +57,24 @@
     width: 25%;
     min-width: 95px;
 }
+iframe.slide-show-iframe{
+    width: 100%;
+}
 .rank-data iframe{
     border-radius: 6px;
-    min-width:520;
-    min-height:420;
 }
 .rank-data h1{
     color: black;
 }
-
+.rank-data iframe.second-iframe {
+    min-height: 360px;
+}
 
 /* media query */
 /* responsive style */
 /* For Desktop View */
 @media screen and (min-width: 1024px) {
-   .rank-data iframe {
+   .rank-data .col-md-12.pr-0 iframe {
         width: 97%;
     }
     .rank-data iframe.first-iframe{
@@ -91,7 +94,7 @@
 }
 
 @media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-    .rank-data iframe {
+    .rank-data .col-md-12.pr-0 iframe {
         width: 98%;
     }
     .rank-data iframe.first-iframe{
