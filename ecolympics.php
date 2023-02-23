@@ -44,7 +44,7 @@
                 </div>
             </a>
         </div>
-        <div class="rank-data row">
+        <div class="rank-data row mb-5">
             <div class="col-md-6 pr-0">
                 <div class="col-md-12 pr-0">
                     <iframe src="https://buildingos.com/blocks/0c64841f267c4efd95d450db6727ab34/"
