@@ -92,7 +92,7 @@
                 </div>
                 <div class="col-md-12 pl-0">
                     <h1>COMMUNITY VOICES</h1>
-                    <iframe src="http://oberlin.communityhub.cloud/calendar/ecolympic"
+                    <iframe src="//oberlin.communityhub.cloud/calendar/ecolympic"
                         allowtransparency="true" scrolling ="no"  frameBorder=0 width="100%" height="470px"></iframe>
                 </div>
             </div>
