@@ -47,16 +47,16 @@
         <div class="rank-data row mb-5">
             <div class="col-md-6 pr-0">
                 <div class="col-md-12 pr-0">
-                    <iframe src="https://buildingos.com/blocks/0c64841f267c4efd95d450db6727ab34/"
-                        allowtransparency="true" frameborder="0" width="520" height="420"></iframe>
+                    <iframe class="first-iframe" src="https://buildingos.com/blocks/0c64841f267c4efd95d450db6727ab34/"
+                        allowtransparency="true" frameborder="0" height="420"></iframe> <!-- width="520"-->
                 </div>
                 <div class="col-md-12 pr-0">
-                    <iframe src="https://buildingos.com/blocks/071a0710a0a3435d8a08e9340a16e6bf/"
-                        allowtransparency="true" frameBorder=0 width="520" height="420"></iframe>
+                    <iframe class="second-iframe" src="https://buildingos.com/blocks/071a0710a0a3435d8a08e9340a16e6bf/"
+                        allowtransparency="true" frameBorder=0 height="360"></iframe> <!-- width="520"-->
                 </div>
                 <div class="col-md-12 pr-0">
-                    <iframe src="https://buildingos.com/blocks/d6105e422c9048fc816758193ca84b4f/"
-                        allowtransparency="true" frameBorder=0 width="520" height="1200"></iframe>
+                    <iframe class="third-iframe" src="https://buildingos.com/blocks/d6105e422c9048fc816758193ca84b4f/"
+                        allowtransparency="true" frameBorder=0 height="1200"></iframe> <!-- width="520"-->
                 </div>
             </div>
             <div class="col-md-6 pl-0">
@@ -75,7 +75,7 @@
                 </div>
                 <div class="col-md-12 pl-0">
                     <h1>COMMUNITY VOICES</h1>
-                    <iframe src="//oberlin.communityhub.cloud/calendar/ecolympic" allowtransparency="true"
+                    <iframe class="slide-show-iframe" src="//oberlin.communityhub.cloud/calendar/ecolympic" allowtransparency="true"
                         scrolling="no" frameBorder=0 width="100%" height="470px"></iframe>
                 </div>
             </div>

@@ -37,6 +37,7 @@
     padding: 1% 2%;
     border-radius: 6px;
     text-decoration: none;
+    text-align: center;
 }
 .more-info-links a:nth-child(1) {
     background-color: #2774ad;
@@ -58,7 +59,77 @@
 }
 .rank-data iframe{
     border-radius: 6px;
+    min-width:520;
+    min-height:420;
 }
 .rank-data h1{
     color: black;
 }
+
+
+/* media query */
+/* responsive style */
+/* For Desktop View */
+@media screen and (min-width: 1024px) {
+   .rank-data iframe {
+        width: 97%;
+    }
+    .rank-data iframe.first-iframe{
+        min-height: 470px;
+    }
+    .rank-data iframe.second-iframe{
+        min-height: 420px;
+    }
+}
+
+/* For Tablet View */
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    .rank-data iframe {
+        width: 98%;
+    }
+    .rank-data iframe.first-iframe{
+        min-height: 470px;
+    }
+    .rank-data iframe.second-iframe{
+        min-height: 420px;
+    }
+    .link img {
+        width: 25%;
+        min-width: 70px;
+    }
+    .more-info-links a {
+        font-size: 15px;
+        padding: 1% 1.5%;
+    }
+    .rank-data .col-md-6.pr-0:nth-child(1){
+        padding-left: 7px;
+    }
+    .rank-data .col-md-6.pl-0:nth-child(2){
+        padding-right: 7px;
+    }
+    .slide-show-iframe{
+        height:500px
+    }
+    li.nav-item {
+        width: 100%;
+        padding-left: 16px;
+    }
+}
+
+/* For Mobile Portrait View */
+@media screen and (max-device-width: 480px) and (orientation: portrait) {}
+
+/* For Mobile Landscape View */
+@media screen and (max-device-width: 640px) and (orientation: landscape) {}
+
+/* For Mobile Phones Portrait or Landscape View */
+@media screen and (max-device-width: 640px) {}
+
+/* For iPhone 4 Portrait or Landscape View */
+@media screen and (min-device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {}
+
+/* For iPhone 5 Portrait or Landscape View */
+@media (device-height: 568px) and (device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {}
+
+/* For iPhone 6 and 6 plus Portrait or Landscape View */
+@media (min-device-height: 667px) and (min-device-width: 375px) and (-webkit-min-device-pixel-ratio: 3) {}
