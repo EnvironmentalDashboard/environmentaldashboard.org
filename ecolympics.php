@@ -23,23 +23,24 @@
         <?php include 'includes/header.php'; ?>
         <div class="more-info-links">
             <a href="https://buildingos.com/s/oberlincity/storyboard314/?chapterId=1382" target="_blank"
-                title="Oberlin City Schools">
+                title="View School Data">
                 <div class="link">
-                    <img src="../images/ecolympics/OPSIcon.svg" alt="" srcset="">
-                    <span>Oberlin City Schools</span>
+                    <img src="../images/ecolympics/OPSIcon.svg" alt="View School Data" srcset="">
+                    <span>View School Data</span>
                 </div>
             </a>
             <a href="https://buildingos.com/s/oberlincity/storyboard31413736/?chapterId=77277" target="_blank"
-                title="City Of Oberlin">
+                title="View Community Data">
                 <div class="link">
-                    <img src="../images/ecolympics/CofOberlinIcon.svg" alt="City of Oberlin" srcset="">
-                    <span>City Of Oberlin</span>
+                    <img src="../images/ecolympics/CofOberlinIcon.svg" alt="View Community Data" srcset="">
+                    <span>View Community Data</span>
                 </div>
             </a>
-            <a href="#" title="Oberlin College">
+            <a href="https://buildingos.com/reports/dashboards/282f6022666d11e7a61b525400d1fc46" target="_blank"
+                title="View Dorms Data">
                 <div class="link">
-                    <img src="../images/ecolympics/OClogo.svg" alt="" srcset="">
-                    <span>Oberlin College</span>
+                    <img src="../images/ecolympics/OClogo.svg" alt="View Dorms Data" srcset="">
+                    <span>View Dorms Data</span>
                 </div>
             </a>
         </div>
@@ -62,37 +63,20 @@
                 <div class="col-md-12 pl-0">
                     <h1>WHAT IS ECOLYMPICS</h1>
                     <P>
-                        Ecolympics is the Oberlin community’s annual resource reduction competition focused on the
-                        decrease of water and electricity use in participating buildings through behavior change.
-                        Environmental Dashboard provides the means to enact those changes by making resource flows
-                        visible and accessible. Use the dashboard to view electricity and water use in real-time.
-                        This
-                        year’s Ecolympics theme is to Act Local, Think Globally.
+                        Ecolympics is the Oberlin community’s annual resource reduction competition focused on the decrease of water and electricity use in participating buildings through behavior change. Environmental Dashboard provides the means to enact those changes by making resource flows visible and accessible. Use the dashboard to view electricity and water use in real-time. This year’s Ecolympics theme is to <i>Think Global, Act Local.</i>
                     </P>
                     <P>
-                        The 2023 Ecolympics will feature three competitions: dormitories on Oberlin College’s campus
-                        will compete. Oberlin Elementary School, Langston Middle School, and Oberlin High School
-                        will
-                        compete. Public buildings including the Prospect Community Center, Oberlin Fire Station,
-                        OCSD
-                        Board of Education office, and Oberlin Public Library will also compete. While participants
-                        are
-                        eager to win, everyone should work towards the community-wide goal to reduce electricity
-                        consumption by 10,000 kWh.
+                        The 2023 Ecolympics will feature three competitions: dormitories on Oberlin College’s campus will compete. Oberlin Elementary School, Langston Middle School, and Oberlin High School will compete. Public buildings including the Prospect Community Center, Oberlin Fire Station, OCSD Board of Education office, and Oberlin Public Library will also compete. While participants are eager to win, everyone should work towards the community-wide goal to reduce electricity consumption by 10,000 kWh.
                     </P>
                     <P>
-                        Above/below are the current standings for competitions as well as the community-wide
-                        progress.
-                        To see in-depth data and information for a specific building, click on the live data button.
-                        To
-                        see where your electricity and water come from, as well as current environmental conditions,
-                        check out
+                        Above/below are the current standings for competitions as well as the community-wide progress. To see in-depth data and information for a specific building, click on the live data button. To see where your electricity and water come from, as well as current environmental conditions, check out 
+                        <a href="https://environmentaldashboard.org/cwd">Citywide Dashboard</a>.
                     </P>
                 </div>
                 <div class="col-md-12 pl-0">
                     <h1>COMMUNITY VOICES</h1>
-                    <iframe src="//oberlin.communityhub.cloud/calendar/ecolympic"
-                        allowtransparency="true" scrolling ="no"  frameBorder=0 width="100%" height="470px"></iframe>
+                    <iframe src="//oberlin.communityhub.cloud/calendar/ecolympic" allowtransparency="true"
+                        scrolling="no" frameBorder=0 width="100%" height="470px"></iframe>
                 </div>
             </div>
         </div>
