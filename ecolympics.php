@@ -36,8 +36,7 @@
                     <span>City Of Oberlin</span>
                 </div>
             </a>
-            <a href="#" target="_blank"
-                title="Oberlin College">
+            <a href="#" title="Oberlin College">
                 <div class="link">
                     <img src="../images/ecolympics/OClogo.svg" alt="" srcset="">
                     <span>Oberlin College</span>
