@@ -1,0 +1,64 @@
+.banner{
+    background: #93cce8;
+    text-align: center;
+    font-family: "Multicolore",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    text-decoration: none;
+}
+
+.banner:hover{
+    opacity: 0.9;
+}
+.ecolympics-logo{
+    
+    height: 100%;
+    width: 10%;
+}
+.title{
+    color: white;
+    font-weight: 700;
+    font-size: 18px;
+}
+.sub-title{
+    color: black;
+    font-weight: 700;
+    font-size: 16px;
+}
+.more-info-links{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    margin: 1.25% 0
+}
+.more-info-links a{
+    width: 31.5%;
+    font-weight: 700;
+    color: white;
+    font-size: 18px;
+    padding: 1% 2%;
+    border-radius: 6px;
+    text-decoration: none;
+}
+.more-info-links a:nth-child(1) {
+    background-color: #2774ad;
+}
+.more-info-links a:nth-child(2) {
+    background-color: #e28b41;
+}
+.more-info-links a:nth-child(3) {
+    background-color: #d33a3a;
+}
+.link {
+    display: flex;
+    align-items: center;
+    gap: 5%;
+}
+.link img {
+    width: 25%;
+    min-width: 95px;
+}
+.rank-data iframe{
+    border-radius: 6px;
+}
+.rank-data h1{
+    color: black;
+}
