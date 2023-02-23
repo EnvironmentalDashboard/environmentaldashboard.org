@@ -36,8 +36,7 @@
                     <span>City Of Oberlin</span>
                 </div>
             </a>
-            <a href="#" target="_blank"
-                title="Oberlin College">
+            <a href="#" title="Oberlin College">
                 <div class="link">
                     <img src="../images/ecolympics/OClogo.svg" alt="" srcset="">
                     <span>Oberlin College</span>
@@ -92,7 +91,7 @@
                 </div>
                 <div class="col-md-12 pl-0">
                     <h1>COMMUNITY VOICES</h1>
-                    <iframe src="http://oberlin.communityhub.cloud/calendar/ecolympic"
+                    <iframe src="//oberlin.communityhub.cloud/calendar/ecolympic"
                         allowtransparency="true" scrolling ="no"  frameBorder=0 width="100%" height="470px"></iframe>
                 </div>
             </div>
