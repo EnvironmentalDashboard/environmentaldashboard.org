@@ -108,10 +108,10 @@
 
 <!-- start eco olympic banner -->
 <div class="banner">
-  <a class="nav-link" href="/ecolympics" title="Ecolympics 2023 April 10th - 23th">
+  <a class="nav-link" href="/ecolympics" title="Ecolympics 2023 April 10th - 23rd">
     <img src="../images/ecolympics/ecolympicslogo.svg" alt="ecolympics logo" sizes="" class="ecolympics-logo">
     <div class="title">
-      Ecolympics 2023 April 10th - 23th
+      Ecolympics 2023 April 10th - 23rd
     </div>
     <div class="sub-title">
       Think Global, Act Local
