@@ -66,7 +66,7 @@ iframe.slide-show-iframe{
 .rank-data h1{
     color: black;
 }
-.rank-data iframe.second-iframe {
+.rank-data iframe.first-iframe {
     min-height: 360px;
 }
 
@@ -77,12 +77,6 @@ iframe.slide-show-iframe{
    .rank-data .col-md-12.pr-0 iframe {
         width: 97%;
     }
-    .rank-data iframe.first-iframe{
-        min-height: 470px;
-    }
-    .rank-data iframe.second-iframe{
-        min-height: 420px;
-    }
 }
 
 /* For Tablet View */
@@ -91,6 +85,13 @@ iframe.slide-show-iframe{
         width: auto;
         padding-left: 0;
     }
+    .rank-data iframe.first-iframe{
+        min-height: 420px;
+    }
+    .rank-data iframe.second-iframe{
+        min-height: 470px;
+
+    }
 }
 
 @media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
@@ -98,10 +99,10 @@ iframe.slide-show-iframe{
         width: 98%;
     }
     .rank-data iframe.first-iframe{
-        min-height: 470px;
+        min-height: 420px;
     }
     .rank-data iframe.second-iframe{
-        min-height: 420px;
+        min-height: 470px;
     }
     .link img {
         width: 25%;
