@@ -8,11 +8,45 @@
 .banner:hover{
     opacity: 0.9;
 }
-.ecolympics-logo{
-    
+.ecolympics-logo {
     height: 100%;
     width: 10%;
 }
+/* new header button for ecolympic */
+.ecolymipic-button-container{
+    position: absolute;
+    z-index: 4;
+    height: 100%;
+    top: 6%;
+    width: 31%;
+    text-align: right;
+    right: 2%;
+}
+.ecolymipic-button-container img{
+    /* width: 35%; */
+}
+.ecolymipic-button {
+    text-align: center;
+    /* width: 32%; */
+    position: absolute;
+    bottom: 12%;
+    background: #000;
+    right: 1%;
+    padding: 2% 2.5%;
+    border-radius: 10px;
+    border: 2px solid #fff;
+    font-family: "Multicolore",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    cursor: pointer;
+}
+.ecolymipic-button:hover{
+    background-color: #262323
+}
+.ecolymipic-button * {
+    font-weight: 600 !important;
+    color: #fff !important;
+    text-transform: uppercase;
+}
+/* end */
 .title{
     color: white;
     font-weight: 700;
@@ -21,7 +55,7 @@
 .sub-title{
     color: black;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 15px;
 }
 .more-info-links{
     display: flex;
@@ -59,6 +93,7 @@
 }
 iframe.slide-show-iframe{
     width: 100%;
+    margin-bottom: 0.2rem;
 }
 .rank-data iframe{
     border-radius: 6px;
@@ -69,16 +104,20 @@ iframe.slide-show-iframe{
 .rank-data iframe.first-iframe {
     min-height: 360px;
 }
-
-/* media query */
-/* responsive style */
-/* For Desktop View */
-@media screen and (min-width: 1024px) {
-   .rank-data .col-md-12.pr-0 iframe {
-        width: 97%;
-    }
+.rank-data .col-md-12.pr-0 iframe {
+    width: 97%;
+    margin-bottom: 0.2rem;
 }
-
+.rank-data .col-md-12.pl-0 iframe {
+    width: 100%;
+    margin-bottom: 0.2rem;
+}
+.rank-data iframe.first-iframe{
+    min-height: 470px;
+}
+.rank-data iframe.second-iframe{
+    min-height: 420px;
+}
 /* For Tablet View */
 @media screen and (min-width: 992px) {
     .navbar-nav li.nav-item {
@@ -94,7 +133,10 @@ iframe.slide-show-iframe{
     }
 }
 
-@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+@media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1366px) 
+  and (-webkit-min-device-pixel-ratio: 2){
     .rank-data .col-md-12.pr-0 iframe {
         width: 98%;
     }
@@ -103,6 +145,9 @@ iframe.slide-show-iframe{
     }
     .rank-data iframe.second-iframe{
         min-height: 470px;
+    }
+    iframe.slide-show-iframe{
+        margin-bottom: 1.3rem !important;
     }
     .link img {
         width: 25%;
@@ -125,8 +170,33 @@ iframe.slide-show-iframe{
         width: 100%;
         padding-left: 16px;
     }
+    .sub-title {
+        font-size: 13px;
+    }
+    .title {
+        font-size: 15px;
+    }
 }
-
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1){
+    .rank-data h1{
+        font-size: 1.96rem;
+    }
+    .sub-title {
+        font-size: 13px;
+    }
+    .title {
+        font-size: 15px;
+    }
+  }
+/* media query */
+/* responsive style */
+/* For Desktop View */
+@media screen and (min-width: 1024px) {
+   
+}
 /* For Mobile Portrait View */
 @media screen and (max-device-width: 480px) and (orientation: portrait) {}
 

@@ -10,6 +10,22 @@
 <div class="row">
   <div class="col banner-col">
     <a href="/"><img src="../images/oberlin-banner.jpg" alt="" class="img-fluid"></a>
+    <div class="ecolymipic-button-container">
+      <img src="../images/Ecolympics_Banner_Button.svg" alt="ECOLYMPICS 2023 APRIL 10TH - 23RD">
+      <a class="nav-link" href="/ecolympics" title="ECOLYMPICS 2023 APRIL 10TH - 23RD">
+        <div class="ecolymipic-button">
+          <div class="title">
+              Ecolympics 2023 April 10th - 23rd
+            </div>
+            <div class="sub-title">
+              Think Global, Act Local
+            </div>
+            <div class="sub-title">
+              Click here to see standings!
+            </div>
+        </div>
+      </a>
+    </div>
   </div>
 </div>
 <nav class="navbar sticky-top navbar-expand-lg navbar-dark" style="background: #21a7df;padding-top: 0px;padding-bottom: 0px">
@@ -107,7 +123,7 @@
 </nav>
 
 <!-- start eco olympic banner -->
-<div class="banner">
+<!-- <div class="banner">
   <a class="nav-link" href="/ecolympics" title="Ecolympics 2023 April 10th - 23rd">
     <img src="../images/ecolympics/ecolympicslogo.svg" alt="ecolympics logo" sizes="" class="ecolympics-logo">
     <div class="title">
@@ -117,5 +133,5 @@
       Think Global, Act Local
     </div>
   </a>
-</div>
+</div> -->
 <!--end eco olympic banner-->
