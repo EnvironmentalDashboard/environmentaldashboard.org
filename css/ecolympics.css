@@ -21,6 +21,7 @@
     width: 31%;
     text-align: right;
     right: 2%;
+    font-family: "Multicolore",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
 }
 .ecolymipic-button-container img{
     /* width: 35%; */
@@ -35,7 +36,6 @@
     padding: 2% 2.5%;
     border-radius: 10px;
     border: 2px solid #fff;
-    font-family: "Multicolore",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
     cursor: pointer;
 }
 .ecolymipic-button:hover{
@@ -92,7 +92,7 @@
     min-width: 95px;
 }
 iframe.slide-show-iframe{
-    width: 100%;
+    width: 97%;
     margin-bottom: 0.2rem;
 }
 .rank-data iframe{
@@ -104,7 +104,8 @@ iframe.slide-show-iframe{
 .rank-data iframe.first-iframe {
     min-height: 360px;
 }
-.rank-data .col-md-12.pr-0 iframe {
+.rank-data .col-md-12.pr-0 iframe,
+.rank-data .col-lg-6.pr-0 iframe {
     width: 97%;
     margin-bottom: 0.2rem;
 }
@@ -117,6 +118,12 @@ iframe.slide-show-iframe{
 }
 .rank-data iframe.second-iframe{
     min-height: 420px;
+}
+.col-md-12.padding-rignt-0{
+    padding-right: 0;
+}
+.col-md-12.padding-left-0{
+    padding-left: 0;
 }
 /* For Tablet View */
 @media screen and (min-width: 992px) {
@@ -145,9 +152,6 @@ iframe.slide-show-iframe{
     }
     .rank-data iframe.second-iframe{
         min-height: 470px;
-    }
-    iframe.slide-show-iframe{
-        margin-bottom: 1.3rem !important;
     }
     .link img {
         width: 25%;
@@ -185,12 +189,23 @@ iframe.slide-show-iframe{
         font-size: 1.96rem;
     }
     .sub-title {
-        font-size: 13px;
+        font-size: 9px;
     }
     .title {
-        font-size: 15px;
+        font-size: 11px;
     }
-  }
+    iframe.slide-show-iframe{
+        width: 100%;
+        max-height: 440px;
+    }
+    .col-md-12.padding-rignt-0{
+        padding-right: 15px;
+    }
+    .col-md-12.padding-left-0{
+        padding-left: 15px;
+    }
+    .third-iframe{    min-height: 1200px;    }
+}
 /* media query */
 /* responsive style */
 /* For Desktop View */

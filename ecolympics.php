@@ -44,13 +44,32 @@
                 </div>
             </a>
         </div>
-        <div class="rank-data row mb-5">
-            <div class="col-md-6 pr-0">
-                <div class="col-md-12 pr-0">
+        <div class="rank-data row">
+            <div class="col-lg-6 col-md-12 padding-rignt-0 order-sm-2 order-lg-1">
+                <div class="col-md-12 padding-rignt-0">
                     <h1>COMMUNITY VOICES</h1>
                     <iframe class="slide-show-iframe" src="//oberlin.communityhub.cloud/calendar/ecolympic" allowtransparency="true"
                         scrolling="no" frameBorder=0 width="100%" height="470px"></iframe>
                 </div>
+            </div>
+            <div class="col-lg-6 col-md-12 padding-left-0 order-sm-1 order-lg-2">
+                <div class="col-md-12 padding-left-0">
+                    <h1>WHAT IS ECOLYMPICS</h1>
+                    <P>
+                        Ecolympics is the Oberlin community’s annual resource reduction competition focused on the decrease of water and electricity use in participating buildings through behavior change. Environmental Dashboard provides the means to enact those changes by making resource flows visible and accessible. Use the dashboard to view electricity and water use in real-time. This year’s Ecolympics theme is to <i>Think Global, Invest Local.</i>
+                    </P>
+                    <P>
+                        The 2023 Ecolympics will feature three competitions: dormitories on Oberlin College’s campus will compete. Oberlin Elementary School, Langston Middle School, and Oberlin High School will compete. Public buildings including the Prospect Community Center, Oberlin Fire Station, OCSD Board of Education office, and Oberlin Public Library will also compete. While participants are eager to win, everyone should work towards the community-wide goal to reduce electricity consumption by 10,000 kWh.
+                    </P>
+                    <P>
+                        Above/below are the current standings for competitions as well as the community-wide progress. To see in-depth data and information for a specific building, click on the live data button. To see where your electricity and water come from, as well as current environmental conditions, check out 
+                        <a href="https://environmentaldashboard.org/cwd">Citywide Dashboard</a>.
+                    </P>
+                </div>
+            </div>
+        </div>
+        <div class="rank-data row mb-5">
+            <div class="col-md-6 pr-0">
                 <div class="col-md-12 pr-0">
                     <iframe class="first-iframe" src="https://buildingos.com/blocks/0c64841f267c4efd95d450db6727ab34/"
                         allowtransparency="true" frameborder="0" height="420"></iframe> <!-- width="520"-->
@@ -66,24 +85,11 @@
             </div>
             <div class="col-md-6 pl-0">
                 <div class="col-md-12 pl-0">
-                    <h1>WHAT IS ECOLYMPICS</h1>
-                    <P>
-                        Ecolympics is the Oberlin community’s annual resource reduction competition focused on the decrease of water and electricity use in participating buildings through behavior change. Environmental Dashboard provides the means to enact those changes by making resource flows visible and accessible. Use the dashboard to view electricity and water use in real-time. This year’s Ecolympics theme is to <i>Think Global, Invest Local.</i>
-                    </P>
-                    <P>
-                        The 2023 Ecolympics will feature three competitions: dormitories on Oberlin College’s campus will compete. Oberlin Elementary School, Langston Middle School, and Oberlin High School will compete. Public buildings including the Prospect Community Center, Oberlin Fire Station, OCSD Board of Education office, and Oberlin Public Library will also compete. While participants are eager to win, everyone should work towards the community-wide goal to reduce electricity consumption by 10,000 kWh.
-                    </P>
-                    <P>
-                        Above/below are the current standings for competitions as well as the community-wide progress. To see in-depth data and information for a specific building, click on the live data button. To see where your electricity and water come from, as well as current environmental conditions, check out 
-                        <a href="https://environmentaldashboard.org/cwd">Citywide Dashboard</a>.
-                    </P>
-                </div>
-                <div class="col-md-12 pl-0">
-                    <iframe class="first-iframe" src="https://buildingos.com/blocks/cc7426cfa0c9434c8d4f125e36feac3b/" allowtransparency="true" scrolling ="no" frameBorder=0 height="470px"></iframe>
+                    <iframe class="first-iframe" src="https://buildingos.com/blocks/cc7426cfa0c9434c8d4f125e36feac3b/" allowtransparency="true" scrolling ="no" frameBorder=0 height="420px"></iframe>
                 </div>
                 
                 <div class="col-md-12 pl-0">
-                    <iframe src="https://buildingos.com/blocks/3f15739b3a594a5195b1a755d092a67d/" allowtransparency="true" scrolling ="no" frameBorder=0 height="1580"></iframe>
+                    <iframe src="https://buildingos.com/blocks/3f15739b3a594a5195b1a755d092a67d/" allowtransparency="true" scrolling ="no" frameBorder=0 height="1630"></iframe>
                 </div>
             </div>
         </div>
