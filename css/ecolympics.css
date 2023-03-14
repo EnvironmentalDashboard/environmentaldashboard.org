@@ -47,23 +47,23 @@
     text-transform: uppercase;
 }
 /* end */
-.title{
+.ecolymipic-title{
     color: white;
     font-weight: 700;
     font-size: 18px;
 }
-.sub-title{
+.ecolymipic-sub-title{
     color: black;
     font-weight: 700;
     font-size: 15px;
 }
-.more-info-links{
+.ecolymipic-more-info-links{
     display: flex;
     width: 100%;
     justify-content: space-evenly;
     margin: 1.25% 0
 }
-.more-info-links a{
+.ecolymipic-more-info-links a{
     width: 31.5%;
     font-weight: 700;
     color: white;
@@ -73,21 +73,21 @@
     text-decoration: none;
     text-align: center;
 }
-.more-info-links a:nth-child(1) {
+.ecolymipic-more-info-links a:nth-child(1) {
     background-color: #2774ad;
 }
-.more-info-links a:nth-child(2) {
+.ecolymipic-more-info-links a:nth-child(2) {
     background-color: #e28b41;
 }
-.more-info-links a:nth-child(3) {
+.ecolymipic-more-info-links a:nth-child(3) {
     background-color: #d33a3a;
 }
-.link {
+.ecolymipic-link {
     display: flex;
     align-items: center;
     gap: 5%;
 }
-.link img {
+.ecolymipic-link img {
     width: 25%;
     min-width: 95px;
 }
@@ -153,11 +153,11 @@ iframe.slide-show-iframe{
     .rank-data iframe.second-iframe{
         min-height: 470px;
     }
-    .link img {
+    .ecolymipic-link img {
         width: 25%;
         min-width: 70px;
     }
-    .more-info-links a {
+    .ecolymipic-more-info-links a {
         font-size: 15px;
         padding: 1% 1.5%;
     }
