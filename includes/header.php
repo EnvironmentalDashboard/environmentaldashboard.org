@@ -14,13 +14,13 @@
       <img src="../images/Ecolympics_Banner_Button.svg" alt="ECOLYMPICS 2023 APRIL 10TH - 23RD">
       <a class="nav-link" href="/ecolympics" title="ECOLYMPICS 2023 APRIL 10TH - 23RD">
         <div class="ecolymipic-button">
-          <div class="title">
+          <div class="ecolymipic-title">
               Ecolympics 2023 April 10th - 23rd
             </div>
-            <div class="sub-title">
+            <div class="ecolymipic-sub-title">
               Think Global, Act Local
             </div>
-            <div class="sub-title">
+            <div class="ecolymipic-sub-title">
               Click here to see standings!
             </div>
         </div>
@@ -126,10 +126,10 @@
 <!-- <div class="banner">
   <a class="nav-link" href="/ecolympics" title="Ecolympics 2023 April 10th - 23rd">
     <img src="../images/ecolympics/ecolympicslogo.svg" alt="ecolympics logo" sizes="" class="ecolympics-logo">
-    <div class="title">
+    <div class="ecolymipic-title">
       Ecolympics 2023 April 10th - 23rd
     </div>
-    <div class="sub-title">
+    <div class="ecolymipic-sub-title">
       Think Global, Act Local
     </div>
   </a>

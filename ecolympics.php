@@ -21,24 +21,24 @@
 <body>
     <div class="container">
         <?php include 'includes/header.php'; ?>
-        <div class="more-info-links">
+        <div class="ecolymipic-more-info-links">
             <a href="https://buildingos.com/s/oberlincity/storyboard314/?chapterId=1382" target="_blank"
                 title="View School Data">
-                <div class="link">
+                <div class="ecolymipic-link">
                     <img src="../images/ecolympics/OPSIcon.svg" alt="View School Data" srcset="">
                     <span>View School Data</span>
                 </div>
             </a>
             <a href="https://buildingos.com/s/oberlincity/storyboard31413736/?chapterId=77277" target="_blank"
                 title="View Community Data">
-                <div class="link">
+                <div class="ecolymipic-link">
                     <img src="../images/ecolympics/CofOberlinIcon.svg" alt="View Community Data" srcset="">
                     <span>View Community Data</span>
                 </div>
             </a>
             <a href="https://buildingos.com/reports/dashboards/282f6022666d11e7a61b525400d1fc46" target="_blank"
                 title="View Dorms Data">
-                <div class="link">
+                <div class="ecolymipic-link">
                     <img src="../images/ecolympics/OClogo.svg" alt="View Dorms Data" srcset="">
                     <span>View Dorms Data</span>
                 </div>
