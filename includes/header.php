@@ -18,7 +18,7 @@
               Ecolympics 2023 April 10 - 23
             </div>
             <div class="ecolymipic-sub-title">
-              Think Global, Act Local
+              Think Global, Invest Local
             </div>
             <div class="ecolymipic-sub-title">
               Click here to see standings!
@@ -130,7 +130,7 @@
       Ecolympics 2023 April 10 - 23
     </div>
     <div class="ecolymipic-sub-title">
-      Think Global, Act Local
+      Think Global, Invest Local
     </div>
   </a>
 </div> -->
