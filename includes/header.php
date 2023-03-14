@@ -15,7 +15,7 @@
       <a class="nav-link" href="/ecolympics" title="ECOLYMPICS 2023 APRIL 10TH - 23RD">
         <div class="ecolymipic-button">
           <div class="ecolymipic-title">
-              Ecolympics 2023 April 10th - 23rd
+              Ecolympics 2023 April 10 - 23
             </div>
             <div class="ecolymipic-sub-title">
               Think Global, Act Local
