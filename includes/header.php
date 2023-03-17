@@ -12,7 +12,7 @@
     <a href="/"><img src="../images/oberlin-banner.jpg" alt="" class="img-fluid"></a>
     <div class="ecolymipic-button-container">
       <img src="../images/Ecolympics_Banner_Button.svg" alt="ECOLYMPICS 2023 APRIL 10 - 23">
-      <a class="nav-link" href="/ecolympics" title="ECOLYMPICS 2023 APRIL 10 - 23">
+      <a class="nav-link" href="/ecolympics" title="CLICK HERE FOR EVENTS & STANDINGS">
         <div class="ecolymipic-button">
           <div class="ecolymipic-title">
               Ecolympics 2023 April 10 - 23
