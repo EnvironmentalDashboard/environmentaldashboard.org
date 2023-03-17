@@ -14,6 +14,8 @@
 }
 /* new header button for ecolympic */
 .ecolymipic-button-container{
+    display: flex;
+    flex-direction: column;
     position: absolute;
     z-index: 4;
     height: 100%;
@@ -28,15 +30,16 @@
 }
 .ecolymipic-button {
     text-align: center;
-    /* width: 32%; */
-    position: absolute;
+    position: relative;
     bottom: 12%;
     background: #000;
-    right: 5%;
     padding: 2% 2.5%;
     border-radius: 10px;
     border: 2px solid #fff;
     cursor: pointer;
+    width: max-content;
+    transform: translateY(-120%);
+    align-items: center;
 }
 .ecolymipic-button:hover{
     background-color: #262323
@@ -50,12 +53,12 @@
 .ecolymipic-title{
     color: white;
     font-weight: 700;
-    font-size: 18px;
+    font-size: min(1.6vw, 18px);
 }
 .ecolymipic-sub-title{
     color: black;
     font-weight: 700;
-    font-size: 15px;
+    font-size: min(1.55vw, 15px);
 }
 .ecolymipic-more-info-links{
     display: flex;
