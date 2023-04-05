@@ -59,10 +59,13 @@
             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink3">
               <!-- <li><a class="dropdown-item" href="https://buildingos.com/s/oberlincity/storyboard314/?chapterId=1390">Eastwood Elementary</a></li>
               <li><a class="dropdown-item" href="https://buildingos.com/s/oberlincity/storyboard314/?chapterId=1391">Prospect Elementary</a></li> -->
+              <li><a class="dropdown-item" href="https://buildingos.com/s/oberlincity/storyboard314/?chapterId=77281">Oberlin Elementry School</a></li>
               <li><a class="dropdown-item" href="https://buildingos.com/s/oberlincity/storyboard314/?chapterId=1392">Langston Middle School</a></li>
               <li><a class="dropdown-item" href="https://buildingos.com/s/oberlincity/storyboard314/?chapterId=1393">Oberlin High School</a></li>
-              <li><a class="dropdown-item" href="https://buildingos.com/s/oberlincity/storyboard314/?chapterId=1394">Langston Board Office</a></li>
-              <li><a class="dropdown-item" href="https://buildingos.com/s/oberlincity/storyboard314/?chapterId=1395">Oberlin Public Library</a></li>
+              <li><a class="dropdown-item" href="https://buildingos.com/s/oberlincity/storyboard314/?chapterId=1382">Oberlin School District Office</a></li>
+              <li><a class="dropdown-item" href="https://buildingos.com/s/oberlincity/storyboard31413736/?chapterId=77272">Oberlin Public Library</a></li>
+              <li><a class="dropdown-item" href="https://buildingos.com/s/oberlincity/storyboard31413736/?chapterId=77280">Oberlin Community Center at Prospect</a></li>
+              <li><a class="dropdown-item" href="https://buildingos.com/s/oberlincity/storyboard31413736/?chapterId=77279">Oberlin Fire Station</a></li>
             </ul>
           </div>
 
