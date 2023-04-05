@@ -10,6 +10,22 @@
 <div class="row">
   <div class="col banner-col">
     <a href="/"><img src="../images/oberlin-banner.jpg" alt="" class="img-fluid"></a>
+    <div class="ecolymipic-button-container">
+      <img src="../images/Ecolympics_Banner_Button.svg" alt="ECOLYMPICS 2023 APRIL 10 - 23">
+      <a class="nav-link" href="/ecolympics" title="CLICK HERE FOR EVENTS & STANDINGS">
+        <div class="ecolymipic-button">
+          <div class="ecolymipic-title">
+              Ecolympics 2023 April 10 - 23
+            </div>
+            <div class="ecolymipic-sub-title">
+              Think Global, Invest Local
+            </div>
+            <div class="ecolymipic-sub-title">
+              Click here to see standings!
+            </div>
+        </div>
+      </a>
+    </div>
   </div>
 </div>
 <nav class="navbar sticky-top navbar-expand-lg navbar-dark" style="background: #21a7df;padding-top: 0px;padding-bottom: 0px">
@@ -43,10 +59,13 @@
             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink3">
               <!-- <li><a class="dropdown-item" href="https://buildingos.com/s/oberlincity/storyboard314/?chapterId=1390">Eastwood Elementary</a></li>
               <li><a class="dropdown-item" href="https://buildingos.com/s/oberlincity/storyboard314/?chapterId=1391">Prospect Elementary</a></li> -->
+              <li><a class="dropdown-item" href="https://buildingos.com/s/oberlincity/storyboard314/?chapterId=77281">Oberlin Elementry School</a></li>
               <li><a class="dropdown-item" href="https://buildingos.com/s/oberlincity/storyboard314/?chapterId=1392">Langston Middle School</a></li>
               <li><a class="dropdown-item" href="https://buildingos.com/s/oberlincity/storyboard314/?chapterId=1393">Oberlin High School</a></li>
-              <li><a class="dropdown-item" href="https://buildingos.com/s/oberlincity/storyboard314/?chapterId=1394">Langston Board Office</a></li>
-              <li><a class="dropdown-item" href="https://buildingos.com/s/oberlincity/storyboard314/?chapterId=1395">Oberlin Public Library</a></li>
+              <li><a class="dropdown-item" href="https://buildingos.com/s/oberlincity/storyboard314/?chapterId=1382">Oberlin School District Office</a></li>
+              <li><a class="dropdown-item" href="https://buildingos.com/s/oberlincity/storyboard31413736/?chapterId=77272">Oberlin Public Library</a></li>
+              <li><a class="dropdown-item" href="https://buildingos.com/s/oberlincity/storyboard31413736/?chapterId=77280">Oberlin Community Center at Prospect</a></li>
+              <li><a class="dropdown-item" href="https://buildingos.com/s/oberlincity/storyboard31413736/?chapterId=77279">Oberlin Fire Station</a></li>
             </ul>
           </div>
 
@@ -107,15 +126,15 @@
 </nav>
 
 <!-- start eco olympic banner -->
-<div class="banner">
-  <a class="nav-link" href="/ecolympics" title="Ecolympics 2023 April 10th - 23rd">
+<!-- <div class="banner">
+  <a class="nav-link" href="/ecolympics" title="Ecolympics 2023 April 10 - 23">
     <img src="../images/ecolympics/ecolympicslogo.svg" alt="ecolympics logo" sizes="" class="ecolympics-logo">
-    <div class="title">
-      Ecolympics 2023 April 10th - 23rd
+    <div class="ecolymipic-title">
+      Ecolympics 2023 April 10 - 23
     </div>
-    <div class="sub-title">
-      Think Global, Act Local
+    <div class="ecolymipic-sub-title">
+      Think Global, Invest Local
     </div>
   </a>
-</div>
+</div> -->
 <!--end eco olympic banner-->
