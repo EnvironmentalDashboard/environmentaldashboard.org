@@ -30,12 +30,12 @@
     <div class="rank-data row mb-5">
         <div class="col-md-6 pr-0">
             <div class="col-md-12 pr-0">
-                <iframe class="second-iframe" src="https://buildingos.com/blocks/3126b38b0b574c49be350a26571b12f1/" allowtransparency="true" frameBorder=0 height="430"></iframe> <!-- width="520"-->
+                <iframe class="second-iframe" src="https://buildingos.com/blocks/28fbdab72c6440fba16a3a6c817e8b66/" allowtransparency="true" frameBorder=0 height="430"></iframe> <!-- width="520"-->
             </div>
         </div>
         <div class="col-md-6 pl-0">
             <div class="col-md-12 pl-0">
-                <iframe class="second-iframe" src="https://buildingos.com/blocks/65a6696eba8e487aaecb7885953bc483/" allowtransparency="true" frameBorder=0 height="430"></iframe>
+                <iframe class="second-iframe" src="https://buildingos.com/blocks/d2245845d2db4bfba8f97c019e580a73/" allowtransparency="true" frameBorder=0 height="430"></iframe>
             </div>
         </div>
     </div>
