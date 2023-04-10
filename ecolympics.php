@@ -65,10 +65,10 @@
         <div class="rank-data row mb-5">
             <div class="col-md-6 pr-0">
                 <div class="col-md-12 pr-0">
-                    <iframe class="first-iframe" src="https://buildingos.com/blocks/9df95b768c2347918f6e0ae8c7f72fb0/" allowtransparency="true" frameborder="0" height="430"></iframe> <!-- width="520"-->
+                    <iframe class="first-iframe" src="https://buildingos.com/blocks/3ea7f48b901042068d496250628bfef5/" allowtransparency="true" frameborder="0" height="430"></iframe> <!-- width="520"-->
                 </div>
                 <div class="col-md-12 pr-0">
-                    <iframe class="second-iframe" src="https://buildingos.com/blocks/3126b38b0b574c49be350a26571b12f1/" allowtransparency="true" frameBorder=0 height="430"></iframe> <!-- width="520"-->
+                    <iframe class="second-iframe" src="https://buildingos.com/blocks/28fbdab72c6440fba16a3a6c817e8b66/" allowtransparency="true" frameBorder=0 height="430"></iframe> <!-- width="520"-->
                 </div>
                 <div class="col-md-12 pr-0">
                     <iframe class="third-iframe" src="https://buildingos.com/blocks/d6105e422c9048fc816758193ca84b4f/" allowtransparency="true" frameBorder=0 height="1870"></iframe> <!-- width="1150"-->
@@ -76,10 +76,10 @@
             </div>
             <div class="col-md-6 pl-0">
                 <div class="col-md-12 pl-0">
-                    <iframe class="first-iframe" src="https://buildingos.com/blocks/70efbb00d13547db9440ed062e6430ba/" allowtransparency="true" frameBorder=0 height="430"></iframe>
+                    <iframe class="first-iframe" src="https://buildingos.com/blocks/cb4f61797a6f4f8da12f096502552e24/" allowtransparency="true" frameBorder=0 height="430"></iframe>
                 </div>
                 <div class="col-md-12 pl-0">
-                    <iframe class="second-iframe" src="https://buildingos.com/blocks/65a6696eba8e487aaecb7885953bc483/" allowtransparency="true" frameBorder=0 height="430"></iframe>
+                    <iframe class="second-iframe" src="https://buildingos.com/blocks/d2245845d2db4bfba8f97c019e580a73/" allowtransparency="true" frameBorder=0 height="430"></iframe>
                 </div>
                 <div class="col-md-12 pl-0">
                     <iframe src="https://buildingos.com/blocks/3f15739b3a594a5195b1a755d092a67d/" allowtransparency="true" scrolling="no" frameBorder=0 height="1870"></iframe> <!-- 1630 -->
