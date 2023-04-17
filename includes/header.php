@@ -2,7 +2,10 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-65902947-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
     gtag('js', new Date());
     gtag('config', 'UA-65902947-1');
   </script>
@@ -15,14 +18,14 @@
       <a class="nav-link" href="/ecolympics" title="CLICK HERE FOR EVENTS & STANDINGS">
         <div class="ecolymipic-button">
           <div class="ecolymipic-title">
-              Ecolympics 2023 April 10 - 23
-            </div>
-            <div class="ecolymipic-sub-title">
-              Think Global, Invest Local
-            </div>
-            <div class="ecolymipic-sub-title">
-              Click here to see standings!
-            </div>
+            Ecolympics 2023 April 10 - 23
+          </div>
+          <div class="ecolymipic-sub-title">
+            Think Global, Invest Local
+          </div>
+          <div class="ecolymipic-sub-title">
+            Click here to see standings!
+          </div>
         </div>
       </a>
     </div>
@@ -30,14 +33,14 @@
 </div>
 <nav class="navbar sticky-top navbar-expand-lg navbar-dark" style="background: #21a7df;padding-top: 0px;padding-bottom: 0px">
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-  <span class="navbar-toggler-icon"></span>
+    <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarNavDropdown">
     <ul class="navbar-nav">
       <li class="nav-item dropdown" id="hover1">
         <a class="nav-link dropdown-toggle" href="/cwd" id="navbarDropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        Citywide Dashboard
-      </a>
+          Citywide Dashboard
+        </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink1" id="hover_target1">
           <a class="dropdown-item" href="/cwd">Citywide View</a>
           <!-- <a class="dropdown-item" href="http://buildingdashboard.net/oberlincity/#/oberlincity/cityelectricity/">Electricity</a>
@@ -49,8 +52,8 @@
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="/building-dashboard-explained" id="navbarDropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        Building Dashboard
-      </a>
+          Building Dashboard
+        </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink2">
           <a class="dropdown-item" href="/building-dashboard-explained">Building Dashboard Explained</a>
 
@@ -83,17 +86,17 @@
         </div>
       </li>
       <li class="nav-item">
-        <!--<a class="nav-link" href="/community-voices/"></!--a> <-->
-        <a class="nav-link" href="https://oberlin.communityhub.cloud/community-voices/">Community Voices</a>
+        <a class="nav-link" href="/community-voices/">Community Voices</a>
+        <!-- <a class="nav-link" href="https://oberlin.communityhub.cloud/community-voices/">Community Voices</a> -->
       </li>
       <li class="nav-item">
-        <!--<a class="nav-link" href="/calendar/">Events Calendar</a> <-->
-        <a class="nav-link" href="https://oberlin.communityhub.cloud/calendar/">Events Calendar</a>
+        <a class="nav-link" href="/calendar/">Events Calendar</a>
+        <!-- <a class="nav-link" href="https://oberlin.communityhub.cloud/calendar/">Events Calendar</a> -->
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink6" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        More
-      </a>
+          More
+        </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink6" style="left: -250%">
           <a class="dropdown-item" href="/resources-explained">Resources Explained</a>
           <a class="dropdown-item" href="/story-of-dashboard">Story of Dashboard</a>
