@@ -13,7 +13,7 @@
 <div class="row">
   <div class="col banner-col">
     <a href="/"><img src="../images/oberlin-banner.jpg" alt="" class="img-fluid"></a>
-    <div class="ecolymipic-button-container">
+    <!-- <div class="ecolymipic-button-container">
       <img src="../images/Ecolympics_Banner_Button.svg" alt="ECOLYMPICS 2023 APRIL 10 - 23">
       <a class="nav-link" href="/ecolympics" title="CLICK HERE FOR EVENTS & STANDINGS">
         <div class="ecolymipic-button">
@@ -28,7 +28,7 @@
           </div>
         </div>
       </a>
-    </div>
+    </div> -->
   </div>
 </div>
 <nav class="navbar sticky-top navbar-expand-lg navbar-dark" style="background: #21a7df;padding-top: 0px;padding-bottom: 0px">
