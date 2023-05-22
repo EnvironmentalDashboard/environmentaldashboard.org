@@ -100,6 +100,7 @@
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink6" style="left: -250%">
           <a class="dropdown-item" href="/resources-explained">Resources Explained</a>
           <a class="dropdown-item" href="/story-of-dashboard">Story of Dashboard</a>
+          <a class="dropdown-item" href="/ecolympics">Ecolympics 2023</a>
           <a class="dropdown-item" href="/bring-dashboard-to-your-community">Bring Dashboard to Your Community</a>
           <a class="dropdown-item" href="/press-page">Press/Media</a>
 
