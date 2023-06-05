@@ -97,7 +97,7 @@
     min-width: 95px;
 }
 iframe.slide-show-iframe{
-    width: 97%;
+    width: 99%;
     margin-bottom: 0.2rem;
 }
 .rank-data iframe{
@@ -111,7 +111,7 @@ iframe.slide-show-iframe{
 }
 .rank-data .col-md-12.pr-0 iframe,
 .rank-data .col-lg-6.pr-0 iframe {
-    width: 97%;
+    width: 99%;
     margin-bottom: 0.2rem;
 }
 .rank-data .col-md-12.pl-0 iframe {
@@ -122,7 +122,7 @@ iframe.slide-show-iframe{
     min-height: 470px;
 }
 .rank-data iframe.second-iframe{
-    min-height: 420px;
+    min-height: 500px;
 }
 .col-md-12.padding-rignt-0{
     padding-right: 0;
@@ -137,10 +137,10 @@ iframe.slide-show-iframe{
         padding-left: 0;
     }
     .rank-data iframe.first-iframe{
-        min-height: 420px;
+        min-height: 470px;
     }
     .rank-data iframe.second-iframe{
-        min-height: 470px;
+        min-height: 500px;
 
     }
 }
@@ -153,10 +153,10 @@ iframe.slide-show-iframe{
         width: 98%;
     }
     .rank-data iframe.first-iframe{
-        min-height: 420px;
+        min-height: 470px;
     }
     .rank-data iframe.second-iframe{
-        min-height: 470px;
+        min-height: 500px;
     }
     .ecolymipic-link img {
         width: 25%;

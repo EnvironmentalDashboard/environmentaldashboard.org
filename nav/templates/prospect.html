@@ -6,6 +6,10 @@
     <meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
     <!-- change title as appropriate -->
     <title>Prospect Elementary Controller</title>
+    <script>
+      // to redirect new controller
+        window.location = 'https://oberlin.communityhub.cloud/digital-signage/remote/custom/prospect-community'
+    </script>
     <style>
     @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400&display=swap');
 
@@ -288,7 +292,7 @@
     	if (sessionConn === null) {
     		const uuidExtension = uuid ? `?uuid=${uuid}` : '';
 
-    		sessionConn = new WebSocket("wss\u003A\/\/oberlin.communityhub.cloud/digital-signage/websockets/session/80" + uuidExtension);
+    		sessionConn = new WebSocket("wss://oberlin.communityhub.cloud/digital-signage/websockets/session/80" + uuidExtension);
     		// onclose will always fire when onerror does (https://stackoverflow.com/a/40084550/2624391)
     		// so don't try reconnecting in both methods
     		sessionConn.onerror = function () { return; }
