@@ -25,4 +25,4 @@
     </div>
     <?php include 'includes/js.php'; ?>
   </body>
-</html>php
+</html>
