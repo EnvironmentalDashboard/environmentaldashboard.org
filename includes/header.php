@@ -15,16 +15,21 @@
 $isEmbedded = "";
 $showMainHeader = "showMainHeader='true'";
 $showMenu = "showMenu='true'";
+$subDomain = "subDomain='oberlin'";
 if($_GET['embed']){
   $isEmbedded= "isembedded='true'";
   $showMainHeader = "";
   if($_GET['show-menu-bar'] == "0"){
     $showMenu = "";
   }
+  if($_GET['subdomain']){
+    $subDomain = $_GET['subdomain'];
+    $subDomain = "subDomain='$subDomain'";
+  }
 }
 
 ?>
-<ch-header <?=$isEmbedded?> <?=$showMainHeader?> <?=$showMenu?> layout="container-fluid" subDomain="oberlin"></ch-header>
+<ch-header <?=$isEmbedded?> <?=$showMainHeader?> <?=$showMenu?> layout="container-fluid" <?=$subDomain?>></ch-header>
 <div class="container p-0">
   <div class="row" style="display: none;">
     <div class="col banner-col">
