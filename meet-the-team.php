@@ -7,14 +7,14 @@
   <body>
     <?php include 'includes/header.php'; ?>
     <div class="container">
-      <h1 class="head">
+      <h1 class="head primary-heading">
         Meet Our Team
       </h1>
       <p class="headdes">
         The Environmental Dashboard has a decade long legacy of being a collaboration between students, faculty,
         community members, and staff. Hover for more information and to see what makes the Dashboard team unique.
       </p>
-      <h1 class="head">
+      <h1 class="head primary-heading">
         Management and Research
       </h1>
       <p class="headdes">
@@ -73,7 +73,7 @@
       </div>
     </div>
       <br>
-      <h1 class="head">
+      <h1 class="head primary-heading">
         Student Team
       </h1>
       <p class="headdes">

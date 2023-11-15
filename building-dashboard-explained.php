@@ -8,19 +8,19 @@
     <div class="container">
       <div class="row">
         <div class="col-12" style="padding: 30px">
-          <h1 class="text-center">Building Dashboards</h1>
+          <h1 class="primary-heading">Building Dashboards</h1>
           <p>Building Dashboard is a technology that measures electricity and water consumption in schools, businesses, public facilities and homes and translate this into animated displays. Building Dashboards are designed to engage, educate, motivate and empower building occupants to make informed choices that conserve resources. Linked sites on this page allow you to track patterns of use over different time scales and to compare use among buildings.</p>
         </div>
       </div>
       <div class="row">
         <div class="col-12 col-sm-4">
-          <h4 class="text-center">City Buildings</h4>
+          <h4 class="primary-heading">City Buildings</h4>
         </div>
         <div class="col-12 col-sm-4">
-          <h4 class="text-center">Oberlin Public Schools</h4>
+          <h4 class="primary-heading">Oberlin Public Schools</h4>
         </div>
         <div class="col-12 col-sm-4">
-          <h4 class="text-center">College Buildings</h4>
+          <h4 class="primary-heading">College Buildings</h4>
         </div>
       </div>
       <div class="row text-center" style="margin: 10px 0px">
@@ -45,7 +45,7 @@
       </div>
       <div class="row">
         <div class="col-12" style="padding: 0px 30px;margin-bottom: 50px">
-          <h3 class="text-center">Businesses, Homes and Places of Worship</h3>
+          <h3 class="primary-heading">Businesses, Homes and Places of Worship</h3>
           <p>Our goal is to make Building Dashboard displays available to all members of the community. Currently, dashboards have been created for all 33 residences and 14 businesses that occupy Sustainable Community Associates East College Street buildings. To protect privacy, these have password protected websites, but dashboards for the Slow Train Cafe is visible to the public. We are working towards a pilot “home dashboard” project with displays for up to 100 residences in Oberlin.</p>
         </div>
       </div>

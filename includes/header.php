@@ -16,24 +16,25 @@ $isEmbedded = "";
 $showMainHeader = "showMainHeader='true'";
 $showMenu = "showMenu='true'";
 $subDomain = "subDomain='oberlin'";
-if($_GET['embed']){
-  $isEmbedded= "isembedded='true'";
+if (!empty($_GET['embed'])) {
+  $isEmbedded = "isembedded='true'";
   $showMainHeader = "";
-  if($_GET['show-menu-bar'] == "0"){
-    $showMenu = "";
+  $showMenu = "";
+  if (!empty($_GET['show-menu-bar']) && $_GET['show-menu-bar'] == "1") {
+    $showMenu = "showMenu='true'";
   }
-  if($_GET['subdomain']){
+  if (!empty($_GET['subdomain'])) {
     $subDomain = $_GET['subdomain'];
     $subDomain = "subDomain='$subDomain'";
   }
 }
-
+$target = $isEmbedded ? "target='_blank'" : "target='_self'"
 ?>
-<ch-header <?=$isEmbedded?> <?=$showMainHeader?> <?=$showMenu?> layout="container-fluid" <?=$subDomain?>></ch-header>
+<ch-header <?= $isEmbedded ?> <?= $showMainHeader ?> <?= $showMenu ?> layout="container-fluid" <?= $subDomain ?>></ch-header>
 <div class="container p-0">
   <div class="row" style="display: none;">
     <div class="col banner-col">
-      <a href="/"><img src="../images/oberlin-banner.jpg" alt="" class="img-fluid"></a>
+      <a href="/"><img src="https://storage.googleapis.com/ch-storage/header-logo/oberlin-banner.jpg" alt="" class="img-fluid"></a>
       <!-- <div class="ecolymipic-button-container">
       <img src="../images/Ecolympics_Banner_Button.svg" alt="ECOLYMPICS 2023 APRIL 10 - 23">
       <a class="nav-link" href="/ecolympics" title="CLICK HERE FOR EVENTS & STANDINGS">
@@ -150,8 +151,8 @@ if($_GET['embed']){
     </div>
   </nav>
 </div>
-  <!-- start eco olympic banner -->
-  <!-- <div class="banner">
+<!-- start eco olympic banner -->
+<!-- <div class="banner">
   <a class="nav-link" href="/ecolympics" title="Ecolympics 2023 April 10 - 23">
     <img src="../images/ecolympics/ecolympicslogo.svg" alt="ecolympics logo" sizes="" class="ecolympics-logo">
     <div class="ecolymipic-title">
@@ -162,4 +163,4 @@ if($_GET['embed']){
     </div>
   </a>
 </div> -->
-  <!--end eco olympic banner-->
+<!--end eco olympic banner-->
