@@ -15,7 +15,7 @@
 $isEmbedded = "";
 $showMainHeader = "showMainHeader='true'";
 $showMenu = "showMenu='true'";
-$subDomain = "subDomain='oberlin'";
+$subDomain = "subDomain='environmentaldashboard'";
 if (!empty($_GET['embed'])) {
   $isEmbedded = "isembedded='true'";
   $showMainHeader = "";
