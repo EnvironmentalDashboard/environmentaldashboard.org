@@ -23,8 +23,8 @@ if (!empty($_GET['embed'])) {
   if (!empty($_GET['show-menu-bar']) && $_GET['show-menu-bar'] == "1") {
     $showMenu = "showMenu='true'";
   }
-  if (!empty($_GET['subdomain'])) {
-    $subDomain = $_GET['subdomain'];
+  if (!empty($_GET['theme_name'])) {
+    $subDomain = $_GET['theme_name'];
     $subDomain = "subDomain='$subDomain'";
   }
 }
