@@ -1,3 +1,18 @@
+:root {
+
+	--blue: #21a7df !important;
+	--primary: #21a7df !important;
+	--header-color: var(--primary) !important;
+	--primary-fade: #1a86b3 !important;
+	--active-hover-color: var(--primary-fade) !important;
+	--btn-primary-color: var(--primary) !important;
+	--link-hover: #17759d !important;
+	--cyan-lighter: #c1e6f6 !important;
+	--cyan-light: #abddf3 !important;
+	--cyan-dark: #115774 !important;
+	--font-family: "Multicolore", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important
+}
+
 $color_1: #212529;
 $color_2: #21a7df;
 $color_3: #17759d;
@@ -824,6 +839,7 @@ template {
 	text-align: initial;
 	padding: 0px 15px;
 }
+
 .lead {
 	font-size: 1.25rem;
 	font-weight: 300;
@@ -12744,6 +12760,7 @@ a.text-dark {
 		display: inline-flex !important;
 	}
 }
-.space-between{
+
+.space-between {
 	justify-content: space-between;
 }

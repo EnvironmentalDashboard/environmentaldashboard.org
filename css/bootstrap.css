@@ -1,4 +1,4 @@
-/*!
+:root{--blue:#21a7df!important;--primary:#21a7df!important;--header-color:var(--primary)!important;--primary-fade:#1a86b3!important;--active-hover-color:var(--primary-fade)!important;--btn-primary-color:var(--primary)!important;--link-hover:#17759d!important;--cyan-lighter:#c1e6f6!important;--cyan-light:#abddf3!important;--cyan-dark:#115774!important;--font-family:"Multicolore",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"!important}/*!
  * Bootstrap v4.0.0 (https://getbootstrap.com)
  * Copyright 2011-2018 The Bootstrap Authors
  * Copyright 2011-2018 Twitter, Inc.
