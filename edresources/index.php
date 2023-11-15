@@ -48,17 +48,21 @@
       </div>
       <div class="row" style="padding: 30px">
         <div class="col-12">
-          <h2>WHAT, WHY, HOW</h2>
-          <h3>What are the aims of the Dashboard-related lessons?</h3>
+          <h2 class="text-left primary-heading">WHAT, WHY, HOW</h2>
+          <h3 class="text-left primary-heading">What are the aims of the Dashboard-related lessons?</h3>
           <p>We believe that students can be powerful agents of change. Dashboard related lessons are designed to engage, motivate and empower students to improve their community and their environment while they develop systems thinking skills and core competencies.</p>
-          <h3>Why are Dashboard educational tools unique?</h3>
+          <h3 class="text-left primary-heading">Why are Dashboard educational tools unique?</h3>
           <p>Building Dashboard, Citywide Dashboard and BuildingOS use real-time data on the environmental performance of buildings to engage students in authentic research; these tools compel students to ask and answer important questions for which answers are not already known.  It empowers them to identify how behavior and management choices influence resource use and environmental impacts.  Community Voices-related lessons empower students to promote pro-environmental and pro-community thought and action.</p>
-          <h3>How to navigate this portion of the website:</h3>
+          <h3 class="text-left primary-heading">How to navigate this portion of the website:</h3>
           <p>Click the search button below to search the expanding repository of lessons developed by educators in K-college who are using Environmental Dashboard to empower their students.</p>
         </div>
       </div>
       <div class="row" style="padding: 30px">
-        <div class="col text-center"><a href="/edresources/searchedresources" class="btn btn-lg btn-primary">Search</a></div>
+        <div class="col text-center">
+          <a href="<?=generateURL("/edresources/searchedresources")?>" class="btn btn-lg btn-primary">
+            Search
+          </a>
+        </div>
       </div>
       <div class="row">
         <div class="col-12" style="padding: 30px">
