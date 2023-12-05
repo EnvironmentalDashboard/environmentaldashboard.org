@@ -46,16 +46,20 @@
     </p>
   </div>
 </div>
+
 <div class="row">
-  <div class="col text-center d-flex justify-content-center align-items-center" style="padding-bottom: 50px; gap: 0.75rem;">
-    <a href="https://www.facebook.com/oberlindashboard/" class="btn btn-primary d-flex" style="height: 35px;width: 35px;padding: 5px">
-      <img src="https://environmentaldashboard.org/images/facebook-f.svg" alt="Environmental Dashboard on Facebook" style="height: 100%">
+  <div class="col text-center d-flex justify-content-center align-items-center social-btn-container">
+    <a href="https://www.facebook.com/oberlindashboard/" class="btn btn-primary d-flex social-btn">
+      <img src="https://environmentaldashboard.org/images/facebook-f.svg" alt="Environmental Dashboard on Facebook">
     </a>
-    <a href="https://twitter.com/envirodashboard" class="btn btn-primary d-flex" style="height: 35px;width: 35px;padding: 5px">
-      <img src="https://environmentaldashboard.org/images/twitter.svg" style="height: 100%" alt="Environmental Dashboard on Twitter">
+    <a href="https://twitter.com/EnvDash" class="btn btn-primary d-flex social-btn">
+      <img src="https://environmentaldashboard.org/images/twitter.svg" alt="Environmental Dashboard on Twitter">
     </a>
-    <a href="https://www.instagram.com/environmentaldashboard_project/" class="btn btn-primary d-flex" style="height: 35px;width: 35px;padding: 5px">
-      <img src="https://environmentaldashboard.org/images/instagram.svg" style="height: 100%" alt="Environmental Dashboard on Instagram">
+    <a href="https://www.instagram.com/environmentaldashboard/" class="btn btn-primary d-flex social-btn">
+      <img src="https://environmentaldashboard.org/images/instagram.svg" alt="Environmental Dashboard on Instagram">
+    </a>
+    <a href="https://www.linkedin.com/company/environmentaldashboard/" class="btn btn-primary d-flex social-btn">
+      <img src="https://environmentaldashboard.org/images/linkedin-logo.svg" alt="Environmental Dashboard on Linkedin">
     </a>
   </div>
 </div>
