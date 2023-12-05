@@ -12764,3 +12764,18 @@ a.text-dark {
 .space-between {
 	justify-content: space-between;
 }
+
+.social-btn-container {
+	padding-bottom: 50px;
+	gap: 0.75rem;
+
+	.social-btn {
+		height: 35px;
+		width: 35px;
+		padding: 5px;
+
+		img {
+			height: 100%
+		}
+	}
+}
