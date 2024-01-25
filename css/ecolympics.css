@@ -78,6 +78,9 @@
     text-decoration: none;
     text-align: center;
 }
+.ecolymipic-more-info-links a:hover {
+    color: #dfdfdf !important
+}
 .ecolymipic-more-info-links a:nth-child(1) {
     background-color: #2774ad;
 }
