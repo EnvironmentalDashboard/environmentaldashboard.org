@@ -17,6 +17,11 @@
 
   .brand-item-container .img-fluid {
     max-width: 255px;
+    height: 255px;
+    width: 100%;
+    background: #dfdfdf;
+    border-radius: 12px;
+    border-color: transparent;
   }
 
   .brand-items:hover .face-image {
