@@ -66,7 +66,7 @@
     display: flex;
     width: 100%;
     justify-content: space-evenly;
-    margin: 1.25% 0
+    padding: 1.25% 0
 }
 .ecolymipic-more-info-links a{
     width: 31.5%;
