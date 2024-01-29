@@ -4,6 +4,7 @@
 <head>
     <meta name="description" content="Environmental Dashboard. A technology & approach for organizations and whole communities that combines feedback, through real-time public displays of resource use and environmental conditions, with thoughts and actions of community to engage, motivate, empower & celebrate sustainable thought and action.">
     <?php include 'includes/html-head.php'; ?>
+    <script type="module" crossorigin src="https://config.communityhub.cloud/embed-plugins/ecolympic/ecolympic-index.js"></script>
 </head>
 
 <body>
@@ -33,7 +34,10 @@
             <div class="col-lg-6 col-md-12 padding-rignt-0 order-sm-2 order-lg-1">
                 <div class="col-md-12 padding-rignt-0">
                     <h1>COMMUNITY VOICES</h1>
-                    <iframe class="slide-show-iframe" src="/calendar/ecolympic" allowtransparency="true" scrolling="no" frameBorder=0 width="100%" height="470px"></iframe>
+                    <div class="slide-show-container">
+                        <ecolympic-tabs-plugin/>
+                    </div>
+                    <!-- <iframe class="slide-show-iframe" src="http://oberlin.communityhub.local:9001/calendar/ecolympic" allowtransparency="true" scrolling="no" frameBorder=0 width="100%" height="470px"></iframe> -->
                 </div>
             </div>
             <div class="col-lg-6 col-md-12 padding-left-0 order-sm-1 order-lg-2">
