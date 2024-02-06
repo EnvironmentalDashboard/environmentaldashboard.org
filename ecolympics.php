@@ -9,7 +9,7 @@
 
 <body>
     <?php include 'includes/header.php'; ?>
-    <div class="container">
+    <div class="container" id="environmentaldashboard-ecolympics">
         <div class="ecolymipic-more-info-links">
             <a href="https://buildingos.com/s/oberlincity/storyboard314/?chapterId=1382" target="_blank" title="View School Data">
                 <div class="ecolymipic-link">
@@ -35,7 +35,7 @@
                 <div class="col-md-12 padding-rignt-0">
                     <h1>COMMUNITY VOICES</h1>
                     <div class="slide-show-container">
-                        <ecolympic-tabs-plugin/>
+                        <ecolympic-tabs-plugin />
                     </div>
                     <!-- <iframe class="slide-show-iframe" src="http://oberlin.communityhub.local:9001/calendar/ecolympic" allowtransparency="true" scrolling="no" frameBorder=0 width="100%" height="470px"></iframe> -->
                 </div>
@@ -82,6 +82,15 @@
         <?php include 'includes/footer.php'; ?>
     </div>
     <?php include 'includes/js.php'; ?>
+    <?php include 'includes/resize-obersavable.js.php'; ?>
+    <script>
+        try {
+            /* "#environmentaldashboard-ecolympics" */
+            elementResizeObserver('body')
+        } catch (error) {
+            console.log(error);
+        }
+    </script>
 </body>
 
 </html>

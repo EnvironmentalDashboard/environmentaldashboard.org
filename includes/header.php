@@ -28,9 +28,23 @@ if (!empty($_GET['embed'])) {
     $subDomain = "subDomain='$subDomain'";
   }
 }
+$noBodyBackground = false;
+/* remove background image from body if  */
+if (!empty($_GET['no-body-background'])) {
+  $noBodyBackground = true;
+}
 $target = $isEmbedded ? "target='_blank'" : "target='_self'"
 ?>
 <ch-header <?= $isEmbedded ?> <?= $showMainHeader ?> <?= $showMenu ?> layout="container-fluid" <?= $subDomain ?>></ch-header>
+<?php if($noBodyBackground): ?>
+  <style>
+    body {
+      background-image: none !important;
+      /* background-color: black !important; */
+    }
+  </style>
+<?php endif ?>
+
 <div class="container p-0">
   <div class="row" style="display: none;">
     <div class="col banner-col">
