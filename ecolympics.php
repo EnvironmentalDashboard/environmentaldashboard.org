@@ -9,9 +9,9 @@
 
 <body>
     <?php include 'includes/header.php'; ?>
-    <div class="container" id="environmentaldashboard-ecolympics">
+    <div class="container resizable-element">
         <div class="ecolymipic-more-info-links">
-            <a href="https://buildingos.com/s/oberlincity/storyboard314/?chapterId=1382" target="_blank" title="View School Data">
+            <a href="https://oberlin.communityhub.cloud/dh-public/ops-embed" target="_blank" title="View School Data">
                 <div class="ecolymipic-link">
                     <img src="../images/ecolympics/OPSIcon.svg" alt="View School Data" srcset="">
                     <span>View School Data</span>
@@ -33,21 +33,45 @@
         <div class="rank-data row">
             <div class="col-lg-6 col-md-12 padding-rignt-0 order-sm-2 order-lg-1">
                 <div class="col-md-12 padding-rignt-0">
-                    <h1>COMMUNITY VOICES</h1>
                     <div class="slide-show-container">
                         <ecolympic-tabs-plugin />
                     </div>
                     <!-- <iframe class="slide-show-iframe" src="http://oberlin.communityhub.local:9001/calendar/ecolympic" allowtransparency="true" scrolling="no" frameBorder=0 width="100%" height="470px"></iframe> -->
                 </div>
+                <div class="col-md-12 padding-rignt-0 my-2">
+                    <div class="d-block">
+                        <em class="h6 text-black text-italic">
+                            Follow on social media
+                        </em>
+                    </div>
+                    <div class="text-center d-inline-flex justify-content-center align-items-center py-1 px-1 pb-3 social-btn-container">
+                        <?php include 'includes/social-media-links.php'; ?>
+                    </div>
+                    <div class="standings-container">
+                        <div class="d-block">
+                            <strong class="h4 text-black">
+                                CURRENT STANDINGS
+                            </strong>
+                        </div>
+                        <div class="d-block">
+                            <strong class="h6 text-black">
+                                (2024 will be posted when competition begins)
+                            </strong>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="col-lg-6 col-md-12 padding-left-0 order-sm-1 order-lg-2">
-                <div class="col-md-12 padding-left-0">
-                    <h1>OBERLIN ECOLYMPICS 2023</h1>
+                <div class="col-md-12 padding-left-0 about-ecolympic">
+                    <h1>OBERLIN ECOLYMPICS 2024</h1>
                     <P>
-                        <strong><i>What is it?</i></strong> Ecolympics is the Oberlin community’s annual competition to conserve water and electricity use in buildings through behavior change while celebrating the environment. The 2023 theme is “Think Global, Invest Local”. Three concurrent competitions will take place between: Oberlin City Schools; Community Buildings (Prospect Community Center, Oberlin Fire Station, the School District Office, and Oberlin Public Library); and Oberlin College Dorms. Occupants in each building work to reduce electricity and water use by the largest perentage relative to a baseline period established immediately before the competition. The highest percent reduction in each building for each resource wins!
+                        <strong><i>What is it?</i></strong> Ecolympics is the Oberlin community’s annual competition to conserve water and electricity use in buildings through behavior change while celebrating the environment. The 2024 community theme is “Later is too late: Efficiency, Electrification and Solarization”. A concurrent campaign will help all Oberlin residents identify smart choice for action.
                     </P>
                     <P>
-                        <strong><i>Standings and Strategy:</i></strong> The competition standings shown below are updated in real-time throughout the competition (scroll down to see College dorms). The three buttons above are your strategic tools for winning! Click a button to see in-depth graphs of real-time electricity and water use in each participating building. Use what you learn from patterns to brainstorm on how occupants of your building can reduce water and electricity use.
+                        <strong><i>Who is competing?</i></strong> Four concurrent competitions will take place among: Oberlin City Schools; Community Buildings (Oberlin Community Center, Oberlin Fire Station, the School District Office, and Oberlin Public Library); Oberlin College Dorms; and Oberlin College Buildings (Cox, Admissions, and Wilder). Occupants in each building will work to reduce electricity and water use by the largest percentage relative to a baseline period established immediately before the competition. Buildings with the highest percent reduction in each group for each resource win!
+                    </P>
+                    <P>
+                        <strong><i>Standings and Strategy:</i></strong>  During the competition, standings shown below are updated in real-time (scroll down to see College dorms). The three buttons above link to strategy tools for winning! Click to see in-depth graphs of real-time electricity and water use in each participating building. Use what you learn from patterns to brainstorm on how occupants of your building can reduce water and electricity use!
                     </P>
                     <P>
                         <strong><i>Community Goals:</i></strong> While occupants of each building should work to win, a community-wide goal has been set to reduce electricity use by 10,000 kWh and water use by 10,000 gallons during the competition. The entire community wins if we meet or exceed these collective goals!
