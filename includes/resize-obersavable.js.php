@@ -9,7 +9,7 @@
 
             const postMessageContent = {
                 messageType: 'content-resize',
-                moduleName: 'environmentaldashboard-ecolympics',
+                moduleName: 'environmentaldashboard',
                 targetFrame: window.location.href,
                 width: 0,
                 height: 0
