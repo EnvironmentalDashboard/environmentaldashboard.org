@@ -5,6 +5,9 @@
     text-decoration: none;
 }
 
+.about-ecolympic *, .ecolymipic-link * {
+    font-family: Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+}
 .banner:hover{
     opacity: 0.9;
 }
@@ -99,6 +102,7 @@
     width: 25%;
     min-width: 95px;
 }
+
 iframe.slide-show-iframe, 
 .slide-show-container{
     width: 99%;
@@ -133,6 +137,10 @@ iframe.slide-show-iframe,
 }
 .col-md-12.padding-left-0{
     padding-left: 0;
+}
+
+.text-black {
+    color: #000;
 }
 /* For Tablet View */
 @media screen and (min-width: 992px) {
