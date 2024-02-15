@@ -107,6 +107,8 @@ iframe.slide-show-iframe,
 .slide-show-container{
     width: 99%;
     margin-bottom: 0.2rem;
+    min-height: min(472px, 61vh);
+    display: inline-block;
 }
 .rank-data > iframe{
     border-radius: 6px;

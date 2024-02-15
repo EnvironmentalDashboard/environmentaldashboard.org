@@ -4,7 +4,7 @@
 <head>
     <meta name="description" content="Environmental Dashboard. A technology & approach for organizations and whole communities that combines feedback, through real-time public displays of resource use and environmental conditions, with thoughts and actions of community to engage, motivate, empower & celebrate sustainable thought and action.">
     <?php include 'includes/html-head.php'; ?>
-    <script type="module" crossorigin src="https://config.communityhub.cloud/embed-plugins/ecolympic/ecolympic-index.js"></script>
+    <script type="module" crossorigin src="https://config.communityhub.cloud/embed-plugins/ecolympic/ecolympic-index.js?v=1.0"></script>
 </head>
 
 <body>
@@ -30,6 +30,10 @@
                 </div>
             </a>
         </div>
+        <div class="col-md-12 padding-left-0 order-sm-1 order-lg-2 text-center">
+            <h1>OBERLIN ECOLYMPICS 2024</h1>
+        </div>
+
         <div class="rank-data row">
             <div class="col-lg-6 col-md-12 padding-rignt-0 order-sm-2 order-lg-1">
                 <div class="col-md-12 padding-rignt-0">
@@ -39,31 +43,32 @@
                     <!-- <iframe class="slide-show-iframe" src="http://oberlin.communityhub.local:9001/calendar/ecolympic" allowtransparency="true" scrolling="no" frameBorder=0 width="100%" height="470px"></iframe> -->
                 </div>
                 <div class="col-md-12 padding-rignt-0 my-2">
-                    <div class="d-block">
-                        <em class="h6 text-black text-italic">
-                            Follow on social media
-                        </em>
-                    </div>
-                    <div class="text-center d-inline-flex justify-content-center align-items-center py-1 px-1 pb-3 social-btn-container">
-                        <?php include 'includes/social-media-links.php'; ?>
-                    </div>
-                    <div class="standings-container">
+                    <div class="content-status">
                         <div class="d-block">
-                            <strong class="h4 text-black">
-                                CURRENT STANDINGS
-                            </strong>
+                            <em class="h6 text-black text-italic">
+                                Follow on social media
+                            </em>
                         </div>
-                        <div class="d-block">
-                            <strong class="h6 text-black">
-                                (2024 will be posted when competition begins)
-                            </strong>
+                        <div class="text-center d-inline-flex justify-content-center align-items-center py-1 px-1 pb-3 social-btn-container">
+                            <?php include 'includes/social-media-links.php'; ?>
+                        </div>
+                        <div class="standings-container">
+                            <div class="d-block">
+                                <strong class="h4 text-black">
+                                    CURRENT STANDINGS
+                                </strong>
+                            </div>
+                            <div class="d-block">
+                                <strong class="h6 text-black">
+                                    (2024 will be posted when competition begins)
+                                </strong>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-lg-6 col-md-12 padding-left-0 order-sm-1 order-lg-2">
                 <div class="col-md-12 padding-left-0 about-ecolympic">
-                    <h1>OBERLIN ECOLYMPICS 2024</h1>
                     <P>
                         <strong><i>What is it?</i></strong> Ecolympics is the Oberlin community’s annual competition to conserve water and electricity use in buildings through behavior change while celebrating the environment. The 2024 community theme is “Later is too late: Efficiency, Electrification and Solarization”. A concurrent campaign will help all Oberlin residents identify smart choice for action.
                     </P>
