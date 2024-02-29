@@ -6,8 +6,22 @@
   <?php include 'includes/html-head.php'; ?>
 </head>
 <style>
+  .brand-item-container {
+    display: flex;
+    justify-content: center;
+  }
+
   .brand-items {
     text-align: center;
+  }
+
+  .brand-item-container .img-fluid {
+    max-width: 255px;
+    height: 255px;
+    width: 100%;
+    background: #dfdfdf;
+    border-radius: 12px;
+    border-color: transparent;
   }
 
   .brand-items:hover .face-image {
@@ -22,11 +36,16 @@
     display: none;
   }
 </style>
+<script>
+  function removeBackground(image) {
+    image.style.backgroundColor = 'transparent'
+  }
+</script>
 
 <body>
   <!-- isEmbedded is defined in header.php-->
   <?php include 'includes/header.php'; ?>
-  
+
   <div class="container p-0">
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators" style="top: 10px; height: 5px">
@@ -86,33 +105,33 @@
     </div>
     <div class="row" style="margin-top: 20px;margin-bottom: 20px;padding-right: 15px;padding-left: 15px">
       <div class="col-12 col-sm-3 brand-items">
-        <a href="<?= generateURL('/cwd') ?>">
-          <img src="https://environmentaldashboard.org/images/uploads/2015/07/icons-cleveland1-300x300.png" class="face-image img-fluid">
-          <img src="https://environmentaldashboard.org/images/uploads/2015/07/cwd_icon_hr-300x300.png" class="hover-image img-fluid">
+        <a class="brand-item-container" href="<?= generateURL('/cwd') ?>">
+          <img onload="removeBackground(this)" src="https://environmentaldashboard.org/images/uploads/2015/07/icons-cleveland1-300x300.png" class="face-image img-fluid">
+          <img onload="removeBackground(this)" src="https://environmentaldashboard.org/images/uploads/2015/07/cwd_icon_hr-300x300.png" class="hover-image img-fluid">
         </a>
         <h4 class="primary-heading">Citywide Dashboard</h4>
         <p class="primary-heading-content">An animated display of current electricity and water use and environmental conditions in the entire community. “Flash” the energy squirrel and “Walley the Walleye” narrate the dynamic story.</p>
       </div>
       <div class="col-12 col-sm-3 brand-items">
-        <a href="<?= generateURL('/building-dashboard-explained') ?>">
-          <img src="https://environmentaldashboard.org/images/uploads/2015/07/icons-town1-300x300.png" class="face-image img-fluid">
-          <img src="https://environmentaldashboard.org/images/uploads/2015/07/building_dashboard_icon_ed_hr-300x300.png" class="hover-image img-fluid">
+        <a class="brand-item-container" href="<?= generateURL('/building-dashboard-explained') ?>">
+          <img onload="removeBackground(this)" src="https://environmentaldashboard.org/images/uploads/2015/07/icons-town1-300x300.png" class="face-image img-fluid">
+          <img onload="removeBackground(this)" src="https://environmentaldashboard.org/images/uploads/2015/07/building_dashboard_icon_ed_hr-300x300.png" class="hover-image img-fluid">
         </a>
         <h4 class="primary-heading">Building Dashboards</h4>
         <p class="primary-heading-content">Measure electricity and water consumption in schools, businesses, public facilities and homes and translate this into animated displays.</p>
       </div>
       <div class="col-12 col-sm-3 brand-items">
-        <a href="<?= generateURL('/community-voices') ?>">
-          <img src="https://environmentaldashboard.org/images/uploads/2015/07/icons-home-family-300x300.png" class="face-image img-fluid">
-          <img src="https://environmentaldashboard.org/images/uploads/2015/07/cv_logo_hr-300x300.png" class="hover-image img-fluid">
+        <a class="brand-item-container" href="<?= generateURL('/community-voices') ?>">
+          <img onload="removeBackground(this)" src="https://environmentaldashboard.org/images/uploads/2015/07/icons-home-family-300x300.png" class="face-image img-fluid">
+          <img onload="removeBackground(this)" src="https://environmentaldashboard.org/images/uploads/2015/07/cv_logo_hr-300x300.png" class="hover-image img-fluid">
         </a>
         <h4 class="primary-heading">Community Voices</h4>
         <p class="primary-heading-content">Combines images thoughts, ideas and actions of community members and groups to celebrate and empower positive action.</p>
       </div>
       <div class="col-12 col-sm-3 brand-items">
-        <a href="<?= generateURL('/calendar') ?>">
-          <img src="images/Homepageonhovercalendarcovericon.png" class="face-image img-fluid">
-          <img src="images/Homepageonhover.png" class="hover-image img-fluid">
+        <a class="brand-item-container" href="<?= generateURL('/calendar') ?>">
+          <img onload="removeBackground(this)" src="images/Homepageonhovercalendarcovericon.png" class="face-image img-fluid">
+          <img onload="removeBackground(this)" src="images/Homepageonhover.png" class="hover-image img-fluid">
         </a>
         <h4 class="primary-heading">Community Calendar</h4>
         <p class="primary-heading-content">The Community Calendar is a free, public website, where events submitted by community members are displayed both on this site and on digital signs installed in Oberlin.</p>

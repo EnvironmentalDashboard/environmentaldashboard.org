@@ -119,6 +119,15 @@
     <?php include 'includes/footer.php'; ?>
   </div>
   <?php include 'includes/js.php'; ?>
+  <?php include 'includes/resize-obersavable.js.php'; ?>
+  <script>
+    try {
+      /* "#environmentaldashboard-ecolympics" */
+      elementResizeObserver('body')
+    } catch (error) {
+      console.log(error);
+    }
+  </script>
 </body>
 
 </html>

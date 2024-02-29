@@ -5,6 +5,9 @@
     text-decoration: none;
 }
 
+.about-ecolympic *, .ecolymipic-link * {
+    font-family: Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+}
 .banner:hover{
     opacity: 0.9;
 }
@@ -66,7 +69,7 @@
     display: flex;
     width: 100%;
     justify-content: space-evenly;
-    margin: 1.25% 0
+    padding: 1.25% 0
 }
 .ecolymipic-more-info-links a{
     width: 31.5%;
@@ -77,6 +80,9 @@
     border-radius: 6px;
     text-decoration: none;
     text-align: center;
+}
+.ecolymipic-more-info-links a:hover {
+    color: #dfdfdf !important
 }
 .ecolymipic-more-info-links a:nth-child(1) {
     background-color: #2774ad;
@@ -96,11 +102,15 @@
     width: 25%;
     min-width: 95px;
 }
-iframe.slide-show-iframe{
+
+iframe.slide-show-iframe, 
+.slide-show-container{
     width: 99%;
     margin-bottom: 0.2rem;
+    min-height: min(472px, 61vh);
+    display: inline-block;
 }
-.rank-data iframe{
+.rank-data > iframe{
     border-radius: 6px;
 }
 .rank-data h1{
@@ -129,6 +139,10 @@ iframe.slide-show-iframe{
 }
 .col-md-12.padding-left-0{
     padding-left: 0;
+}
+
+.text-black {
+    color: #000;
 }
 /* For Tablet View */
 @media screen and (min-width: 992px) {
@@ -172,7 +186,7 @@ iframe.slide-show-iframe{
     .rank-data .col-md-6.pl-0:nth-child(2){
         padding-right: 7px;
     }
-    .slide-show-iframe{
+    .slide-show-iframe, .slide-show-container{
         height:500px
     }
     li.nav-item {
@@ -199,7 +213,7 @@ iframe.slide-show-iframe{
     .title {
         font-size: 11px;
     }
-    iframe.slide-show-iframe{
+    iframe.slide-show-iframe, .slide-show-container{
         width: 100%;
         max-height: 440px;
     }
