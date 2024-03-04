@@ -11,6 +11,7 @@
             margin: 0;
             padding: 0;
             overflow: hidden;
+            background: white !important;
         }
 
         .rank-data {
@@ -26,13 +27,7 @@
 <body>
     <div class="rank-data row mb-5">
         <div class="col-md-12 pr-0">
-            <iframe
-                class="second-iframe"
-                src="https://buildingos.com/reports/dashboards/f261518cda3a11ee9c9902420aff03ec?name=Ecolympics+2024+Oberlin+College+Administrative+Buildings"
-                allowtransparency="true"
-                frameBorder=0
-                scrolling="no"
-                style="height:100vh">
+            <iframe class="second-iframe" src="https://buildingos.com/reports/dashboards/f261518cda3a11ee9c9902420aff03ec?name=Ecolympics+2024+Oberlin+College+Administrative+Buildings" allowtransparency="true" frameBorder=0 scrolling="no" style="height:100vh">
             </iframe> <!-- width="520"-->
         </div>
         <!-- <div class="col-md-6 pl-0">
