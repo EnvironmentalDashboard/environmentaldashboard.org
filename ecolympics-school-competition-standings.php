@@ -19,12 +19,12 @@
     <div class="rank-data row mb-5">
         <div class="col-md-6 pr-0">
             <div class="col-md-12 pr-0">
-                <iframe class="first-iframe" src="https://buildingos.com/blocks/3ea7f48b901042068d496250628bfef5/" allowtransparency="true" frameborder="0" height="430"></iframe> <!-- width="520"-->
+                <iframe class="first-iframe" src="https://buildingos.com/blocks/40d498318460435f8b61e3119200b2d6/" allowtransparency="true" frameborder="0" height="430"></iframe> <!-- width="520"-->
             </div>
         </div>
         <div class="col-md-6 pl-0">
             <div class="col-md-12 pl-0">
-                <iframe class="first-iframe" src="https://buildingos.com/blocks/cb4f61797a6f4f8da12f096502552e24/" allowtransparency="true" frameBorder=0 height="430"></iframe>
+                <iframe class="first-iframe" src="https://buildingos.com/blocks/c513240c583c4e0ea51ff326aafbaf80/" allowtransparency="true" frameBorder=0 height="430"></iframe>
             </div>
         </div>
     </div>
