@@ -36,13 +36,13 @@
 
         <div class="rank-data row">
             <div class="col-lg-6 col-md-12 padding-rignt-0 order-sm-2 order-lg-1">
-                <div class="col-md-12 p-0">
+                <div class="col-md-12 pr-0">
                     <div class="slide-show-container">
                         <ecolympic-tabs-plugin />
                     </div>
                     <!-- <iframe class="slide-show-iframe" src="http://oberlin.communityhub.local:9001/calendar/ecolympic" allowtransparency="true" scrolling="no" frameBorder=0 width="100%" height="470px"></iframe> -->
                 </div>
-                <div class="col-md-12 p-0 my-2">
+                <div class="col-md-12 pr-0 my-2">
                     <div class="content-status">
                         <div class="d-block">
                             <em class="h6 text-black text-italic">
@@ -68,7 +68,7 @@
                 </div>
             </div>
             <div class="col-lg-6 col-md-12 padding-left-0 order-sm-1 order-lg-2">
-                <div class="col-md-12 p-0 about-ecolympic text-justify">
+                <div class="col-md-12 pl-0 about-ecolympic text-justify">
                     <P>
                         <strong><i>What is it?</i></strong> Ecolympics is the Oberlin community’s annual competition to conserve water and electricity use in buildings through behavior change while celebrating the environment. The 2024 community theme is “Later is too late: Efficiency, Electrification and Solarization”. A concurrent campaign will help all Oberlin residents identify smart choice for action.
                     </P>
@@ -118,20 +118,20 @@
         </div>
         <div class="rank-data row mb-5">
             <!-- Ecolympics 2024 Oberlin City Schools  -->
-            <div class="col-md-12 mb-1">
+            <div class="col-md-12 mb-1 pl-4">
                 <iframe class="building-os-report-iframe" src="https://buildingos.com/reports/dashboards/b12e3616da3b11ee866a02420aff03ca" allowtransparency="true" scrolling="no" frameBorder=0 height="600"></iframe>
             </div>
-            <div class="col-md-12 mb-1">
+            <div class="col-md-12 mb-1 pl-4">
                 <iframe class="building-os-report-iframe" src="https://buildingos.com/reports/dashboards/14960edada3d11ee814f02420aff03c9" allowtransparency="true" scrolling="no" frameBorder=0 height="600"></iframe>
             </div>
             <!-- Ecolympics 2024 Community Buildings  -->
-            <div class="col-md-12 mb-1">
+            <div class="col-md-12 mb-1 pl-4">
                 <iframe class="building-os-report-iframe" src="https://buildingos.com/reports/dashboards/7ca10804da3d11ee814f02420aff03c9" allowtransparency="true" scrolling="no" frameBorder=0 height="670"></iframe>
             </div>
-            <div class="col-md-12 mb-1">
+            <div class="col-md-12 mb-1 pl-4">
                 <iframe class="building-os-report-iframe" src="https://buildingos.com/reports/dashboards/f261518cda3a11ee9c9902420aff03ec" allowtransparency="true" scrolling="no" frameBorder=0 height="600"></iframe>
             </div>
-            <div class="col-md-12 mb-1">
+            <div class="col-md-12 mb-1 pl-4">
                 <iframe class="building-os-report-iframe" src="https://buildingos.com/reports/dashboards/8bf86870da3711ee815402420aff03d2" allowtransparency="true" scrolling="no" frameBorder=0 height="2500"></iframe> <!-- width="520"-->
             </div>
         </div>
