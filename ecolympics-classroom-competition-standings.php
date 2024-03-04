@@ -10,6 +10,7 @@
             margin:0;
             padding: 0;
             overflow: hidden;
+            background: white !important;
         }
         .rank-data {
             display: flex;
