@@ -6,6 +6,13 @@
     <?php include 'includes/html-head.php'; ?>
 
     <style>
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
         .rank-data {
             display: flex;
             padding: 0;
@@ -17,27 +24,22 @@
 </head>
 
 <body>
-    <div class="rank-data row">
-        <div class="col-md-6 pr-0">
-            <div class="col-md-12 pr-0">
-                <iframe style="height: 98vh;"
-                    class="second-iframe"
-                    src="https://buildingos.com/blocks/7f3c13065ada4d6fb822d593639796dc/"
-                    allowtransparency="true" frameBorder=0 
-                    height="430">
-                </iframe> <!-- width="520"-->
-            </div>
+    <div class="rank-data row mb-5">
+        <div class="col-md-12 pr-0">
+            <iframe
+                class="second-iframe"
+                src="https://buildingos.com/reports/dashboards/8bf86870da3711ee815402420aff03d2?name=Ecolympics-2024-Oberlin-College"
+                allowtransparency="true"
+                scrolling="no"
+                frameBorder=0
+                style="height:100vh">
+            </iframe>
         </div>
-        <div class="col-md-6 pl-0">
+        <!-- <div class="col-md-6 pl-0">
             <div class="col-md-12 pl-0">
-                <iframe style="height: 98vh;" class="second-iframe"
-                    src="https://buildingos.com/blocks/0491d8713d394f139e4787f80b97e28f/"
-                    allowtransparency="true"
-                    frameBorder=0 
-                    height="430">
-                </iframe>
+                <iframe class="second-iframe" src="https://buildingos.com/blocks/b451ce33b11142ceb02332ec2fc78030/" allowtransparency="true" frameBorder=0 height="430"></iframe>
             </div>
-        </div>
+        </div> -->
     </div>
 </body>
 
