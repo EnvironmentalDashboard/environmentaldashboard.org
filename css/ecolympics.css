@@ -116,6 +116,9 @@ iframe.slide-show-iframe,
 .rank-data h1{
     color: black;
 }
+.rank-data iframe {
+    width: 100%
+}
 .rank-data iframe.first-iframe {
     min-height: 360px;
 }
@@ -132,7 +135,7 @@ iframe.slide-show-iframe,
     min-height: 470px;
 }
 .rank-data iframe.second-iframe{
-    min-height: 500px;
+    min-height: 520px;
 }
 .col-md-12.padding-rignt-0{
     padding-right: 0;
@@ -154,7 +157,7 @@ iframe.slide-show-iframe,
         min-height: 470px;
     }
     .rank-data iframe.second-iframe{
-        min-height: 500px;
+        min-height: 520px;
 
     }
 }
@@ -170,7 +173,7 @@ iframe.slide-show-iframe,
         min-height: 470px;
     }
     .rank-data iframe.second-iframe{
-        min-height: 500px;
+        min-height: 520px;
     }
     .ecolymipic-link img {
         width: 25%;

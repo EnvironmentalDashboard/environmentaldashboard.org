@@ -91,13 +91,13 @@
                     <iframe class="first-iframe" src="https://buildingos.com/blocks/40d498318460435f8b61e3119200b2d6/" allowtransparency="true" frameborder="0" height="430"></iframe> <!-- width="520"-->
                 </div>
                 <div class="col-md-12 pr-0">
-                    <iframe class="third-iframe" src="https://buildingos.com/blocks/46ff7badd92f40a8948a96cc350b091f/" allowtransparency="true" frameBorder=0 height="500"></iframe> <!-- width="1150"-->
+                    <iframe class="second-iframe" src="https://buildingos.com/blocks/46ff7badd92f40a8948a96cc350b091f/" allowtransparency="true" frameBorder=0 height="500"></iframe> <!-- width="1150"-->
                 </div>
                 <div class="col-md-12 pr-0">
                     <iframe class="second-iframe" src="https://buildingos.com/blocks/e4c2b519f54d422698d7eb78d2cbd4fa/" allowtransparency="true" frameBorder=0 height="430"></iframe> <!-- width="520"-->
                 </div>
                 <div class="col-md-12 pr-0">
-                    <iframe class="second-iframe" src="https://buildingos.com/blocks/7f3c13065ada4d6fb822d593639796dc/" allowtransparency="true" frameBorder=0 height="1870"></iframe> <!-- width="520"-->
+                    <iframe class="third-iframe" src="https://buildingos.com/blocks/7f3c13065ada4d6fb822d593639796dc/" allowtransparency="true" frameBorder=0 height="1870"></iframe> <!-- width="520"-->
                 </div>
             </div>
             <div class="col-md-6 pl-0">
