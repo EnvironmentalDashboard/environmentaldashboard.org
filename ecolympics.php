@@ -34,7 +34,7 @@
             <h1>OBERLIN ECOLYMPICS 2024</h1>
         </div>
 
-        <div class="rank-data row">
+        <div class="row">
             <div class="col-lg-6 col-md-12 padding-rignt-0 order-sm-2 order-lg-1">
                 <div class="col-md-12 pr-0">
                     <div class="slide-show-container">
