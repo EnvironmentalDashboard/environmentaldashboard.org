@@ -1,114 +1,146 @@
 <html>
-  <head>
-    <meta charset= "UTF-8">
-    <!-- change "content" as appropriate -->
-    <meta name= "description" content="Controller template webpage">
-    <meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
-    <!-- change title as appropriate -->
-    <title>Kendal at Oberlin Controller</title>
-    <link rel="stylesheet" href="../styles/controller.css">
-    <!-- <link rel="stylesheet" type="text/css" href="/nav/styles/style.css"> -->
 
+<head>
+  <meta charset="UTF-8">
+  <!-- change "content" as appropriate -->
+  <meta name="description" content="Controller template webpage">
+  <meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
+  <!-- change title as appropriate -->
+  <title>Kendal at Oberlin Controller</title>
+  <link rel="stylesheet" href="../styles/controller.css">
+  <!-- <link rel="stylesheet" type="text/css" href="/nav/styles/style.css"> -->
+  <script>
+    // to redirect new controller
+    window.location = 'https://oberlin.communityhub.cloud/digital-signage/remote/custom/kendal';
+  </script>
 </head>
 
 
-  <body>
+<body>
 
-    <div id="timeout-overlay"><h1>Your time using this remote is up. Try again starting at a later time.</h1></div>
-    <div id="queue-overlay"><h1>You are waiting <span id="in-the-queue">in the queue</span>. You will gain access at <span id="a-later-time">a later time</span> at the latest.</h1></div>
-    <div id="cookie-overlay"><h1>Cookies are required to use the remote controller.</h1></div>
-    <div id="disconnected-overlay"><h1>Display is disconnected. Please restart the display in order to control it.</h1></div>
-    <div id="init-overlay"><h1>Initializing connection...</h1></div>
-    <div id="error-overlay"><h1>Lost connection to display... reconnecting in <span id="remaining">10</span>.</h1><p>If this problem persists, please contact <a href="mailto:mail@communityhub.cloud?subject=Controller 38 loaded at 1626203244 connection error with oberlin server">mail@communityhub.cloud</a>.</p></div>
-    <!-- first row container -->
+  <div id="timeout-overlay">
+    <h1>Your time using this remote is up. Try again starting at a later time.</h1>
+  </div>
+  <div id="queue-overlay">
+    <h1>You are waiting <span id="in-the-queue">in the queue</span>. You will gain access at <span id="a-later-time">a
+        later time</span> at the latest.</h1>
+  </div>
+  <div id="cookie-overlay">
+    <h1>Cookies are required to use the remote controller.</h1>
+  </div>
+  <div id="disconnected-overlay">
+    <h1>Display is disconnected. Please restart the display in order to control it.</h1>
+  </div>
+  <div id="init-overlay">
+    <h1>Initializing connection...</h1>
+  </div>
+  <div id="error-overlay">
+    <h1>Lost connection to display... reconnecting in <span id="remaining">10</span>.</h1>
+    <p>If this problem persists, please contact <a
+        href="mailto:mail@communityhub.cloud?subject=Controller 38 loaded at 1626203244 connection error with oberlin server">mail@communityhub.cloud</a>.
+    </p>
+  </div>
+  <!-- first row container -->
 
 
-      <!-- first column item in first-row container -->
-      <!-- <div class="flex-child">
+  <!-- first column item in first-row container -->
+  <!-- <div class="flex-child">
         <center>IGA Screen Controller</center>
       </div> -->
 
-      <!-- second column item in first-row container -->
-      <div class="flex-container">
-      <div class="flex-child">
+  <!-- second column item in first-row container -->
+  <div class="flex-container">
+    <div class="flex-child">
 
-          <img src="/nav/resources/Kendal_controllerbanner.svg">
-
-      </div>
+      <img src="/nav/resources/Kendal_controllerbanner.svg">
 
     </div>
 
-    <div class="flex-container2">
+  </div>
 
-      <div class="flex-child2">
-        <center>
+  <div class="flex-container2">
+
+    <div class="flex-child2">
+      <center>
         <div class="button" data-twig="btn1">
-          <img  data-type='1' data-url='/digital-signage/remote/7' data-id='1701' data-active_src='' data-src='https://storage.googleapis.com/ch-digital-signage/oberlin/digital-signage/61098c64a40d2.svg' src='https://storage.googleapis.com/ch-digital-signage/oberlin/digital-signage/61098c64a40d2.svg' />
+          <img data-type='1' data-url='/digital-signage/remote/7' data-id='1701' data-active_src=''
+            data-src='https://storage.googleapis.com/ch-digital-signage/oberlin/digital-signage/61098c64a40d2.svg'
+            src='https://storage.googleapis.com/ch-digital-signage/oberlin/digital-signage/61098c64a40d2.svg' />
         </div>
-        </center>
-      </div>
-
-      <div class="flex-child2">
-        <center>
-          <div class="button" data-twig="btn2" >
-            <img  data-type='1' data-url='/digital-signage/remote/7' data-id='1610' data-active_src='' data-src='https://storage.googleapis.com/ch-digital-signage/oberlin/digital-signage/60f9d2652afe7.svg' src='https://storage.googleapis.com/ch-digital-signage/oberlin/digital-signage/60f9d2652afe7.svg' />
-          </div>
-        </center>
-      </div>
-
+      </center>
     </div>
 
-    <div class="flex-container2">
-
-      <div class="flex-child2">
-        <center>
-          <div class="button" data-twig="btn3">
-            <img  data-type='1' data-url='/digital-signage/remote/7' data-id='1700' data-active_src='' data-src='https://storage.googleapis.com/ch-digital-signage/oberlin/digital-signage/61098c4d49191.svg' src='https://storage.googleapis.com/ch-digital-signage/oberlin/digital-signage/61098c4d49191.svg' />
-          </div>
-        </center>
-      </div>
-
-      <div class="flex-child2">
-        <center>
-          <div class="button" data-twig="btn4">
-            <img  data-type='1' data-url='/digital-signage/remote/7' data-id='1702' data-active_src='' data-src='https://storage.googleapis.com/ch-digital-signage/oberlin/digital-signage/61098c7b6c20d.svg' src='https://storage.googleapis.com/ch-digital-signage/oberlin/digital-signage/61098c7b6c20d.svg' />
-          </div>
-        </center>
-      </div>
-
+    <div class="flex-child2">
+      <center>
+        <div class="button" data-twig="btn2">
+          <img data-type='1' data-url='/digital-signage/remote/7' data-id='1610' data-active_src=''
+            data-src='https://storage.googleapis.com/ch-digital-signage/oberlin/digital-signage/60f9d2652afe7.svg'
+            src='https://storage.googleapis.com/ch-digital-signage/oberlin/digital-signage/60f9d2652afe7.svg' />
+        </div>
+      </center>
     </div>
 
-    <div class="flex-container2">
+  </div>
 
-      <div class="flex-child2">
-        <center>
-          <div class="button" data-twig="btn5">
-            <img  data-type='1' data-url='/digital-signage/remote/7' data-id='1703' data-active_src='' data-src='https://storage.googleapis.com/ch-digital-signage/oberlin/digital-signage/61098c8ed7e75.svg' src='https://storage.googleapis.com/ch-digital-signage/oberlin/digital-signage/61098c8ed7e75.svg' />
-          </div>
-        </center>
-      </div>
+  <div class="flex-container2">
 
-      <div class="flex-child2">
-        <center>
-          <div class="button" data-twig="btn6">
-            <img  data-type='1' data-url='/digital-signage/remote/7' data-id='1699' data-active_src='' data-src='https://storage.googleapis.com/ch-digital-signage/oberlin/digital-signage/61098c363acaa.svg' src='../resources/Kendal Information.svg' />
-          </div>
-        </center>
-      </div>
-
+    <div class="flex-child2">
+      <center>
+        <div class="button" data-twig="btn3">
+          <img data-type='1' data-url='/digital-signage/remote/7' data-id='1700' data-active_src=''
+            data-src='https://storage.googleapis.com/ch-digital-signage/oberlin/digital-signage/61098c4d49191.svg'
+            src='https://storage.googleapis.com/ch-digital-signage/oberlin/digital-signage/61098c4d49191.svg' />
+        </div>
+      </center>
     </div>
 
+    <div class="flex-child2">
+      <center>
+        <div class="button" data-twig="btn4">
+          <img data-type='1' data-url='/digital-signage/remote/7' data-id='1702' data-active_src=''
+            data-src='https://storage.googleapis.com/ch-digital-signage/oberlin/digital-signage/61098c7b6c20d.svg'
+            src='https://storage.googleapis.com/ch-digital-signage/oberlin/digital-signage/61098c7b6c20d.svg' />
+        </div>
+      </center>
+    </div>
+
+  </div>
+
+  <div class="flex-container2">
+
+    <div class="flex-child2">
+      <center>
+        <div class="button" data-twig="btn5">
+          <img data-type='1' data-url='/digital-signage/remote/7' data-id='1703' data-active_src=''
+            data-src='https://storage.googleapis.com/ch-digital-signage/oberlin/digital-signage/61098c8ed7e75.svg'
+            src='https://storage.googleapis.com/ch-digital-signage/oberlin/digital-signage/61098c8ed7e75.svg' />
+        </div>
+      </center>
+    </div>
+
+    <div class="flex-child2">
+      <center>
+        <div class="button" data-twig="btn6">
+          <img data-type='1' data-url='/digital-signage/remote/7' data-id='1699' data-active_src=''
+            data-src='https://storage.googleapis.com/ch-digital-signage/oberlin/digital-signage/61098c363acaa.svg'
+            src='../resources/Kendal Information.svg' />
+        </div>
+      </center>
+    </div>
+
+  </div>
 
 
 
 
 
 
-    <!-- hub home button end -->
-    <a href="https://environmentaldashboard.org/nav/" class="button2">HUB HOME</a>
-    <script src="../scripts/controllers.js"></script>
 
-  </body>
+  <!-- hub home button end -->
+  <a href="https://environmentaldashboard.org/nav/" class="button2">HUB HOME</a>
+  <script src="../scripts/controllers.js"></script>
+
+</body>
 
 
 
