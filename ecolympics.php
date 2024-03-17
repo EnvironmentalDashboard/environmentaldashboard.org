@@ -36,7 +36,7 @@
 
         <div class="row">
             <div class="col-lg-6 col-md-12 padding-rignt-0 order-sm-2 order-lg-1">
-                <div class="col-md-12 pr-0">
+                <div class="col-md-12 pr-lg-0">
                     <div class="slide-show-container">
                         <ecolympic-tabs-plugin />
                     </div>
@@ -49,7 +49,7 @@
                                 Follow on social media
                             </em>
                         </div>
-                        <div class="text-center d-inline-flex justify-content-center align-items-center py-1 px-1 pb-3 social-btn-container">
+                        <div class="text-center d-inline-flex justify-content-center align-items-center py-1 px-1 pb-4 social-btn-container">
                             <?php include 'includes/social-media-links.php'; ?>
                         </div>
                         <div class="standings-container">
@@ -58,17 +58,17 @@
                                     CURRENT STANDINGS
                                 </strong>
                             </div>
-                            <div class="d-block">
+                            <!-- <div class="d-block">
                                 <strong class="h6 text-black">
                                     (2024 will be posted when competition begins)
                                 </strong>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-lg-6 col-md-12 padding-left-0 order-sm-1 order-lg-2">
-                <div class="col-md-12 pl-0 about-ecolympic text-justify">
+                <div class="col-md-12 pl-lg-0 about-ecolympic text-justify">
                     <P>
                         <strong><i>What is it?</i></strong> Ecolympics is the Oberlin community’s annual competition to conserve water and electricity use in buildings through behavior change while celebrating the environment. The 2024 community theme is “Later is too late: Efficiency, Electrification and Solarization”. A concurrent campaign will help all Oberlin residents identify smart choice for action.
                     </P>
@@ -78,7 +78,7 @@
                     <P>
                         <strong><i>Standings and Strategy:</i></strong>  During the competition, standings shown below are updated in real-time (scroll down to see College Residence hall). The three buttons above link to strategy tools for winning! Click to see in-depth graphs of real-time electricity and water use in each participating building. Use what you learn from patterns to brainstorm on how occupants of your building can reduce water and electricity use!
                     </P>
-                    <P>
+                    <P class="m-0">
                         <strong><i>Community Goals:</i></strong> While occupants of each building should work to win, a community-wide goal has been set to reduce electricity use by 10,000 kWh and water use by 10,000 gallons during the competition. The entire community wins if we meet or exceed these collective goals!
                     </P>
                 </div>
