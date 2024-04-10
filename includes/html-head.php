@@ -13,7 +13,7 @@ $external_css = isset($_GET['css']) ? $_GET['css'] : '';
 <link rel="shortcut icon" href="/favicon.ico?v=9ByOqqx0o3">
 <meta name="theme-color" content="#000000">
 <title>Environmental Dashboard</title>
-<script src="https://config.communityhub.cloud/ch-header/app-index.js?v=1.17" crossorigin="anonymous" type="module"></script>
+<script src="https://config.communityhub.cloud/ch-header/app-index.js?v=2.25" crossorigin="anonymous" type="module"></script>
 
 <?php
 if ($external_css) {
