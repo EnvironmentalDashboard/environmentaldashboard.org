@@ -111,7 +111,7 @@ function format_key($str)
           <p>Educators from a variety of schools have creatively employed Environmental Dashboard to teach a variety of concepts, subjects and levels. Use the selectors below to search our repository for Dashboard-related lessons and units by title, topic, grade level or any of the other search fields alone or in combination.</p>
           <p>For example, a search for the term "electricity" will take you to titles and summary descriptions of all lessons tagged as being related. From this list you can click and download PDFs of complete lessons. This <a href="https://docs.google.com/document/d/1uJLghYhpDRiZadqeeacH2aUyiedKHI0DhQs_QWsQjLM/edit">Navigation Guide to BuildingOS</a> may be a useful resource as a general introduction to the tools and apps in the BuildingOS component of Dashboard.</p>
         <?php } ?>
-        <form action=<?= generateURL('/edresources/searchedresources') ?> <?= $target ?> method="GET">
+        <form action=<?= $generateURL('edresources/searchedresources') ?> <?= $target ?> method="GET">
           <div class="card bg-light mb-3">
             <div class="card-body">
               <div class="row">

@@ -63,17 +63,17 @@
           <img class="d-block w-100" src="https://environmentaldashboard.org/images/uploads/2015/07/homepage-slider2-welcome1.jpg" alt="First slide">
         </div>
         <div class="carousel-item">
-          <a href="<?= generateURL('/mission') ?>">
+          <a href="<?= $generateURL('mission') ?>">
             <img class="d-block w-100" src="https://environmentaldashboard.org/images/uploads/2015/07/homepage-slider2-our-mission.jpg" alt="Second slide">
           </a>
         </div>
         <div class="carousel-item">
-          <a href="<?= generateURL('/story-of-dashboard') ?>">
+          <a href="<?= $generateURL('story-of-dashboard') ?>">
             <img class="d-block w-100" src="https://environmentaldashboard.org/images/uploads/2015/07/homepage-slider2-project1.jpg" alt="Third slide">
           </a>
         </div>
         <div class="carousel-item">
-          <a href="<?= generateURL('/resources-explained') ?>">
+          <a href="<?= $generateURL('resources-explained') ?>">
             <img class="d-block w-100" src="https://environmentaldashboard.org/images/uploads/2015/07/homepage-slider2-resources1.jpg" alt="Fourth slide">
           </a>
         </div>
@@ -86,7 +86,7 @@
           <img class="d-block w-100" src="https://environmentaldashboard.org/images/uploads/2015/07/homepage-slider2-digital-signage1.jpg" alt="Sixth slide">
         </div>
         <div class="carousel-item">
-          <a href="<?= generateURL('/community-voices') ?>">
+          <a href="<?= $generateURL('community-voices') ?>">
             <img class="d-block w-100" src="https://environmentaldashboard.org/images/uploads/2015/07/homepage-slider2-community-voices1.jpg" alt="Seventh slide">
           </a>
         </div>
@@ -105,7 +105,7 @@
     </div>
     <div class="row" style="margin-top: 20px;margin-bottom: 20px;padding-right: 15px;padding-left: 15px">
       <div class="col-12 col-sm-3 brand-items">
-        <a class="brand-item-container" href="<?= generateURL('/cwd') ?>">
+        <a class="brand-item-container" href="<?= $generateURL('cwd') ?>">
           <img onload="removeBackground(this)" src="https://environmentaldashboard.org/images/uploads/2015/07/icons-cleveland1-300x300.png" class="face-image img-fluid">
           <img onload="removeBackground(this)" src="https://environmentaldashboard.org/images/uploads/2015/07/cwd_icon_hr-300x300.png" class="hover-image img-fluid">
         </a>
@@ -113,7 +113,7 @@
         <p class="primary-heading-content">An animated display of current electricity and water use and environmental conditions in the entire community. “Flash” the energy squirrel and “Walley the Walleye” narrate the dynamic story.</p>
       </div>
       <div class="col-12 col-sm-3 brand-items">
-        <a class="brand-item-container" href="<?= generateURL('/building-dashboard-explained') ?>">
+        <a class="brand-item-container" href="<?= $generateURL('building-dashboard-explained') ?>">
           <img onload="removeBackground(this)" src="https://environmentaldashboard.org/images/uploads/2015/07/icons-town1-300x300.png" class="face-image img-fluid">
           <img onload="removeBackground(this)" src="https://environmentaldashboard.org/images/uploads/2015/07/building_dashboard_icon_ed_hr-300x300.png" class="hover-image img-fluid">
         </a>
@@ -121,7 +121,7 @@
         <p class="primary-heading-content">Measure electricity and water consumption in schools, businesses, public facilities and homes and translate this into animated displays.</p>
       </div>
       <div class="col-12 col-sm-3 brand-items">
-        <a class="brand-item-container" href="<?= generateURL('/community-voices') ?>">
+        <a class="brand-item-container" href="<?= $generateURL('community-voices') ?>">
           <img onload="removeBackground(this)" src="https://environmentaldashboard.org/images/uploads/2015/07/icons-home-family-300x300.png" class="face-image img-fluid">
           <img onload="removeBackground(this)" src="https://environmentaldashboard.org/images/uploads/2015/07/cv_logo_hr-300x300.png" class="hover-image img-fluid">
         </a>
@@ -129,7 +129,7 @@
         <p class="primary-heading-content">Combines images thoughts, ideas and actions of community members and groups to celebrate and empower positive action.</p>
       </div>
       <div class="col-12 col-sm-3 brand-items">
-        <a class="brand-item-container" href="<?= generateURL('/calendar') ?>">
+        <a class="brand-item-container" href="<?= $generateURL('calendar') ?>">
           <img onload="removeBackground(this)" src="images/Homepageonhovercalendarcovericon.png" class="face-image img-fluid">
           <img onload="removeBackground(this)" src="images/Homepageonhover.png" class="hover-image img-fluid">
         </a>
