@@ -16,11 +16,12 @@
   }
 
   .brand-item-container .img-fluid {
-    max-width: 255px;
+    /* max-width: 255px;
     height: 255px;
-    width: 100%;
+    width: 100%; */
+    aspect-ratio: 1;
     background: #dfdfdf;
-    border-radius: 12px;
+    border-radius: 0.75vw;
     border-color: transparent;
   }
 

@@ -59,7 +59,7 @@
       </div>
       <div class="row" style="padding: 30px">
         <div class="col text-center">
-          <a href="<?=$generateURL("edresources/searchedresources")?>" class="btn btn-lg btn-primary">
+          <a href="<?=$generateURL("searchedresources")?>" class="btn btn-lg btn-primary">
             Search
           </a>
         </div>
