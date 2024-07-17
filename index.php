@@ -79,7 +79,7 @@
           </a>
         </div>
         <div class="carousel-item">
-          <a href="https://buildingos.com/s/oberlincity/storyboard314/?chapterId=1390" <?= $target ?>>
+          <a href="https://oberlin.communityhub.cloud/dh-public/ops-embed?active-page=exploreData" <?= $target ?>>
             <img class="d-block w-100" src="https://environmentaldashboard.org/images/uploads/2015/07/homepage-slider2-schools1.jpg" alt="Fifth slide">
           </a>
         </div>
@@ -105,7 +105,7 @@
       </a>
     </div>
     <div class="row" style="margin-top: 20px;margin-bottom: 20px;padding-right: 15px;padding-left: 15px">
-      <div class="col-12 col-sm-3 brand-items">
+      <div class="col-12 col-lg-3 col-md-6 brand-items">
         <a class="brand-item-container" href="<?= $generateURL('cwd') ?>">
           <img onload="removeBackground(this)" src="https://environmentaldashboard.org/images/uploads/2015/07/icons-cleveland1-300x300.png" class="face-image img-fluid">
           <img onload="removeBackground(this)" src="https://environmentaldashboard.org/images/uploads/2015/07/cwd_icon_hr-300x300.png" class="hover-image img-fluid">
@@ -113,7 +113,7 @@
         <h4 class="primary-heading">Citywide Dashboard</h4>
         <p class="primary-heading-content">An animated display of current electricity and water use and environmental conditions in the entire community. “Flash” the energy squirrel and “Walley the Walleye” narrate the dynamic story.</p>
       </div>
-      <div class="col-12 col-sm-3 brand-items">
+      <div class="col-12 col-lg-3 col-md-6 brand-items">
         <a class="brand-item-container" href="<?= $generateURL('building-dashboard-explained') ?>">
           <img onload="removeBackground(this)" src="https://environmentaldashboard.org/images/uploads/2015/07/icons-town1-300x300.png" class="face-image img-fluid">
           <img onload="removeBackground(this)" src="https://environmentaldashboard.org/images/uploads/2015/07/building_dashboard_icon_ed_hr-300x300.png" class="hover-image img-fluid">
@@ -121,7 +121,7 @@
         <h4 class="primary-heading">Building Dashboards</h4>
         <p class="primary-heading-content">Measure electricity and water consumption in schools, businesses, public facilities and homes and translate this into animated displays.</p>
       </div>
-      <div class="col-12 col-sm-3 brand-items">
+      <div class="col-12 col-lg-3 col-md-6 brand-items">
         <a class="brand-item-container" href="<?= $generateURL('community-voices') ?>">
           <img onload="removeBackground(this)" src="https://environmentaldashboard.org/images/uploads/2015/07/icons-home-family-300x300.png" class="face-image img-fluid">
           <img onload="removeBackground(this)" src="https://environmentaldashboard.org/images/uploads/2015/07/cv_logo_hr-300x300.png" class="hover-image img-fluid">
@@ -129,7 +129,7 @@
         <h4 class="primary-heading">Community Voices</h4>
         <p class="primary-heading-content">Combines images thoughts, ideas and actions of community members and groups to celebrate and empower positive action.</p>
       </div>
-      <div class="col-12 col-sm-3 brand-items">
+      <div class="col-12 col-lg-3 col-md-6 brand-items">
         <a class="brand-item-container" href="<?= $generateURL('calendar') ?>">
           <img onload="removeBackground(this)" src="images/Homepageonhovercalendarcovericon.png" class="face-image img-fluid">
           <img onload="removeBackground(this)" src="images/Homepageonhover.png" class="hover-image img-fluid">

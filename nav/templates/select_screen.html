@@ -1,140 +1,153 @@
 <html>
-  <head>
-    <meta charset= "UTF-8">
-    <!-- change "content" as appropriate -->
-    <meta name= "description" content="Select Screen Webpage">
-    <meta name="viewport" content="user-scalable=0">
-    <meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
-    <!-- change title as appropriate -->
-    <title>Select Screen</title>
-    <style>
-    @import url('//fonts.googleapis.com/css2?family=Comfortaa:wght@300;400&display=swap');
-    @font-face{font-family:'Multicolore';src:url(/fonts/multicolore/Multicolore.otf);font-weight:normal}
+    <head>
+        <meta charset="UTF-8" />
+        <!-- change "content" as appropriate -->
+        <meta name="description" content="Select Screen Webpage" />
+        <meta name="viewport" content="user-scalable=0" />
+        <meta http-equiv="ScreenOrientation" content="autoRotate:disabled" />
+        <!-- change title as appropriate -->
+        <title>Select Screen</title>
+        <style>
+            @import url("//fonts.googleapis.com/css2?family=Comfortaa:wght@300;400&display=swap");
 
-    @font-face {
-      font-family: 'Multicolore';
-      font-style: normal;
-      src: local('Multicolore'), url('https://fonts.cdnfonts.com/s/24636/Multicolore.woff') format('woff');
-    }
+            @font-face {
+                font-family: "Multicolore";
+                src: url(/fonts/multicolore/Multicolore.otf);
+                font-weight: normal;
+            }
 
-    html, body {
-      height: 100%;
-      margin: 0px;
-      background: #2c2c2c;
-      font-family: 'Multicolore', sans-serif;
-      font-size: 1.85rem;
-    }
-    .flex-container {
-      display: flex;
-      width:100%;
-      margin-bottom: 3vh;
-    }
+            @font-face {
+                font-family: "Multicolore";
+                font-style: normal;
+                src: local("Multicolore"),
+                    url("https://fonts.cdnfonts.com/s/24636/Multicolore.woff")
+                        format("woff");
+            }
 
-    .flex-container2{
-      display:flex;
-      /* height:16%; */
-      width:100%;
-    }
-    .banner-cotainer{
-      display: flex;
-      box-shadow: rgb(0 0 0 / 50%) 8px 10px 17px;
-      margin: 0.8rem 1.25rem 1.5rem 1rem;
-      border-radius: 0.5rem;
-      height: 100%;
-      max-height: 220px;
-      width: auto;
+            html,
+            body {
+                height: 100%;
+                margin: 0px;
+                background: #2c2c2c;
+                font-family: "Multicolore", sans-serif;
+                font-size: 1.85rem;
+            }
 
-    }
-    .banner-title{
-      margin: 1.3rem 1.15rem 1.2rem 1.35rem;
-      width: 100%;
-      border-radius: 0.5rem;
-      align-items: center;
-      display: flex;
-      padding-left: 1.1rem;
-      border-top-right-radius: 1em;
-      border-bottom-right-radius: 1em;
-    }
-    .logo-image{
-      height: 100%;
-      width: auto;
-      position: absolute;
-      right: 45px;
-      max-height: 208px;
-      align-self: center;
-    }
-    /* @media screen and (min-width: 768px){
+            .flex-container {
+                display: flex;
+                width: 100%;
+                margin-bottom: 3vh;
+            }
+
+            .flex-container2 {
+                display: flex;
+                /* height:16%; */
+                width: 100%;
+            }
+
+            .banner-cotainer {
+                display: flex;
+                box-shadow: rgb(0 0 0 / 50%) 8px 10px 17px;
+                margin: 0.8rem 1.25rem 1.5rem 1rem;
+                border-radius: 0.5rem;
+                height: 100%;
+                max-height: 220px;
+                width: auto;
+            }
+
+            .banner-title {
+                margin: 1.3rem 1.15rem 1.2rem 1.35rem;
+                width: 100%;
+                border-radius: 0.5rem;
+                align-items: center;
+                display: flex;
+                padding-left: 1.1rem;
+                border-top-right-radius: 1em;
+                border-bottom-right-radius: 1em;
+            }
+
+            .logo-image {
+                height: 100%;
+                width: auto;
+                position: absolute;
+                right: 45px;
+                max-height: 208px;
+                align-self: center;
+            }
+
+            /* @media screen and (min-width: 768px){
       .flex-container2{
         display:flex;
         height:16%;
         width:100%;
         margin-top:35px;
    } */
-   @media screen and (max-width: 768px){
-    .flex-child2{
-      flex:1;
-      height:100%;
-      width:100%;
-      margin-left:100px;
-      margin-right:100px;
-      padding-left:10px;
-      padding-right:10px;
-    }
-  }
+            @media screen and (max-width: 768px) {
+                .flex-child2 {
+                    flex: 1;
+                    height: 100%;
+                    width: 100%;
+                    margin-left: 100px;
+                    margin-right: 100px;
+                    padding-left: 10px;
+                    padding-right: 10px;
+                }
+            }
 
-  @media screen and (orientation: landscape) and (max-width:1000px) {
-    html {
-      /* Rotate the content container */
-      transform: rotate(-90deg);
-      transform-origin: left top;
-      /* Set content width to viewport height */
-      width: 100vh;
-      /* Set content height to viewport width */
-      height: 100vw;
-      overflow-x: hidden;
-      position: absolute;
-      top: 100%;
-      left: 0;
-    }
-  }
-  /* Media Query for IPAD */
-    @media screen and (min-width: 768px){
-      .flex-child2{
-        flex:1;
-        height:100%;
-        width:100%;
-        margin-top:15px; /* Margin top added for ipad and ipad pro*/
-        margin-left:15px;
-        margin-right:15px;
-      }
+            @media screen and (orientation: landscape) and (max-width: 1000px) {
+                html {
+                    /* Rotate the content container */
+                    transform: rotate(-90deg);
+                    transform-origin: left top;
+                    /* Set content width to viewport height */
+                    width: 100vh;
+                    /* Set content height to viewport width */
+                    height: 100vw;
+                    overflow-x: hidden;
+                    position: absolute;
+                    top: 100%;
+                    left: 0;
+                }
+            }
 
-    }
+            /* Media Query for IPAD */
+            @media screen and (min-width: 768px) {
+                .flex-child2 {
+                    flex: 1;
+                    height: 100%;
+                    width: 100%;
+                    margin-top: 15px;
+                    /* Margin top added for ipad and ipad pro*/
+                    margin-left: 15px;
+                    margin-right: 15px;
+                }
+            }
 
-    @media screen and (min-width: 1000px){
-     .flex-child2{
-       flex:1;
-       height:95%;
-       width:50%;
-       margin-top:50px;
-     }
-   }
+            @media screen and (min-width: 1000px) {
+                .flex-child2 {
+                    flex: 1;
+                    height: 95%;
+                    width: 50%;
+                    margin-top: 50px;
+                }
+            }
 
-   @media screen and (min-width: 1800px){
-    .flex-child2{
-      flex:1;
-      height:95%;
-      width:50%;
-      margin-top:500px;
-    }
-  }
+            @media screen and (min-width: 1800px) {
+                .flex-child2 {
+                    flex: 1;
+                    height: 95%;
+                    width: 50%;
+                    margin-top: 500px;
+                }
+            }
 
-    .flex-child {
-      flex: 1;
-      height:100%;
-      width: 100%;
-    }
+            .flex-child {
+                flex: 1;
+                height: 100%;
+                width: 100%;
+            }
 
-    /* .flex-child:first-child {
+            /* .flex-child:first-child {
       margin-right: 20px;
       font-family:'Comfortaa',cursive;
       font-size:50px;
@@ -142,73 +155,90 @@
       padding-top:20px;
     } */
 
-    /* .frame{
+            /* .frame{
       height:70%;
       width:100%;
     } */
 
-    .button img {
-      width: 100%;
-      height: 100%;
-      cursor: pointer;
-      position: relative;
-    }
+            .button img {
+                width: 100%;
+                height: 100%;
+                cursor: pointer;
+                position: relative;
+            }
+        </style>
+        <!-- <link rel="stylesheet" type="text/css" href="/nav/styles/style.css"> -->
+    </head>
 
-    </style>
-    <!-- <link rel="stylesheet" type="text/css" href="/nav/styles/style.css"> -->
-
-</head>
-
-
-  <body>
-
-      <div class="flex-container">
-        <div class="flex-child">
-
-          <img src="../resources/selectscreen_banner.svg">
-
+    <body>
+        <div class="flex-container">
+            <div class="flex-child">
+                <img src="../resources/selectscreen_banner.svg" />
+            </div>
         </div>
 
-      </div>
-      
-      <!-- <div class="flex-container2">
+        <!-- <div class="flex-container2">
         <div class="flex-child2">
           <center>
             <input type="image" src="../resources/OPL_remotebutton.svg" onclick="location.href = '../templates/oberlinpubliclibrary.html';" />
           </center>
         </div>
       </div> -->
-      <div class="banner-cotainer" style="background: #365f93;"
-        onclick="location.href = 'https://oberlin.communityhub.cloud/digital-signage/remote/custom/oberlin-public-library';">
-        <div class="banner-title" style="background: #638cba;">
-          LIBRARY
-          <img class="logo-image" src="https://storage.googleapis.com/ch-digital-signage/oberlin/digital-signage/oberlin-public-library.svg">
+        <div
+            class="banner-cotainer"
+            style="background: #365f93"
+            onclick="location.href = 'https://oberlin.communityhub.cloud/digital-signage/remote/custom/oberlin-public-library';"
+        >
+            <div class="banner-title" style="background: #638cba">
+                LIBRARY
+                <img
+                    class="logo-image"
+                    src="https://storage.googleapis.com/ch-digital-signage/oberlin/digital-signage/oberlin-public-library.svg"
+                />
+            </div>
         </div>
-      </div>
-      <div class="banner-cotainer" style="background: #99e9ff;"
-        onclick="location.href = 'https://oberlin.communityhub.cloud/digital-signage/remote/custom/the-bridge';">
-        <div class="banner-title" style="background: #b3dcba;">
-          The Bridge
-          <img class="logo-image" src="https://storage.googleapis.com/ch-digital-signage/oberlin/digital-signage/BridgeIcon.svg">
+        <div
+            class="banner-cotainer"
+            style="background: #99e9ff"
+            onclick="location.href = 'https://oberlin.communityhub.cloud/digital-signage/remote/custom/the-bridge';"
+        >
+            <div class="banner-title" style="background: #b3dcba">
+                The Bridge
+                <img
+                    class="logo-image"
+                    src="https://storage.googleapis.com/ch-digital-signage/oberlin/digital-signage/BridgeIcon.svg"
+                />
+            </div>
         </div>
-      </div>
 
-      <div class="banner-cotainer" style="background: #6eb744;"
-        onclick="location.href = 'https://oberlin.communityhub.cloud/digital-signage/remote/custom/lewis-gateway-center-lobby';">
-        <div class="banner-title" style="background: #d4eac7;">
-          Hotel Lobby
-          <img class="logo-image" src="https://storage.googleapis.com/ch-digital-signage/oberlin/digital-signage/hotel-oberlin-icon.svg">
+        <div
+            class="banner-cotainer"
+            style="background: #6eb744"
+            onclick="location.href = 'https://oberlin.communityhub.cloud/digital-signage/remote/custom/lewis-gateway-center-lobby';"
+        >
+            <div class="banner-title" style="background: #d4eac7">
+                Hotel Lobby
+                <img
+                    class="logo-image"
+                    src="https://storage.googleapis.com/ch-digital-signage/oberlin/digital-signage/hotel-oberlin-icon.svg"
+                />
+            </div>
         </div>
-      </div>
-      <div class="banner-cotainer" style="background: #6eb744;"
-        onclick="location.href = 'https://oberlin.communityhub.cloud/digital-signage/remote/custom/lewis-gateway-center-desk';">
-        <div class="banner-title" style="background: #d4eac7;">
-          Hotel Desk
-          <img class="logo-image" src="https://storage.googleapis.com/ch-digital-signage/oberlin/digital-signage/hotel-oberlin-icon.svg">
+        <div
+            class="banner-cotainer"
+            style="background: #6eb744"
+            onclick="location.href = 'https://oberlin.communityhub.cloud/digital-signage/remote/custom/lewis-gateway-center-desk';"
+        >
+            <div class="banner-title" style="background: #d4eac7">
+                Hotel Desk
+                <img
+                    class="logo-image"
+                    src="https://storage.googleapis.com/ch-digital-signage/oberlin/digital-signage/hotel-oberlin-icon.svg"
+                />
+            </div>
         </div>
-      </div>
 
-      <!-- <div class="flex-container2">  
+        <!-- <div class="flex-container2">  
         <div class="flex-child2">
           <center>
             <input type="image" src="../resources/thebridge_remotebutton.svg" onclick="location.href = '../templates/thebridge.html';" />
@@ -216,7 +246,7 @@
         </div>
       </div> -->
 
-    <!-- <div class="flex-container2">
+        <!-- <div class="flex-container2">
       <div class="flex-child2">
         <center>
           <input type="image" src="../resources/hoteldesk_remotebutton.svg" onclick="location.href = '../templates/hotelfrontdesk.html';" />
@@ -224,14 +254,14 @@
       </div>
     </div> -->
 
-    <!-- <div class="flex-container2">
+        <!-- <div class="flex-container2">
       <div class="flex-child2">        <center>
           <input type="image" src="../resources/hotelobby_remotebutton.svg" onclick="location.href = '../templates/hotellobby.html';" />
         </center>
       </div>
     </div> -->
 
-    <!-- <div class="flex-container2">
+        <!-- <div class="flex-container2">
       <div class="flex-child2">
         <center>
           <input type="image" src="../resources/IGA_remotebutton.svg" onclick="location.href = '../templates/iga.html';" />
@@ -239,35 +269,61 @@
       </div>
     </div> -->
 
-    <div class="banner-cotainer" style="background: #8a3534;" onclick="location.href = 'https://oberlin.communityhub.cloud/digital-signage/remote/custom/iga';">
-      <div class="banner-title" style="background: #eec2c4;">
-          IGA
-          <img class="logo-image" src="https://storage.googleapis.com/ch-digital-signage/oberlin/digital-signage/IGAIcon.svg">
-      </div>
-    </div>
-    <div class="banner-cotainer" style="background: #c8353b;" onclick="location.href = 'https://oberlin.communityhub.cloud/digital-signage/remote/custom/oberlin-k8-school';">
-      <div class="banner-title" style="background: #eec2c4;">
-          OPS - Elementary
-          <img class="logo-image" src="https://storage.googleapis.com/ch-digital-signage/oberlin/digital-signage/oberlin-high-school.png">
-      </div>
-    </div>
-    <div class="banner-cotainer" style="background: #c8353b;"
-      onclick="location.href = 'https://oberlin.communityhub.cloud/digital-signage/remote/custom/oberlin-high-school';">
-      <div class="banner-title" style="background: #eec2c4;">
-        OPS - High School
-        <img class="logo-image" src="https://storage.googleapis.com/ch-digital-signage/oberlin/digital-signage/oberlin-high-school.png">
-      </div>
-    </div>
-    
-    <div class="banner-cotainer" style="background: #c8353b;"
-      onclick="location.href = 'https://oberlin.communityhub.cloud/digital-signage/remote/custom/langston-middle-school';">
-      <div class="banner-title" style="background: #eec2c4;">
-        OPS - Langston
-        <img class="logo-image" src="https://storage.googleapis.com/ch-digital-signage/oberlin/digital-signage/oberlin-high-school.png">
-      </div>
-    </div>
-    <!-- old ops banner -->
-    <!-- <div class="flex-container2">
+        <div
+            class="banner-cotainer"
+            style="background: #8a3534"
+            onclick="location.href = 'https://oberlin.communityhub.cloud/digital-signage/remote/custom/iga';"
+        >
+            <div class="banner-title" style="background: #eec2c4">
+                IGA
+                <img
+                    class="logo-image"
+                    src="https://storage.googleapis.com/ch-digital-signage/oberlin/digital-signage/IGAIcon.svg"
+                />
+            </div>
+        </div>
+        <div
+            class="banner-cotainer"
+            style="background: #c8353b"
+            onclick="location.href = 'https://oberlin.communityhub.cloud/digital-signage/remote/custom/oberlin-k8-school';"
+        >
+            <div class="banner-title" style="background: #eec2c4">
+                OPS - Elementary
+                <img
+                    class="logo-image"
+                    src="https://storage.googleapis.com/ch-digital-signage/oberlin/digital-signage/oberlin-high-school.png"
+                />
+            </div>
+        </div>
+        <div
+            class="banner-cotainer"
+            style="background: #c8353b"
+            onclick="location.href = 'https://oberlin.communityhub.cloud/digital-signage/remote/custom/oberlin-high-school';"
+        >
+            <div class="banner-title" style="background: #eec2c4">
+                OPS - High School
+                <img
+                    class="logo-image"
+                    src="https://storage.googleapis.com/ch-digital-signage/oberlin/digital-signage/oberlin-high-school.png"
+                />
+            </div>
+        </div>
+
+        <div
+            class="banner-cotainer"
+            style="background: #c8353b"
+            onclick="location.href = 'https://oberlin.communityhub.cloud/digital-signage/remote/custom/langston-middle-school';"
+        >
+            <div class="banner-title" style="background: #eec2c4">
+                OPS - Langston
+                <img
+                    class="logo-image"
+                    src="https://storage.googleapis.com/ch-digital-signage/oberlin/digital-signage/oberlin-high-school.png"
+                />
+            </div>
+        </div>
+        <!-- old ops banner -->
+        <!-- <div class="flex-container2">
       <div class="flex-child2">
         <center>
           <input type="image" src="../resources/OPS_remotebutton.svg" onclick="location.href = '../templates/ops_demo_app.html';" />
@@ -275,49 +331,87 @@
       </div>
     </div> -->
 
-    <div class="banner-cotainer" style="background: #296260;" onclick="location.href = 'https://oberlin.communityhub.cloud/digital-signage/remote/14';">
-      <div class="banner-title" style="background: #bfd0cf;">
-          AJLC
-          <img class="logo-image" src="https://storage.googleapis.com/ch-digital-signage/oberlin/digital-signage/ajlc_remotebuttons.svg">
-      </div>
-    </div>
+        <div
+            class="banner-cotainer"
+            style="background: #296260"
+            onclick="location.href = 'https://oberlin.communityhub.cloud/digital-signage/remote/14';"
+        >
+            <div class="banner-title" style="background: #bfd0cf">
+                AJLC
+                <img
+                    class="logo-image"
+                    src="https://storage.googleapis.com/ch-digital-signage/oberlin/digital-signage/ajlc_remotebuttons.svg"
+                />
+            </div>
+        </div>
 
-    <div class="banner-cotainer" style="background: #003846;"
-      onclick="location.href = 'https://oberlin.communityhub.cloud/digital-signage/remote/115';">
-      <div class="banner-title" style="background: #b3c4c8;">
-        CITY HALL
-        <img class="logo-image" src="https://storage.googleapis.com/ch-digital-signage/oberlin/digital-signage/city_of_oberlin.svg">
-      </div>
-    </div>
+        <div
+            class="banner-cotainer"
+            style="background: #003846"
+            onclick="location.href = 'https://oberlin.communityhub.cloud/digital-signage/remote/115';"
+        >
+            <div class="banner-title" style="background: #b3c4c8">
+                CITY HALL
+                <img
+                    class="logo-image"
+                    src="https://storage.googleapis.com/ch-digital-signage/oberlin/digital-signage/city_of_oberlin.svg"
+                />
+            </div>
+        </div>
 
-    <div class="banner-cotainer" style="background: #652300;" onclick="location.href = 'https://oberlin.communityhub.cloud/digital-signage/remote/116';">
-      <div class="banner-title" style="background: #d7b1b1;">
-          Finance Office
-          <img class="logo-image" src="https://storage.googleapis.com/ch-digital-signage/oberlin/digital-signage/financeoffice_remotebutton.svg">
-      </div>
-    </div>
-    <div class="banner-cotainer" style="background: #652311;"
-      onclick="location.href = 'https://oberlin.communityhub.cloud/digital-signage/remote/custom/community-center';">
-      <div class="banner-title" style="background: #d7b1b1;">
-        Community Center
-        <img class="logo-image" src="https://storage.googleapis.com/ch-digital-signage/oberlin/digital-signage/city_of_oberlin.svg">
-      </div>
-    </div>
-    <div class="banner-cotainer" style="background: #113846;"
-      onclick="location.href = 'https://oberlin.communityhub.cloud/digital-signage/remote/custom/sustainability-office';">
-      <div class="banner-title" style="background: #b3c4c8;">
-        Sustainability
-        <img class="logo-image" src="https://storage.googleapis.com/ch-digital-signage/oberlin/digital-signage/city_of_oberlin.svg">
-      </div>
-    </div>
-    <div class="banner-cotainer" style="background: #c8353b;"
-      onclick="location.href = 'https://oberlin.communityhub.cloud/digital-signage/remote/custom/oberlin-superintendent';">
-      <div class="banner-title" style="background: #eec2c4;">
-        Superintendent
-        <img class="logo-image" src="https://storage.googleapis.com/ch-digital-signage/oberlin/digital-signage/oberlin.svg">
-      </div>
-    </div>
-    <!-- <div class="flex-container2">    
+        <div
+            class="banner-cotainer"
+            style="background: #652300"
+            onclick="location.href = 'https://oberlin.communityhub.cloud/digital-signage/remote/116';"
+        >
+            <div class="banner-title" style="background: #d7b1b1">
+                Finance Office
+                <img
+                    class="logo-image"
+                    src="https://storage.googleapis.com/ch-digital-signage/oberlin/digital-signage/financeoffice_remotebutton.svg"
+                />
+            </div>
+        </div>
+        <div
+            class="banner-cotainer"
+            style="background: #652311"
+            onclick="location.href = 'https://oberlin.communityhub.cloud/digital-signage/remote/custom/community-center';"
+        >
+            <div class="banner-title" style="background: #d7b1b1">
+                Community Center
+                <img
+                    class="logo-image"
+                    src="https://storage.googleapis.com/ch-digital-signage/oberlin/digital-signage/city_of_oberlin.svg"
+                />
+            </div>
+        </div>
+        <div
+            class="banner-cotainer"
+            style="background: #113846"
+            onclick="location.href = 'https://oberlin.communityhub.cloud/digital-signage/remote/custom/sustainability-office';"
+        >
+            <div class="banner-title" style="background: #b3c4c8">
+                Sustainability
+                <img
+                    class="logo-image"
+                    src="https://storage.googleapis.com/ch-digital-signage/oberlin/digital-signage/city_of_oberlin.svg"
+                />
+            </div>
+        </div>
+        <div
+            class="banner-cotainer"
+            style="background: #c8353b"
+            onclick="location.href = 'https://oberlin.communityhub.cloud/digital-signage/remote/custom/oberlin-superintendent';"
+        >
+            <div class="banner-title" style="background: #eec2c4">
+                Superintendent
+                <img
+                    class="logo-image"
+                    src="https://storage.googleapis.com/ch-digital-signage/oberlin/digital-signage/oberlin.svg"
+                />
+            </div>
+        </div>
+        <!-- <div class="flex-container2">    
       <div class="flex-child2">
         <center>
           <input type="image" src="../resources/ajlc_remotebuttons.svg"
@@ -326,23 +420,33 @@
       </div>
     </div> -->
 
-    <div class="banner-cotainer" style="background: #c8353b;"
-      onclick="location.href = 'https://oberlin.communityhub.cloud/digital-signage/remote/custom/benfranklin';">
-      <div class="banner-title" style="background: #eec2c4;">
-        Ben Franklin
-        <img class="logo-image"
-          src="https://storage.googleapis.com/ch-digital-signage/oberlin/digital-signage/BenFranklinIcon.svg">
-      </div>
-    </div>
-    <div class="banner-cotainer" style="background: #efd038;"
-      onclick="location.href = 'https://oberlin.communityhub.cloud/digital-signage/remote/custom/cable-coop-window';">
-      <div class="banner-title" style="background: #faf1c4;">
-        Cable Co-Op
-        <img class="logo-image"
-          src="https://storage.googleapis.com/ch-digital-signage/oberlin/digital-signage/CableCo-opIcon.svg">
-      </div>
-    </div>
-    <!-- <div class="flex-container2">
+        <div
+            class="banner-cotainer"
+            style="background: #c8353b"
+            onclick="location.href = 'https://oberlin.communityhub.cloud/digital-signage/remote/custom/benfranklin';"
+        >
+            <div class="banner-title" style="background: #eec2c4">
+                Ben Franklin
+                <img
+                    class="logo-image"
+                    src="https://storage.googleapis.com/ch-digital-signage/oberlin/digital-signage/BenFranklinIcon.svg"
+                />
+            </div>
+        </div>
+        <div
+            class="banner-cotainer"
+            style="background: #efd038"
+            onclick="location.href = 'https://oberlin.communityhub.cloud/digital-signage/remote/custom/cable-coop-window';"
+        >
+            <div class="banner-title" style="background: #faf1c4">
+                Cable Co-Op
+                <img
+                    class="logo-image"
+                    src="https://storage.googleapis.com/ch-digital-signage/oberlin/digital-signage/CableCo-opIcon.svg"
+                />
+            </div>
+        </div>
+        <!-- <div class="flex-container2">
       <div class="flex-child2">
         <center>
           <input type="image" src="../resources/BF_remotebutton.svg" onclick="location.href = '../templates/benfranklin.html';" />
@@ -350,16 +454,15 @@
       </div>
     </div> -->
 
-
-    <!-- <div class="flex-container2">
+        <!-- <div class="flex-container2">
       <div class="flex-child2">
         <center>
           <input type="image" src="../resources/cableco-op_remotebutton.svg" onclick="location.href = '../templates/cablecoop-window.html';" />
         </center>
       </div>
     </div> -->
-    
-    <!--
+
+        <!--
     <div class="flex-container2">
 
       <div class="flex-child2">
@@ -371,7 +474,7 @@
     </div>
     -->
 
-    <!-- <div class="flex-container2">
+        <!-- <div class="flex-container2">
       <div class="flex-child2">
         <center>
           <input type="image" src="../resources/cityofoberlin_remotebutton.svg" onclick="location.href = 'https://environmentaldashboard.org/nav/underconstruction.html';" />
@@ -379,23 +482,27 @@
       </div>
     </div> -->
 
-
-    <!-- <div class="flex-container2">
+        <!-- <div class="flex-container2">
       <div class="flex-child2">
         <center>
           <input type="image" src="../resources/cowork_remotebutton.svg" onclick="location.href = 'https://environmentaldashboard.org/nav/underconstruction.html';" />
         </center>
       </div>
     </div> -->
-    <div class="banner-cotainer" style="background: #f9de7f;"
-      onclick="location.href = 'https://oberlin.communityhub.cloud/digital-signage/remote/custom/oberlin-firestation';">
-      <div class="banner-title" style="background: #fdf5d9;">
-        Fire Department
-        <img class="logo-image"
-          src="https://storage.googleapis.com/ch-digital-signage/oberlin/digital-signage/firedept_remotebutton.svg">
-      </div>
-    </div>
-    <!-- <div class="flex-container2">
+        <div
+            class="banner-cotainer"
+            style="background: #f9de7f"
+            onclick="location.href = 'https://oberlin.communityhub.cloud/digital-signage/remote/custom/oberlin-firestation';"
+        >
+            <div class="banner-title" style="background: #fdf5d9">
+                Fire Department
+                <img
+                    class="logo-image"
+                    src="https://storage.googleapis.com/ch-digital-signage/oberlin/digital-signage/firedept_remotebutton.svg"
+                />
+            </div>
+        </div>
+        <!-- <div class="flex-container2">
       <div class="flex-child2">
         <center>
           <input type="image" src="../resources/firedept_remotebutton.svg" onclick="location.href = '../templates/firestation.html';" />
@@ -403,31 +510,42 @@
       </div>
     </div> -->
 
-    <!-- <div class="flex-container2">
+        <!-- <div class="flex-container2">
       <div class="flex-child2">
         <center>
           <input type="image" src="../resources/firstchurch_remotebutton.svg" onclick="location.href = '../templates/firstchurch.html';" />
         </center>
       </div>
     </div> -->
-    <div class="banner-cotainer" style="background: #afc06e;"
-      onclick="location.href = 'https://oberlin.communityhub.cloud/digital-signage/remote/custom/firstchurch';">
-      <div class="banner-title" style="background: #e7ecd4;">
-        First Church
-        <img class="logo-image"
-          src="https://storage.googleapis.com/ch-digital-signage/oberlin/digital-signage/FirstChurchIcon.svg">
-      </div>
-    </div>
+        <div
+            class="banner-cotainer"
+            style="background: #afc06e"
+            onclick="location.href = 'https://oberlin.communityhub.cloud/digital-signage/remote/custom/firstchurch';"
+        >
+            <div class="banner-title" style="background: #e7ecd4">
+                First Church
+                <img
+                    class="logo-image"
+                    src="https://storage.googleapis.com/ch-digital-signage/oberlin/digital-signage/FirstChurchIcon.svg"
+                />
+            </div>
+        </div>
 
-    <div class="banner-cotainer" style="background: #003300;"
-      onclick="location.href = 'https://oberlin.communityhub.cloud/digital-signage/remote/custom/kendal';">
-      <div class="banner-title" style="background: #c6d1c6;">
-        Kendal
-        <img class="logo-image" src="https://storage.googleapis.com/ch-digital-signage/oberlin/digital-signage/KendalIcon.svg">
-      </div>
-    </div>
-    
-    <!-- <div class="flex-container2">
+        <div
+            class="banner-cotainer"
+            style="background: #003300"
+            onclick="location.href = 'https://oberlin.communityhub.cloud/digital-signage/remote/custom/kendal';"
+        >
+            <div class="banner-title" style="background: #c6d1c6">
+                Kendal
+                <img
+                    class="logo-image"
+                    src="https://storage.googleapis.com/ch-digital-signage/oberlin/digital-signage/KendalIcon.svg"
+                />
+            </div>
+        </div>
+
+        <!-- <div class="flex-container2">
       <div class="flex-child2">
         <center>
           <input type="image" src="../resources/kendal_remotebutton.svg" onclick="location.href = '../templates/kendal.html';" />
@@ -435,7 +553,7 @@
       </div>
     </div> -->
 
-    <!-- <div class="flex-container2">
+        <!-- <div class="flex-container2">
       <div class="flex-child2">
         <center>
           <input type="image" src="../resources/OCS_remotebutton.svg" onclick="location.href = '../templates/ocscontroller.html';" />
@@ -443,23 +561,34 @@
       </div>
     </div> -->
 
+        <div
+            class="banner-cotainer"
+            style="background: #000000"
+            onclick="location.href = 'https://oberlin.communityhub.cloud/digital-signage/remote/custom/oberlin-community-services';"
+        >
+            <div class="banner-title" style="background: #b3b3b3">
+                OCS
+                <img
+                    class="logo-image"
+                    src="https://storage.googleapis.com/ch-digital-signage/oberlin/digital-signage/OCSIcon.svg"
+                />
+            </div>
+        </div>
 
-    <div class="banner-cotainer" style="background: #000000;"
-      onclick="location.href = 'https://oberlin.communityhub.cloud/digital-signage/remote/custom/oberlin-community-services';">
-      <div class="banner-title" style="background: #b3b3b3;">
-        OCS
-        <img class="logo-image" src="https://storage.googleapis.com/ch-digital-signage/oberlin/digital-signage/OCSIcon.svg">
-      </div>
-    </div>
-
-    <div class="banner-cotainer" style="background: #bfd62d;"
-      onclick="location.href = 'https://oberlin.communityhub.cloud/digital-signage/remote/custom/oberlin-childhood-center';">
-      <div class="banner-title" style="background: #e2e8b5;">
-        Childhood Center
-        <img class="logo-image" src="https://storage.googleapis.com/ch-digital-signage/oberlin/digital-signage/OECCIcon.svg">
-      </div>
-    </div>
-    <!-- <div class="flex-container2">
+        <div
+            class="banner-cotainer"
+            style="background: #bfd62d"
+            onclick="location.href = 'https://oberlin.communityhub.cloud/digital-signage/remote/custom/oberlin-childhood-center';"
+        >
+            <div class="banner-title" style="background: #e2e8b5">
+                Childhood Center
+                <img
+                    class="logo-image"
+                    src="https://storage.googleapis.com/ch-digital-signage/oberlin/digital-signage/OECCIcon.svg"
+                />
+            </div>
+        </div>
+        <!-- <div class="flex-container2">
       <div class="flex-child2">
         <center>
           <input type="image" src="../resources/OECC_remotebutton.svg" onclick="location.href = '../templates/oberlinearlychildhoodcenter.html';" />
@@ -467,7 +596,7 @@
       </div>
     </div> -->
 
-    <!--
+        <!--
     <div class="flex-container2">
 
       <div class="flex-child2">
@@ -478,12 +607,5 @@
       
     </div>
   -->
-
-    
-  </body>
-
-
-
-
-
+    </body>
 </html>
