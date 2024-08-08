@@ -27,7 +27,7 @@
     </div>
     <div class="row text-center" style="margin: 10px 0px">
       <div class="col-12 col-sm-4" style="padding: 0px 30px">
-        <a href="https://buildingos.com/s/oberlincity/storyboard314/?chapterId=1382">
+        <a href="https://buildingos.com/s/oberlincity/storyboard31413736/?chapterId=77277">
           <img class="img-fluid grow" src="https://environmentaldashboard.org/images/uploads/2015/07/icons-town1-300x300.png" alt="">
           <p style="text-align: initial;margin-top: 20px">A variety of public buildings within the City of Oberlin have building dashboards and displays. Links here allow you to view dashboards for all four public schools, the Oberlin Public Library and Slow Train Cafe. digital signs in eleven locations in town display content.</p>
         </a>
