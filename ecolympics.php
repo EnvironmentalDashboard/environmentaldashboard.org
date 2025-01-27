@@ -23,10 +23,10 @@
                     <span>View Community Data</span>
                 </div>
             </a>
-            <a href="https://oberlin.communityhub.cloud/dh-public/oc-embed?active-page=exploreData" target="_blank" title="View Residence Hall Data">
+            <a href="https://oberlin.communityhub.cloud/dh-public/oc-embed?active-page=exploreData" target="_blank" title="View Oberlin College Data">
                 <div class="ecolymipic-link">
-                    <img src="../images/ecolympics/OClogo.svg" alt="View Residence Hall Data" srcset="">
-                    <span>View Residence Hall Data</span>
+                    <img src="../images/ecolympics/OClogo.svg" alt="View Oberlin College Data" srcset="">
+                    <span>View Oberlin College Data</span>
                 </div>
             </a>
         </div>
@@ -76,7 +76,7 @@
                         <strong><i>Who is competing?</i></strong> Four concurrent competitions will take place among: Oberlin City Schools; Community Buildings (Oberlin Community Center, Oberlin Fire Station, the School District Office, and Oberlin Public Library); Oberlin College Residential Houses (Dorms); and Oberlin College Buildings (Cox, Admissions, and Wilder). Occupants in each building will work to reduce electricity and water use by the largest percentage relative to a baseline period established immediately before the competition. Buildings with the highest percent reduction in each group for each resource win!
                     </P>
                     <P>
-                        <strong><i>Standings and Strategy:</i></strong>  During the competition, standings shown below are updated in real-time (scroll down to see College dorms). The three buttons above link to strategy tools for winning! Click to see in-depth graphs of real-time electricity and water use in each participating building. Use what you learn from patterns to brainstorm on how occupants of your building can reduce water and electricity use!
+                        <strong><i>Standings and Strategy:</i></strong> During the competition, standings shown below are updated in real-time (scroll down to see College dorms). The three buttons above link to strategy tools for winning! Click to see in-depth graphs of real-time electricity and water use in each participating building. Use what you learn from patterns to brainstorm on how occupants of your building can reduce water and electricity use!
                     </P>
                     <P class="m-0">
                         <strong><i>Community Goals:</i></strong> While occupants of each building should work to win, a community-wide goal has been set to reduce electricity use by 10,000 kWh and water use by 10,000 gallons during the competition. The entire community wins if we meet or exceed these collective goals!
