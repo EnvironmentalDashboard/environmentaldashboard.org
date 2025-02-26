@@ -55,7 +55,8 @@
                         <div class="standings-container">
                             <div class="d-block">
                                 <strong class="h4 text-black">
-                                    CURRENT STANDINGS WILL BE SHOWN AFTER 2025 COMPETION BEGINS
+                                    <!-- CURRENT STANDINGS WILL BE SHOWN AFTER 2025 COMPETION BEGINS -->
+                                    This is a test competition the actual competition will commence on March 3rd, 2025.
                                 </strong>
                             </div>
                             <!-- <div class="d-block">
@@ -84,20 +85,9 @@
                 </div>
             </div>
         </div>
-        <div class="rank-data row mb-5">
-            <!-- Ecolympics 2025 Oberlin City Schools  -->
-            <div class="col-md-12 mb-1 pl-4">
-                <img class="img-thumbnail" src="https://storage.googleapis.com/ch-digital-signage/oberlin/digital-signage/oberlin-city-schools-winners.png" />
-            </div>
-            <div class="col-md-12 mb-1 pl-4">
-                <img class="img-thumbnail" src="https://storage.googleapis.com/ch-digital-signage/oberlin/digital-signage/commuinity-buildings-winners.png" />
-            </div>
-            <div class="col-md-12 mb-1 pl-4">
-                <img class="img-thumbnail" src="https://storage.googleapis.com/ch-digital-signage/oberlin/digital-signage/community-wide-savings.png" />
-            </div>
-            <!-- Ecolympics 2025 Community Buildings  -->
-            <div class="col-md-12 mb-1 pl-4">
-                <img class="img-thumbnail" src="https://storage.googleapis.com/ch-digital-signage/oberlin/digital-signage/city-school-savings.png" />
+        <div class="row mb-5">
+            <div class="col-md-12 ecolympic-data-hub">
+                <iframe id="ecolympic-data-hub-iframe" src="https://oberlin.communityhub.cloud/data-hub/embed/ecolympic-tab-contents" allowtransparency="true" scrolling="no" frameBorder=0 width="100%" height="600px"></iframe>
             </div>
         </div>
         <?php include 'includes/footer.php'; ?>
@@ -110,6 +100,33 @@
             elementResizeObserver('body')
         } catch (error) {
             console.log(error);
+        }
+    </script>
+    <script type="text/javascript">
+        /*To handle height of incoming content*/
+        if (window.addEventListener) {
+            window.addEventListener("message", handleMessage);
+        } else {
+            window.attachEvent("onmessage", handleMessage);
+        }
+
+        function handleMessage(event) {
+            const iframe = document.getElementById("ecolympic-data-hub-iframe")
+            const iframeContainer = document.getElementById("ecolympic-data-hub-embed")
+
+
+            if (
+                typeof event.data == "object" &&
+                event.data.messageType &&
+                event.data.messageType == "content-resize"
+            ) {
+                const height = Math.max(event.data.height, 600);
+                iframe && (iframe.style.height = `${height}px`);
+                iframeContainer && (iframeContainer.style.height = `${height}px`);
+            } else {
+                iframe && (iframe.style.height = `${event.data}px`);
+                iframeContainer && (iframeContainer.style.height = `${event.data}px`);
+            }
         }
     </script>
 </body>
