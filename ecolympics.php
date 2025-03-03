@@ -35,7 +35,7 @@
         </div>
 
         <div class="row">
-            <div class="col-lg-6 col-md-12 padding-rignt-0 order-sm-2 order-lg-1">
+            <div class="col-lg-6 col-md-12 padding-left-0 pr-sm-0 order-sm-1 order-lg-0">
                 <div class="col-md-12 pr-lg-0">
                     <div class="slide-show-container">
                         <ecolympic-tabs-plugin />
@@ -69,7 +69,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-6 col-md-12 padding-left-0 order-sm-1 order-lg-2">
+            <div class="col-lg-6 col-md-12 padding-left-0 pl-sm-0 order-sm-0 order-lg-1">
                 <div class="col-md-12 pl-lg-0 about-ecolympic text-justify">
                     <P>
                         <strong><i>What is it?</i></strong> Ecolympics is the Oberlin community’s annual competition to conserve water and electricity use in buildings through behavior change while celebrating the environment. The 2025 competition will emphasize all the ways that the City of Oberlin, Oberlin City Schools, Oberlin College and other organizations and community members are taking local action to bring about positive global change.
