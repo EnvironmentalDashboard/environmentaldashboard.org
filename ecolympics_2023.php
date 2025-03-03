@@ -11,22 +11,22 @@
     <?php include 'includes/header.php'; ?>
     <div class="container resizable-element">
         <div class="ecolymipic-more-info-links">
-            <a href="https://buildingos.com/s/oberlincity/storyboard314/?chapterId=1382" target="_blank" title="View School Data">
+            <a href="https://oberlin.communityhub.cloud/dh-public/ops-embed?active-page=exploreData" target="_blank" title="View School Data">
                 <div class="ecolymipic-link">
                     <img src="../images/ecolympics/OPSIcon.svg" alt="View School Data" srcset="">
                     <span>View School Data</span>
                 </div>
             </a>
-            <a href="https://buildingos.com/s/oberlincity/storyboard31413736/?chapterId=77277" target="_blank" title="View Community Data">
+            <a href="https://oberlin.communityhub.cloud/dh-public/city-of-oberlin?active-page=exploreData" target="_blank" title="View Community Data">
                 <div class="ecolymipic-link">
                     <img src="../images/ecolympics/CofOberlinIcon.svg" alt="View Community Data" srcset="">
                     <span>View Community Data</span>
                 </div>
             </a>
-            <a href="https://buildingos.com/reports/dashboards/282f6022666d11e7a61b525400d1fc46" target="_blank" title="View Dorms Data">
+            <a href="https://oberlin.communityhub.cloud/dh-public/oc-embed?active-page=exploreData" target="_blank" title="View Oberlin College Data">
                 <div class="ecolymipic-link">
-                    <img src="../images/ecolympics/OClogo.svg" alt="View Dorms Data" srcset="">
-                    <span>View Dorms Data</span>
+                    <img src="../images/ecolympics/OClogo.svg" alt="View Oberlin College Data" srcset="">
+                    <span>View Oberlin College Data</span>
                 </div>
             </a>
         </div>
