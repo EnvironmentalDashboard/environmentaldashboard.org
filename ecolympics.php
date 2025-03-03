@@ -55,8 +55,9 @@
                         <div class="standings-container">
                             <div class="d-block">
                                 <strong class="h4 text-black">
+                                    CURRENT STANDINGS
                                     <!-- CURRENT STANDINGS WILL BE SHOWN AFTER 2025 COMPETION BEGINS -->
-                                    This is a test competition the actual competition will commence on March 3rd, 2025.
+                                    <!-- This is a test competition the actual competition will commence on March 3rd, 2025. -->
                                 </strong>
                             </div>
                             <!-- <div class="d-block">
@@ -86,8 +87,10 @@
             </div>
         </div>
         <div class="row mb-5">
-            <div class="col-md-12 ecolympic-data-hub">
-                <iframe id="ecolympic-data-hub-iframe" src="https://oberlin.communityhub.cloud/data-hub/embed/ecolympic-tab-contents" allowtransparency="true" scrolling="no" frameBorder=0 width="100%" height="600px"></iframe>
+            <div class="col-md-12">
+                <div class="ecolympic-data-hub">
+                    <iframe id="ecolympic-data-hub-iframe" src="https://oberlin.communityhub.cloud/data-hub/embed/ecolympic-tab-contents" allowtransparency="true" scrolling="no" frameBorder=0 width="100%" height="600px"></iframe>
+                </div>
             </div>
         </div>
         <?php include 'includes/footer.php'; ?>
