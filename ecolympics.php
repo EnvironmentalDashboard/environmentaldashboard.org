@@ -35,7 +35,7 @@
         </div>
 
         <div class="row">
-            <div class="col-lg-6 col-md-12 padding-left-0 pr-sm-0 order-sm-1 order-lg-0">
+            <div class="col-lg-6 col-md-12 padding-rignt-0 pr-sm-0 order-sm-1 order-lg-0">
                 <div class="col-md-12 pr-lg-0">
                     <div class="slide-show-container">
                         <ecolympic-tabs-plugin />
