@@ -35,7 +35,7 @@ if (!empty($_GET['no-body-background'])) {
 }
 $target = $isEmbedded ? "target='_blank'" : "target='_self'"
 ?>
-<ch-header <?= $isEmbedded ?> <?= $showMainHeader ?> <?= $showMenu ?> layout="container-fluid" <?= $subDomain ?>></ch-header>
+<ch-header <?= $isEmbedded ?> <?= $showMainHeader ?> <?= $showMenu ?> layout="<?= $isEmbedded ? 'container-fuild' : 'container' ?>" <?= $subDomain ?>></ch-header>
 <?php if($noBodyBackground): ?>
   <style>
     body {
