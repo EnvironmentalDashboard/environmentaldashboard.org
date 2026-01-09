@@ -59,7 +59,7 @@
                                         2025 Results 
                                     </span>
                                     <span>
-                                        Current Standing Available March 2
+                                        2026 Standings Available March 2
                                     </span>
                                     <!-- CURRENT STANDINGS WILL BE SHOWN AFTER 2026 COMPETION BEGINS -->
                                     <!-- This is a test competition the actual competition will commence on March 3rd, 2026. -->
