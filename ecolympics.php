@@ -95,7 +95,7 @@
         <div class="row mb-5">
             <div class="col-md-12">
                 <div class="ecolympic-data-hub">
-                    <iframe id="ecolympic-data-hub-iframe" src="https://oberlin.communityhub.cloud/data-hub/embed/ecolympic-tab-contents" allowtransparency="true" scrolling="no" frameBorder=0 width="100%" height="600px"></iframe>
+                    <iframe id="ecolympic-data-hub-iframe" src="https://oberlin.communityhub.cloud/data-hub/embed/ecolympic-tab-contents/2025" allowtransparency="true" scrolling="no" frameBorder=0 width="100%" height="600px"></iframe>
                 </div>
             </div>
         </div>
