@@ -56,7 +56,7 @@
                             <div class="d-block">
                                 <strong class="h4 text-black text-capitalize d-flex flex-column">
                                     <span>
-                                        2025 Results 
+                                        2025 Results
                                     </span>
                                     <span>
                                         2026 Standings Available March 2
@@ -82,6 +82,10 @@
                     </P>
                     <P>
                         <strong><i>Who is competing?</i></strong> Four concurrent competitions will take place among: Oberlin City Schools; Community Buildings (Oberlin Community Center, Oberlin Fire Station, the School District Office, and Oberlin Public Library); Oberlin College Residential Houses (Dorms); and Oberlin College Buildings (Cox, Admissions, and Wilder). Occupants in each building will work to reduce electricity and water use by the largest percentage relative to a baseline period established immediately before the competition. Buildings with the highest percent reduction in each group for each resource win!
+                        <a href="https://docs.google.com/spreadsheets/d/1uCC8ledMbevUmdeUHXrKnuhzxcZEeA0eaUj6snhJE3w/edit?gid=1275906230#gid=1275906230" target="_blank" title="List of competing buildings">
+                            Click here
+                        </a>
+                        for a complete list of competing buildings and what parts are included.
                     </P>
                     <P>
                         <strong><i>Standings and Strategy:</i></strong> During the competition, standings shown below are updated in real-time (scroll down to see College dorms). The three buttons above link to strategy tools for winning! Click to see in-depth graphs of real-time electricity and water use in each participating building. Use what you learn from patterns to brainstorm on how occupants of your building can reduce water and electricity use!
