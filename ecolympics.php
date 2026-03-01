@@ -5,6 +5,9 @@
     <meta name="description" content="Environmental Dashboard. A technology & approach for organizations and whole communities that combines feedback, through real-time public displays of resource use and environmental conditions, with thoughts and actions of community to engage, motivate, empower & celebrate sustainable thought and action.">
     <?php include 'includes/html-head.php'; ?>
     <script type="module" crossorigin src="https://config.communityhub.cloud/embed-plugins/ecolympic/ecolympic-index.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -82,9 +85,11 @@
                     </P>
                     <P>
                         <strong><i>Who is competing?</i></strong> Four concurrent competitions will take place among: Oberlin City Schools; Community Buildings (Oberlin Community Center, Oberlin Fire Station, the School District Office, and Oberlin Public Library); Oberlin College Residential Houses (Dorms); and Oberlin College Buildings (Cox, Admissions, and Wilder). Occupants in each building will work to reduce electricity and water use by the largest percentage relative to a baseline period established immediately before the competition. Buildings with the highest percent reduction in each group for each resource win!
-                        <a href="https://docs.google.com/spreadsheets/d/1uCC8ledMbevUmdeUHXrKnuhzxcZEeA0eaUj6snhJE3w/edit?gid=1275906230#gid=1275906230" target="_blank" title="List of competing buildings">
-                            Click here
-                        </a>
+                        <strong >
+                            <a href="https://docs.google.com/spreadsheets/d/1uCC8ledMbevUmdeUHXrKnuhzxcZEeA0eaUj6snhJE3w/edit?gid=1275906230#gid=1275906230" target="_blank" title="List of competing buildings" style="font-weight: bold; font-family: sans-serif;">
+                                Click here
+                            </a>
+                        </strong>
                         for a complete list of competing buildings and what parts are included.
                     </P>
                     <P>
