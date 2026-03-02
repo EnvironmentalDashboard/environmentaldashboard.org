@@ -59,11 +59,11 @@
                             <div class="d-block">
                                 <strong class="h4 text-black text-capitalize d-flex flex-column">
                                     <span>
-                                        2025 Results
+                                        2026 Results
                                     </span>
-                                    <span>
+                                    <!-- <span>
                                         2026 Standings Available March 2
-                                    </span>
+                                    </span> -->
                                     <!-- CURRENT STANDINGS WILL BE SHOWN AFTER 2026 COMPETION BEGINS -->
                                     <!-- This is a test competition the actual competition will commence on March 3rd, 2026. -->
                                 </strong>
@@ -104,7 +104,7 @@
         <div class="row mb-5">
             <div class="col-md-12">
                 <div class="ecolympic-data-hub">
-                    <iframe id="ecolympic-data-hub-iframe" src="https://oberlin.communityhub.cloud/data-hub/embed/ecolympic-tab-contents/2025" allowtransparency="true" scrolling="no" frameBorder=0 width="100%" height="600px"></iframe>
+                    <iframe id="ecolympic-data-hub-iframe" src="https://oberlin.communityhub.cloud/data-hub/embed/ecolympic-tab-contents/2026" allowtransparency="true" scrolling="no" frameBorder=0 width="100%" height="600px"></iframe>
                 </div>
             </div>
         </div>

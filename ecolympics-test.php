@@ -56,11 +56,11 @@
                             <div class="d-block">
                                 <strong class="h4 text-black text-capitalize d-flex flex-column">
                                     <span>
-                                        2025 Results 
+                                        2026 Results 
                                     </span>
-                                    <span>
+                                    <!-- <span>
                                         2026 Standings Available March 2
-                                    </span>
+                                    </span> -->
                                     <!-- CURRENT STANDINGS WILL BE SHOWN AFTER 2026 COMPETION BEGINS -->
                                     <!-- This is a test competition the actual competition will commence on March 3rd, 2026. -->
                                 </strong>
