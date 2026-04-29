@@ -15,7 +15,8 @@
 $isEmbedded = "";
 $showMainHeader = "showMainHeader='true'";
 $showMenu = "showMenu='true'";
-$subDomain = "subDomain='environmentaldashboard'";
+$subDomain = "environmentaldashboard";
+
 if (!empty($_GET['embed'])) {
   $isEmbedded = "isembedded='true'";
   $showMainHeader = "";
@@ -23,9 +24,10 @@ if (!empty($_GET['embed'])) {
   if (!empty($_GET['show-menu-bar']) && $_GET['show-menu-bar'] == "1") {
     $showMenu = "showMenu='true'";
   }
-  if (!empty($_GET['theme_name'])) {
+  if (!empty($_GET['subdomain'])) {
+    $subDomain = $_GET['subdomain'];
+  } else if (!empty($_GET['theme_name'])) {
     $subDomain = $_GET['theme_name'];
-    $subDomain = "subDomain='$subDomain'";
   }
 }
 $noBodyBackground = false;
@@ -35,7 +37,7 @@ if (!empty($_GET['no-body-background'])) {
 }
 $target = $isEmbedded ? "target='_blank'" : "target='_self'"
 ?>
-<ch-header <?= $isEmbedded ?> <?= $showMainHeader ?> <?= $showMenu ?> layout="<?= $isEmbedded ? 'container-fuild' : 'container' ?>" <?= $subDomain ?>></ch-header>
+<ch-header <?= $isEmbedded ?> <?= $showMainHeader ?> <?= $showMenu ?> layout="<?= $isEmbedded ? 'container-fuild' : 'container' ?>" subDomain="<?= $subDomain ?>"></ch-header>
 <?php if($noBodyBackground): ?>
   <style>
     body {
@@ -48,7 +50,7 @@ $target = $isEmbedded ? "target='_blank'" : "target='_self'"
 <div class="container p-0">
   <div class="row" style="display: none;">
     <div class="col banner-col">
-      <a href="/"><img src="https://storage.googleapis.com/ch-storage/header-logo/oberlin-banner.jpg" alt="" class="img-fluid"></a>
+      <a href="/"><img src="https://communityhubstorage.cloud/ch-storage/header-logo/oberlin-banner.jpg" alt="" class="img-fluid"></a>
       <!-- <div class="ecolymipic-button-container">
       <img src="../images/Ecolympics_Banner_Button.svg" alt="ECOLYMPICS 2023 APRIL 10 - 23">
       <a class="nav-link" href="/ecolympics" title="CLICK HERE FOR EVENTS & STANDINGS">
