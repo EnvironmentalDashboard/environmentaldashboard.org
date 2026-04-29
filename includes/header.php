@@ -50,7 +50,7 @@ $target = $isEmbedded ? "target='_blank'" : "target='_self'"
 <div class="container p-0">
   <div class="row" style="display: none;">
     <div class="col banner-col">
-      <a href="/"><img src="https://communityhubstorage.cloud//ch-storage/header-logo/oberlin-banner.jpg" alt="" class="img-fluid"></a>
+      <a href="/"><img src="https://communityhubstorage.cloud/ch-storage/header-logo/oberlin-banner.jpg" alt="" class="img-fluid"></a>
       <!-- <div class="ecolymipic-button-container">
       <img src="../images/Ecolympics_Banner_Button.svg" alt="ECOLYMPICS 2023 APRIL 10 - 23">
       <a class="nav-link" href="/ecolympics" title="CLICK HERE FOR EVENTS & STANDINGS">
