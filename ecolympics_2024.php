@@ -119,17 +119,17 @@
         <div class="rank-data row mb-5">
             <!-- Ecolympics 2024 Oberlin City Schools  -->
             <div class="col-md-12 mb-1 pl-4">
-                <img class="img-thumbnail" src="https://storage.googleapis.com/ch-digital-signage/oberlin/digital-signage/oberlin-city-schools-winners.png" />
+                <img class="img-thumbnail" src="https://communityhubstorage.cloud/ch-digital-signage/oberlin/digital-signage/oberlin-city-schools-winners.png" />
             </div>
             <div class="col-md-12 mb-1 pl-4">
-                <img class="img-thumbnail" src="https://storage.googleapis.com/ch-digital-signage/oberlin/digital-signage/commuinity-buildings-winners.png" />
+                <img class="img-thumbnail" src="https://communityhubstorage.cloud/ch-digital-signage/oberlin/digital-signage/commuinity-buildings-winners.png" />
             </div>
             <div class="col-md-12 mb-1 pl-4">
-                <img class="img-thumbnail" src="https://storage.googleapis.com/ch-digital-signage/oberlin/digital-signage/community-wide-savings.png" />
+                <img class="img-thumbnail" src="https://communityhubstorage.cloud/ch-digital-signage/oberlin/digital-signage/community-wide-savings.png" />
             </div>
             <!-- Ecolympics 2024 Community Buildings  -->
             <div class="col-md-12 mb-1 pl-4">
-                <img class="img-thumbnail" src="https://storage.googleapis.com/ch-digital-signage/oberlin/digital-signage/city-school-savings.png" />
+                <img class="img-thumbnail" src="https://communityhubstorage.cloud/ch-digital-signage/oberlin/digital-signage/city-school-savings.png" />
             </div>
         </div>
         <?php include 'includes/footer.php'; ?>
