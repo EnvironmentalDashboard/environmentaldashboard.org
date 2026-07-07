@@ -7,7 +7,7 @@
   <body>
     <?php include 'includes/header.php'; ?>
     <div class="container">
-      <h1 class="head primary-heading">
+      <h1 class="head primary-heading" style="margin:0; padding-top:10px">
         Meet Our Team
       </h1>
       <p class="headdes">
