@@ -6,6 +6,11 @@ require '../includes/db.php';
   <head>
     <?php include 'includes/html-head.php'; ?>
     <meta name="description" content="Citywide Dashboard. An animated display of current electricity and water use and environmental conditions. “Flash” the energy squirrel and “Walley” the Walleye narrate dynamic resource use.">
+    <style>
+      parsererror {
+        display: none;
+      }
+    </style>
   </head>
   <body>
     <?php include 'includes/header.php'; ?>
