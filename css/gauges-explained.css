@@ -1,0 +1,33 @@
+.gaugerow{
+    margin: 20px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    .gaugerow{
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+/* For Mobile Landscape View */
+@media screen and (max-device-width: 640px) and (orientation: landscape) {
+    .gaugerow{
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+/* For Mobile Phones Portrait or Landscape View */
+@media screen and (max-device-width: 640px) {
+    .gaugerow{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .gauge{
+        padding: 0 20px;
+    }
+
+}

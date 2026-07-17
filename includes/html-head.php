@@ -13,15 +13,17 @@ $external_css = isset($_GET['css']) ? $_GET['css'] : '';
 <link rel="shortcut icon" href="/favicon.ico?v=9ByOqqx0o3">
 <meta name="theme-color" content="#000000">
 <title>Environmental Dashboard</title>
-<script src="https://config.communityhub.cloud/ch-header/app-index.js?v=1.14" crossorigin="anonymous" type="module"></script>
+<script src="https://config.communityhub.cloud/ch-header/app-index.js?v=2.31" crossorigin="anonymous" type="module"></script>
 
 <?php
 if ($external_css) {
     echo "<link rel='stylesheet' href='{$external_css}'>";
 }
 
-function generateURL($basePath, $queryParams = [])
-{
+$domainName = isset($_SERVER['SCRIPT_URI']) ? $_SERVER['SCRIPT_URI'] : "https://environmentaldashboard.org/";
+
+$generateURL = function($basePath, $queryParams = []) use ($domainName)
+{    
     // Get the current query parameters
     $currentParams = $_GET;
 
@@ -32,15 +34,17 @@ function generateURL($basePath, $queryParams = [])
     $mergedQueryString = http_build_query($mergedParams);
 
     // Get the current URL without the query string
-    $currentUrl = strtok($_SERVER["REQUEST_URI"], '?');
+    $currentUrl = $domainName . $basePath;
     // echo "<pre>";
     // print_r(['$currentUrl' => $currentUrl]);
     // print_r($_SERVER);
     // exit;
     // Create the final merged URL
     // $mergedUrl = $currentUrl . '?' . $mergedQueryString;
-    $mergedUrl = $basePath . '?' . $mergedQueryString;
+    if($mergedQueryString){
+        return $currentUrl . '?' . $mergedQueryString;
+    }
 
-    return $mergedUrl;
+    return $currentUrl;
 }
 ?>

@@ -3,7 +3,7 @@
   <head>
     <?php include 'includes/html-head.php'; ?>
     <meta name="description" content="The numbers displayed in gauges on Citywide Dashboard provide current rates of water, electricity consumption, water quality, and weather conditions in Oberlin. Sliders below the current values compare current use to previous readings.">
-    <link rel="stylesheet" type="text/css" href="css/ge.css">
+    <link rel="stylesheet" type="text/css" href="css/gauges-explained.css">
   </head>
   <body>
     <?php include 'includes/header.php'; ?>

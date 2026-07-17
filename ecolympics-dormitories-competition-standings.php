@@ -27,7 +27,13 @@
 <body>
     <div class="rank-data row mb-5">
         <div class="col-md-12 pr-0">
-            <iframe class="second-iframe" src="https://buildingos.com/reports/dashboards/7ca10804da3d11ee814f02420aff03c9?name=Ecolympics-2024-Community-Buildings" allowtransparency="true" frameBorder=0 scrolling="no" style="height:100vh">
+            <iframe
+                class="second-iframe"
+                src="https://buildingos.com/reports/dashboards/8bf86870da3711ee815402420aff03d2?name=Ecolympics-2024-Oberlin-College"
+                allowtransparency="true"
+                scrolling="no"
+                frameBorder=0
+                style="height:100vh">
             </iframe>
         </div>
         <!-- <div class="col-md-6 pl-0">

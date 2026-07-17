@@ -6,14 +6,12 @@
     <?php include 'includes/html-head.php'; ?>
 
     <style>
-        body,
-        html {
-            margin: 0;
+        body, html {
+            margin:0;
             padding: 0;
             overflow: hidden;
             background: white !important;
         }
-
         .rank-data {
             display: flex;
             padding: 0;
@@ -25,10 +23,18 @@
 </head>
 
 <body>
-    <div class="rank-data row mb-5">
+    <div class="rank-data row">
         <div class="col-md-12 pr-0">
-            <iframe class="second-iframe" src="https://buildingos.com/reports/dashboards/7ca10804da3d11ee814f02420aff03c9?name=Ecolympics-2024-Community-Buildings" allowtransparency="true" frameBorder=0 scrolling="no" style="height:100vh">
-            </iframe>
+            <div class="col-md-12 pr-0">
+                <iframe 
+                    class="second-iframe" 
+                    src="https://buildingos.com/reports/dashboards/14960edada3d11ee814f02420aff03c9?name=Ecolympics-2024-Oberlin-Elementary-School%20Internal" 
+                    allowtransparency="true"
+                    scrolling="no"
+                    frameBorder=0 
+                    style="height:100vh">
+                </iframe> <!-- width="520"-->
+            </div>
         </div>
         <!-- <div class="col-md-6 pl-0">
             <div class="col-md-12 pl-0">

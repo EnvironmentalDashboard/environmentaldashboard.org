@@ -5,9 +5,6 @@
     <meta name="description" content="Environmental Dashboard. A technology & approach for organizations and whole communities that combines feedback, through real-time public displays of resource use and environmental conditions, with thoughts and actions of community to engage, motivate, empower & celebrate sustainable thought and action.">
     <?php include 'includes/html-head.php'; ?>
     <script type="module" crossorigin src="https://config.communityhub.cloud/embed-plugins/ecolympic/ecolympic-index.js?v=1.1"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -59,7 +56,7 @@
                             <div class="d-block">
                                 <strong class="h4 text-black text-capitalize d-flex flex-column">
                                     <span>
-                                        2026 Results
+                                        2026 Results 
                                     </span>
                                     <!-- <span>
                                         2026 Standings Available March 2
@@ -85,12 +82,6 @@
                     </P>
                     <P>
                         <strong><i>Who is competing?</i></strong> Four concurrent competitions will take place among: Oberlin City Schools; Community Buildings (Oberlin Community Center, Oberlin Fire Station, the School District Office, and Oberlin Public Library); Oberlin College Residential Houses (Dorms); and Oberlin College Buildings (Cox, Admissions, and Wilder). Occupants in each building will work to reduce electricity and water use by the largest percentage relative to a baseline period established immediately before the competition. Buildings with the highest percent reduction in each group for each resource win!
-                        <strong >
-                            <a href="https://docs.google.com/spreadsheets/d/1uCC8ledMbevUmdeUHXrKnuhzxcZEeA0eaUj6snhJE3w/edit?gid=1275906230#gid=1275906230" target="_blank" title="List of competing buildings" style="font-weight: bold; font-family: sans-serif;">
-                                Click here
-                            </a>
-                        </strong>
-                        for a complete list of competing buildings and what parts are included.
                     </P>
                     <P>
                         <strong><i>Standings and Strategy:</i></strong> During the competition, standings shown below are updated in real-time (scroll down to see College dorms). The three buttons above link to strategy tools for winning! Click to see in-depth graphs of real-time electricity and water use in each participating building. Use what you learn from patterns to brainstorm on how occupants of your building can reduce water and electricity use!

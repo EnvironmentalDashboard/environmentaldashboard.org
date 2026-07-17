@@ -5,6 +5,14 @@
     <meta name="description" content="Environmental Dashboard. A technology & approach for organizations and whole communities that combines feedback, through real-time public displays of resource use and environmental conditions, with thoughts and actions of community to engage, motivate, empower & celebrate sustainable thought and action.">
     <?php include 'includes/html-head.php'; ?>
     <style>
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background: white !important;
+        }
+
         .rank-data {
             display: flex;
             padding: 0;
@@ -17,14 +25,10 @@
 
 <body>
     <div class="rank-data row mb-5">
-        <div class="col-md-6 pr-0">
+        <div class="col-md-12 pr-0">
             <div class="col-md-12 pr-0">
-                <iframe class="first-iframe" src="https://buildingos.com/blocks/3ea7f48b901042068d496250628bfef5/" allowtransparency="true" frameborder="0" height="430"></iframe> <!-- width="520"-->
-            </div>
-        </div>
-        <div class="col-md-6 pl-0">
-            <div class="col-md-12 pl-0">
-                <iframe class="first-iframe" src="https://buildingos.com/blocks/cb4f61797a6f4f8da12f096502552e24/" allowtransparency="true" frameBorder=0 height="430"></iframe>
+                <iframe class="second-iframe" src="https://buildingos.com/reports/dashboards/b12e3616da3b11ee866a02420aff03ca?name=Ecolympics-2024-Oberlin-City-Schools" allowtransparency="true" frameBorder=0 style="height:100vh">
+                </iframe>
             </div>
         </div>
     </div>

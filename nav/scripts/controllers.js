@@ -20,7 +20,7 @@ function initSessionConn() {
     if (sessionConn === null) {
         const uuidExtension = uuid ? `?uuid=${uuid}` : '';
 
-        sessionConn = new WebSocket("wss\u003A\/\/oberlin.communityhub.cloud/digital-signage/websockets/session/38" + uuidExtension);
+        sessionConn = new WebSocket("wss://oberlin.communityhub.cloud/digital-signage/websockets/session/38" + uuidExtension);
         // onclose will always fire when onerror does (https://stackoverflow.com/a/40084550/2624391)
         // so don't try reconnecting in both methods
         sessionConn.onerror = function () { return; }

@@ -5,9 +5,6 @@
     <meta name="description" content="Environmental Dashboard. A technology & approach for organizations and whole communities that combines feedback, through real-time public displays of resource use and environmental conditions, with thoughts and actions of community to engage, motivate, empower & celebrate sustainable thought and action.">
     <?php include 'includes/html-head.php'; ?>
     <script type="module" crossorigin src="https://config.communityhub.cloud/embed-plugins/ecolympic/ecolympic-index.js?v=1.1"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -34,7 +31,7 @@
             </a>
         </div>
         <div class="col-md-12 padding-left-0 order-sm-1 order-lg-2 text-center">
-            <h1>OBERLIN ECOLYMPICS 2026</h1>
+            <h1>OBERLIN ECOLYMPICS 2025</h1>
         </div>
 
         <div class="row">
@@ -57,21 +54,15 @@
                         </div>
                         <div class="standings-container">
                             <div class="d-block">
-                                <strong class="h4 text-black text-capitalize d-flex flex-column">
-                                    <span>
-                                        2026 Results
-                                    </span>
-                                    <!-- <span>
-                                        2026 Standings Available March 2
-                                    </span> -->
-                                    <!-- CURRENT STANDINGS WILL BE SHOWN AFTER 2026 COMPETION BEGINS -->
-                                    <!-- This is a test competition the actual competition will commence on March 3rd, 2026. -->
+                                <strong class="h4 text-black">
+                                    2025 Results
+                                    <!-- CURRENT STANDINGS WILL BE SHOWN AFTER 2025 COMPETION BEGINS -->
+                                    <!-- This is a test competition the actual competition will commence on March 3rd, 2025. -->
                                 </strong>
-
                             </div>
                             <!-- <div class="d-block">
                                 <strong class="h6 text-black">
-                                    (2026 will be posted when competition begins)
+                                    (2025 will be posted when competition begins)
                                 </strong>
                             </div> -->
                         </div>
@@ -81,22 +72,16 @@
             <div class="col-lg-6 col-md-12 padding-left-0 pl-sm-0 order-sm-0 order-lg-1">
                 <div class="col-md-12 pl-lg-0 about-ecolympic text-justify">
                     <P>
-                        <strong><i>What is it?</i></strong> Ecolympics is the Oberlin community’s annual competition to conserve water and electricity use in buildings through behavior change while celebrating the environment. The 2026 competition will emphasize all the ways that the City of Oberlin, Oberlin City Schools, Oberlin College and other organizations and community members are taking local action to bring about positive global change.
+                        <strong><i>What is it?</i></strong> Ecolympics is the Oberlin community’s annual competition to conserve water and electricity use in buildings through behavior change while celebrating the environment. The 2025 competition will emphasize all the ways that the City of Oberlin, Oberlin City Schools, Oberlin College and other organizations and community members are taking local action to bring about positive global change.
                     </P>
                     <P>
                         <strong><i>Who is competing?</i></strong> Four concurrent competitions will take place among: Oberlin City Schools; Community Buildings (Oberlin Community Center, Oberlin Fire Station, the School District Office, and Oberlin Public Library); Oberlin College Residential Houses (Dorms); and Oberlin College Buildings (Cox, Admissions, and Wilder). Occupants in each building will work to reduce electricity and water use by the largest percentage relative to a baseline period established immediately before the competition. Buildings with the highest percent reduction in each group for each resource win!
-                        <strong >
-                            <a href="https://docs.google.com/spreadsheets/d/1uCC8ledMbevUmdeUHXrKnuhzxcZEeA0eaUj6snhJE3w/edit?gid=1275906230#gid=1275906230" target="_blank" title="List of competing buildings" style="font-weight: bold; font-family: sans-serif;">
-                                Click here
-                            </a>
-                        </strong>
-                        for a complete list of competing buildings and what parts are included.
                     </P>
                     <P>
                         <strong><i>Standings and Strategy:</i></strong> During the competition, standings shown below are updated in real-time (scroll down to see College dorms). The three buttons above link to strategy tools for winning! Click to see in-depth graphs of real-time electricity and water use in each participating building. Use what you learn from patterns to brainstorm on how occupants of your building can reduce water and electricity use!
                     </P>
                     <P class="m-0">
-                        <strong><i>Community Goals:</i></strong> While occupants of each building should work to win, a community-wide goal has been set to reduce electricity use by 20,000 kWh and water use by 15,000 gallons during the competition. The entire community wins if we meet or exceed these collective goals!
+                        <strong><i>Community Goals:</i></strong> While occupants of each building should work to win, a community-wide goal has been set to reduce electricity use by 10,000 kWh and water use by 10,000 gallons during the competition. The entire community wins if we meet or exceed these collective goals!
                     </P>
                 </div>
             </div>
@@ -104,7 +89,7 @@
         <div class="row mb-5">
             <div class="col-md-12">
                 <div class="ecolympic-data-hub">
-                    <iframe id="ecolympic-data-hub-iframe" src="https://oberlin.communityhub.cloud/data-hub/embed/ecolympic-tab-contents/2026" allowtransparency="true" scrolling="no" frameBorder=0 width="100%" height="600px"></iframe>
+                    <iframe id="ecolympic-data-hub-iframe" src="https://oberlin.communityhub.cloud/data-hub/embed/ecolympic-tab-contents/2025" allowtransparency="true" scrolling="no" frameBorder=0 width="100%" height="600px"></iframe>
                 </div>
             </div>
         </div>
